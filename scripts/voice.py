@@ -62,7 +62,9 @@ async def tts(out, voice, rate, text):
 def align(audio, out, lang, text):
     from faster_whisper import WhisperModel
     m = WhisperModel("large-v3-turbo", device="cpu", compute_type="int8", cpu_threads=6)
-    segs, _ = m.transcribe(audio, language=lang, word_timestamps=True, vad_filter=False, initial_prompt=text[:200])
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", audio, "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True).stdout
+    segs, _ = m.transcribe(np.frombuffer(raw, dtype=np.float32), language=lang, word_timestamps=True, vad_filter=False, initial_prompt=text[:200])
     timed = [(w.start, w.end, w.word.strip()) for s in segs for w in (s.words or [])]
     words = map_times(split_script(text), timed)
     json.dump(words, open(out + ".words.json", "w"), ensure_ascii=False)
