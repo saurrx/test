@@ -51,3 +51,18 @@ Hashtags: rho +0.06, p = 0.38, signs split 6/11 → null, as predicted. Caption 
 opposite of my prediction (longer captions do slightly better), only 10 of 17 creators agree. The caption sample is
 incomplete and not random (the scrape runs lowest-priority reels first), so both are re-run when all captions are in.
 → P12 (`null` so far): don't spend effort on hashtags.
+
+## Iteration 4 (2026-11-09 21:47, caption content, 324 reels with captions; interim until all captions are in)
+
+**F7. Series reels get about 2.6x the creator's usual views (V23).**
+Reels whose caption marks them as part of a series ("part 2", "भाग", "episode") beat the same creator's other reels by
+2.6x (p = 0.0016, 6 of 7 creators who use series labels, stable leaving any creator out). This agrees with F5 (momentum).
+Caveat: creators tend to make a "part 2" after a part 1 did well, so some of this is selection, not the label itself.
+→ P8 upgraded: plan stories as 2–3 parts and label them.
+
+**F8. Calls to action in the caption: no detectable effect (V24–V26).** Comment: 0.65x (p = 0.23); follow: 1.65x
+(p = 0.11); share: 1.28x (p = 0.53). All unstable across creators. → `null`: a CTA is free to include but is not a lever.
+
+**F9. Topic (exploratory, few creators).** Shiva / Mahadev mentions: 2.3x (p = 0.025, but only 3 of 5 creators agree).
+Krishna / Mahabharat mentions: 0.44x (p = 0.023, 3 of 4 creators). Ram / Hanuman: 1.1x (null).
+Too few creators cover each topic to call this evidenced; treat as a lead: Shiva content may travel best for these accounts.

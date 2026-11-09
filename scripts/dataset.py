@@ -66,6 +66,13 @@ def main():
         cap = j.get("description") or ""
         r.update({"has_meta": 1, "caption_chars": len(cap), "caption_hashtags": cap.count("#"), "caption_lines": cap.count("\n") + 1, "caption_first": cap.split("\n")[0][:120].replace(",", " ")})
         r.update(text_feats("cap", cap.split("\n")[0]))
+        low = cap.lower()
+        r["cap_is_series"] = int(bool(re.search(r"\bpart\s*\d|\bpart[- ]?(one|two|three)|\bep(isode)?\s*\d|भाग|series|to be continued", low)))
+        r["cap_cta_comment"] = int(bool(re.search(r"comment|कमेंट|type |likho|लिखो|बताओ|tell me", low)))
+        r["cap_cta_follow"] = int(bool(re.search(r"follow|फ़ॉलो|फॉलो", low)))
+        r["cap_cta_share"] = int(bool(re.search(r"share|send this|शेयर|भेजो", low)))
+        for name, pat in {"shiva": r"shiv|mahadev|shankar|bholenath|शिव|महादेव", "ram": r"\bram\b|rama\b|ramayan|hanuman|sita|राम|हनुमान|सीता", "krishna": r"krishna|kanha|radha|mahabharat|arjun|gita|कृष्ण|महाभारत|अर्जुन|गीता"}.items():
+            r[f"topic_{name}"] = int(bool(re.search(pat, low)))
     keys = []
     for r in rows:
         for k in r:

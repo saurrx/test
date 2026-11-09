@@ -40,6 +40,15 @@ other reels (`virality_local`).
 | V21 | Longer gap since the previous post helps, detrended | positive | `run V21 gap_prev_h --split median --outcome virality_local` |
 | V22 | Momentum, clean version: previous reel's detrended views vs this reel's views against a baseline that excludes the previous reel (registered 20:36 after spotting the flaw in V20; needs a new feature `virality_local_xprev`) | positive | `run V22 prev_virality_local --continuous --outcome virality_local_xprev` |
 
+### Caption-content tests registered 2026-11-09 21:45 UTC (before running)
+| id | Claim | Expected | Command |
+|---|---|---|---|
+| V23 | Reels whose caption marks them as part of a series ("part 2", "भाग") do better | positive | `run V23 cap_is_series --split binary` |
+| V24 | A "comment ..." call to action in the caption goes with more views | positive | `run V24 cap_cta_comment --split binary` |
+| V25 | A "follow" call to action in the caption makes no difference | null | `run V25 cap_cta_follow --split binary` |
+| V26 | A "share / send this" call to action goes with more views | positive | `run V26 cap_cta_share --split binary` |
+| V27–V29 | Topic (exploratory, no prediction): Shiva / Ram-Hanuman / Krishna-Mahabharat mentions vs the creator's other reels | none | `run V27 topic_shiva --split binary`, `V28 topic_ram`, `V29 topic_krishna` |
+
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).
 These can only ever produce `prior` rules about craft, unless judge calibration shows the judge predicts real views.

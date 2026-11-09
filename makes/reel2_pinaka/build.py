@@ -25,11 +25,11 @@ sc(0.0, cam={"z0": 1.22, "z1": 1.0}, layers=[border(215), {"kind": "crowd", "x":
 t = T("सिर्फ़") - 0.1; sc(t, trans="punch", cam={"x0": -50, "x1": 50}, layers=[{"kind": "chest", "x": 720, "y": 900, "s": 0.9, "roll": 2.5, "enter": "slide_r", "move": {"x": -70}}, {"kind": "rope", "x": 150, "y": 880, "len": 280},
    {"kind": "crowd", "x": 190, "y": 860, "count": 6, "cols": 6, "gap": 62, "pose": "pull", "anim": "strain", "s": 0.95, "enter": "none"}, border(1180), txt("1 धनुष", y=330, size=170, at=T("एक") - t)])
 # 3 this was Pinaka
-t = T("यह") - 0.1; sc(t, trans="flash", palette="dusk", bg={"kind": "radial", "cy": 42}, dust=True, cam={"z0": 1.0, "z1": 1.16}, layers=[{"kind": "rays", "x": 540, "y": 800, "opacity": 0.24}, {"kind": "bow", "x": 600, "y": 800, "s": 1.05, "color": INK, "color2": Y, "enter": "pop"},
+t = T("यह") - 0.1; sc(t, trans="flash", palette="dusk", bg={"kind": "radial", "cy": 42}, dust=True, cam={"z0": 1.0, "z1": 1.16}, layers=[{"kind": "rays", "x": 540, "y": 800, "opacity": 0.24}, {"kind": "glowdot", "x": 560, "y": 800, "r": 420, "color2": Y, "opacity": 0.7, "enter": "fade"}, {"kind": "bow", "x": 600, "y": 800, "s": 1.05, "color": "#ffe08a", "color2": "#fff", "enter": "pop"},
    txt("पिनाक", y=330, size=210, col="#fff1dd", at=T("पिनाक") - t)])
 # 4 Mahadev's own bow: night, mountain
 t = T("स्वयं") - 0.1; sc(t, trans="fade", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0": 1.12, "z1": 1.0}, layers=[{"kind": "moon", "x": 800, "y": 380, "color": "#f4f1ff", "color2": "#0d1330", "r": 80}, {"kind": "mountain", "x": 540, "y": 1250, "s": 1.5, "color": "#0d1230", "color2": "#dfe6ff", "enter": "none"},
-   {"kind": "glowdot", "x": 500, "y": 640, "r": 200, "color2": "#7aa2ff", "enter": "fade"}, {"kind": "bow", "x": 520, "y": 640, "s": 0.32, "color": "#f4f1ff", "color2": "#7aa2ff", "glow": False, "enter": "pop", "at": 0.3}, txt("महादेव", y=1640, size=150, col="#f4f1ff", glow="#7aa2ff", at=T("महादेव") - t)])
+   {"kind": "glowdot", "x": 520, "y": 560, "r": 240, "color2": "#7aa2ff", "enter": "fade"}, {"kind": "bow", "x": 540, "y": 560, "s": 0.42, "color": "#ffe08a", "color2": "#fff", "glow": False, "enter": "pop", "at": 0.3}, {"kind": "rings", "x": 520, "y": 560, "color": "#7aa2ff", "at": 0.4, "count": 3, "max": 500, "width": 8, "enter": "none"}, txt("महादेव", y=1640, size=150, col="#f4f1ff", glow="#7aa2ff", at=T("महादेव") - t)])
 # 5 Janak's iron chest on eight wheels
 t = T("राजा") - 0.1; e8 = T("आठ") - t
 sc(t, trans="punch", cam={"z0": 1.0, "z1": 1.1}, layers=[{"kind": "palace", "x": 540, "y": 560, "s": 1.0, "color": C, "color2": "#7a2e12", "enter": "none"}, {"kind": "chest", "x": 540, "y": 1080, "s": 1.15, "roll": 0, "color": "#3a2a22", "color2": C, "enter": "rise"},
@@ -61,7 +61,7 @@ sc(t, trans="punch", palette="dusk", bg={"kind": "horizon"}, cam={"z0": 1.1, "z1
    {"kind": "bow", "x": 640, "y": 1060, "s": 0.62, "color": INK, "color2": "#fff", "draw": 0.9, "breakAt": int(br * 30), "enter": "none"}, {"kind": "bolt", "x": 260, "y": 0, "color": "#fff", "at": br, "until": br + 0.8, "enter": "none"}, {"kind": "bolt", "x": 820, "y": 0, "color": "#fff", "at": br + 0.15, "until": br + 0.9, "seed": 5, "enter": "none"}])
 # 13 a sound like lightning; the whole court shook
 t = T("आवाज़") - 0.1; sc(t, trans="flash", palette="storm", bg={"kind": "radial", "cy": 40}, cam={"z0": 1.0, "z1": 1.12, "shakeAt": 0.1, "shake": 30}, layers=[{"kind": "bolt", "x": 540, "y": 0, "color": "#9fe3ff", "len": 1000, "enter": "none", "until": 2.2}, {"kind": "rings", "x": 540, "y": 900, "color": "#9fe3ff", "count": 6, "every": 12, "max": 1200, "enter": "none"},
-   {"kind": "crowd", "x": 540, "y": 1230, "count": 14, "cols": 7, "gap": 140, "rowGap": 150, "s": 1.2, "color": "#0b1016", "anim": "tremble", "enter": "none"}, txt("बिजली", y=330, size=190, col="#eef6ff", glow="#9fe3ff", at=T("बिजली") - t)])
+   {"kind": "crowd", "x": 540, "y": 1230, "count": 14, "cols": 7, "gap": 140, "rowGap": 150, "s": 1.2, "color": "#cfe6f5", "anim": "tremble", "enter": "none"}, txt("बिजली", y=330, size=190, col="#eef6ff", glow="#9fe3ff", at=T("बिजली") - t)])
 # 14 the sound travelled far
 t = T("पर", 3) - 0.1; sc(t, trans="fade", palette="night", bg={"kind": "linear"}, stars=True, cam={"x0": -90, "x1": 90}, layers=[{"kind": "mountain", "x": 880, "y": 1200, "s": 1.1, "color": "#0d1230", "color2": "#dfe6ff", "enter": "none"}, hills("#070b1c", 1500),
    {"kind": "wave", "x": 300, "y": 760, "color": "#7aa2ff", "w": 900, "amp": 120, "fade": 400, "enter": "fade", "move": {"x": 420}}, {"kind": "rings", "x": 120, "y": 760, "color": "#7aa2ff", "count": 5, "every": 16, "max": 1300, "width": 8, "enter": "none"}])
@@ -70,8 +70,8 @@ t = T("एक", 3) - 0.1; n21 = T("इक्कीस") - t
 sc(t, trans="cut", palette="blood", bg={"kind": "radial", "cy": 55}, dust=True, cam={"z0": 1.0, "z1": 1.18}, layers=[{"kind": "fire", "x": 540, "y": 1560, "color": "#ff5a2a", "color2": "#ffd24a", "w": 900, "h": 420, "enter": "fade"}, {"kind": "mountain", "x": 540, "y": 1380, "s": 1.0, "color": "#0a0202", "color2": "#3a0c06", "enter": "none"},
    fig(x=540, y=830, s=3.0, color="#0a0202", prop="axe", pose="stand"), txt("#", x=540, y=330, size=260, col="#ffe9d6", glow="#ff5a2a", at=n21, count=[1, 21, 22], enter="pop"), txt("बार", x=820, y=380, size=90, col="#ffe9d6", at=n21 + 0.5, enter="fade")])
 # 16 PARASHURAM
-t = T("परशुराम") - 0.15; sc(t, trans="flash", palette="blood", bg={"kind": "radial", "cy": 45}, cam={"z0": 1.3, "z1": 1.45, "shakeAt": 0.1, "shake": 24}, layers=[{"kind": "rays", "x": 540, "y": 800, "opacity": 0.3, "color": "#ff5a2a"}, fig(x=540, y=1000, s=4.4, color="#0a0202", prop="axe", pose="stand"),
-   band(1560, 260, 0.7, "#140404"), txt("परशुराम", y=1560, size=190, col="#ffe9d6", glow="#ff5a2a")])
+t = T("परशुराम") - 0.15; sc(t, trans="flash", palette="blood", bg={"kind": "radial", "cy": 45}, cam={"z0": 1.3, "z1": 1.45, "shakeAt": 0.1, "shake": 24}, layers=[{"kind": "rays", "x": 540, "y": 800, "opacity": 0.3, "color": "#ff5a2a"}, fig(x=540, y=1100, s=4.2, color="#0a0202", prop="axe", pose="stand"),
+   txt("परशुराम", y=330, size=200, col="#ffe9d6", glow="#ff5a2a")])
 # 17 marching to Mithila in rage
 t = T("और", 3) - 0.1; sc(t, trans="cut", palette="blood", bg={"kind": "horizon"}, cam={"x0": -70, "x1": 70}, layers=[{"kind": "fire", "x": 200, "y": 1500, "color": "#ff5a2a", "color2": "#ffd24a", "w": 500, "h": 520, "enter": "none"}, hills("#0a0202"),
    fig(x=360, y=1280, s=3.0, color="#0a0202", prop="axe", anim="walk", move={"x": 380}), {"kind": "palace", "x": 900, "y": 1180, "s": 0.4, "color": "#0a0202", "color2": "#7a1408", "enter": "none"}])

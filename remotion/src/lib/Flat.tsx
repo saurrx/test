@@ -32,7 +32,7 @@ export const Figure: React.FC<SP> = ({ t, color, pose = "stand", anim = "idle", 
       {crown && <path d="M-16 -78 L-16 -98 L-8 -86 L0 -102 L8 -86 L16 -98 L16 -78 Z" fill={color} />}
       {prop === "staff" && <line x1={52} y1={-90} x2={52} y2={120} stroke={color} strokeWidth={6} strokeLinecap="round" />}
       {prop === "bun" && <circle cx={0} cy={-84} r={9} fill={color} />}
-      {prop === "axe" && <g><line x1={60} y1={-110} x2={60} y2={60} stroke={color} strokeWidth={6} strokeLinecap="round" /><path d="M60 -110 Q100 -100 96 -66 Q78 -78 60 -76 Z" fill={color} /></g>}
+      {prop === "axe" && <g><line x1={62} y1={-128} x2={62} y2={90} stroke={color} strokeWidth={8} strokeLinecap="round" /><path d="M62 -124 Q124 -132 128 -78 Q124 -30 62 -40 Q84 -80 62 -124 Z" fill={color} /><path d="M62 -112 Q30 -108 28 -80 Q32 -56 62 -56 Z" fill={color} /></g>}
     </g>
   );
 };
@@ -241,4 +241,51 @@ export const Thali: React.FC<SP> = ({ t, color2, wicks = 5, r = 240 }) => (
   </g>
 );
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave, mandir: Mandir, doorway: Doorway, feet: Feet, hand: Hand, thali: Thali };
+// Shivling on its base (yoni-pitha) with the water spout to one side. `wet` 0..1 adds a sheen and a trickle off the spout.
+export const Lingam: React.FC<SP> = ({ t, color, color2, wet = 0, spout = -1 }) => {
+  const k = Math.min(1, wet) * prog(t, 0, 20);
+  return (
+    <g>
+      <Halo cx={0} cy={-120} r={420} ry={520} color={color2} opacity={0.4} />
+      <path d={`M${spout * 150} 150 L${spout * 420} 150 Q${spout * 470} 170 ${spout * 420} 196 L${spout * 150} 210 Z`} fill={color} stroke={color2} strokeOpacity={0.6} strokeWidth={5} />
+      <ellipse cx={0} cy={180} rx={290} ry={70} fill={color} stroke={color2} strokeOpacity={0.6} strokeWidth={5} />
+      <path d="M-120 170 L-120 -170 Q-120 -310 0 -310 Q120 -310 120 -170 L120 170 Q0 215 -120 170 Z" fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />
+      <path d="M-86 150 L-86 -170 Q-84 -270 -20 -288 Q-60 -240 -60 -160 L-60 160 Z" fill={color2} opacity={0.28 + 0.3 * k} />
+      {[0, 1, 2].map((i) => <path key={i} d={`M-66 ${-150 + i * 30} Q0 ${-136 + i * 30} 66 ${-150 + i * 30}`} fill="none" stroke="#efe6d2" strokeWidth={11} strokeLinecap="round" opacity={0.85} />)}
+      <circle cx={0} cy={-120} r={13} fill="#c4281a" />
+      {k > 0 && <g opacity={k}><path d={`M${spout * 440} 176 q${spout * 30} 60 ${spout * 14} ${240 + 12 * Math.sin(t / 3)}`} fill="none" stroke="#9fe3ff" strokeWidth={9} strokeLinecap="round" />
+        {[0, 1, 2].map((i) => <circle key={i} cx={spout * 452} cy={430 + ((t * 9 + i * 60) % 200)} r={7} fill="#9fe3ff" opacity={0.8} />)}</g>}
+    </g>
+  );
+};
+// Copper pot (lota) that tilts and pours one stream down to `drop` px below. `broken` makes the stream stutter (the wrong way).
+export const Lota: React.FC<SP> = ({ t, color = "#b8652a", color2, tilt = 55, drop = 620, pourAt = 12, broken = 0, thick = 12 }) => {
+  const a = tilt * prog(t, 0, 14); const p = prog(t, pourAt, pourAt + 12); const lip: [number, number] = [-118, -38];
+  const gaps = broken ? `${40 + 30 * Math.abs(noise(t / 3, 5))} ${50 + 40 * Math.abs(noise(t / 2, 9))}` : undefined;
+  return (
+    <g>
+      <g transform={`rotate(${-a})`}>
+        <Halo cx={0} cy={0} r={230} color={color2} opacity={0.45} />
+        <path d="M-96 -40 Q-150 40 -100 110 Q0 170 100 110 Q150 40 96 -40 Q60 -70 70 -100 L-70 -100 Q-60 -70 -96 -40 Z" fill={color} stroke="#ffd9a0" strokeOpacity={0.8} strokeWidth={5} />
+        <ellipse cx={0} cy={-100} rx={78} ry={16} fill="#5a2a0c" stroke="#ffd9a0" strokeOpacity={0.8} strokeWidth={4} />
+        <path d="M-70 10 Q0 40 70 10" fill="none" stroke="#ffd9a0" strokeWidth={5} opacity={0.6} /><path d="M-80 -20 Q-110 40 -78 96" fill="none" stroke="#fff1d6" strokeWidth={9} opacity={0.5} strokeLinecap="round" />
+      </g>
+      {p > 0 && (() => { const r = (-a * Math.PI) / 180, x0 = lip[0] * Math.cos(r) - (lip[1] - 62) * Math.sin(r), y0 = lip[0] * Math.sin(r) + (lip[1] - 62) * Math.cos(r); const d = `M${x0} ${y0} Q${x0 - 26} ${y0 + drop * 0.3} ${x0 - 30 + 4 * Math.sin(t / 4)} ${y0 + drop * p}`;
+        return <g fill="none" strokeLinecap="round"><path d={d} stroke="#9fe3ff" strokeWidth={thick * 3} opacity={0.14} /><path d={d} stroke="#9fe3ff" strokeWidth={thick} strokeDasharray={gaps} /><path d={d} stroke="#fff" strokeWidth={thick * 0.35} strokeDasharray={gaps} /></g>; })()}
+    </g>
+  );
+};
+// Bilva leaf: three leaflets on one stalk.
+export const Belpatra: React.FC<SP> = ({ t, color = "#4c9a3f" }) => { const sw = 3 * Math.sin(t / 12); const leaf = (rot: number) => <path d="M0 0 Q-46 -70 0 -150 Q46 -70 0 0 Z" fill={color} stroke="#1d4d1f" strokeWidth={4} transform={`rotate(${rot + sw})`} />; return <g>{leaf(-48)}{leaf(48)}{leaf(0)}<line x1={0} y1={0} x2={0} y2={70} stroke="#1d4d1f" strokeWidth={7} strokeLinecap="round" /></g>; };
+export const Trishul: React.FC<SP> = ({ color, color2 }) => (<g><Halo cx={0} cy={-200} r={300} ry={420} color={color2} opacity={0.4} /><line x1={0} y1={-260} x2={0} y2={460} stroke={color} strokeWidth={18} strokeLinecap="round" />
+  <path d="M0 -430 L26 -280 L-26 -280 Z" fill={color} /><path d="M-120 -400 Q-150 -250 -30 -230 L-30 -200 Q-190 -220 -150 -400 Z" fill={color} /><path d="M120 -400 Q150 -250 30 -230 L30 -200 Q190 -220 150 -400 Z" fill={color} />
+  <path d="M-70 -150 L0 -110 L70 -150 L70 -110 L0 -70 L-70 -110 Z" fill={color2} /></g>);
+// Path for walking half-way round and turning back (pradakshina that stops at the spout). progress 0..1.
+export const HalfCircle: React.FC<SP> = ({ t, color, r = 360, dur = 70, back = true }) => {
+  const k = prog(t, 0, dur, (x) => x); const out = Math.min(1, k * 2), ret = Math.max(0, k * 2 - 1); const a0 = Math.PI / 2, sweep = Math.PI * 1.5;
+  const pt = (u: number) => [r * Math.cos(a0 + sweep * u), r * 0.42 * Math.sin(a0 + sweep * u)]; const u = back ? out - ret : out; let d = "";
+  for (let i = 0; i <= 60; i++) { const p = pt((out * i) / 60); d += `${i ? "L" : "M"}${p[0].toFixed(1)} ${p[1].toFixed(1)} `; } const h = pt(u);
+  return <g fill="none" strokeLinecap="round"><path d={d} stroke={color} strokeWidth={30} opacity={0.12} /><path d={d} stroke={color} strokeWidth={10} strokeDasharray="6 26" /><circle cx={h[0]} cy={h[1]} r={26} fill="#fff6d8" /><Halo cx={h[0]} cy={h[1]} r={110} color={color} opacity={0.9} /></g>;
+};
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave, mandir: Mandir, doorway: Doorway, feet: Feet, hand: Hand, thali: Thali, lingam: Lingam, lota: Lota, belpatra: Belpatra, trishul: Trishul, halfcircle: HalfCircle };
