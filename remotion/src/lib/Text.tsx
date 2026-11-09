@@ -48,8 +48,8 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
 };
 
 // Big on-screen text / numbers used inside scenes.
-export const BigText: React.FC<{ t: number; text: string; color: string; glow?: string; size?: number; style?: "serif" | "pop" | "clean"; enter?: string; count?: [number, number, number]; width?: number; sub?: string }> =
-  ({ t, text, color, glow, size = 150, style = "pop", enter = "slam", count, width = 960, sub }) => {
+export const BigText: React.FC<{ t: number; text: string; color: string; glow?: string; size?: number; style?: "serif" | "pop" | "clean"; enter?: string; count?: [number, number, number]; width?: number; sub?: string; panel?: boolean }> =
+  ({ t, text, color, glow, size = 150, style = "pop", enter = "slam", count, width = 960, sub, panel }) => {
     const { fps } = useVideoConfig();
     const k = spring({ frame: t, fps, config: { damping: enter === "slam" ? 11 : 16, stiffness: enter === "slam" ? 260 : 140, mass: 0.7 } });
     let shown = text;
@@ -59,7 +59,8 @@ export const BigText: React.FC<{ t: number; text: string; color: string; glow?: 
     return (
       <div style={{ width, marginLeft: -width / 2, textAlign: "center", transform: `translateY(-50%) scale(${sc})`, opacity: enter === "fade" ? prog(t, 0, 14) : Math.min(1, t / 3) }}>
         <div style={{ fontFamily: fontFor(style, shown), fontSize: size, lineHeight: 1.05, fontWeight: 800, color, textTransform: "uppercase", letterSpacing: style === "serif" ? 6 : 1,
-          textShadow: `0 8px 0 rgba(0,0,0,.5)${glow ? `, 0 0 50px ${glow}, 0 0 120px ${glow}` : ""}` }}>{shown}</div>
+          textShadow: `0 6px 0 rgba(0,0,0,.6), 0 0 16px rgba(0,0,0,.9)${glow ? `, 0 0 34px ${glow}` : ""}`,
+          ...(panel ? { display: "inline-block", background: "rgba(0,0,0,0.66)", borderRadius: 28, padding: "14px 40px" } : {}) }}>{shown}</div>
         {sub && <div style={{ fontFamily: fontFor("serif", sub), fontSize: size * 0.3, color, opacity: 0.85 * prog(t, 8, 20), letterSpacing: 6, marginTop: 18, textTransform: "uppercase" }}>{sub}</div>}
       </div>
     );

@@ -30,6 +30,9 @@ def main():
                       "likes_hidden": int(r["likes"] == 3), "gap_prev_h": round((r["created"] - items[i - 1]["created"]) / 3600, 1) if i else "",
                       "prev_virality": "", "eligible": int(r["age_days"] >= MIN_AGE)})
         for i, r in enumerate(items):
+            r["dur_60_90"] = int(60 <= r["duration_s"] < 90)
+            r["posts_within_12h"] = sum(1 for x in items if x is not r and abs(x["created"] - r["created"]) <= 12 * 3600)
+            r["burst"] = int(r["posts_within_12h"] >= 1)
             if i: r["prev_virality"] = items[i - 1]["virality"]
             # detrended virality: views against the creator's 6 nearest-in-time OTHER reels (removes account growth and time trends)
             nb = [items[j]["views"] for j in range(max(0, i - 3), min(len(items), i + 4)) if j != i]

@@ -1,0 +1,68 @@
+P01_A: अगर आपकी ट्रेन रात दो बजे जंगल के बीच रुक जाए, तो नीचे मत उतरना, पूरा को अधेरा, एसी बंद, सिग्नल जीरो, लोग टॉर्च लेकी नीचे उतरते हैं, रोहन नह
+P01_B: People say buying a $5 coffee every day won't make you poor.
+P02_B: आपके बगल वाला बर्थ चाट पे है ही नहीं, बाहर वाले चिला रहे हैं, बोलो!
+P02_A: (no speech in first 4 s)
+P03_B: अपना बर्थ अब चाट पे खाली है, चाट गिरता है, रोहन लाइट डालता है, बर्थ 31 खाली, और बर्थ 32 पे लिखा है रोहन, रोहन पीछे हटता है, और बर्थ 32 पे जा
+P03_A: OpenAI locked 1,200 AIs in a cage to test them.
+P04_A: नीम की डाली मेरे सुपने में, एक घेर पड़या कती खाली मेरे सुपने में, एक अरहड भरी टराली मेरे सुपने में, सर्चों के फूल की बाली मेरे सुपने में, एक
+P04_B: I know she likes me slim, but I'm in the gallery In California, I don't do anything actually
+P05_B: एक आवे नीम की डाली मेरे सुपने में, एक घेर पड़्या कती खाली मेरे सुपने में, एक अरहड भरी ट्राली मेरे सुपने में, सर्चों के फूल की बाली मेरे सुपन
+P05_A: टीर थीन कॉलेज से फैंग में सबसे मुश्किल राउंड, इंटर्व्यू नहीं है, सबसे मुश्किल है इंटर्व्यू तक पहुँचना,
+P06_B: है घर का वो छोटा जो कंदों पे जिम्मेदारी बड़ी लेके चला है जब बैठा वो छाओं में उतारे चूते तब जाना वो कितना चला है
+P06_A: In 2020, an artist walked down an empty street in Berlin, pulling a small handcart filled with 99 smartphones.
+P07_A: कल राट आया मेरे घर एक चोरा के बोला
+P07_B: Some QR codes still scan, even with almost a third of them torn off.
+P08_A: मृत्यू के बाद, 13 दिन तक आत्मा कहां रहती है?
+P08_B: भारत की प्राचीन और सम्रित सांस्कृतिक परंपराओं में अनेक ऐसे त्योहार है, जिनके साथ प्रेम, विश्वास, परिवार और आस्था की सुन्दर कहानिया जुड़ी हुई
+P09_A: यमलोक के रास्ते में एक ऐसी नदी है जो किसी को अम्रिद दिखती है और किसी को रक्त उसका नाम है वैतरणी
+P09_B: कुरुक्षेत्र कल युद्ध है और तुम्हें चाहिए सिर्फ एक चीज जीद का महूरत
+P10_A: मृत्यू के बाद, हर आत्मा को एक अदालत में खड़ा होना पड़ता है, जहां न कोई वकील है, न कोई जूट चलता है, ये है यम्राज का दर्बार।
+P10_B: नवंबर में तीन राशियों के लिए नए दर्वाजे खुल सकते हैं
+P11_A: If the apocalypse starts while you're driving a train, you might be the luckiest person alive.
+P11_B: If you ever hear the cat in the basement, it's not the cat.
+P12_B: If the apocalypse starts while you're driving a train, you might be the luckiest person alive.
+P12_A: Sarah sent her mom one photo. 40 seconds later, a drone was over her house.
+P13_B: If the apocalypse starts while you're driving a train, the danger isn't outside. It's already on board.
+P13_A: If your phone says an unknown tracker is moving with you, don't ignore it.
+P14_B: एक एक करके सारे रक्त बीज मिट गए और आखिर में वो खुद भी, कहते हैं, जीत के नशे में वो नाचने लगे, हर कदम पर धरती कांपती, पहाड तूटते और जो सामने 
+P14_A: देवता और असुर एक ही रस्सी खीच रहे थे और वो रस्सी एक नाग था दुरवासा के शाप से तीनों लोकों की लक्षमी चली गई थी कथा के आखिर में आज रात की कोजाग
+P15_A: सीता एक साल तक लंका में रही पर रावण ने उन्हें कभी छुआ तक नहीं
+P15_B: (no speech in first 4 s)
+P16_A: आपके कुंड में? कभी नहीं। राधा की यह जिद और हाथ में बस कुछ कंगन।
+P16_B: तपस्या सफल हुई और शिव पार्वती का विवाहत तय हुआ
+P17_B: Three men loved one girl. When she died, one of them made her ashes his bed. Then she came back.
+P17_A: Would you give up your own child to save your king's life?
+P18_B: At midnight, a king carried a corpse through the burning ground, and the corpse began to talk.
+P18_A: A girl was branded a witch and thrown into the forest.
+P19_A: दो लक्षमी आई, एक ही चहरा, एक ही आवास, और उनमें से एक, लक्षमी की एक बड़ी बहन है, अलक्षमी, जिस घर में वो घुश जाए, वहां से सब चला जाता है, मैं 
+P19_B: हुजूर जूतो वाली चालाकी अकल नहीं होती अच्छा तो सबसे अकलमंद कौन भेदीमल
+P20_B: हाँ आ गई सुभा मिलना अब सूजा और शेर बड़ा शेर पहले हाथ चोड प्रणा देवी जी आपने मूँ क्यों डगा है मुझसे नाराज हो नाराज नहीं बहुआ पट खुलेगा तब आँख
+P20_A: ये जहर पदमावती ने बेजा तुमने उसे बताया कि इशारे मैंने पड़े थे उसे डर है
+P21_B: चल निकल भिकारन ये भीक मांगने की जगह नहीं है उसे नहीं पता था जिसे वो धक्के मार रहा था
+P21_A: मेरी मा सांसे गिन रही थी और अस्पताल वाले पैसे गिन रहे थे
+P22_A: 5,000 men. That's how many it took just to pull the cart carrying one bow.
+P22_B: Ravana defeated the gods. Hindra fled from him. Even Mount Kailash once shook in his twenty arms.
+P23_B: Before the snakes, before the stone, Medusa was the most beautiful girl in Greece.
+P23_A: The Odyssey! Twenty years on, his son still waited.
+P24_A: she did nothing wrong. She just said no to Apollo. So the sun god cursed her to see every death coming
+P24_B: An old king walked alone into the enemy camp at night.
+P25_A: The goddess of love was jealous of one girl's face, so she sent her son to ruin her. He fell
+P25_B: A crew robbed a bank near Buenos Aires, vanished through a secret tunnel, and left the police
+P26_A: Meet Adam Rakeem, currently handcuffed to Ian.
+P26_B: She's already on to the next thing.
+P27_B: You cannot reason with a tiger when your head is in its mouth!
+P27_A: I
+P28_B: (no speech in first 4 s)
+P28_A: Mom, tell me, how do you read your children's stories?
+P29_A: You have been doing Aarti wrong. Most of us just wave the lamp round and round.
+P29_B: You
+P30_A: How many times should you walk around each god? Most of us do the same rounds for every god.
+P30_B: Oh
+P31_B: पेलवा के पातु जुमल जांके रूखे ए करेलू छट बरतिया से दांके रूखे
+P31_A: Yeah.
+P32_A: Run it up. The sun is up. So when it down, get your money up. I put money down. On all of us. On what I love. Your problems are just not the
+P32_B: Thank you.
+P33_A: (no speech in first 4 s)
+P33_B: (no speech in first 4 s)
+P34_B: Sixty years, and I've never written you a letter.
+P34_A: (no speech in first 4 s)

@@ -121,3 +121,10 @@ so none passes. An exploratory pooled comparison (not pre-registered) shows the 
 Reading: a hook formula by itself is not what makes these reels hit. This matches the judge calibration (64–68%) and
 the modest model score. → P10 stays a `prior`; stakes is the one device with a consistent (weak) lean in both the
 judges' ranking and the real data. Re-test when all 832 reels are analysed.
+
+## Iteration 6 (2026-11-09 22:42, CSV-only, 610–658 reels)
+**F14. The 60–90 s sweet spot holds as its own test (V40).** 60–90 s reels get 1.42x the creator's local baseline
+(p = 0.029, 7 of 11 creators, stable leaving any creator out). Confirms P1.
+**F15. Posting two reels within 12 hours looks costly (V41, suggestive).** 0.69x (p = 0.10, 5 of 9 creators). Same
+direction as F4 (longer gaps help). Not confirmed on its own.
+**F16. Hiding likes makes no detectable difference (V37).** 1.31x, p = 0.60, creators split 2/4 → null.

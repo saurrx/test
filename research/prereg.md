@@ -62,6 +62,13 @@ without seeing views or creator: `data/hook_lines.tsv` → `data/hook_labels.csv
 | V35 | Openings that address the viewer directly ("you", "aap") do better | positive | `run V35 hook_you --split binary` |
 | V36 | Plain scene-setting openings ("Once there was a king...") do worse | negative | `run V36 hook_plain --split binary` |
 
+### More CSV-only tests registered 2026-11-09 22:41 UTC (before running)
+| id | Claim | Expected | Command |
+|---|---|---|---|
+| V40 | Reels of 60–90 s beat the same creator's other lengths (the sweet spot seen in F1) | positive | `run V40 dur_60_90 --split binary --outcome virality_local` |
+| V41 | A reel posted within 12 h of another by the same creator does worse (bursts split attention) | negative | `run V41 burst --split binary --outcome virality_local` |
+| V37 | Reels with likes hidden do no better or worse | null | `run V37 likes_hidden --split binary` |
+
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).
 These can only ever produce `prior` rules about craft, unless judge calibration shows the judge predicts real views.

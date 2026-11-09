@@ -253,6 +253,10 @@ export const Lingam: React.FC<SP> = ({ t, color, color2, wet = 0, spout = -1 }) 
       <path d="M-86 150 L-86 -170 Q-84 -270 -20 -288 Q-60 -240 -60 -160 L-60 160 Z" fill={color2} opacity={0.28 + 0.3 * k} />
       {[0, 1, 2].map((i) => <path key={i} d={`M-66 ${-150 + i * 30} Q0 ${-136 + i * 30} 66 ${-150 + i * 30}`} fill="none" stroke="#efe6d2" strokeWidth={11} strokeLinecap="round" opacity={0.85} />)}
       <circle cx={0} cy={-120} r={13} fill="#c4281a" />
+      <path d="M40 150 L40 -180 Q40 -262 84 -200 L96 150 Z" fill="#000" opacity={0.28} />
+      <path d="M-118 -40 Q0 60 118 -40" fill="none" stroke="#f08a1c" strokeWidth={20} strokeDasharray="3 24" strokeLinecap="round" /><path d="M-118 -40 Q0 60 118 -40" fill="none" stroke="#ffd24a" strokeWidth={9} strokeDasharray="3 24" strokeLinecap="round" />
+      {[-210, -150, 150, 210].map((x, i) => <g key={x}><circle cx={x} cy={168 + (i % 2) * 14} r={17} fill="#f08a1c" /><circle cx={x} cy={168 + (i % 2) * 14} r={8} fill="#ffd24a" /></g>)}
+      {k > 0 && [0, 1, 2].map((i) => { const u = ((t / 26 + i / 3) % 1); return <ellipse key={`r${i}`} cx={0} cy={176} rx={130 + 150 * u} ry={26 + 40 * u} fill="none" stroke="#9fe3ff" strokeWidth={5 * (1 - u)} opacity={(1 - u) * 0.8 * k} />; })}
       {k > 0 && <g opacity={k}><path d={`M${spout * 440} 176 q${spout * 30} 60 ${spout * 14} ${240 + 12 * Math.sin(t / 3)}`} fill="none" stroke="#9fe3ff" strokeWidth={9} strokeLinecap="round" />
         {[0, 1, 2].map((i) => <circle key={i} cx={spout * 452} cy={430 + ((t * 9 + i * 60) % 200)} r={7} fill="#9fe3ff" opacity={0.8} />)}</g>}
     </g>
