@@ -49,6 +49,19 @@ other reels (`virality_local`).
 | V26 | A "share / send this" call to action goes with more views | positive | `run V26 cap_cta_share --split binary` |
 | V27–V29 | Topic (exploratory, no prediction): Shiva / Ram-Hanuman / Krishna-Mahabharat mentions vs the creator's other reels | none | `run V27 topic_shiva --split binary`, `V28 topic_ram`, `V29 topic_krishna` |
 
+### Hook-type tests registered 2026-11-09 22:36 UTC (before labelling)
+The keyword detector could not test V6–V8 and V16. Instead a model labels each reel's opening line (first 6 s of speech)
+without seeing views or creator: `data/hook_lines.tsv` → `data/hook_labels.csv`. Each label is then tested within creator.
+
+| id | Claim | Expected | Command |
+|---|---|---|---|
+| V31 | Contradiction / "you're doing it wrong" / myth-busting openings do better | positive | `run V31 hook_contradiction --split binary` |
+| V32 | Question openings do better | positive | `run V32 hook_question --split binary` |
+| V33 | Openings with a concrete number or scale ("5,000 men") do better | positive | `run V33 hook_number --split binary` |
+| V34 | Openings with explicit stakes or danger (death, curse, war, loss) do better | positive | `run V34 hook_stakes --split binary` |
+| V35 | Openings that address the viewer directly ("you", "aap") do better | positive | `run V35 hook_you --split binary` |
+| V36 | Plain scene-setting openings ("Once there was a king...") do worse | negative | `run V36 hook_plain --split binary` |
+
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).
 These can only ever produce `prior` rules about craft, unless judge calibration shows the judge predicts real views.

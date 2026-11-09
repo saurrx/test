@@ -109,3 +109,15 @@ features: the idea, the opening line, and the story are not measured yet. The st
 voiceover (+), visual change (+), a beat before the first word (+).
 **So "programming virality" today means:** follow the evidenced rules to avoid the known ways of losing (too short,
 music-only, static picture, no series), then compete on hook and story, where the evidence so far is only blind-judge craft.
+
+## Hook types (2026-11-09 22:40, 92 labelled reels ≥ 7 days old; labels made blind to views)
+
+**F13. The type of opening line does not separate hits from flops in this sample (V31–V36).**
+Within-creator tests are underpowered (most creators have too few reels of each type: 1–7 creators usable per test),
+so none passes. An exploratory pooled comparison (not pre-registered) shows the same: question openings 25% hits vs
+40% without (n = 12, p = 0.55); numbers 44% vs 35% (n = 27, p = 1.0); addressing the viewer 42% vs 36%; plain narration
+35% vs 39%; "you're doing it wrong" openings are rare (n = 5). The only lean is **stakes** (danger, death, a vow):
+47% hits vs 34% (n = 30, p = 0.14).
+Reading: a hook formula by itself is not what makes these reels hit. This matches the judge calibration (64–68%) and
+the modest model score. → P10 stays a `prior`; stakes is the one device with a consistent (weak) lean in both the
+judges' ranking and the real data. Re-test when all 832 reels are analysed.

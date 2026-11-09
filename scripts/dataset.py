@@ -73,6 +73,14 @@ def main():
         r["cap_cta_share"] = int(bool(re.search(r"share|send this|शेयर|भेजो", low)))
         for name, pat in {"shiva": r"shiv|mahadev|shankar|bholenath|शिव|महादेव", "ram": r"\bram\b|rama\b|ramayan|hanuman|sita|राम|हनुमान|सीता", "krishna": r"krishna|kanha|radha|mahabharat|arjun|gita|कृष्ण|महाभारत|अर्जुन|गीता"}.items():
             r[f"topic_{name}"] = int(bool(re.search(pat, low)))
+    # model-labelled hook types (labelled blind to views): data/hook_labels.csv keyed through data/hook_lines_key.json
+    try:
+        key = json.load(open(ROOT / "data/hook_lines_key.json"))
+        for lab in csv.DictReader(open(ROOT / "data/hook_labels.csv")):
+            r = idx.get(key.get(lab["id"], ""))
+            if not r or lab.get("lyrics") == "1": continue
+            for k in ("contradiction", "question", "number", "stakes", "you", "plain"): r[f"hook_{k}"] = int(lab[k])
+    except FileNotFoundError: pass
     keys = []
     for r in rows:
         for k in r:
