@@ -137,3 +137,17 @@ Pooled with the first run: 70 correct of 118 judgments (59%).
 craft as an AI sees it (legible text, a clear focal image, variety), which is worth having, but they are not evidence
 about views. Every "beats the real reel" result in `makes/LOG.md` must be read that way. My own packs give each judge a
 different random lettering, which limits the position bias in those rankings.
+
+## Iteration 7 (2026-11-09 23:29, reach and engagement, 632–658 reels)
+**F17. Viral reels are liked at more than twice the rate, the opposite of my prediction (V43).** Within a creator,
+likes per view rises with views: rho +0.40, p = 0.0002, 15 of 17 creators, stable leaving any creator out.
+Median like rate: flops 2.2%, normal reels 2.4%, hits (2–10x) 5.0%, big hits (over 10x) 6.4%.
+I expected the reverse (viral reels reach strangers, who like less). Reading: on these accounts the reels that spread
+are the ones viewers actually like, at 2–3 times the usual rate; a strong like rate is probably what earns the wider
+push. It is measured after the fact, so it is not a lever by itself, but it sets the bar: **a reel that will travel
+needs about 1 like per 20 views, against a norm of 1 per 45.**
+**F18. Comment rate is slightly lower on viral reels (V44).** rho −0.14, p = 0.0008, 12 of 18 creators: comments do
+not scale with reach the way likes do (0.27 per 1,000 views on big hits vs 0.41 on flops). Chasing comments with a
+"comment the number" ending is not what marks a hit (see also F8).
+**F19. Accounts grow: later reels do better than earlier ones (V45).** rho +0.49, p = 0.0002, 12 of 18 creators.
+This is why every other test compares a reel with its neighbours in time.

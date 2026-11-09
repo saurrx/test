@@ -1,281 +1,2227 @@
 {
  "language": "en",
- "language_prob": 0.997,
+ "detected_language": "en",
+ "language_prob": 1.0,
+ "word_count": 411,
+ "first_word_s": 0.0,
+ "speech_seconds": 170.0,
+ "wpm": 145,
  "segments": [
   {
    "start": 0.0,
-   "end": 5.0,
-   "text": "A mother gave her daughter to a man dying on a stake."
+   "end": 10.2,
+   "text": "a mother gave her daughter to a man dying on a stake. For a thousand gold coins, he wanted a son",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 0.28,
+     "w": "a"
+    },
+    {
+     "s": 0.28,
+     "e": 0.64,
+     "w": "mother"
+    },
+    {
+     "s": 0.64,
+     "e": 1.12,
+     "w": "gave"
+    },
+    {
+     "s": 1.12,
+     "e": 1.46,
+     "w": "her"
+    },
+    {
+     "s": 1.46,
+     "e": 1.86,
+     "w": "daughter"
+    },
+    {
+     "s": 1.86,
+     "e": 2.38,
+     "w": "to"
+    },
+    {
+     "s": 2.38,
+     "e": 2.56,
+     "w": "a"
+    },
+    {
+     "s": 2.56,
+     "e": 3.04,
+     "w": "man"
+    },
+    {
+     "s": 3.04,
+     "e": 3.62,
+     "w": "dying"
+    },
+    {
+     "s": 3.62,
+     "e": 4.12,
+     "w": "on"
+    },
+    {
+     "s": 4.12,
+     "e": 4.26,
+     "w": "a"
+    },
+    {
+     "s": 4.26,
+     "e": 4.66,
+     "w": "stake."
+    },
+    {
+     "s": 4.98,
+     "e": 5.36,
+     "w": "For"
+    },
+    {
+     "s": 5.36,
+     "e": 5.52,
+     "w": "a"
+    },
+    {
+     "s": 5.52,
+     "e": 6.16,
+     "w": "thousand"
+    },
+    {
+     "s": 6.16,
+     "e": 7.02,
+     "w": "gold"
+    },
+    {
+     "s": 7.02,
+     "e": 7.82,
+     "w": "coins,"
+    },
+    {
+     "s": 8.14,
+     "e": 8.54,
+     "w": "he"
+    },
+    {
+     "s": 8.54,
+     "e": 9.3,
+     "w": "wanted"
+    },
+    {
+     "s": 9.3,
+     "e": 9.72,
+     "w": "a"
+    },
+    {
+     "s": 9.72,
+     "e": 10.2,
+     "w": "son"
+    }
+   ]
   },
   {
-   "start": 5.0,
-   "end": 12.0,
-   "text": "For a thousand gold coins, he wanted a son after his death."
+   "start": 10.2,
+   "end": 17.72,
+   "text": "after his death. I'm Mohan Kaka, your storyteller tonight, and this is the corpse's seventh story.",
+   "words": [
+    {
+     "s": 10.2,
+     "e": 10.94,
+     "w": "after"
+    },
+    {
+     "s": 10.94,
+     "e": 11.2,
+     "w": "his"
+    },
+    {
+     "s": 11.2,
+     "e": 11.52,
+     "w": "death."
+    },
+    {
+     "s": 12.2,
+     "e": 12.96,
+     "w": "I'm"
+    },
+    {
+     "s": 12.96,
+     "e": 13.22,
+     "w": "Mohan"
+    },
+    {
+     "s": 13.22,
+     "e": 13.54,
+     "w": "Kaka,"
+    },
+    {
+     "s": 13.8,
+     "e": 14.0,
+     "w": "your"
+    },
+    {
+     "s": 14.0,
+     "e": 14.48,
+     "w": "storyteller"
+    },
+    {
+     "s": 14.48,
+     "e": 14.72,
+     "w": "tonight,"
+    },
+    {
+     "s": 14.98,
+     "e": 15.5,
+     "w": "and"
+    },
+    {
+     "s": 15.5,
+     "e": 15.78,
+     "w": "this"
+    },
+    {
+     "s": 15.78,
+     "e": 15.96,
+     "w": "is"
+    },
+    {
+     "s": 15.96,
+     "e": 16.08,
+     "w": "the"
+    },
+    {
+     "s": 16.08,
+     "e": 16.62,
+     "w": "corpse's"
+    },
+    {
+     "s": 16.62,
+     "e": 17.14,
+     "w": "seventh"
+    },
+    {
+     "s": 17.14,
+     "e": 17.72,
+     "w": "story."
+    }
+   ]
   },
   {
-   "start": 12.0,
-   "end": 15.0,
-   "text": "I'm Mohan Kaka, your storyteller tonight."
+   "start": 17.96,
+   "end": 24.82,
+   "text": "Last tale's riddle, who was truly generous? Vikram answered, the thief. A husband cannot",
+   "words": [
+    {
+     "s": 17.96,
+     "e": 18.56,
+     "w": "Last"
+    },
+    {
+     "s": 18.56,
+     "e": 18.96,
+     "w": "tale's"
+    },
+    {
+     "s": 18.96,
+     "e": 19.16,
+     "w": "riddle,"
+    },
+    {
+     "s": 19.4,
+     "e": 19.68,
+     "w": "who"
+    },
+    {
+     "s": 19.68,
+     "e": 19.94,
+     "w": "was"
+    },
+    {
+     "s": 19.94,
+     "e": 20.2,
+     "w": "truly"
+    },
+    {
+     "s": 20.2,
+     "e": 20.64,
+     "w": "generous?"
+    },
+    {
+     "s": 21.02,
+     "e": 21.56,
+     "w": "Vikram"
+    },
+    {
+     "s": 21.56,
+     "e": 21.96,
+     "w": "answered,"
+    },
+    {
+     "s": 22.4,
+     "e": 22.6,
+     "w": "the"
+    },
+    {
+     "s": 22.6,
+     "e": 23.08,
+     "w": "thief."
+    },
+    {
+     "s": 23.66,
+     "e": 24.08,
+     "w": "A"
+    },
+    {
+     "s": 24.08,
+     "e": 24.46,
+     "w": "husband"
+    },
+    {
+     "s": 24.46,
+     "e": 24.82,
+     "w": "cannot"
+    }
+   ]
   },
   {
-   "start": 15.0,
-   "end": 18.0,
-   "text": "And this is the corpse's seventh story."
+   "start": 24.82,
+   "end": 30.02,
+   "text": "keep a wife whose heart is elsewhere. The friend no longer wanted another man's wife,",
+   "words": [
+    {
+     "s": 24.82,
+     "e": 25.08,
+     "w": "keep"
+    },
+    {
+     "s": 25.08,
+     "e": 25.28,
+     "w": "a"
+    },
+    {
+     "s": 25.28,
+     "e": 25.6,
+     "w": "wife"
+    },
+    {
+     "s": 25.6,
+     "e": 25.92,
+     "w": "whose"
+    },
+    {
+     "s": 25.92,
+     "e": 26.18,
+     "w": "heart"
+    },
+    {
+     "s": 26.18,
+     "e": 26.34,
+     "w": "is"
+    },
+    {
+     "s": 26.34,
+     "e": 26.86,
+     "w": "elsewhere."
+    },
+    {
+     "s": 27.2,
+     "e": 27.64,
+     "w": "The"
+    },
+    {
+     "s": 27.64,
+     "e": 27.88,
+     "w": "friend"
+    },
+    {
+     "s": 27.88,
+     "e": 28.1,
+     "w": "no"
+    },
+    {
+     "s": 28.1,
+     "e": 28.48,
+     "w": "longer"
+    },
+    {
+     "s": 28.48,
+     "e": 28.94,
+     "w": "wanted"
+    },
+    {
+     "s": 28.94,
+     "e": 29.32,
+     "w": "another"
+    },
+    {
+     "s": 29.32,
+     "e": 29.74,
+     "w": "man's"
+    },
+    {
+     "s": 29.74,
+     "e": 30.02,
+     "w": "wife,"
+    }
+   ]
   },
   {
-   "start": 18.0,
-   "end": 21.0,
-   "text": "Last tale's riddle, who was truly generous?"
+   "start": 30.36,
+   "end": 37.34,
+   "text": "but a thief let go a bride and all her gold. The corpse flew back, Vikram fetched it again,",
+   "words": [
+    {
+     "s": 30.36,
+     "e": 30.82,
+     "w": "but"
+    },
+    {
+     "s": 30.82,
+     "e": 30.96,
+     "w": "a"
+    },
+    {
+     "s": 30.96,
+     "e": 31.32,
+     "w": "thief"
+    },
+    {
+     "s": 31.32,
+     "e": 31.66,
+     "w": "let"
+    },
+    {
+     "s": 31.66,
+     "e": 31.88,
+     "w": "go"
+    },
+    {
+     "s": 31.88,
+     "e": 32.08,
+     "w": "a"
+    },
+    {
+     "s": 32.08,
+     "e": 32.48,
+     "w": "bride"
+    },
+    {
+     "s": 32.48,
+     "e": 32.8,
+     "w": "and"
+    },
+    {
+     "s": 32.8,
+     "e": 33.16,
+     "w": "all"
+    },
+    {
+     "s": 33.16,
+     "e": 33.42,
+     "w": "her"
+    },
+    {
+     "s": 33.42,
+     "e": 33.8,
+     "w": "gold."
+    },
+    {
+     "s": 34.2,
+     "e": 34.7,
+     "w": "The"
+    },
+    {
+     "s": 34.7,
+     "e": 35.02,
+     "w": "corpse"
+    },
+    {
+     "s": 35.02,
+     "e": 35.3,
+     "w": "flew"
+    },
+    {
+     "s": 35.3,
+     "e": 35.64,
+     "w": "back,"
+    },
+    {
+     "s": 36.16,
+     "e": 36.52,
+     "w": "Vikram"
+    },
+    {
+     "s": 36.52,
+     "e": 36.96,
+     "w": "fetched"
+    },
+    {
+     "s": 36.96,
+     "e": 37.08,
+     "w": "it"
+    },
+    {
+     "s": 37.08,
+     "e": 37.34,
+     "w": "again,"
+    }
+   ]
   },
   {
-   "start": 21.0,
-   "end": 24.0,
-   "text": "Vikram answered, the thief."
+   "start": 37.54,
+   "end": 43.36,
+   "text": "and it began a new story. When Thanabati's father died, his relative seized everything.",
+   "words": [
+    {
+     "s": 37.54,
+     "e": 38.24,
+     "w": "and"
+    },
+    {
+     "s": 38.24,
+     "e": 38.34,
+     "w": "it"
+    },
+    {
+     "s": 38.34,
+     "e": 38.64,
+     "w": "began"
+    },
+    {
+     "s": 38.64,
+     "e": 38.84,
+     "w": "a"
+    },
+    {
+     "s": 38.84,
+     "e": 39.0,
+     "w": "new"
+    },
+    {
+     "s": 39.0,
+     "e": 39.48,
+     "w": "story."
+    },
+    {
+     "s": 39.76,
+     "e": 40.4,
+     "w": "When"
+    },
+    {
+     "s": 40.4,
+     "e": 40.98,
+     "w": "Thanabati's"
+    },
+    {
+     "s": 40.98,
+     "e": 41.22,
+     "w": "father"
+    },
+    {
+     "s": 41.22,
+     "e": 41.56,
+     "w": "died,"
+    },
+    {
+     "s": 41.82,
+     "e": 42.1,
+     "w": "his"
+    },
+    {
+     "s": 42.1,
+     "e": 42.4,
+     "w": "relative"
+    },
+    {
+     "s": 42.4,
+     "e": 42.8,
+     "w": "seized"
+    },
+    {
+     "s": 42.8,
+     "e": 43.36,
+     "w": "everything."
+    }
+   ]
   },
   {
-   "start": 24.0,
-   "end": 27.0,
-   "text": "A husband cannot keep a wife whose heart is elsewhere."
+   "start": 43.72,
+   "end": 49.9,
+   "text": "She fled with her mother by night. Outside town, her mother walked into something in the dark.",
+   "words": [
+    {
+     "s": 43.72,
+     "e": 44.2,
+     "w": "She"
+    },
+    {
+     "s": 44.2,
+     "e": 44.52,
+     "w": "fled"
+    },
+    {
+     "s": 44.52,
+     "e": 44.74,
+     "w": "with"
+    },
+    {
+     "s": 44.74,
+     "e": 44.9,
+     "w": "her"
+    },
+    {
+     "s": 44.9,
+     "e": 45.2,
+     "w": "mother"
+    },
+    {
+     "s": 45.2,
+     "e": 45.52,
+     "w": "by"
+    },
+    {
+     "s": 45.52,
+     "e": 45.88,
+     "w": "night."
+    },
+    {
+     "s": 46.38,
+     "e": 46.92,
+     "w": "Outside"
+    },
+    {
+     "s": 46.92,
+     "e": 47.3,
+     "w": "town,"
+    },
+    {
+     "s": 47.58,
+     "e": 48.02,
+     "w": "her"
+    },
+    {
+     "s": 48.02,
+     "e": 48.26,
+     "w": "mother"
+    },
+    {
+     "s": 48.26,
+     "e": 48.62,
+     "w": "walked"
+    },
+    {
+     "s": 48.62,
+     "e": 48.86,
+     "w": "into"
+    },
+    {
+     "s": 48.86,
+     "e": 49.26,
+     "w": "something"
+    },
+    {
+     "s": 49.26,
+     "e": 49.46,
+     "w": "in"
+    },
+    {
+     "s": 49.46,
+     "e": 49.56,
+     "w": "the"
+    },
+    {
+     "s": 49.56,
+     "e": 49.9,
+     "w": "dark."
+    }
+   ]
   },
   {
-   "start": 27.0,
-   "end": 30.0,
-   "text": "The friend no longer wanted another man's wife,"
+   "start": 49.9,
+   "end": 59.22,
+   "text": "A man on a stake, still alive. He groaned, who rubs salt into my wounds? The moon rose.",
+   "words": [
+    {
+     "s": 49.9,
+     "e": 50.86,
+     "w": "A"
+    },
+    {
+     "s": 50.86,
+     "e": 51.24,
+     "w": "man"
+    },
+    {
+     "s": 51.24,
+     "e": 51.5,
+     "w": "on"
+    },
+    {
+     "s": 51.5,
+     "e": 51.66,
+     "w": "a"
+    },
+    {
+     "s": 51.66,
+     "e": 52.06,
+     "w": "stake,"
+    },
+    {
+     "s": 52.32,
+     "e": 52.9,
+     "w": "still"
+    },
+    {
+     "s": 52.9,
+     "e": 53.4,
+     "w": "alive."
+    },
+    {
+     "s": 53.76,
+     "e": 54.3,
+     "w": "He"
+    },
+    {
+     "s": 54.3,
+     "e": 54.82,
+     "w": "groaned,"
+    },
+    {
+     "s": 55.02,
+     "e": 55.58,
+     "w": "who"
+    },
+    {
+     "s": 55.58,
+     "e": 56.06,
+     "w": "rubs"
+    },
+    {
+     "s": 56.06,
+     "e": 56.52,
+     "w": "salt"
+    },
+    {
+     "s": 56.52,
+     "e": 56.78,
+     "w": "into"
+    },
+    {
+     "s": 56.78,
+     "e": 57.02,
+     "w": "my"
+    },
+    {
+     "s": 57.02,
+     "e": 57.46,
+     "w": "wounds?"
+    },
+    {
+     "s": 57.86,
+     "e": 58.42,
+     "w": "The"
+    },
+    {
+     "s": 58.42,
+     "e": 58.68,
+     "w": "moon"
+    },
+    {
+     "s": 58.68,
+     "e": 59.22,
+     "w": "rose."
+    }
+   ]
   },
   {
-   "start": 30.0,
-   "end": 34.0,
-   "text": "but a thief let go of bride and all her gold."
+   "start": 59.6,
+   "end": 66.52,
+   "text": "He saw Thanabati and said, a thousand gold coins. Make her my wife. Her mother laughed.",
+   "words": [
+    {
+     "s": 59.6,
+     "e": 60.02,
+     "w": "He"
+    },
+    {
+     "s": 60.02,
+     "e": 60.24,
+     "w": "saw"
+    },
+    {
+     "s": 60.24,
+     "e": 60.84,
+     "w": "Thanabati"
+    },
+    {
+     "s": 60.84,
+     "e": 61.04,
+     "w": "and"
+    },
+    {
+     "s": 61.04,
+     "e": 61.36,
+     "w": "said,"
+    },
+    {
+     "s": 61.9,
+     "e": 62.04,
+     "w": "a"
+    },
+    {
+     "s": 62.04,
+     "e": 62.46,
+     "w": "thousand"
+    },
+    {
+     "s": 62.46,
+     "e": 62.82,
+     "w": "gold"
+    },
+    {
+     "s": 62.82,
+     "e": 63.36,
+     "w": "coins."
+    },
+    {
+     "s": 63.64,
+     "e": 64.24,
+     "w": "Make"
+    },
+    {
+     "s": 64.24,
+     "e": 64.38,
+     "w": "her"
+    },
+    {
+     "s": 64.38,
+     "e": 64.58,
+     "w": "my"
+    },
+    {
+     "s": 64.58,
+     "e": 64.94,
+     "w": "wife."
+    },
+    {
+     "s": 65.16,
+     "e": 65.78,
+     "w": "Her"
+    },
+    {
+     "s": 65.78,
+     "e": 66.02,
+     "w": "mother"
+    },
+    {
+     "s": 66.02,
+     "e": 66.52,
+     "w": "laughed."
+    }
+   ]
   },
   {
-   "start": 34.0,
-   "end": 40.0,
-   "text": "The corpse flew back, Vikram touched it again, and it began a new story."
+   "start": 66.92,
+   "end": 75.14,
+   "text": "What do you want with her? No son, no peace after death. Let her have a son by any man.",
+   "words": [
+    {
+     "s": 66.92,
+     "e": 67.68,
+     "w": "What"
+    },
+    {
+     "s": 67.68,
+     "e": 67.8,
+     "w": "do"
+    },
+    {
+     "s": 67.8,
+     "e": 67.96,
+     "w": "you"
+    },
+    {
+     "s": 67.96,
+     "e": 68.28,
+     "w": "want"
+    },
+    {
+     "s": 68.28,
+     "e": 68.5,
+     "w": "with"
+    },
+    {
+     "s": 68.5,
+     "e": 68.82,
+     "w": "her?"
+    },
+    {
+     "s": 69.28,
+     "e": 69.74,
+     "w": "No"
+    },
+    {
+     "s": 69.74,
+     "e": 70.26,
+     "w": "son,"
+    },
+    {
+     "s": 70.6,
+     "e": 70.82,
+     "w": "no"
+    },
+    {
+     "s": 70.82,
+     "e": 71.26,
+     "w": "peace"
+    },
+    {
+     "s": 71.26,
+     "e": 71.58,
+     "w": "after"
+    },
+    {
+     "s": 71.58,
+     "e": 72.02,
+     "w": "death."
+    },
+    {
+     "s": 72.42,
+     "e": 73.04,
+     "w": "Let"
+    },
+    {
+     "s": 73.04,
+     "e": 73.22,
+     "w": "her"
+    },
+    {
+     "s": 73.22,
+     "e": 73.52,
+     "w": "have"
+    },
+    {
+     "s": 73.52,
+     "e": 73.7,
+     "w": "a"
+    },
+    {
+     "s": 73.7,
+     "e": 74.0,
+     "w": "son"
+    },
+    {
+     "s": 74.0,
+     "e": 74.3,
+     "w": "by"
+    },
+    {
+     "s": 74.3,
+     "e": 74.7,
+     "w": "any"
+    },
+    {
+     "s": 74.7,
+     "e": 75.14,
+     "w": "man."
+    }
+   ]
   },
   {
-   "start": 40.0,
-   "end": 44.0,
-   "text": "When the Navatis father died, his relatives seized everything."
+   "start": 75.14,
+   "end": 81.82,
+   "text": "He will be mine. For the gold, her mother agreed, and poured the wetting water on his hand.",
+   "words": [
+    {
+     "s": 75.14,
+     "e": 75.84,
+     "w": "He"
+    },
+    {
+     "s": 75.84,
+     "e": 76.06,
+     "w": "will"
+    },
+    {
+     "s": 76.06,
+     "e": 76.24,
+     "w": "be"
+    },
+    {
+     "s": 76.24,
+     "e": 76.6,
+     "w": "mine."
+    },
+    {
+     "s": 76.96,
+     "e": 77.6,
+     "w": "For"
+    },
+    {
+     "s": 77.6,
+     "e": 77.76,
+     "w": "the"
+    },
+    {
+     "s": 77.76,
+     "e": 78.12,
+     "w": "gold,"
+    },
+    {
+     "s": 78.26,
+     "e": 78.42,
+     "w": "her"
+    },
+    {
+     "s": 78.42,
+     "e": 78.66,
+     "w": "mother"
+    },
+    {
+     "s": 78.66,
+     "e": 79.12,
+     "w": "agreed,"
+    },
+    {
+     "s": 79.36,
+     "e": 79.9,
+     "w": "and"
+    },
+    {
+     "s": 79.9,
+     "e": 80.22,
+     "w": "poured"
+    },
+    {
+     "s": 80.22,
+     "e": 80.38,
+     "w": "the"
+    },
+    {
+     "s": 80.38,
+     "e": 80.7,
+     "w": "wetting"
+    },
+    {
+     "s": 80.7,
+     "e": 81.02,
+     "w": "water"
+    },
+    {
+     "s": 81.02,
+     "e": 81.28,
+     "w": "on"
+    },
+    {
+     "s": 81.28,
+     "e": 81.46,
+     "w": "his"
+    },
+    {
+     "s": 81.46,
+     "e": 81.82,
+     "w": "hand."
+    }
+   ]
   },
   {
-   "start": 44.0,
-   "end": 46.0,
-   "text": "She fled with her mother by night."
+   "start": 82.08,
+   "end": 89.38,
+   "text": "He told them where his gold lay, then he died. They carried the thief's gold to a far city.",
+   "words": [
+    {
+     "s": 82.08,
+     "e": 82.7,
+     "w": "He"
+    },
+    {
+     "s": 82.7,
+     "e": 82.94,
+     "w": "told"
+    },
+    {
+     "s": 82.94,
+     "e": 83.14,
+     "w": "them"
+    },
+    {
+     "s": 83.14,
+     "e": 83.36,
+     "w": "where"
+    },
+    {
+     "s": 83.36,
+     "e": 83.6,
+     "w": "his"
+    },
+    {
+     "s": 83.6,
+     "e": 83.9,
+     "w": "gold"
+    },
+    {
+     "s": 83.9,
+     "e": 84.24,
+     "w": "lay,"
+    },
+    {
+     "s": 84.42,
+     "e": 84.9,
+     "w": "then"
+    },
+    {
+     "s": 84.9,
+     "e": 85.12,
+     "w": "he"
+    },
+    {
+     "s": 85.12,
+     "e": 85.54,
+     "w": "died."
+    },
+    {
+     "s": 86.2,
+     "e": 86.84,
+     "w": "They"
+    },
+    {
+     "s": 86.84,
+     "e": 87.26,
+     "w": "carried"
+    },
+    {
+     "s": 87.26,
+     "e": 87.42,
+     "w": "the"
+    },
+    {
+     "s": 87.42,
+     "e": 87.82,
+     "w": "thief's"
+    },
+    {
+     "s": 87.82,
+     "e": 88.18,
+     "w": "gold"
+    },
+    {
+     "s": 88.18,
+     "e": 88.42,
+     "w": "to"
+    },
+    {
+     "s": 88.42,
+     "e": 88.58,
+     "w": "a"
+    },
+    {
+     "s": 88.58,
+     "e": 88.92,
+     "w": "far"
+    },
+    {
+     "s": 88.92,
+     "e": 89.38,
+     "w": "city."
+    }
+   ]
   },
   {
-   "start": 46.0,
-   "end": 50.0,
-   "text": "Outside town, her mother walked into something in the dark."
+   "start": 89.74,
+   "end": 97.54,
+   "text": "From her roof, Thanabati saw a poor young scholar. She remembered the thief's order. He named his price,",
+   "words": [
+    {
+     "s": 89.74,
+     "e": 90.3,
+     "w": "From"
+    },
+    {
+     "s": 90.3,
+     "e": 90.5,
+     "w": "her"
+    },
+    {
+     "s": 90.5,
+     "e": 90.8,
+     "w": "roof,"
+    },
+    {
+     "s": 91.28,
+     "e": 91.76,
+     "w": "Thanabati"
+    },
+    {
+     "s": 91.76,
+     "e": 92.14,
+     "w": "saw"
+    },
+    {
+     "s": 92.14,
+     "e": 92.36,
+     "w": "a"
+    },
+    {
+     "s": 92.36,
+     "e": 92.76,
+     "w": "poor"
+    },
+    {
+     "s": 92.76,
+     "e": 93.06,
+     "w": "young"
+    },
+    {
+     "s": 93.06,
+     "e": 93.62,
+     "w": "scholar."
+    },
+    {
+     "s": 93.98,
+     "e": 94.54,
+     "w": "She"
+    },
+    {
+     "s": 94.54,
+     "e": 94.94,
+     "w": "remembered"
+    },
+    {
+     "s": 94.94,
+     "e": 95.12,
+     "w": "the"
+    },
+    {
+     "s": 95.12,
+     "e": 95.48,
+     "w": "thief's"
+    },
+    {
+     "s": 95.48,
+     "e": 95.82,
+     "w": "order."
+    },
+    {
+     "s": 96.14,
+     "e": 96.56,
+     "w": "He"
+    },
+    {
+     "s": 96.56,
+     "e": 96.86,
+     "w": "named"
+    },
+    {
+     "s": 96.86,
+     "e": 97.08,
+     "w": "his"
+    },
+    {
+     "s": 97.08,
+     "e": 97.54,
+     "w": "price,"
+    }
+   ]
   },
   {
-   "start": 50.0,
-   "end": 54.0,
-   "text": "A man on a stake, still alive."
+   "start": 97.96,
+   "end": 103.68,
+   "text": "five hundred gold coins, one night. The thief's gold paid him. By morning, he was gone.",
+   "words": [
+    {
+     "s": 97.96,
+     "e": 98.32,
+     "w": "five"
+    },
+    {
+     "s": 98.32,
+     "e": 98.56,
+     "w": "hundred"
+    },
+    {
+     "s": 98.56,
+     "e": 98.82,
+     "w": "gold"
+    },
+    {
+     "s": 98.82,
+     "e": 99.2,
+     "w": "coins,"
+    },
+    {
+     "s": 99.52,
+     "e": 99.9,
+     "w": "one"
+    },
+    {
+     "s": 99.9,
+     "e": 100.12,
+     "w": "night."
+    },
+    {
+     "s": 100.46,
+     "e": 100.88,
+     "w": "The"
+    },
+    {
+     "s": 100.88,
+     "e": 101.2,
+     "w": "thief's"
+    },
+    {
+     "s": 101.2,
+     "e": 101.5,
+     "w": "gold"
+    },
+    {
+     "s": 101.5,
+     "e": 101.84,
+     "w": "paid"
+    },
+    {
+     "s": 101.84,
+     "e": 102.0,
+     "w": "him."
+    },
+    {
+     "s": 102.32,
+     "e": 102.62,
+     "w": "By"
+    },
+    {
+     "s": 102.62,
+     "e": 102.98,
+     "w": "morning,"
+    },
+    {
+     "s": 103.04,
+     "e": 103.26,
+     "w": "he"
+    },
+    {
+     "s": 103.26,
+     "e": 103.42,
+     "w": "was"
+    },
+    {
+     "s": 103.42,
+     "e": 103.68,
+     "w": "gone."
+    }
+   ]
   },
   {
-   "start": 54.0,
-   "end": 58.0,
-   "text": "He groaned, who rubbed salt into my wounds?"
+   "start": 103.68,
+   "end": 111.98,
+   "text": "She had a son. A dream told her, leave him at the king's gate with the thief's gold. The old king",
+   "words": [
+    {
+     "s": 103.68,
+     "e": 104.76,
+     "w": "She"
+    },
+    {
+     "s": 104.76,
+     "e": 105.02,
+     "w": "had"
+    },
+    {
+     "s": 105.02,
+     "e": 105.18,
+     "w": "a"
+    },
+    {
+     "s": 105.18,
+     "e": 105.52,
+     "w": "son."
+    },
+    {
+     "s": 106.0,
+     "e": 106.52,
+     "w": "A"
+    },
+    {
+     "s": 106.52,
+     "e": 106.82,
+     "w": "dream"
+    },
+    {
+     "s": 106.82,
+     "e": 107.16,
+     "w": "told"
+    },
+    {
+     "s": 107.16,
+     "e": 107.46,
+     "w": "her,"
+    },
+    {
+     "s": 107.7,
+     "e": 108.06,
+     "w": "leave"
+    },
+    {
+     "s": 108.06,
+     "e": 108.26,
+     "w": "him"
+    },
+    {
+     "s": 108.26,
+     "e": 108.44,
+     "w": "at"
+    },
+    {
+     "s": 108.44,
+     "e": 108.56,
+     "w": "the"
+    },
+    {
+     "s": 108.56,
+     "e": 109.0,
+     "w": "king's"
+    },
+    {
+     "s": 109.0,
+     "e": 109.36,
+     "w": "gate"
+    },
+    {
+     "s": 109.36,
+     "e": 109.66,
+     "w": "with"
+    },
+    {
+     "s": 109.66,
+     "e": 109.82,
+     "w": "the"
+    },
+    {
+     "s": 109.82,
+     "e": 110.28,
+     "w": "thief's"
+    },
+    {
+     "s": 110.28,
+     "e": 110.5,
+     "w": "gold."
+    },
+    {
+     "s": 110.92,
+     "e": 111.42,
+     "w": "The"
+    },
+    {
+     "s": 111.42,
+     "e": 111.66,
+     "w": "old"
+    },
+    {
+     "s": 111.66,
+     "e": 111.98,
+     "w": "king"
+    }
+   ]
   },
   {
-   "start": 58.0,
-   "end": 60.0,
-   "text": "The moon rose."
+   "start": 111.98,
+   "end": 120.4,
+   "text": "had no son. He dreamed of a child at his gate. At dawn, a baby on a heap of gold. He raised him as",
+   "words": [
+    {
+     "s": 111.98,
+     "e": 112.38,
+     "w": "had"
+    },
+    {
+     "s": 112.38,
+     "e": 112.64,
+     "w": "no"
+    },
+    {
+     "s": 112.64,
+     "e": 113.0,
+     "w": "son."
+    },
+    {
+     "s": 113.26,
+     "e": 113.66,
+     "w": "He"
+    },
+    {
+     "s": 113.66,
+     "e": 114.0,
+     "w": "dreamed"
+    },
+    {
+     "s": 114.0,
+     "e": 114.24,
+     "w": "of"
+    },
+    {
+     "s": 114.24,
+     "e": 114.36,
+     "w": "a"
+    },
+    {
+     "s": 114.36,
+     "e": 114.72,
+     "w": "child"
+    },
+    {
+     "s": 114.72,
+     "e": 114.94,
+     "w": "at"
+    },
+    {
+     "s": 114.94,
+     "e": 115.1,
+     "w": "his"
+    },
+    {
+     "s": 115.1,
+     "e": 115.48,
+     "w": "gate."
+    },
+    {
+     "s": 115.8,
+     "e": 116.34,
+     "w": "At"
+    },
+    {
+     "s": 116.34,
+     "e": 116.66,
+     "w": "dawn,"
+    },
+    {
+     "s": 116.86,
+     "e": 117.22,
+     "w": "a"
+    },
+    {
+     "s": 117.22,
+     "e": 117.56,
+     "w": "baby"
+    },
+    {
+     "s": 117.56,
+     "e": 117.82,
+     "w": "on"
+    },
+    {
+     "s": 117.82,
+     "e": 117.96,
+     "w": "a"
+    },
+    {
+     "s": 117.96,
+     "e": 118.22,
+     "w": "heap"
+    },
+    {
+     "s": 118.22,
+     "e": 118.42,
+     "w": "of"
+    },
+    {
+     "s": 118.42,
+     "e": 118.72,
+     "w": "gold."
+    },
+    {
+     "s": 119.1,
+     "e": 119.62,
+     "w": "He"
+    },
+    {
+     "s": 119.62,
+     "e": 120.02,
+     "w": "raised"
+    },
+    {
+     "s": 120.02,
+     "e": 120.2,
+     "w": "him"
+    },
+    {
+     "s": 120.2,
+     "e": 120.4,
+     "w": "as"
+    }
+   ]
   },
   {
-   "start": 60.0,
-   "end": 64.0,
-   "text": "He saw the Navati and said, a thousand gold coins."
+   "start": 120.4,
+   "end": 127.62,
+   "text": "his own, and the boy became king. The old king died. His son walked to the holy well of Gaia.",
+   "words": [
+    {
+     "s": 120.4,
+     "e": 120.58,
+     "w": "his"
+    },
+    {
+     "s": 120.58,
+     "e": 120.9,
+     "w": "own,"
+    },
+    {
+     "s": 120.92,
+     "e": 121.34,
+     "w": "and"
+    },
+    {
+     "s": 121.34,
+     "e": 121.5,
+     "w": "the"
+    },
+    {
+     "s": 121.5,
+     "e": 121.8,
+     "w": "boy"
+    },
+    {
+     "s": 121.8,
+     "e": 122.28,
+     "w": "became"
+    },
+    {
+     "s": 122.28,
+     "e": 122.68,
+     "w": "king."
+    },
+    {
+     "s": 123.28,
+     "e": 123.76,
+     "w": "The"
+    },
+    {
+     "s": 123.76,
+     "e": 123.98,
+     "w": "old"
+    },
+    {
+     "s": 123.98,
+     "e": 124.22,
+     "w": "king"
+    },
+    {
+     "s": 124.22,
+     "e": 124.64,
+     "w": "died."
+    },
+    {
+     "s": 125.0,
+     "e": 125.38,
+     "w": "His"
+    },
+    {
+     "s": 125.38,
+     "e": 125.6,
+     "w": "son"
+    },
+    {
+     "s": 125.6,
+     "e": 125.94,
+     "w": "walked"
+    },
+    {
+     "s": 125.94,
+     "e": 126.12,
+     "w": "to"
+    },
+    {
+     "s": 126.12,
+     "e": 126.24,
+     "w": "the"
+    },
+    {
+     "s": 126.24,
+     "e": 126.54,
+     "w": "holy"
+    },
+    {
+     "s": 126.54,
+     "e": 126.88,
+     "w": "well"
+    },
+    {
+     "s": 126.88,
+     "e": 127.14,
+     "w": "of"
+    },
+    {
+     "s": 127.14,
+     "e": 127.62,
+     "w": "Gaia."
+    }
+   ]
   },
   {
-   "start": 64.0,
-   "end": 66.0,
-   "text": "Make her my wife."
+   "start": 127.62,
+   "end": 138.06,
+   "text": "He held out the offering for his father. The water moved, its rose out of the well. One held an iron",
+   "words": [
+    {
+     "s": 127.62,
+     "e": 128.88,
+     "w": "He"
+    },
+    {
+     "s": 128.88,
+     "e": 129.14,
+     "w": "held"
+    },
+    {
+     "s": 129.14,
+     "e": 129.32,
+     "w": "out"
+    },
+    {
+     "s": 129.32,
+     "e": 129.48,
+     "w": "the"
+    },
+    {
+     "s": 129.48,
+     "e": 129.96,
+     "w": "offering"
+    },
+    {
+     "s": 129.96,
+     "e": 130.28,
+     "w": "for"
+    },
+    {
+     "s": 130.28,
+     "e": 130.42,
+     "w": "his"
+    },
+    {
+     "s": 130.42,
+     "e": 130.8,
+     "w": "father."
+    },
+    {
+     "s": 131.4,
+     "e": 132.04,
+     "w": "The"
+    },
+    {
+     "s": 132.04,
+     "e": 132.32,
+     "w": "water"
+    },
+    {
+     "s": 132.32,
+     "e": 132.84,
+     "w": "moved,"
+    },
+    {
+     "s": 134.72,
+     "e": 135.06,
+     "w": "its"
+    },
+    {
+     "s": 135.06,
+     "e": 135.42,
+     "w": "rose"
+    },
+    {
+     "s": 135.42,
+     "e": 135.8,
+     "w": "out"
+    },
+    {
+     "s": 135.8,
+     "e": 135.92,
+     "w": "of"
+    },
+    {
+     "s": 135.92,
+     "e": 136.0,
+     "w": "the"
+    },
+    {
+     "s": 136.0,
+     "e": 136.26,
+     "w": "well."
+    },
+    {
+     "s": 136.82,
+     "e": 137.34,
+     "w": "One"
+    },
+    {
+     "s": 137.34,
+     "e": 137.56,
+     "w": "held"
+    },
+    {
+     "s": 137.56,
+     "e": 137.74,
+     "w": "an"
+    },
+    {
+     "s": 137.74,
+     "e": 138.06,
+     "w": "iron"
+    }
+   ]
   },
   {
-   "start": 66.0,
-   "end": 68.0,
-   "text": "Her mother laughed."
+   "start": 138.06,
+   "end": 146.38,
+   "text": "spike, a thief's hand. One held a book, a scholar's hand. One wore a ring, a king's hand. Even the",
+   "words": [
+    {
+     "s": 138.06,
+     "e": 138.52,
+     "w": "spike,"
+    },
+    {
+     "s": 138.66,
+     "e": 138.86,
+     "w": "a"
+    },
+    {
+     "s": 138.86,
+     "e": 139.18,
+     "w": "thief's"
+    },
+    {
+     "s": 139.18,
+     "e": 139.46,
+     "w": "hand."
+    },
+    {
+     "s": 139.9,
+     "e": 140.38,
+     "w": "One"
+    },
+    {
+     "s": 140.38,
+     "e": 140.6,
+     "w": "held"
+    },
+    {
+     "s": 140.6,
+     "e": 140.72,
+     "w": "a"
+    },
+    {
+     "s": 140.72,
+     "e": 141.02,
+     "w": "book,"
+    },
+    {
+     "s": 141.42,
+     "e": 141.68,
+     "w": "a"
+    },
+    {
+     "s": 141.68,
+     "e": 142.2,
+     "w": "scholar's"
+    },
+    {
+     "s": 142.2,
+     "e": 142.48,
+     "w": "hand."
+    },
+    {
+     "s": 143.02,
+     "e": 143.58,
+     "w": "One"
+    },
+    {
+     "s": 143.58,
+     "e": 143.94,
+     "w": "wore"
+    },
+    {
+     "s": 143.94,
+     "e": 144.12,
+     "w": "a"
+    },
+    {
+     "s": 144.12,
+     "e": 144.32,
+     "w": "ring,"
+    },
+    {
+     "s": 144.5,
+     "e": 144.62,
+     "w": "a"
+    },
+    {
+     "s": 144.62,
+     "e": 144.98,
+     "w": "king's"
+    },
+    {
+     "s": 144.98,
+     "e": 145.3,
+     "w": "hand."
+    },
+    {
+     "s": 146.02,
+     "e": 146.22,
+     "w": "Even"
+    },
+    {
+     "s": 146.22,
+     "e": 146.38,
+     "w": "the"
+    }
+   ]
   },
   {
-   "start": 68.0,
-   "end": 70.0,
-   "text": "What do you want with her?"
+   "start": 146.38,
+   "end": 154.1,
+   "text": "priests did not know. Three hands, one son, one offering. King, into whose hand should it go?",
+   "words": [
+    {
+     "s": 146.38,
+     "e": 146.8,
+     "w": "priests"
+    },
+    {
+     "s": 146.8,
+     "e": 147.28,
+     "w": "did"
+    },
+    {
+     "s": 147.28,
+     "e": 147.48,
+     "w": "not"
+    },
+    {
+     "s": 147.48,
+     "e": 147.72,
+     "w": "know."
+    },
+    {
+     "s": 148.36,
+     "e": 148.58,
+     "w": "Three"
+    },
+    {
+     "s": 148.58,
+     "e": 148.98,
+     "w": "hands,"
+    },
+    {
+     "s": 149.4,
+     "e": 149.76,
+     "w": "one"
+    },
+    {
+     "s": 149.76,
+     "e": 150.06,
+     "w": "son,"
+    },
+    {
+     "s": 150.6,
+     "e": 150.9,
+     "w": "one"
+    },
+    {
+     "s": 150.9,
+     "e": 151.34,
+     "w": "offering."
+    },
+    {
+     "s": 151.88,
+     "e": 152.3,
+     "w": "King,"
+    },
+    {
+     "s": 152.7,
+     "e": 152.88,
+     "w": "into"
+    },
+    {
+     "s": 152.88,
+     "e": 153.18,
+     "w": "whose"
+    },
+    {
+     "s": 153.18,
+     "e": 153.46,
+     "w": "hand"
+    },
+    {
+     "s": 153.46,
+     "e": 153.68,
+     "w": "should"
+    },
+    {
+     "s": 153.68,
+     "e": 153.84,
+     "w": "it"
+    },
+    {
+     "s": 153.84,
+     "e": 154.1,
+     "w": "go?"
+    }
+   ]
   },
   {
-   "start": 70.0,
-   "end": 73.0,
-   "text": "No son, no peace after death."
+   "start": 154.1,
+   "end": 162.78,
+   "text": "Stay silent and your head splits. So whose son is he? The thief who gave him a name? The man who gave",
+   "words": [
+    {
+     "s": 154.1,
+     "e": 154.88,
+     "w": "Stay"
+    },
+    {
+     "s": 154.88,
+     "e": 155.4,
+     "w": "silent"
+    },
+    {
+     "s": 155.4,
+     "e": 155.64,
+     "w": "and"
+    },
+    {
+     "s": 155.64,
+     "e": 155.76,
+     "w": "your"
+    },
+    {
+     "s": 155.76,
+     "e": 155.96,
+     "w": "head"
+    },
+    {
+     "s": 155.96,
+     "e": 156.32,
+     "w": "splits."
+    },
+    {
+     "s": 156.88,
+     "e": 157.5,
+     "w": "So"
+    },
+    {
+     "s": 157.5,
+     "e": 157.78,
+     "w": "whose"
+    },
+    {
+     "s": 157.78,
+     "e": 158.18,
+     "w": "son"
+    },
+    {
+     "s": 158.18,
+     "e": 158.54,
+     "w": "is"
+    },
+    {
+     "s": 158.54,
+     "e": 158.76,
+     "w": "he?"
+    },
+    {
+     "s": 159.04,
+     "e": 159.48,
+     "w": "The"
+    },
+    {
+     "s": 159.48,
+     "e": 159.94,
+     "w": "thief"
+    },
+    {
+     "s": 159.94,
+     "e": 160.14,
+     "w": "who"
+    },
+    {
+     "s": 160.14,
+     "e": 160.4,
+     "w": "gave"
+    },
+    {
+     "s": 160.4,
+     "e": 160.62,
+     "w": "him"
+    },
+    {
+     "s": 160.62,
+     "e": 160.8,
+     "w": "a"
+    },
+    {
+     "s": 160.8,
+     "e": 161.2,
+     "w": "name?"
+    },
+    {
+     "s": 161.52,
+     "e": 162.08,
+     "w": "The"
+    },
+    {
+     "s": 162.08,
+     "e": 162.36,
+     "w": "man"
+    },
+    {
+     "s": 162.36,
+     "e": 162.52,
+     "w": "who"
+    },
+    {
+     "s": 162.52,
+     "e": 162.78,
+     "w": "gave"
+    }
+   ]
   },
   {
-   "start": 73.0,
-   "end": 76.0,
-   "text": "Let her have a son by any man."
+   "start": 162.78,
+   "end": 170.48,
+   "text": "him blood? Or the king who gave him a life? For more story details, check the caption. Comment below",
+   "words": [
+    {
+     "s": 162.78,
+     "e": 162.98,
+     "w": "him"
+    },
+    {
+     "s": 162.98,
+     "e": 163.38,
+     "w": "blood?"
+    },
+    {
+     "s": 164.1,
+     "e": 164.32,
+     "w": "Or"
+    },
+    {
+     "s": 164.32,
+     "e": 164.64,
+     "w": "the"
+    },
+    {
+     "s": 164.64,
+     "e": 165.02,
+     "w": "king"
+    },
+    {
+     "s": 165.02,
+     "e": 165.36,
+     "w": "who"
+    },
+    {
+     "s": 165.36,
+     "e": 165.66,
+     "w": "gave"
+    },
+    {
+     "s": 165.66,
+     "e": 165.98,
+     "w": "him"
+    },
+    {
+     "s": 165.98,
+     "e": 166.1,
+     "w": "a"
+    },
+    {
+     "s": 166.1,
+     "e": 166.42,
+     "w": "life?"
+    },
+    {
+     "s": 166.98,
+     "e": 167.46,
+     "w": "For"
+    },
+    {
+     "s": 167.46,
+     "e": 167.62,
+     "w": "more"
+    },
+    {
+     "s": 167.62,
+     "e": 167.88,
+     "w": "story"
+    },
+    {
+     "s": 167.88,
+     "e": 168.42,
+     "w": "details,"
+    },
+    {
+     "s": 168.58,
+     "e": 168.84,
+     "w": "check"
+    },
+    {
+     "s": 168.84,
+     "e": 169.0,
+     "w": "the"
+    },
+    {
+     "s": 169.0,
+     "e": 169.3,
+     "w": "caption."
+    },
+    {
+     "s": 169.74,
+     "e": 170.18,
+     "w": "Comment"
+    },
+    {
+     "s": 170.18,
+     "e": 170.48,
+     "w": "below"
+    }
+   ]
   },
   {
-   "start": 76.0,
-   "end": 78.0,
-   "text": "He will be mine."
-  },
-  {
-   "start": 78.0,
-   "end": 80.0,
-   "text": "For the gold, her mother agreed,"
-  },
-  {
-   "start": 80.0,
-   "end": 83.0,
-   "text": "and poured the wedding water on his hand."
-  },
-  {
-   "start": 83.0,
-   "end": 87.0,
-   "text": "He told them where his gold lay, then he died."
-  },
-  {
-   "start": 87.0,
-   "end": 90.0,
-   "text": "They carried the thief's gold to a far city."
-  },
-  {
-   "start": 90.0,
-   "end": 94.0,
-   "text": "From her roof, the Navati saw a poor young scholar."
-  },
-  {
-   "start": 94.0,
-   "end": 97.0,
-   "text": "She remembered the thief's order."
-  },
-  {
-   "start": 97.0,
-   "end": 100.0,
-   "text": "He named his price, 500 gold coins."
-  },
-  {
-   "start": 100.0,
-   "end": 103.0,
-   "text": "One night, the thief's gold paid him."
-  },
-  {
-   "start": 103.0,
-   "end": 105.0,
-   "text": "By morning, he was gone."
-  },
-  {
-   "start": 105.0,
-   "end": 107.0,
-   "text": "She had a son."
-  },
-  {
-   "start": 107.0,
-   "end": 111.0,
-   "text": "A dream told her, leave him at the king's gate with the thief's gold."
-  },
-  {
-   "start": 111.0,
-   "end": 113.0,
-   "text": "The old king had no son."
-  },
-  {
-   "start": 113.0,
-   "end": 116.0,
-   "text": "He dreamed of a child at his gate."
-  },
-  {
-   "start": 116.0,
-   "end": 119.0,
-   "text": "A dawn, a baby on a heap of gold."
-  },
-  {
-   "start": 119.0,
-   "end": 123.0,
-   "text": "He raised him as his own, and the boy became king."
-  },
-  {
-   "start": 123.0,
-   "end": 125.0,
-   "text": "The old king died."
-  },
-  {
-   "start": 125.0,
-   "end": 128.0,
-   "text": "His son walked to the holy well of Gaia."
-  },
-  {
-   "start": 128.0,
-   "end": 131.0,
-   "text": "He held out the offering for his father."
-  },
-  {
-   "start": 131.0,
-   "end": 136.66,
-   "text": "The water moved, his rose out the well."
-  },
-  {
-   "start": 136.66,
-   "end": 139.66,
-   "text": "One held an iron spike, a thief's hand."
-  },
-  {
-   "start": 139.66,
-   "end": 142.66,
-   "text": "One held a book, a scholar's hand."
-  },
-  {
-   "start": 142.66,
-   "end": 145.66,
-   "text": "One wore a ring, a king's hand."
-  },
-  {
-   "start": 145.66,
-   "end": 147.66,
-   "text": "Even the priests did not know."
-  },
-  {
-   "start": 147.66,
-   "end": 151.66,
-   "text": "Three hands, one son, one offering."
-  },
-  {
-   "start": 151.66,
-   "end": 154.66,
-   "text": "King, into whose hand should it go?"
-  },
-  {
-   "start": 154.66,
-   "end": 156.66,
-   "text": "Stay silent and your head splits."
-  },
-  {
-   "start": 156.66,
-   "end": 158.66,
-   "text": "So whose son is he?"
-  },
-  {
-   "start": 158.66,
-   "end": 161.66,
-   "text": "The thief who gave him a name?"
-  },
-  {
-   "start": 161.66,
-   "end": 163.66,
-   "text": "The man who gave him blood?"
-  },
-  {
-   "start": 163.66,
-   "end": 166.66,
-   "text": "Or the king who gave him a life?"
-  },
-  {
-   "start": 166.66,
-   "end": 169.66,
-   "text": "For more story details, check the caption."
-  },
-  {
-   "start": 169.66,
-   "end": 173.66,
-   "text": "Comment below and follow for Vikram's surprising answer."
+   "start": 170.48,
+   "end": 172.98,
+   "text": "and follow for Vikram's surprising answer.",
+   "words": [
+    {
+     "s": 170.48,
+     "e": 170.76,
+     "w": "and"
+    },
+    {
+     "s": 170.76,
+     "e": 171.12,
+     "w": "follow"
+    },
+    {
+     "s": 171.12,
+     "e": 171.38,
+     "w": "for"
+    },
+    {
+     "s": 171.38,
+     "e": 171.9,
+     "w": "Vikram's"
+    },
+    {
+     "s": 171.9,
+     "e": 172.5,
+     "w": "surprising"
+    },
+    {
+     "s": 172.5,
+     "e": 172.98,
+     "w": "answer."
+    }
+   ]
   }
  ]
 }

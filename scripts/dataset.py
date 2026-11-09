@@ -31,6 +31,9 @@ def main():
                       "prev_virality": "", "eligible": int(r["age_days"] >= MIN_AGE)})
         for i, r in enumerate(items):
             r["dur_60_90"] = int(60 <= r["duration_s"] < 90)
+            r["like_rate"] = round(r["likes"] / max(r["views"], 1), 5) if r["likes"] != 3 else ""
+            r["comment_rate"] = round(1000 * r["comments"] / max(r["views"], 1), 4)
+            r["reel_index_frac"] = round(i / max(len(items) - 1, 1), 3)
             r["posts_within_12h"] = sum(1 for x in items if x is not r and abs(x["created"] - r["created"]) <= 12 * 3600)
             r["burst"] = int(r["posts_within_12h"] >= 1)
             if i: r["prev_virality"] = items[i - 1]["virality"]

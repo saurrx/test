@@ -1,0 +1,87 @@
+npm notice run npx
+npm notice run 'remotion' render build_v4 Reel ../renders/reel1c_final.mp4 --props=../makes/reel1_bell/reel.json --crf=18 --gl=swangle --concurrency=7 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing
+Getting compositions
+Getting compositions
+Composition          Reel
+Codec                h264
+Output               ../renders/reel1c_final.mp4
+Concurrency          7x
+Rendered 0/1884
+Rendered 1/1884, time remaining: 1h 50m 28s
+Rendered 2/1884, time remaining: 3h 10m 16s
+Rendered 3/1884, time remaining: 3h 37m 3s
+Rendered 4/1884, time remaining: 3h 50m 32s
+Rendered 5/1884, time remaining: 3h 52m 48s
+Rendered 6/1884, time remaining: 4h 13m 15s
+Rendered 7/1884, time remaining: 4h 31m 27s
+Rendered 8/1884, time remaining: 4h 45m 11s
+Rendered 9/1884, time remaining: 4h 54m 31s
+Rendered 10/1884, time remaining: 5h 1m 56s
+Rendered 11/1884, time remaining: 5h 7m 58s
+Rendered 12/1884, time remaining: 5h 11m 27s
+Rendered 13/1884, time remaining: 5h 24m 52s
+Rendered 14/1884, time remaining: 5h 38m 31s
+Rendered 15/1884, time remaining: 5h 48m 20s
+Rendered 16/1884, time remaining: 5h 43m 13s
+Rendered 17/1884, time remaining: 5h 38m 42s
+Rendered 18/1884, time remaining: 5h 34m 44s
+Rendered 19/1884, time remaining: 5h 29m 4s
+Rendered 20/1884, time remaining: 5h 29m 17s
+Rendered 21/1884, time remaining: 5h 29m 29s
+Rendered 22/1884, time remaining: 5h 28m 34s
+Rendered 23/1884, time remaining: 5h 27m 43s
+Rendered 24/1884, time remaining: 5h 28m 38s
+Rendered 25/1884, time remaining: 5h 27m 9s
+Rendered 26/1884, time remaining: 5h 26m 48s
+Rendered 27/1884, time remaining: 5h 18m 4s
+Rendered 28/1884, time remaining: 5h 18m 12s
+Rendered 29/1884, time remaining: 5h 18m 43s
+Rendered 30/1884, time remaining: 5h 19m 39s
+Rendered 31/1884, time remaining: 5h 20m 30s
+Rendered 32/1884, time remaining: 5h 20m 57s
+Rendered 33/1884, time remaining: 5h 21m 42s
+Rendered 34/1884, time remaining: 5h 21m 14s
+Rendered 35/1884, time remaining: 5h 19m 39s
+Rendered 36/1884, time remaining: 5h 17m 6s
+Rendered 36/1884, time remaining: 5h 17m 6s
+Rendered 36/1884, time remaining: 5h 17m 6s
+Rendered 36/1884, time remaining: 5h 17m 6s
+Rendered 36/1884, time remaining: 5h 17m 6s
+Rendered 37/1884, time remaining: 5h 16m 29s
+Rendered 38/1884, time remaining: 5h 15m 54s
+Rendered 39/1884, time remaining: 5h 15m 20s
+Rendered 40/1884, time remaining: 5h 14m 47s
+Rendered 40/1884, time remaining: 5h 14m 47s
+Rendered 40/1884, time remaining: 5h 14m 47s
+Rendered 41/1884, time remaining: 5h 14m 0s
+Rendered 41/1884, time remaining: 5h 14m 0s
+Rendered 41/1884, time remaining: 5h 14m 0s
+Rendered 41/1884, time remaining: 5h 14m 0s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 42/1884, time remaining: 5h 9m 50s
+Rendered 43/1884, time remaining: 5h 7m 51s
+Rendered 43/1884, time remaining: 5h 7m 51s
+Rendered 43/1884, time remaining: 5h 7m 51s
+Rendered 43/1884, time remaining: 5h 7m 51s
+Rendered 44/1884, time remaining: 5h 5m 33s
+Rendered 45/1884, time remaining: 5h 2m 39s
+Rendered 46/1884, time remaining: 5h 34s
+Rendered 47/1884, time remaining: 4h 58m 33s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 48/1884, time remaining: 4h 56m 37s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s
+Rendered 49/1884, time remaining: 4h 54m 49s

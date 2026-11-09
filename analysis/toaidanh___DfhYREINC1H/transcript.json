@@ -1,0 +1,78 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.994,
+ "word_count": 12,
+ "first_word_s": 3.5,
+ "speech_seconds": 3.8,
+ "wpm": 190,
+ "segments": [
+  {
+   "start": 3.5,
+   "end": 7.28,
+   "text": "Stay with me. He needs the healing herbs from the mountain. Go!",
+   "words": [
+    {
+     "s": 3.5,
+     "e": 4.0,
+     "w": "Stay"
+    },
+    {
+     "s": 4.0,
+     "e": 4.26,
+     "w": "with"
+    },
+    {
+     "s": 4.26,
+     "e": 4.46,
+     "w": "me."
+    },
+    {
+     "s": 4.98,
+     "e": 5.46,
+     "w": "He"
+    },
+    {
+     "s": 5.46,
+     "e": 5.68,
+     "w": "needs"
+    },
+    {
+     "s": 5.68,
+     "e": 5.82,
+     "w": "the"
+    },
+    {
+     "s": 5.82,
+     "e": 6.06,
+     "w": "healing"
+    },
+    {
+     "s": 6.06,
+     "e": 6.3,
+     "w": "herbs"
+    },
+    {
+     "s": 6.3,
+     "e": 6.5,
+     "w": "from"
+    },
+    {
+     "s": 6.5,
+     "e": 6.6,
+     "w": "the"
+    },
+    {
+     "s": 6.6,
+     "e": 6.86,
+     "w": "mountain."
+    },
+    {
+     "s": 7.08,
+     "e": 7.28,
+     "w": "Go!"
+    }
+   ]
+  }
+ ]
+}

@@ -21,3 +21,5 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P14 | Shiva / Mahadev topics may travel best; Krishna / Mahabharat worst, for these accounts | lead (exploratory) | F9: 2.3x and 0.44x, but only 3–5 creators each |
 | P15 | Always voice-led, never music-only | evidenced | F10: 5/5 creators, p = 0.004; 94% of hits vs 71% of flops have a voiceover |
 | P16 | A new picture at least every 6 s, ideally every 3–4 s; cut, dissolve or camera move all count | evidenced | F11: rho +0.25, q = 0.06, 11/16 creators; hits 1.6 vs flops 0.8 visual changes per 10 s. Hard cuts alone: null |
+| P17 | Aim for likeability, not just a stop: hits earn about 1 like per 20 views vs a norm of 1 per 45. Give the viewer something worth saving or agreeing with (a usable rule, a satisfying pay-off) | evidenced (after-the-fact marker) | F17: rho +0.40, 15/17 creators; like rate 5.0–6.4% on hits vs 2.2–2.4% otherwise |
+| P18 | Do not design endings around collecting comments | evidenced / null | F18: comment rate is lower on hits; F8: caption CTAs show no effect |

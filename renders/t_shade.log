@@ -1,0 +1,121 @@
+npm notice run npx
+npm notice run 'remotion' render build_shade Reel ../renders/t_shade.mp4 --props=../makes/_test/shade.json --scale=0.5 --jpeg-quality=70 --crf=26 --gl=swangle --concurrency=3 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing
+Getting compositions
+Getting compositions
+Composition          Reel
+Codec                h264
+Output               ../renders/t_shade.mp4
+Concurrency          3x
+Rendered 0/108
+Rendered 1/108, time remaining: 2m 9s
+Rendered 2/108, time remaining: 2m 58s
+Rendered 3/108, time remaining: 3m 19s
+Rendered 4/108, time remaining: 2m 59s
+Rendered 5/108, time remaining: 2m 40s
+Rendered 6/108, time remaining: 2m 27s
+Rendered 7/108, time remaining: 2m 23s
+Rendered 8/108, time remaining: 2m 13s
+Rendered 9/108, time remaining: 2m 15s
+Rendered 10/108, time remaining: 2m 10s
+Rendered 11/108, time remaining: 2m 12s
+Rendered 12/108, time remaining: 2m 8s
+Rendered 13/108, time remaining: 2m 5s
+Rendered 14/108, time remaining: 1m 59s
+Rendered 15/108, time remaining: 1m 57s
+Rendered 16/108, time remaining: 1m 54s
+Rendered 17/108, time remaining: 1m 51s
+Rendered 18/108, time remaining: 1m 50s
+Rendered 19/108, time remaining: 1m 48s
+Rendered 20/108, time remaining: 1m 44s
+Rendered 21/108, time remaining: 1m 41s
+Rendered 22/108, time remaining: 1m 41s
+Rendered 23/108, time remaining: 1m 40s
+Rendered 24/108, time remaining: 1m 37s
+Rendered 25/108, time remaining: 1m 35s
+Rendered 26/108, time remaining: 1m 34s
+Rendered 27/108, time remaining: 1m 31s
+Rendered 28/108, time remaining: 1m 29s
+Rendered 29/108, time remaining: 1m 29s
+Rendered 30/108, time remaining: 1m 28s
+Rendered 31/108, time remaining: 1m 25s
+Rendered 32/108, time remaining: 1m 24s
+Rendered 33/108, time remaining: 1m 23s
+Rendered 34/108, time remaining: 1m 21s
+Rendered 35/108, time remaining: 1m 20s
+Rendered 36/108, time remaining: 1m 19s
+Rendered 37/108, time remaining: 1m 19s
+Rendered 38/108, time remaining: 1m 19s
+Rendered 39/108, time remaining: 1m 19s
+Rendered 40/108, time remaining: 1m 17s
+Rendered 41/108, time remaining: 1m 16s
+Rendered 42/108, time remaining: 1m 15s
+Rendered 43/108, time remaining: 1m 13s
+Rendered 44/108, time remaining: 1m 12s
+Rendered 45/108, time remaining: 1m 10s
+Rendered 46/108, time remaining: 1m 9s
+Rendered 47/108, time remaining: 1m 8s
+Rendered 48/108, time remaining: 1m 6s
+Rendered 49/108, time remaining: 1m 6s
+Rendered 50/108, time remaining: 1m 5s
+Rendered 51/108, time remaining: 1m 4s
+Rendered 52/108, time remaining: 1m 3s
+Rendered 53/108, time remaining: 1m 1s
+Rendered 54/108, time remaining: 1m 0s
+Rendered 55/108, time remaining: 58s
+Rendered 56/108, time remaining: 58s
+Rendered 57/108, time remaining: 57s
+Rendered 58/108, time remaining: 56s
+Rendered 59/108, time remaining: 55s
+Rendered 60/108, time remaining: 53s
+Rendered 61/108, time remaining: 52s
+Rendered 62/108, time remaining: 51s
+Rendered 63/108, time remaining: 50s
+Rendered 64/108, time remaining: 49s
+Rendered 65/108, time remaining: 47s
+Rendered 66/108, time remaining: 46s
+Rendered 67/108, time remaining: 45s
+Rendered 68/108, time remaining: 44s
+Rendered 69/108, time remaining: 43s
+Rendered 70/108, time remaining: 42s
+Rendered 71/108, time remaining: 41s
+Rendered 72/108, time remaining: 39s
+Rendered 73/108, time remaining: 38s
+Rendered 74/108, time remaining: 37s
+Rendered 75/108, time remaining: 36s
+Rendered 76/108, time remaining: 34s
+Rendered 77/108, time remaining: 33s
+Rendered 78/108, time remaining: 32s
+Rendered 79/108, time remaining: 31s
+Rendered 80/108, time remaining: 30s
+Rendered 81/108, time remaining: 28s
+Rendered 82/108, time remaining: 27s
+Rendered 83/108, time remaining: 26s
+Rendered 84/108, time remaining: 25s
+Rendered 85/108, time remaining: 24s
+Rendered 86/108, time remaining: 23s
+Rendered 87/108, time remaining: 22s
+Rendered 88/108, time remaining: 21s
+Rendered 89/108, time remaining: 20s
+Rendered 90/108, time remaining: 19s
+Rendered 91/108, time remaining: 18s
+Rendered 92/108, time remaining: 16s
+Rendered 93/108, time remaining: 15s
+Rendered 94/108, time remaining: 14s
+Rendered 95/108, time remaining: 13s
+Rendered 96/108, time remaining: 12s
+Rendered 97/108, time remaining: 11s
+Rendered 98/108, time remaining: 10s
+Rendered 99/108, time remaining: 9s
+Rendered 100/108, time remaining: 8s
+Rendered 101/108, time remaining: 7s
+Rendered 102/108, time remaining: 6s
+Rendered 103/108, time remaining: 5s
+Rendered 104/108, time remaining: 4s
+Rendered 105/108, time remaining: 3s
+Rendered 106/108, time remaining: 2s
+Rendered 107/108, time remaining: 1s
+Rendered 108/108
+Stitched 21/108
+Stitched 86/108
+Stitched 108/108
++                    ../renders/t_shade.mp4 644.3 kB

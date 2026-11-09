@@ -69,6 +69,14 @@ without seeing views or creator: `data/hook_lines.tsv` → `data/hook_labels.csv
 | V41 | A reel posted within 12 h of another by the same creator does worse (bursts split attention) | negative | `run V41 burst --split binary --outcome virality_local` |
 | V37 | Reels with likes hidden do no better or worse | null | `run V37 likes_hidden --split binary` |
 
+### Reach and engagement tests registered 2026-11-09 23:27 UTC (before running)
+These describe what a viral reel looks like afterwards; they are not levers.
+| id | Claim | Expected | Command |
+|---|---|---|---|
+| V43 | A creator's viral reels have a LOWER like rate (likes per view): they reach people outside the fan base | negative | `run V43 like_rate --continuous` |
+| V44 | A creator's viral reels have a LOWER comment rate (comments per 1,000 views) | negative | `run V44 comment_rate --continuous` |
+| V45 | Later reels in a creator's history do better than earlier ones (account growth) | positive | `run V45 reel_index_frac --continuous` |
+
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).
 These can only ever produce `prior` rules about craft, unless judge calibration shows the judge predicts real views.
