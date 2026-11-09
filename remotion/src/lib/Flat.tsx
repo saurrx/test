@@ -281,11 +281,23 @@ export const Trishul: React.FC<SP> = ({ color, color2 }) => (<g><Halo cx={0} cy=
   <path d="M0 -430 L26 -280 L-26 -280 Z" fill={color} /><path d="M-120 -400 Q-150 -250 -30 -230 L-30 -200 Q-190 -220 -150 -400 Z" fill={color} /><path d="M120 -400 Q150 -250 30 -230 L30 -200 Q190 -220 150 -400 Z" fill={color} />
   <path d="M-70 -150 L0 -110 L70 -150 L70 -110 L0 -70 L-70 -110 Z" fill={color2} /></g>);
 // Path for walking half-way round and turning back (pradakshina that stops at the spout). progress 0..1.
-export const HalfCircle: React.FC<SP> = ({ t, color, r = 360, dur = 70, back = true }) => {
-  const k = prog(t, 0, dur, (x) => x); const out = Math.min(1, k * 2), ret = Math.max(0, k * 2 - 1); const a0 = Math.PI / 2, sweep = Math.PI * 1.5;
-  const pt = (u: number) => [r * Math.cos(a0 + sweep * u), r * 0.42 * Math.sin(a0 + sweep * u)]; const u = back ? out - ret : out; let d = "";
+export const HalfCircle: React.FC<SP> = ({ t, color, r = 360, dur = 70, back = true, squash = 0.42, turns = 0.75 }) => {
+  const k = prog(t, 0, dur, (x) => x); const out = Math.min(1, k * 2), ret = Math.max(0, k * 2 - 1); const a0 = Math.PI / 2, sweep = Math.PI * 2 * turns;
+  const pt = (u: number) => [r * Math.cos(a0 + sweep * u), r * squash * Math.sin(a0 + sweep * u)]; const u = back ? out - ret : out; let d = "";
   for (let i = 0; i <= 60; i++) { const p = pt((out * i) / 60); d += `${i ? "L" : "M"}${p[0].toFixed(1)} ${p[1].toFixed(1)} `; } const h = pt(u);
   return <g fill="none" strokeLinecap="round"><path d={d} stroke={color} strokeWidth={30} opacity={0.12} /><path d={d} stroke={color} strokeWidth={10} strokeDasharray="6 26" /><circle cx={h[0]} cy={h[1]} r={26} fill="#fff6d8" /><Halo cx={h[0]} cy={h[1]} r={110} color={color} opacity={0.9} /></g>;
 };
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave, mandir: Mandir, doorway: Doorway, feet: Feet, hand: Hand, thali: Thali, lingam: Lingam, lota: Lota, belpatra: Belpatra, trishul: Trishul, halfcircle: HalfCircle };
+// Shivling seen from above: round base, the lingam, and the water channel pointing up (north).
+export const LingamTop: React.FC<SP> = ({ t, color, color2 }) => (
+  <g>
+    <Halo cx={0} cy={0} r={420} color={color2} opacity={0.45} />
+    <path d="M-46 -150 L-46 -330 Q0 -372 46 -330 L46 -150 Z" fill={color} stroke={color2} strokeOpacity={0.8} strokeWidth={6} />
+    <path d={`M0 -160 L0 ${-330 + 6 * Math.sin(t / 5)}`} stroke="#9fe3ff" strokeWidth={14} strokeLinecap="round" opacity={0.9} />
+    <circle r={190} fill={color} stroke={color2} strokeOpacity={0.8} strokeWidth={6} /><circle r={150} fill="none" stroke={color2} strokeOpacity={0.35} strokeWidth={4} />
+    <circle r={84} fill="#241710" stroke={color2} strokeWidth={6} /><circle r={30} fill={color2} opacity={0.5} />
+    {[0, 1, 2].map((i) => <line key={i} x1={-40} x2={40} y1={-16 + i * 16} y2={-16 + i * 16} stroke="#efe6d2" strokeWidth={7} strokeLinecap="round" />)}
+  </g>
+);
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave, mandir: Mandir, doorway: Doorway, feet: Feet, hand: Hand, thali: Thali, lingam: Lingam, lota: Lota, belpatra: Belpatra, trishul: Trishul, halfcircle: HalfCircle, lingamtop: LingamTop };
