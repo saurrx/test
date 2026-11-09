@@ -1,10 +1,10 @@
 # 9-hour self-improving reel loop (v3, awaiting owner "go")
 
-Status: **NOT STARTED**. Nothing below runs until the owner says "go" in this session.
-On go: fill in the two times, create the two wake-ups, start Phase 0.
+Status: **RUNNING** since 2026-11-09T19:59Z.
+Runner: session_01Gy5RgGBibuvxR5H9sESUN3.
 
-- Loop start (UTC): _not set_
-- Loop end (UTC): _start + 9h_
+- Loop start (UTC): 2026-11-09T19:59Z
+- Loop end (UTC): 2026-11-10T04:59Z
 
 v3 folds in the Fable 5.2 review (`research/loop_review_fable52.md`) and the owner's answers:
 no posting for now, no Treg top-up, the PC is available, Fable 5.2 runs the loop.

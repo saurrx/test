@@ -1,12 +1,7 @@
 # Tasks
 
 ## Now
-- [ ] Waiting for the owner's "go" to start the 9-hour loop (`LOOP.md` v3). Nothing in the loop has run.
-
-## On "go"
-1. Write loop start/end (UTC) in `LOOP.md`; enable the two watchdog wake-ups with `update_trigger enabled=true`: A `trig_01W81GSJRHEHJ1JUPrxaG8Bc` (fires at :56), B `trig_018B98jFa4hDE7PHcmLxUtpt` (fires at :27). Both exist and are disabled.
-2. Phase 0 (75 min): `scripts/qc.py`, `scripts/judge_pair.py`, judge calibration, `bench/briefs/`, component library + Gallery, `research/prereg.md`, checkpoint 0.
-3. Iterations per `LOOP.md`.
+- Loop RUNNING: 2026-11-09T19:59Z → 2026-11-10T04:59Z (UTC). **Phase 0, step 1** (qc.py). Next: judge_pair.py, calibration, briefs, component library, prereg, checkpoint 0.
 
 ## Running in the background
 - PC `reels-worker` (systemd user unit on `arch`): balanced reel download + analysis v3. Check with `scripts/pc 'cat ~/reels-loop/repo/data/reels/_progress.txt'`; pull with `scripts/pc_sync.sh pull`.
