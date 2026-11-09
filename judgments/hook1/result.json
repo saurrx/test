@@ -1,0 +1,72 @@
+{
+ "name": "hook1",
+ "judges": 3,
+ "order": [
+  "renders/h1_v4_text.mp4",
+  "renders/h1_v7_3shots.mp4",
+  "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+  "renders/h1_v5_cross.mp4",
+  "renders/h1_v6_person.mp4",
+  "renders/h1_v1_base.mp4",
+  "renders/h1_v3_strike0.mp4",
+  "renders/h1_v8_popcaps.mp4",
+  "renders/h1_v2_bright.mp4"
+ ],
+ "borda": {
+  "renders/h1_v1_base.mp4": 11,
+  "renders/h1_v2_bright.mp4": 3,
+  "renders/h1_v3_strike0.mp4": 11,
+  "renders/h1_v4_text.mp4": 24,
+  "renders/h1_v5_cross.mp4": 12,
+  "renders/h1_v6_person.mp4": 12,
+  "renders/h1_v7_3shots.mp4": 15,
+  "renders/h1_v8_popcaps.mp4": 7,
+  "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg": 13
+ },
+ "first_place_votes": {
+  "renders/h1_v1_base.mp4": 0,
+  "renders/h1_v2_bright.mp4": 0,
+  "renders/h1_v3_strike0.mp4": 0,
+  "renders/h1_v4_text.mp4": 3,
+  "renders/h1_v5_cross.mp4": 0,
+  "renders/h1_v6_person.mp4": 0,
+  "renders/h1_v7_3shots.mp4": 0,
+  "renders/h1_v8_popcaps.mp4": 0,
+  "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg": 0
+ },
+ "per_judge": [
+  [
+   "renders/h1_v4_text.mp4",
+   "renders/h1_v1_base.mp4",
+   "renders/h1_v7_3shots.mp4",
+   "renders/h1_v5_cross.mp4",
+   "renders/h1_v8_popcaps.mp4",
+   "renders/h1_v3_strike0.mp4",
+   "renders/h1_v2_bright.mp4",
+   "renders/h1_v6_person.mp4",
+   "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg"
+  ],
+  [
+   "renders/h1_v4_text.mp4",
+   "renders/h1_v6_person.mp4",
+   "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+   "renders/h1_v5_cross.mp4",
+   "renders/h1_v7_3shots.mp4",
+   "renders/h1_v1_base.mp4",
+   "renders/h1_v3_strike0.mp4",
+   "renders/h1_v2_bright.mp4",
+   "renders/h1_v8_popcaps.mp4"
+  ],
+  [
+   "renders/h1_v4_text.mp4",
+   "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+   "renders/h1_v3_strike0.mp4",
+   "renders/h1_v7_3shots.mp4",
+   "renders/h1_v6_person.mp4",
+   "renders/h1_v8_popcaps.mp4",
+   "renders/h1_v5_cross.mp4",
+   "renders/h1_v1_base.mp4",
+   "renders/h1_v2_bright.mp4"
+  ]
+ ]
+}

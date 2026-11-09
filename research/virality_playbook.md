@@ -10,3 +10,5 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P3 | Space posts out; avoid bursts | evidenced (weak) | F4: 1.38x detrended, q = 0.02, 11/17 creators |
 | P4 | Voice starts within 0.5 s; something changes on screen by 3 s; first frame is not dark | prior | QC gates; to be tested as V9, V13, C1 |
 | P5 | Captions: contrast ≥ 4.5, inside the safe area (y 260–1500 of 1920) | prior | QC gates |
+| P6 | Put a headline of 3–5 words, large and high-contrast, on the very first frame | prior (craft) | Hook lab 1: the only variant with a frame-1 headline won 3/3 judges; the 4.8M-view reference also opens with one |
+| P7 | Brightening the first frame alone does nothing; motion alone does little | prior (craft) | Hook lab 1: bright-only ranked last (3 pts), strike-at-0 mid (11) |

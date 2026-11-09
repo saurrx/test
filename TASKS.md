@@ -2,8 +2,9 @@
 
 ## Now
 - Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:30** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
-- **Iteration 1**: (a) run V1–V5 (CSV-only tests); (b) hook lab on the bell brief, craft hypotheses C1 + C4; (c) fix baseline defects in the library.
-- Iteration plan: 2 = full reel #1 (bell or aarti-style original); 3 = checkpoint 1; then alternate per LOOP.md.
+- Iteration 1 done 20:38 (V1–V5, V19–V21; hook lab 1: frame-1 headline wins).
+- **Iteration 2 (now)**: full reel #1 `makes/reel1_bell/` (original, 60–70 s per P1, glow lane, headline on frame 1 per P6): script → Gemini voice → align on PC → 1 Lyria music clip → props → draft → QC → final 1080p → `renders/best/`.
+- Then iteration 3: hook lab 2 on the Pinaka brief (C3 line variants, bigger captions) + checkpoint 1 + calibration if ≥ 20 pairs + V22 and analysed-feature tests.
 
 ## How to work (for a restart)
 - Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.
