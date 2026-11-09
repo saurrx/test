@@ -84,7 +84,7 @@ sc(t, trans="cut", bg=rad(42), dust=40, cam={"z0": 1.0, "z1": 1.18, "shakeAt": y
 # --- CTA: ring it once, count the seconds, comment the number
 t = T("Tomorrow,") - 0.1; st = T("once,", 3) - t
 sc(t, trans="flash", bg=temple(g=1.8), dust=True, cam={"z0": 1.1, "z1": 1.0}, layers=[glow(y=820), bell(y=800, s=0.9, swing=1, strikeAt=int(st * 30)), {"kind": "rings", "x": 540, "y": 960, "color": G, "at": st, "count": 8, "every": 18, "max": 1100, "width": 8, "enter": "none"},
-   txt("1 STOP   2 RING ONCE", y=230, size=66, at=0.2, enter="fade", width=1000), txt("3 STAND TILL SILENT   4 RIGHT FOOT", y=330, size=52, at=0.5, enter="fade", width=1040),
+   txt("1 STOP  ·  2 RING ONCE", y=215, size=62, at=0.2, enter="fade", width=1040), txt("3 STAND TILL SILENT", y=300, size=62, at=0.5, enter="fade", width=1040), txt("4 RIGHT FOOT FIRST", y=385, size=62, at=0.8, enter="fade", width=1040),
    txt("#s ?", x=860, y=640, size=150, font="serif", col=W, at=T("count") - t, count=[1, 9, 110], enter="pop"), txt("COMMENT THE NUMBER", y=1580, size=84, font="pop", col=G, at=T("Comment") - t, enter="slam", width=1000)])
 END = 62.3
 scenes = []

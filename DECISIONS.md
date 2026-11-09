@@ -59,3 +59,8 @@
 - Hook-lab judging uses a ranking by 3 blind judges (Borda count) instead of all pairwise comparisons, to save usage: one judge call ranks up to 9 clips.
 - A metadata-only scrape (`reels-meta` unit, one request every ~20 s) runs alongside the video worker to get captions and covers for all 832 reels.
 - BLOCKER (handled): worker restart at 20:52 killed tailscaled and autocommit. Both restart from saved state; the watchdog prompt covers this case.
+
+## 2026-11-09 21:27 — Reel 1 marked hard; next lever is scene variety
+- After 3 attempts reel 1 improved each time by blind judgment (v1 < v2 < v3) but still loses clearly to the 4.8M-view reference. Per the 3-attempt rule it is closed and logged as `hard`.
+- What blocks it (both judges, both rounds): one repeated composition. So iteration 3 builds new scene types (temple exterior, doorway/threshold, hand close-up, different backdrops) before making reel 2. Alternative skipped: more polish on the same temple set (judged "close" gains only).
+- Judging uses 2 judges for whole-reel rankings and 3 for hook tournaments and checkpoints, to save usage.
