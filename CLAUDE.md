@@ -7,3 +7,9 @@ This is an experimental sandbox repo with no real data. The owner wants Claude t
 - Keep a running `TASKS.md`: what is in progress, what is done, what comes next. Pick up from it at the start of each session, since cloud containers are ephemeral and only what is committed survives.
 - Commit and push after each meaningful step so work is never lost when a container is reclaimed.
 - Only stop for things that actually need the owner: a missing credential, an external account action, or spending real money.
+
+## Paid APIs (Treg connector)
+- Treg tools (`mcp__Treg__*`) are pre-approved in `.claude/settings.json`; call them without asking.
+- Before any job that makes many calls, run `mcp__Treg__balance` and estimate cost from `catalog_get`.
+- Log spend in `DECISIONS.md` (what, how many calls, $).
+- If the balance would drop below $0.10, or a planned job costs more than the remaining balance, stop that job and tell the owner how much to top up and why. Everything else continues.
