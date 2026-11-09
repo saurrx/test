@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Treg"
+      "mcp__Treg",
+      "mcp__Treg__*"
     ]
   }
 }
