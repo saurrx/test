@@ -128,3 +128,12 @@ judges' ranking and the real data. Re-test when all 832 reels are analysed.
 **F15. Posting two reels within 12 hours looks costly (V41, suggestive).** 0.69x (p = 0.10, 5 of 9 creators). Same
 direction as F4 (longer gaps help). Not confirmed on its own.
 **F16. Hiding likes makes no detectable difference (V37).** 1.31x, p = 0.60, creators split 2/4 → null.
+
+## Judge calibration 2 (2026-11-09 23:06, 34 hit/flop pairs from 15 creators)
+Two blind Sonnet judges picked the real hit in **19/34 (56%)** and **18/34 (53%)**: no better than chance. Both chose
+clip "A" about three times in four (the real hit was "A" in 18 of 34), so they also show a position bias.
+Pooled with the first run: 70 correct of 118 judgments (59%).
+**Conclusion: the blind judge cannot tell which real reel went viral from its first 3 seconds.** Its rankings measure
+craft as an AI sees it (legible text, a clear focal image, variety), which is worth having, but they are not evidence
+about views. Every "beats the real reel" result in `makes/LOG.md` must be read that way. My own packs give each judge a
+different random lettering, which limits the position bias in those rankings.

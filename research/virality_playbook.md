@@ -13,7 +13,7 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P6 | Put a headline of 3–5 words, large and high-contrast, on the very first frame | prior (craft) | Hook lab 1: the only variant with a frame-1 headline won 3/3 judges; the 4.8M-view reference also opens with one |
 | P7 | Brightening the first frame alone does nothing; motion alone does little | prior (craft) | Hook lab 1: bright-only ranked last (3 pts), strike-at-0 mid (11) |
 | P8 | Plan stories as 2–3 labelled parts; end each on a hook for the next; after a hit, post the follow-up next | evidenced (correlational) | F5: rho +0.17 between consecutive reels, p = 0.0004, 11/13 creators. F7: series-labelled reels 2.6x, p = 0.0016, 6/7 creators |
-| P9 | Judge verdicts are craft opinions, not view predictions | calibration | Blind judges picked the real hit from the first 3 s in 64–68% of 25 pairs (chance 50%) |
+| P9 | Judge verdicts are craft opinions, not view predictions | calibration (2 runs) | Blind judges picked the real hit from the first 3 s in 59% of 118 judgments (first run 64–68%, second 53–56%; chance 50%), with a bias toward whichever clip is shown as "A" |
 | P10 | Open on stakes with a concrete number and a contrast ("5,000 men failed. One prince."), not a bare fact, a question, or generic clickbait ("nobody told you this") | prior (craft) | Hook lab 2: both stakes variants ranked 1–2 of 8; generic clickbait 7th; plain number 8th; all 3 judges picked the stakes line as the strongest words |
 | P11 | Put the headline over one strong focal image (glowing bow, sun), fully inside the frame from frame 1 | prior (craft) | Hook lab 2 judge fixes (3/3) |
 | P12 | Hashtag count does not matter | null (interim, 324 reels) | F6: rho +0.06, p = 0.38 |
