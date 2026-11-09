@@ -32,7 +32,7 @@ const LayerView: React.FC<{ l: Layer; p: Palette; sceneFrames: number; svg: bool
   if (e === "fade") op *= kin; if (e === "pop") { s *= kin; op *= Math.min(1, t / 3); } if (e === "rise") { y += (1 - kin) * 160; op *= kin; } if (e === "drop") { y -= (1 - kin) * 400; op *= Math.min(1, t / 3); }
   if (e === "slide_l") { x -= (1 - kin) * 900; } if (e === "slide_r") { x += (1 - kin) * 900; }
   const color = l.color ?? p.fg, color2 = l.color2 ?? p.accent;
-  if (isText) return <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: `rotate(${rot}deg) scale(${s})` }}><BigText t={t} text={l.text} color={color} glow={l.glow} size={l.size} style={l.font} enter={l.textEnter ?? "slam"} count={l.count} width={l.width} sub={l.sub} panel={l.panel} /></div>;
+  if (isText) return <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: `rotate(${rot}deg) scale(${s})` }}><BigText t={t} text={l.text} color={color} glow={l.glow} size={l.size} style={l.font} enter={l.textEnter ?? "slam"} count={l.count} width={Math.min(l.width ?? 920, 940)} sub={l.sub} panel={l.panel} /></div>;
   const tr = `translate(${x} ${y}) rotate(${rot}) scale(${s})`;
   // absolute-space glow primitives take frames relative to the scene, so shift by `a`
   if (l.kind === "trail") return <g opacity={op}><GlowTrail {...(l as any)} cx={l.x ?? 540} cy={l.y ?? 900} from={a + (l.from ?? 0) * fps} to={a + (l.to ?? 1.5) * fps} fadeOutAt={l.fadeAt === undefined ? undefined : a + l.fadeAt * fps} color={l.color ?? p.accent} /></g>;
@@ -50,7 +50,7 @@ const SceneView: React.FC<{ sc: Scene; p: Palette; frames: number }> = ({ sc, p,
   const f = useCurrentFrame(); const c = sc.cam ?? {}; const k = prog(f, 0, frames, easeIO);
   const z = interpolate(k, [0, 1], [c.z0 ?? 1.0, c.z1 ?? 1.06]), cx = interpolate(k, [0, 1], [c.x0 ?? 0, c.x1 ?? 0]), cy = interpolate(k, [0, 1], [c.y0 ?? 0, c.y1 ?? 0]);
   let sx = 0, sy = 0; if (c.shakeAt !== undefined) { const st = f - c.shakeAt * 30; if (st >= 0 && st < 22) { const amp = (c.shake ?? 26) * (1 - st / 22); sx = amp * noise(f * 1.7, 1); sy = amp * noise(f * 1.9, 2); } }
-  const tr = sc.trans ?? "cut"; const tin = tr === "fade" ? prog(f, 0, 9) : 1; const punch = tr === "punch" ? 1 + 0.18 * (1 - prog(f, 0, 7)) : 1;
+  const tr = sc.trans ?? "cut"; const tin = tr === "fade" ? 0.4 + 0.6 * prog(f, 0, 6) : 1; const punch = tr === "punch" ? 1 + 0.18 * (1 - prog(f, 0, 7)) : 1;
   const bg = sc.bg ?? {}; const layers = sc.layers ?? [];
   return (
     <AbsoluteFill style={{ opacity: tin, background: p.bg }}>

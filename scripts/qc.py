@@ -32,6 +32,12 @@ def main():
     checks["visual_change_by_3s"] = first_change <= 3.0
     f0 = frame_gray(v, 0.05); nums["first_frame_luma"] = round(float(f0.mean()), 3) if f0 is not None else None
     checks["first_frame_not_black"] = f0 is not None and f0.mean() >= 0.06 and (f0 > 0.5).mean() >= 0.004
+    # no near-black seconds anywhere (judges read them as dead air)
+    dark = []
+    for sec in range(0, int(d)):
+        g = frame_gray(v, sec + 0.5, 54, 96)
+        if g is not None and (g.mean() < 0.035 or (g > 0.35).mean() < 0.003): dark.append(sec)
+    nums["dark_seconds"] = dark[:12]; checks["no_dark_seconds"] = len(dark) == 0
     if words:
         nums["first_word_s"] = words[0]["s"]; checks["first_word_by_1.5s"] = words[0]["s"] <= 1.5
         speech = sum(w["e"] - w["s"] for w in words); span = words[-1]["e"] - words[0]["s"]

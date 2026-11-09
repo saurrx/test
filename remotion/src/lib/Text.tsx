@@ -37,7 +37,7 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
         const col = w.emph || (pop && active) ? p.accent : p.fg;
         return (
           <span key={i} style={{ display: "inline-block", margin: pop ? "0 14px" : "0 10px", color: col,
-            opacity: said ? 1 : 0, transform: pop ? `scale(${said ? 0.6 + 0.4 * k : 0.6}) rotate(${said ? (1 - k) * (i % 2 ? 4 : -4) : 0}deg)` : `translateY(${said ? (1 - k) * 10 : 10}px)`,
+            opacity: said ? 1 : 0.55, transform: pop ? `scale(${said ? 0.88 + 0.12 * k : 0.88})` : `translateY(${said ? (1 - k) * 6 : 0}px)`,
             textShadow: pop ? `0 6px 0 rgba(0,0,0,.55), 0 0 28px rgba(0,0,0,.8)${w.emph || active ? `, 0 0 34px ${p.accent}` : ""}` : `0 0 22px rgba(0,0,0,.95), 0 2px 6px rgba(0,0,0,.9)${w.emph ? `, 0 0 26px ${p.accent}` : ""}`,
             WebkitTextStroke: pop ? "2px rgba(0,0,0,.35)" : undefined }}>{w.w}</span>
         );
@@ -49,13 +49,13 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
 
 // Big on-screen text / numbers used inside scenes.
 export const BigText: React.FC<{ t: number; text: string; color: string; glow?: string; size?: number; style?: "serif" | "pop" | "clean"; enter?: string; count?: [number, number, number]; width?: number; sub?: string; panel?: boolean }> =
-  ({ t, text, color, glow, size = 150, style = "pop", enter = "slam", count, width = 960, sub, panel }) => {
+  ({ t, text, color, glow, size = 150, style = "pop", enter = "slam", count, width = 920, sub, panel }) => {
     const { fps } = useVideoConfig();
     const k = spring({ frame: t, fps, config: { damping: enter === "slam" ? 11 : 16, stiffness: enter === "slam" ? 260 : 140, mass: 0.7 } });
     let shown = text;
     if (count) { const v = Math.round(interpolate(t, [0, count[2]], [count[0], count[1]], { ...clamp, easing: (x) => 1 - Math.pow(1 - x, 3) })); shown = text.replace("#", v.toLocaleString("en-IN")); }
     if (enter === "type") shown = shown.slice(0, Math.floor(shown.length * prog(t, 0, Math.max(8, shown.length * 1.4), (x) => x)));
-    const sc = enter === "slam" ? 1.45 - 0.45 * k : enter === "pop" ? 0.5 + 0.5 * k : 1;
+    const sc = enter === "slam" ? 1.18 - 0.18 * k : enter === "pop" ? 0.5 + 0.5 * k : 1;
     return (
       <div style={{ width, marginLeft: -width / 2, textAlign: "center", transform: `translateY(-50%) scale(${sc})`, opacity: enter === "fade" ? prog(t, 0, 14) : Math.min(1, t / 3) }}>
         <div style={{ fontFamily: fontFor(style, shown), fontSize: size, lineHeight: 1.05, fontWeight: 800, color, textTransform: "uppercase", letterSpacing: style === "serif" ? 6 : 1,
