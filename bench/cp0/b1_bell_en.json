@@ -1,0 +1,490 @@
+{
+ "palette": "glow",
+ "captions": {
+  "style": "serif",
+  "words": [
+   {
+    "s": 0.096,
+    "e": 0.351,
+    "w": "You've"
+   },
+   {
+    "s": 0.351,
+    "e": 0.652,
+    "w": "been"
+   },
+   {
+    "s": 0.652,
+    "e": 1.011,
+    "w": "ringing"
+   },
+   {
+    "s": 1.011,
+    "e": 1.115,
+    "w": "the"
+   },
+   {
+    "s": 1.115,
+    "e": 1.555,
+    "w": "temple"
+   },
+   {
+    "s": 1.555,
+    "e": 1.798,
+    "w": "bell",
+    "emph": true
+   },
+   {
+    "s": 1.798,
+    "e": 2.18,
+    "w": "wrong.",
+    "emph": true
+   },
+   {
+    "s": 3.044,
+    "e": 3.137,
+    "w": "It"
+   },
+   {
+    "s": 3.148,
+    "e": 3.299,
+    "w": "is"
+   },
+   {
+    "s": 3.299,
+    "e": 3.576,
+    "w": "not"
+   },
+   {
+    "s": 3.576,
+    "e": 3.681,
+    "w": "to"
+   },
+   {
+    "s": 3.681,
+    "e": 3.97,
+    "w": "wake"
+   },
+   {
+    "s": 3.97,
+    "e": 4.109,
+    "w": "the"
+   },
+   {
+    "s": 4.109,
+    "e": 4.491,
+    "w": "god."
+   },
+   {
+    "s": 5.324,
+    "e": 5.417,
+    "w": "It"
+   },
+   {
+    "s": 5.44,
+    "e": 5.59,
+    "w": "is"
+   },
+   {
+    "s": 5.59,
+    "e": 5.718,
+    "w": "to"
+   },
+   {
+    "s": 5.718,
+    "e": 5.995,
+    "w": "wake"
+   },
+   {
+    "s": 6.007,
+    "e": 6.25,
+    "w": "you.",
+    "emph": true
+   },
+   {
+    "s": 7.118,
+    "e": 7.373,
+    "w": "One"
+   },
+   {
+    "s": 7.419,
+    "e": 7.778,
+    "w": "clear"
+   },
+   {
+    "s": 7.778,
+    "e": 8.264,
+    "w": "strike."
+   },
+   {
+    "s": 9.109,
+    "e": 9.595,
+    "w": "Tradition"
+   },
+   {
+    "s": 9.595,
+    "e": 9.965,
+    "w": "says"
+   },
+   {
+    "s": 9.977,
+    "e": 10.139,
+    "w": "the"
+   },
+   {
+    "s": 10.197,
+    "e": 10.498,
+    "w": "echo"
+   },
+   {
+    "s": 10.498,
+    "e": 10.995,
+    "w": "lasts"
+   },
+   {
+    "s": 11.042,
+    "e": 11.424,
+    "w": "seven",
+    "emph": true
+   },
+   {
+    "s": 11.424,
+    "e": 11.933,
+    "w": "seconds."
+   },
+   {
+    "s": 12.732,
+    "e": 12.986,
+    "w": "One"
+   },
+   {
+    "s": 12.986,
+    "e": 13.275,
+    "w": "for"
+   },
+   {
+    "s": 13.368,
+    "e": 13.623,
+    "w": "each"
+   },
+   {
+    "s": 13.634,
+    "e": 13.993,
+    "w": "chakra."
+   },
+   {
+    "s": 14.78,
+    "e": 14.965,
+    "w": "So"
+   },
+   {
+    "s": 15.0,
+    "e": 15.532,
+    "w": "tomorrow,"
+   },
+   {
+    "s": 15.741,
+    "e": 16.018,
+    "w": "ring"
+   },
+   {
+    "s": 16.018,
+    "e": 16.157,
+    "w": "it"
+   },
+   {
+    "s": 16.157,
+    "e": 16.609,
+    "w": "once.",
+    "emph": true
+   },
+   {
+    "s": 17.431,
+    "e": 17.627,
+    "w": "And"
+   },
+   {
+    "s": 17.627,
+    "e": 18.032,
+    "w": "stand"
+   },
+   {
+    "s": 18.032,
+    "e": 18.495,
+    "w": "still,"
+   },
+   {
+    "s": 18.704,
+    "e": 18.889,
+    "w": "till"
+   },
+   {
+    "s": 18.912,
+    "e": 19.039,
+    "w": "it"
+   },
+   {
+    "s": 19.039,
+    "e": 19.514,
+    "w": "fades."
+   }
+  ],
+  "y": 1330
+ },
+ "audio": {
+  "vo": "audio/b1_bell_en.mp3",
+  "music": "audio/bed_drone.mp3",
+  "musicVol": 0.16,
+  "sfx": [
+   {
+    "src": "audio/sfx_bell.mp3",
+    "at": 0.0,
+    "vol": 0.5
+   },
+   {
+    "src": "audio/sfx_bell_low.mp3",
+    "at": 7.7,
+    "vol": 0.9
+   },
+   {
+    "src": "audio/sfx_bell_low.mp3",
+    "at": 16.2,
+    "vol": 0.8
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 2
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.15,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "bell",
+     "x": 540,
+     "y": 760,
+     "s": 1.25,
+     "color": "#1a0f08",
+     "color2": "#ffb648",
+     "swing": 22,
+     "speed": 3.2,
+     "enter": "none"
+    },
+    {
+     "kind": "cross",
+     "x": 540,
+     "y": 800,
+     "color": "#ff3b30",
+     "size": 230,
+     "at": 1.5,
+     "enter": "none",
+     "opacity": 0.9
+    }
+   ],
+   "dur": 3.0
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "temple",
+    "idol": "murti",
+    "lamps": 2,
+    "glow": 0.6
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.1
+   },
+   "layers": [],
+   "dur": 2.3
+  },
+  {
+   "trans": "flash",
+   "bg": {
+    "kind": "radial",
+    "cy": 42
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.12
+   },
+   "layers": [
+    {
+     "kind": "yantra",
+     "x": 540,
+     "y": 800,
+     "r": 400,
+     "draw": 1.2
+    },
+    {
+     "kind": "figure",
+     "x": 540,
+     "y": 930,
+     "s": 4.2,
+     "pose": "pray",
+     "color": "#fff4dc",
+     "enter": "rise"
+    }
+   ],
+   "dur": 1.8
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 2
+   },
+   "cam": {
+    "z0": 1.25,
+    "z1": 1.3,
+    "shakeAt": 0.65,
+    "shake": 18
+   },
+   "layers": [
+    {
+     "kind": "bell",
+     "x": 540,
+     "y": 800,
+     "s": 1.5,
+     "color": "#1a0f08",
+     "color2": "#ffb648",
+     "swing": 2,
+     "strikeAt": 18,
+     "enter": "none"
+    },
+    {
+     "kind": "rings",
+     "x": 540,
+     "y": 1010,
+     "color": "#ffb648",
+     "at": 0.65,
+     "count": 5,
+     "max": 1000
+    }
+   ],
+   "dur": 2.0
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "radial",
+    "cy": 50
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.08
+   },
+   "layers": [
+    {
+     "kind": "figure",
+     "x": 400,
+     "y": 1150,
+     "s": 5.0,
+     "pose": "pray",
+     "color": "#2a1a10",
+     "enter": "fade"
+    },
+    {
+     "kind": "chakras",
+     "x": 400,
+     "y": 1260,
+     "at": 1.6,
+     "every": 14,
+     "gap": 96,
+     "r": 24,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "#",
+     "count": [
+      1,
+      7,
+      110
+     ],
+     "x": 800,
+     "y": 800,
+     "size": 380,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": "#ffb648",
+     "at": 1.6,
+     "textEnter": "pop"
+    },
+    {
+     "kind": "rings",
+     "x": 400,
+     "y": 900,
+     "color": "#ffb648",
+     "at": 0.2,
+     "count": 7,
+     "every": 22,
+     "max": 900,
+     "width": 8
+    }
+   ],
+   "dur": 5.7
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 3
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.1,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "bell",
+     "x": 540,
+     "y": 760,
+     "s": 1.25,
+     "color": "#1a0f08",
+     "color2": "#ffb648",
+     "swing": 1,
+     "strikeAt": 42,
+     "enter": "none"
+    },
+    {
+     "kind": "rings",
+     "x": 540,
+     "y": 950,
+     "color": "#ffb648",
+     "at": 1.45,
+     "count": 3,
+     "every": 30,
+     "max": 1100,
+     "width": 10
+    },
+    {
+     "kind": "text",
+     "text": "ONCE",
+     "x": 540,
+     "y": 1560,
+     "size": 120,
+     "font": "serif",
+     "color": "#ffb648",
+     "at": 1.4,
+     "textEnter": "fade",
+     "opacity": 0.0
+    }
+   ],
+   "dur": 5.6
+  }
+ ]
+}

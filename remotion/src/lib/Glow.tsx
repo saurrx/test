@@ -64,9 +64,9 @@ export const glowStroke = (d: string, color: string, w: number, k = 1) => (
 );
 
 // Oil-lamp flame with flicker and a breathing halo.
-export const Flame: React.FC<{ x: number; y: number; s?: number; color?: string; seed?: number }> = ({ x, y, s = 1, color = "#ffb648", seed = 1 }) => {
+export const Flame: React.FC<{ x: number; y: number; s?: number; color?: string; seed?: number; lean?: number }> = ({ x, y, s = 1, color = "#ffb648", seed = 1, lean = 0 }) => {
   const f = useCurrentFrame();
-  const k = 1 + 0.12 * noise(f / 2.5, seed), sway = 5 * noise(f / 6, seed + 3) * s, h = 70 * s * k, w = 22 * s;
+  const k = 1 + 0.12 * noise(f / 2.5, seed), sway = (5 * noise(f / 6, seed + 3) + lean) * s, h = 70 * s * k, w = 22 * s;
   const d = `M ${x - w} ${y} C ${x - w} ${y - h * 0.5}, ${x + sway - 4} ${y - h * 0.7}, ${x + sway} ${y - h} C ${x + sway + 4} ${y - h * 0.7}, ${x + w} ${y - h * 0.5}, ${x + w} ${y} C ${x + w} ${y + w * 0.9}, ${x - w} ${y + w * 0.9}, ${x - w} ${y} Z`;
   return (
     <g>
@@ -78,11 +78,11 @@ export const Flame: React.FC<{ x: number; y: number; s?: number; color?: string;
   );
 };
 
-export const Diya: React.FC<{ x: number; y: number; s?: number; color?: string; seed?: number; metal?: string }> = ({ x, y, s = 1, color, seed, metal = "#8a5a1c" }) => (
+export const Diya: React.FC<{ x: number; y: number; s?: number; color?: string; seed?: number; metal?: string; lean?: number }> = ({ x, y, s = 1, color, seed, metal = "#8a5a1c", lean }) => (
   <g>
     <path d={`M ${x - 46 * s} ${y} Q ${x} ${y + 44 * s} ${x + 46 * s} ${y} L ${x + 58 * s} ${y - 6 * s} Q ${x} ${y + 10 * s} ${x - 46 * s} ${y} Z`} fill={metal} />
     <rect x={x - 12 * s} y={y + 20 * s} width={24 * s} height={10 * s} fill={metal} />
-    <Flame x={x + 4 * s} y={y - 4 * s} s={s} color={color} seed={seed} />
+    <Flame x={x + 4 * s} y={y - 4 * s} s={s} color={color} seed={seed} lean={lean} />
   </g>
 );
 

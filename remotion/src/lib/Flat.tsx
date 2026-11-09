@@ -117,4 +117,33 @@ export const Birds: React.FC<SP> = ({ t, color, count = 7 }) => (<g>{Array.from(
 // Madhubani/Warli-style border band of triangles and dots.
 export const Border: React.FC<SP> = ({ t, color, w = 1080, n = 18 }) => (<g>{Array.from({ length: n }).map((_, i) => { const x = -w / 2 + ((i + 0.5) * w) / n, k = prog(t, i, i + 8); return <g key={i} opacity={k} transform={`translate(${x} 0) scale(${k})`}><path d="M-22 18 L0 -22 L22 18 Z" fill="none" stroke={color} strokeWidth={5} /><circle cy={34} r={5} fill={color} /></g>; })}<line x1={-w / 2} x2={w / 2} y1={50} y2={50} stroke={color} strokeWidth={5} /><line x1={-w / 2} x2={w / 2} y1={-34} y2={-34} stroke={color} strokeWidth={5} /></g>);
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border };
+// Temple bell: swings on its hook; `strikeAt` (frames) gives one hard swing. Dark body with a warm rim.
+export const Bell: React.FC<SP> = ({ t, color, color2, swing = 10, speed = 7, strikeAt }) => {
+  let a = swing * Math.sin(t / speed);
+  if (strikeAt !== undefined && t >= strikeAt) a += 24 * Math.exp(-(t - strikeAt) / 18) * Math.cos((t - strikeAt) / 3.2);
+  return (
+    <g>
+      <line x1={0} y1={-420} x2={0} y2={-250} stroke={color} strokeWidth={10} />
+      <g transform={`rotate(${a} 0 -250)`}>
+        <Halo cx={0} cy={0} r={420} color={color2} opacity={0.35} />
+        <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L210 150 L170 60 Q150 -120 70 -190 Q40 -210 40 -250 Z" fill={color} stroke={color2} strokeWidth={6} />
+        <path d="M-196 120 L196 120" stroke={color2} strokeWidth={7} opacity={0.8} /><path d="M-150 20 L150 20" stroke={color2} strokeWidth={4} opacity={0.5} />
+        <g transform={`rotate(${-a * 1.6} 0 100)`}><line x1={0} y1={100} x2={0} y2={190} stroke={color2} strokeWidth={8} /><circle cx={0} cy={200} r={26} fill={color2} /></g>
+      </g>
+    </g>
+  );
+};
+// Seven points of light up a vertical line, lighting one by one (every `every` frames).
+export const Chakras: React.FC<SP> = ({ t, every = 12, gap = 120, r = 30 }) => {
+  const cols = ["#ff3b30", "#ff8a1f", "#ffd60a", "#34c759", "#32ade6", "#5856d6", "#c77dff"];
+  return <g>{cols.map((c, i) => { const k = prog(t, i * every, i * every + 8); return k > 0 ? <g key={i} opacity={k}><Halo cx={0} cy={-i * gap} r={r * 4.5 * (0.7 + 0.3 * k)} color={c} opacity={0.8} /><circle cx={0} cy={-i * gap} r={r * k} fill={c} /><circle cx={0} cy={-i * gap} r={r * 0.4 * k} fill="#fff" /></g> : null; })}</g>;
+};
+export const Cross: React.FC<SP> = ({ t, color, size = 200, width = 44 }) => { const k = prog(t, 0, 7); const k2 = prog(t, 4, 11); return (
+  <g strokeLinecap="round" stroke={color} strokeWidth={width}><line x1={-size} y1={-size} x2={-size + 2 * size * k} y2={-size + 2 * size * k} />{k2 > 0 && <line x1={size} y1={-size} x2={size - 2 * size * k2} y2={-size + 2 * size * k2} />}</g>); };
+export const Coins: React.FC<SP> = ({ t, color, count = 14, spread = 500, fall = 700 }) => (
+  <g>{Array.from({ length: count }).map((_, i) => { const st = i * 2.2, k = prog(t, st, st + 26, (x) => x * x); return k > 0 ? <g key={i} transform={`translate(${(rnd(i, 3) - 0.5) * spread} ${-fall + fall * k})`}><ellipse rx={36} ry={36 * Math.abs(Math.cos(t / 5 + i))} fill={color} stroke="#7a4b00" strokeWidth={5} /></g> : null; })}</g>);
+// Compass pointer: a glowing needle that swings to `angle` degrees (0 = up, 90 = right).
+export const Needle: React.FC<SP> = ({ t, color, color2, angle = 0, from = 0, len = 330 }) => { const a = from + (angle - from) * prog(t, 0, 16) + 3 * Math.sin(t / 4) * (1 - prog(t, 16, 40)); return (
+  <g transform={`rotate(${a})`}><path d={`M0 ${-len} L26 0 L0 40 L-26 0 Z`} fill={color2} /><Halo cx={0} cy={-len} r={90} color={color2} opacity={0.8} /><circle r={16} fill={color} /></g>); };
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle };

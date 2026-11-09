@@ -4,14 +4,16 @@
   voice.py align <audio> <out_base> <lang> "<text>"   any audio + its script -> <out_base>.words.json (whisper word times
                                                       mapped back onto the exact script words)
 Words JSON: [{"s": sec, "e": sec, "w": "word"}], plus a trailing-silence-trimmed duration printed to stdout.
-Emphasis: wrap a word in *stars* in the text; it is spoken normally and marked "emph": true."""
+Emphasis: wrap a word in *stars*; it is spoken normally and marked "emph": true.
+Transliteration: write spoken|SHOWN (e.g. पाँच|PAANCH) to speak one form and caption another."""
 import asyncio, difflib, json, re, subprocess, sys
 
 def split_script(text):
     toks = []
     for raw in text.split():
-        emph = raw.startswith("*") or raw.endswith("*") or "*" in raw
-        toks.append({"w": raw.replace("*", ""), "emph": emph})
+        emph = "*" in raw; raw = raw.replace("*", "")
+        spoken, _, disp = raw.partition("|")  # "पाँच|PAANCH": speak the left side, show the right side
+        toks.append({"w": disp or spoken, "say": spoken, "emph": emph})
     return toks
 
 def norm(w): return re.sub(r"[^\wऀ-ॿ]", "", w.lower())
@@ -22,7 +24,7 @@ def duration(path):
 
 def map_times(script, timed):
     """timed: [(s, e, word)] from TTS boundaries or whisper. Map onto script tokens; interpolate where unmatched."""
-    a = [norm(t["w"]) for t in script]; b = [norm(w) for _, _, w in timed]
+    a = [norm(t["say"]) for t in script]; b = [norm(w) for _, _, w in timed]
     out = [None] * len(script)
     for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
         if tag == "equal":
@@ -45,7 +47,7 @@ def map_times(script, timed):
 
 async def tts(out, voice, rate, text):
     import edge_tts
-    script = split_script(text); plain = " ".join(t["w"] for t in script)
+    script = split_script(text); plain = " ".join(t["say"] for t in script)
     com = edge_tts.Communicate(plain, voice, rate=rate, boundary="WordBoundary")
     timed = []
     with open(out + ".mp3", "wb") as f:

@@ -1,0 +1,50 @@
+{
+ "P01": {
+  "hit": "A",
+  "handle": "anchorlinedigital",
+  "hit_code": "DfCTMOFDrgx",
+  "flop_code": "Dd93qiUzCKG",
+  "hit_ratio": 414.4,
+  "flop_ratio": 0.19
+ },
+ "P02": {
+  "hit": "B",
+  "handle": "anim_aman",
+  "hit_code": "DfOiMdsRMFM",
+  "flop_code": "DfMiKRxxBGa",
+  "hit_ratio": 1237.5,
+  "flop_ratio": 0.56
+ },
+ "P03": {
+  "hit": "A",
+  "handle": "artandartists_ai",
+  "hit_code": "DeweiEayJ0G",
+  "flop_code": "DecY5x7khRO",
+  "hit_ratio": 2477.6,
+  "flop_ratio": 0.14
+ },
+ "P04": {
+  "hit": "B",
+  "handle": "astro_zova",
+  "hit_code": "DfKOKAKRk2d",
+  "flop_code": "DfGcS2bRTV8",
+  "hit_ratio": 89.6,
+  "flop_ratio": 0.43
+ },
+ "P05": {
+  "hit": "B",
+  "handle": "dayzero.story",
+  "hit_code": "DfB24tJN8dG",
+  "flop_code": "De_esygN5l4",
+  "hit_ratio": 123.6,
+  "flop_ratio": 0.01
+ },
+ "P06": {
+  "hit": "B",
+  "handle": "devanshu.motion",
+  "hit_code": "DelhST6SPPT",
+  "flop_code": "De5c4KFS3z8",
+  "hit_ratio": 18.8,
+  "flop_ratio": 0.09
+ }
+}
