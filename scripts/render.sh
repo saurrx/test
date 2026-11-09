@@ -11,7 +11,7 @@ rsync -az -e "$SSH" makes gamer@arch:reels-loop/repo/ --exclude '*.mp4'
 [ $MODE = draft ] && Q="--scale=0.5 --jpeg-quality=70 --crf=26" || Q="--crf=18"
 CMD='cd ~/reels-loop/repo/remotion && mkdir -p ../renders && rm -rf build && npx remotion bundle src/index.ts --out-dir build >/dev/null 2>&1 || { echo BUNDLE_FAILED; npx remotion bundle src/index.ts --out-dir build 2>&1 | tail -15; exit 1; }; '
 i=0; while [ $i -lt ${#ARGS[@]} ]; do P=${ARGS[$i]}; N=${ARGS[$((i+1))]}; i=$((i+2))
-  CMD+="( npx remotion render build Reel ../renders/$N.mp4 --props=../$P $Q --gl=swangle --concurrency=4 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing >../renders/$N.log 2>&1 && ffmpeg -y -v error -i ../renders/$N.mp4 -vf 'fps=2,scale=180:-2,tile=10x2' -frames:v 1 ../renders/$N.sheet.jpg && echo OK $N || { echo FAIL $N; tail -6 ../renders/$N.log; } ) & "
+  CMD+="( npx remotion render build Reel ../renders/$N.mp4 --props=../$P $Q --gl=swangle --concurrency=6 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing >../renders/$N.log 2>&1 && ffmpeg -y -v error -i ../renders/$N.mp4 -vf 'fps=2,scale=180:-2,tile=10x2' -frames:v 1 ../renders/$N.sheet.jpg && echo OK $N || { echo FAIL $N; tail -6 ../renders/$N.log; } ) & "
   [ $((i % 8)) = 0 ] && CMD+="wait; "
 done
 CMD+="wait"

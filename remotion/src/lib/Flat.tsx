@@ -1,5 +1,6 @@
 import React from "react";
 import { noise, prog, rnd } from "./util";
+import { Halo } from "./Glow";
 
 // All shapes draw around (0,0) in their own space; Layer positions and scales them. `t` = frames since the layer appeared.
 type SP = { t: number; color: string; color2: string; [k: string]: any };
@@ -62,7 +63,7 @@ export const Bow: React.FC<SP> = ({ t, color, color2, draw = 0, breakAt, glow = 
   );
   return (
     <g>
-      {glow && <ellipse cx={-40} cy={0} rx={200} ry={460} fill={color2} opacity={0.18 + 0.5 * b} filter="url(#blurL)" />}
+      {glow && <Halo cx={-40} cy={0} r={320} ry={640} color={color2} opacity={0.35 + 0.6 * b} />}
       {half(-1)}{half(1)}
       {b > 0 && b < 1 && <circle cx={0} cy={0} r={320 * b} fill="none" stroke="#fff" strokeWidth={30 * (1 - b)} />}
     </g>
@@ -85,9 +86,9 @@ export const Hills: React.FC<SP> = ({ color, seed = 1, amp = 120, w = 1400 }) =>
 };
 export const Mountain: React.FC<SP> = ({ color, color2 }) => (<g><path d="M-420 300 L-60 -420 L40 -260 L140 -380 L460 300 Z" fill={color} /><path d="M-60 -420 L-130 -280 L-40 -320 L10 -250 L40 -260 Z" fill={color2} opacity={0.9} /></g>);
 export const Sun: React.FC<SP> = ({ t, color, r = 150, rays = true }) => (
-  <g><circle r={r * 2.4} fill={color} opacity={0.25} filter="url(#blurL)" /><circle r={r} fill={color} />
+  <g><Halo cx={0} cy={0} r={r * 3.4} color={color} opacity={0.55} /><circle r={r} fill={color} />
     {rays && Array.from({ length: 16 }).map((_, i) => <line key={i} x1={r + 24} x2={r + 60 + 14 * Math.sin(t / 8 + i)} y1={0} y2={0} stroke={color} strokeWidth={9} strokeLinecap="round" transform={`rotate(${i * 22.5 + t * 0.3})`} />)}</g>);
-export const Moon: React.FC<SP> = ({ color, color2, r = 110 }) => (<g><circle r={r * 2.2} fill={color} opacity={0.2} filter="url(#blurL)" /><circle r={r} fill={color} /><circle cx={r * 0.4} cy={-r * 0.2} r={r * 0.9} fill={color2} /></g>);
+export const Moon: React.FC<SP> = ({ color, color2, r = 110 }) => (<g><Halo cx={0} cy={0} r={r * 3.2} color={color} opacity={0.45} /><circle r={r} fill={color} /><circle cx={r * 0.4} cy={-r * 0.2} r={r * 0.9} fill={color2} /></g>);
 export const Palace: React.FC<SP> = ({ color, color2 }) => (
   <g>
     <rect x={-380} y={-200} width={760} height={420} fill={color} />
@@ -100,14 +101,14 @@ export const Tree: React.FC<SP> = ({ t, color, seed = 1 }) => (
   <g><path d="M-14 200 L-8 0 L8 0 L14 200 Z" fill={color} />{Array.from({ length: 9 }).map((_, i) => { const a = -Math.PI + (i / 8) * Math.PI, sway = 3 * Math.sin(t / 20 + i + seed); return <g key={i}><line x1={0} y1={0} x2={150 * Math.cos(a)} y2={150 * Math.sin(a) + sway} stroke={color} strokeWidth={6} /><circle cx={150 * Math.cos(a)} cy={150 * Math.sin(a) + sway} r={34} fill={color} /></g>; })}<circle r={90} cy={-50} fill={color} /></g>);
 export const Bolt: React.FC<SP> = ({ t, color, seed = 1, len = 900 }) => {
   const on = (Math.floor(t / 3) % 3) !== 2 || t < 6; let d = "M0 0", x = 0; for (let i = 1; i <= 9; i++) { x += (rnd(i, seed, Math.floor(t / 4)) - 0.5) * 190; d += ` L${x} ${(i * len) / 9}`; }
-  return on ? <g><path d={d} fill="none" stroke={color} strokeWidth={50} opacity={0.35} filter="url(#blurL)" /><path d={d} fill="none" stroke="#fff" strokeWidth={9} strokeLinejoin="bevel" /></g> : null;
+  return on ? <g><path d={d} fill="none" stroke={color} strokeWidth={90} opacity={0.08} /><path d={d} fill="none" stroke={color} strokeWidth={44} opacity={0.18} /><path d={d} fill="none" stroke={color} strokeWidth={22} opacity={0.4} /><path d={d} fill="none" stroke="#fff" strokeWidth={9} strokeLinejoin="bevel" /></g> : null;
 };
 export const Rings: React.FC<SP> = ({ t, color, count = 4, max = 900, every = 9, width = 14 }) => (
   <g>{Array.from({ length: count }).map((_, i) => { const k = prog(t, i * every, i * every + 28); return k > 0 && k < 1 ? <circle key={i} r={max * k} fill="none" stroke={color} strokeWidth={width * (1 - k)} opacity={1 - k} /> : null; })}</g>);
 export const Fire: React.FC<SP> = ({ t, color, color2, w = 300, h = 380 }) => (
   <g>{Array.from({ length: 9 }).map((_, i) => { const x = (i / 8 - 0.5) * w, hh = h * (0.45 + 0.55 * Math.abs(noise(t / 4 + i * 1.7, i))) * (1 - Math.abs(i / 8 - 0.5) * 0.9);
     return <path key={i} d={`M${x - 40} 0 Q${x - 30 + 20 * noise(t / 5, i)} ${-hh * 0.6} ${x + 14 * noise(t / 3, i + 9)} ${-hh} Q${x + 34} ${-hh * 0.5} ${x + 40} 0 Z`} fill={i % 2 ? color : color2} opacity={0.9} />; })}
-    <ellipse rx={w} ry={h * 0.8} cy={-h * 0.3} fill={color} opacity={0.25} filter="url(#blurXL)" /></g>);
+    <Halo cx={0} cy={-h * 0.3} r={w * 1.6} ry={h * 1.4} color={color} opacity={0.5} /></g>);
 export const River: React.FC<SP> = ({ t, color, w = 1300, rows = 5 }) => (
   <g>{Array.from({ length: rows }).map((_, r) => { let d = ""; for (let i = 0; i <= 26; i++) { const x = -w / 2 + (i * w) / 26; d += `${i ? "L" : "M"}${x} ${r * 46 + 14 * Math.sin(i * 0.9 + t / 9 + r * 1.3)} `; } return <path key={r} d={d} fill="none" stroke={color} strokeWidth={7} strokeLinecap="round" opacity={0.9 - r * 0.13} />; })}</g>);
 export const Arrow: React.FC<SP> = ({ color, len = 420 }) => (<g><line x1={-len / 2} x2={len / 2} y1={0} y2={0} stroke={color} strokeWidth={9} strokeLinecap="round" /><path d={`M${len / 2 + 34} 0 L${len / 2 - 14} -22 L${len / 2 - 14} 22 Z`} fill={color} /><path d={`M${-len / 2} 0 l-34 -24 M${-len / 2 + 18} 0 l-34 -24 M${-len / 2} 0 l-34 24 M${-len / 2 + 18} 0 l-34 24`} stroke={color} strokeWidth={6} /></g>);

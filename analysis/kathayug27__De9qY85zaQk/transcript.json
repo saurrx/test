@@ -1,101 +1,837 @@
 {
  "language": "en",
- "language_prob": 0.989,
+ "detected_language": "en",
+ "language_prob": 0.999,
+ "word_count": 140,
+ "first_word_s": 0.0,
+ "speech_seconds": 48.0,
+ "wpm": 175,
  "segments": [
   {
    "start": 0.0,
-   "end": 2.0,
-   "text": "5,000 men."
+   "end": 1.52,
+   "text": "5,000 men.",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 0.5,
+     "w": "5"
+    },
+    {
+     "s": 0.5,
+     "e": 1.16,
+     "w": ",000"
+    },
+    {
+     "s": 1.16,
+     "e": 1.52,
+     "w": "men."
+    }
+   ]
   },
   {
-   "start": 2.0,
-   "end": 6.0,
-   "text": "That's how many it took just to pull the cart carrying one bow."
+   "start": 1.96,
+   "end": 5.54,
+   "text": "That's how many it took just to pull the cart carrying one bow.",
+   "words": [
+    {
+     "s": 1.96,
+     "e": 2.58,
+     "w": "That's"
+    },
+    {
+     "s": 2.58,
+     "e": 2.7,
+     "w": "how"
+    },
+    {
+     "s": 2.7,
+     "e": 2.9,
+     "w": "many"
+    },
+    {
+     "s": 2.9,
+     "e": 3.06,
+     "w": "it"
+    },
+    {
+     "s": 3.06,
+     "e": 3.3,
+     "w": "took"
+    },
+    {
+     "s": 3.3,
+     "e": 3.64,
+     "w": "just"
+    },
+    {
+     "s": 3.64,
+     "e": 3.78,
+     "w": "to"
+    },
+    {
+     "s": 3.78,
+     "e": 3.96,
+     "w": "pull"
+    },
+    {
+     "s": 3.96,
+     "e": 4.12,
+     "w": "the"
+    },
+    {
+     "s": 4.12,
+     "e": 4.38,
+     "w": "cart"
+    },
+    {
+     "s": 4.38,
+     "e": 4.8,
+     "w": "carrying"
+    },
+    {
+     "s": 4.8,
+     "e": 5.22,
+     "w": "one"
+    },
+    {
+     "s": 5.22,
+     "e": 5.54,
+     "w": "bow."
+    }
+   ]
   },
   {
-   "start": 6.0,
-   "end": 10.0,
-   "text": "This was Binaka, the bow of Mahadev himself."
+   "start": 5.92,
+   "end": 9.32,
+   "text": "This was Pinaka, the bow of Mahadev himself.",
+   "words": [
+    {
+     "s": 5.92,
+     "e": 6.54,
+     "w": "This"
+    },
+    {
+     "s": 6.54,
+     "e": 6.78,
+     "w": "was"
+    },
+    {
+     "s": 6.78,
+     "e": 7.24,
+     "w": "Pinaka,"
+    },
+    {
+     "s": 7.48,
+     "e": 7.86,
+     "w": "the"
+    },
+    {
+     "s": 7.86,
+     "e": 8.1,
+     "w": "bow"
+    },
+    {
+     "s": 8.1,
+     "e": 8.32,
+     "w": "of"
+    },
+    {
+     "s": 8.32,
+     "e": 8.84,
+     "w": "Mahadev"
+    },
+    {
+     "s": 8.84,
+     "e": 9.32,
+     "w": "himself."
+    }
+   ]
   },
   {
-   "start": 10.0,
-   "end": 14.0,
-   "text": "King Janaka of Mithila kept it in an iron chest on eight wheels,"
+   "start": 9.84,
+   "end": 13.88,
+   "text": "King Janaka of Mithila kept it in an iron chest on eight wheels,",
+   "words": [
+    {
+     "s": 9.84,
+     "e": 10.24,
+     "w": "King"
+    },
+    {
+     "s": 10.24,
+     "e": 10.66,
+     "w": "Janaka"
+    },
+    {
+     "s": 10.66,
+     "e": 10.9,
+     "w": "of"
+    },
+    {
+     "s": 10.9,
+     "e": 11.28,
+     "w": "Mithila"
+    },
+    {
+     "s": 11.28,
+     "e": 11.68,
+     "w": "kept"
+    },
+    {
+     "s": 11.68,
+     "e": 11.84,
+     "w": "it"
+    },
+    {
+     "s": 11.84,
+     "e": 12.02,
+     "w": "in"
+    },
+    {
+     "s": 12.02,
+     "e": 12.14,
+     "w": "an"
+    },
+    {
+     "s": 12.14,
+     "e": 12.48,
+     "w": "iron"
+    },
+    {
+     "s": 12.48,
+     "e": 12.9,
+     "w": "chest"
+    },
+    {
+     "s": 12.9,
+     "e": 13.16,
+     "w": "on"
+    },
+    {
+     "s": 13.16,
+     "e": 13.44,
+     "w": "eight"
+    },
+    {
+     "s": 13.44,
+     "e": 13.88,
+     "w": "wheels,"
+    }
+   ]
   },
   {
-   "start": 14.0,
-   "end": 16.0,
-   "text": "and he made a promise."
+   "start": 14.06,
+   "end": 15.08,
+   "text": "and he made a promise.",
+   "words": [
+    {
+     "s": 14.06,
+     "e": 14.32,
+     "w": "and"
+    },
+    {
+     "s": 14.32,
+     "e": 14.42,
+     "w": "he"
+    },
+    {
+     "s": 14.42,
+     "e": 14.58,
+     "w": "made"
+    },
+    {
+     "s": 14.58,
+     "e": 14.68,
+     "w": "a"
+    },
+    {
+     "s": 14.68,
+     "e": 15.08,
+     "w": "promise."
+    }
+   ]
   },
   {
-   "start": 16.0,
-   "end": 19.0,
-   "text": "Whoever could string this bow would marry his daughter, Sita."
+   "start": 15.32,
+   "end": 18.82,
+   "text": "Whoever could string this bow would marry his daughter, Sita.",
+   "words": [
+    {
+     "s": 15.32,
+     "e": 15.9,
+     "w": "Whoever"
+    },
+    {
+     "s": 15.9,
+     "e": 16.18,
+     "w": "could"
+    },
+    {
+     "s": 16.18,
+     "e": 16.48,
+     "w": "string"
+    },
+    {
+     "s": 16.48,
+     "e": 16.74,
+     "w": "this"
+    },
+    {
+     "s": 16.74,
+     "e": 17.06,
+     "w": "bow"
+    },
+    {
+     "s": 17.06,
+     "e": 17.42,
+     "w": "would"
+    },
+    {
+     "s": 17.42,
+     "e": 17.74,
+     "w": "marry"
+    },
+    {
+     "s": 17.74,
+     "e": 17.98,
+     "w": "his"
+    },
+    {
+     "s": 17.98,
+     "e": 18.32,
+     "w": "daughter,"
+    },
+    {
+     "s": 18.62,
+     "e": 18.82,
+     "w": "Sita."
+    }
+   ]
   },
   {
-   "start": 19.0,
-   "end": 22.0,
-   "text": "Kings came from every corner of the land."
+   "start": 19.4,
+   "end": 21.8,
+   "text": "Kings came from every corner of the land.",
+   "words": [
+    {
+     "s": 19.4,
+     "e": 19.78,
+     "w": "Kings"
+    },
+    {
+     "s": 19.78,
+     "e": 20.1,
+     "w": "came"
+    },
+    {
+     "s": 20.1,
+     "e": 20.38,
+     "w": "from"
+    },
+    {
+     "s": 20.38,
+     "e": 20.84,
+     "w": "every"
+    },
+    {
+     "s": 20.84,
+     "e": 21.2,
+     "w": "corner"
+    },
+    {
+     "s": 21.2,
+     "e": 21.38,
+     "w": "of"
+    },
+    {
+     "s": 21.38,
+     "e": 21.48,
+     "w": "the"
+    },
+    {
+     "s": 21.48,
+     "e": 21.8,
+     "w": "land."
+    }
+   ]
   },
   {
-   "start": 22.0,
-   "end": 24.0,
-   "text": "Not one of them could even lift it."
+   "start": 22.12,
+   "end": 23.94,
+   "text": "Not one of them could even lift it.",
+   "words": [
+    {
+     "s": 22.12,
+     "e": 22.54,
+     "w": "Not"
+    },
+    {
+     "s": 22.54,
+     "e": 22.8,
+     "w": "one"
+    },
+    {
+     "s": 22.8,
+     "e": 22.9,
+     "w": "of"
+    },
+    {
+     "s": 22.9,
+     "e": 23.02,
+     "w": "them"
+    },
+    {
+     "s": 23.02,
+     "e": 23.26,
+     "w": "could"
+    },
+    {
+     "s": 23.26,
+     "e": 23.42,
+     "w": "even"
+    },
+    {
+     "s": 23.42,
+     "e": 23.74,
+     "w": "lift"
+    },
+    {
+     "s": 23.74,
+     "e": 23.94,
+     "w": "it."
+    }
+   ]
   },
   {
-   "start": 24.0,
-   "end": 28.0,
-   "text": "Then Sage Vishwamitra arrived with a young prince from Ayodhya,"
+   "start": 24.18,
+   "end": 29.0,
+   "text": "Then sage Vishwamitra arrived with a young prince from Ayodhya, Sri Ram.",
+   "words": [
+    {
+     "s": 24.18,
+     "e": 24.64,
+     "w": "Then"
+    },
+    {
+     "s": 24.64,
+     "e": 25.06,
+     "w": "sage"
+    },
+    {
+     "s": 25.06,
+     "e": 25.78,
+     "w": "Vishwamitra"
+    },
+    {
+     "s": 25.78,
+     "e": 26.2,
+     "w": "arrived"
+    },
+    {
+     "s": 26.2,
+     "e": 26.44,
+     "w": "with"
+    },
+    {
+     "s": 26.44,
+     "e": 26.56,
+     "w": "a"
+    },
+    {
+     "s": 26.56,
+     "e": 26.8,
+     "w": "young"
+    },
+    {
+     "s": 26.8,
+     "e": 27.16,
+     "w": "prince"
+    },
+    {
+     "s": 27.16,
+     "e": 27.4,
+     "w": "from"
+    },
+    {
+     "s": 27.4,
+     "e": 27.98,
+     "w": "Ayodhya,"
+    },
+    {
+     "s": 28.44,
+     "e": 28.66,
+     "w": "Sri"
+    },
+    {
+     "s": 28.66,
+     "e": 29.0,
+     "w": "Ram."
+    }
+   ]
   },
   {
-   "start": 28.0,
-   "end": 30.0,
-   "text": "Shri Ram."
+   "start": 29.0,
+   "end": 32.56,
+   "text": "Ram walked up and lifted the bow as if it weighed nothing.",
+   "words": [
+    {
+     "s": 29.0,
+     "e": 29.78,
+     "w": "Ram"
+    },
+    {
+     "s": 29.78,
+     "e": 30.14,
+     "w": "walked"
+    },
+    {
+     "s": 30.14,
+     "e": 30.36,
+     "w": "up"
+    },
+    {
+     "s": 30.36,
+     "e": 30.58,
+     "w": "and"
+    },
+    {
+     "s": 30.58,
+     "e": 30.94,
+     "w": "lifted"
+    },
+    {
+     "s": 30.94,
+     "e": 31.14,
+     "w": "the"
+    },
+    {
+     "s": 31.14,
+     "e": 31.38,
+     "w": "bow"
+    },
+    {
+     "s": 31.38,
+     "e": 31.64,
+     "w": "as"
+    },
+    {
+     "s": 31.64,
+     "e": 31.78,
+     "w": "if"
+    },
+    {
+     "s": 31.78,
+     "e": 31.88,
+     "w": "it"
+    },
+    {
+     "s": 31.88,
+     "e": 32.1,
+     "w": "weighed"
+    },
+    {
+     "s": 32.1,
+     "e": 32.56,
+     "w": "nothing."
+    }
+   ]
   },
   {
-   "start": 30.0,
-   "end": 33.0,
-   "text": "Ram walked up and lifted the bow as if it weighed nothing."
+   "start": 32.8,
+   "end": 36.12,
+   "text": "And as he pulled the string, the bow snapped in half.",
+   "words": [
+    {
+     "s": 32.8,
+     "e": 33.22,
+     "w": "And"
+    },
+    {
+     "s": 33.22,
+     "e": 33.38,
+     "w": "as"
+    },
+    {
+     "s": 33.38,
+     "e": 33.48,
+     "w": "he"
+    },
+    {
+     "s": 33.48,
+     "e": 33.72,
+     "w": "pulled"
+    },
+    {
+     "s": 33.72,
+     "e": 33.88,
+     "w": "the"
+    },
+    {
+     "s": 33.88,
+     "e": 34.2,
+     "w": "string,"
+    },
+    {
+     "s": 34.4,
+     "e": 34.74,
+     "w": "the"
+    },
+    {
+     "s": 34.74,
+     "e": 35.0,
+     "w": "bow"
+    },
+    {
+     "s": 35.0,
+     "e": 35.56,
+     "w": "snapped"
+    },
+    {
+     "s": 35.56,
+     "e": 35.76,
+     "w": "in"
+    },
+    {
+     "s": 35.76,
+     "e": 36.12,
+     "w": "half."
+    }
+   ]
   },
   {
-   "start": 33.0,
-   "end": 37.0,
-   "text": "And as he pulled the string, the bow snapped in half."
+   "start": 36.68,
+   "end": 38.4,
+   "text": "The sound was like thunder.",
+   "words": [
+    {
+     "s": 36.68,
+     "e": 37.02,
+     "w": "The"
+    },
+    {
+     "s": 37.02,
+     "e": 37.44,
+     "w": "sound"
+    },
+    {
+     "s": 37.44,
+     "e": 37.7,
+     "w": "was"
+    },
+    {
+     "s": 37.7,
+     "e": 37.9,
+     "w": "like"
+    },
+    {
+     "s": 37.9,
+     "e": 38.4,
+     "w": "thunder."
+    }
+   ]
   },
   {
-   "start": 37.0,
-   "end": 39.0,
-   "text": "The sound was like thunder."
+   "start": 38.96,
+   "end": 40.8,
+   "text": "Almost everyone in the court fainted.",
+   "words": [
+    {
+     "s": 38.96,
+     "e": 39.24,
+     "w": "Almost"
+    },
+    {
+     "s": 39.24,
+     "e": 39.74,
+     "w": "everyone"
+    },
+    {
+     "s": 39.74,
+     "e": 39.9,
+     "w": "in"
+    },
+    {
+     "s": 39.9,
+     "e": 39.98,
+     "w": "the"
+    },
+    {
+     "s": 39.98,
+     "e": 40.22,
+     "w": "court"
+    },
+    {
+     "s": 40.22,
+     "e": 40.8,
+     "w": "fainted."
+    }
+   ]
   },
   {
-   "start": 39.0,
-   "end": 41.0,
-   "text": "Almost everyone in the court fainted."
+   "start": 41.18,
+   "end": 42.76,
+   "text": "Only four stayed standing.",
+   "words": [
+    {
+     "s": 41.18,
+     "e": 41.48,
+     "w": "Only"
+    },
+    {
+     "s": 41.48,
+     "e": 41.86,
+     "w": "four"
+    },
+    {
+     "s": 41.86,
+     "e": 42.28,
+     "w": "stayed"
+    },
+    {
+     "s": 42.28,
+     "e": 42.76,
+     "w": "standing."
+    }
+   ]
   },
   {
-   "start": 41.0,
-   "end": 43.0,
-   "text": "Only four stayed standing."
+   "start": 43.28,
+   "end": 47.16,
+   "text": "Janaka, Vishwamitra, Lakshman, and Ram.",
+   "words": [
+    {
+     "s": 43.28,
+     "e": 43.64,
+     "w": "Janaka,"
+    },
+    {
+     "s": 44.02,
+     "e": 44.76,
+     "w": "Vishwamitra,"
+    },
+    {
+     "s": 45.22,
+     "e": 45.66,
+     "w": "Lakshman,"
+    },
+    {
+     "s": 45.88,
+     "e": 46.82,
+     "w": "and"
+    },
+    {
+     "s": 46.82,
+     "e": 47.16,
+     "w": "Ram."
+    }
+   ]
   },
   {
-   "start": 43.0,
-   "end": 48.0,
-   "text": "Janaka, Vishwamitra, Lakshman, and Ram."
+   "start": 47.78,
+   "end": 50.08,
+   "text": "But that sound traveled far,",
+   "words": [
+    {
+     "s": 47.78,
+     "e": 48.46,
+     "w": "But"
+    },
+    {
+     "s": 48.46,
+     "e": 48.68,
+     "w": "that"
+    },
+    {
+     "s": 48.68,
+     "e": 49.14,
+     "w": "sound"
+    },
+    {
+     "s": 49.14,
+     "e": 49.56,
+     "w": "traveled"
+    },
+    {
+     "s": 49.56,
+     "e": 50.08,
+     "w": "far,"
+    }
+   ]
   },
   {
-   "start": 48.0,
-   "end": 50.0,
-   "text": "But that sound traveled far,"
+   "start": 50.32,
+   "end": 53.32,
+   "text": "all the way to someone who was not happy about it.",
+   "words": [
+    {
+     "s": 50.32,
+     "e": 50.78,
+     "w": "all"
+    },
+    {
+     "s": 50.78,
+     "e": 50.92,
+     "w": "the"
+    },
+    {
+     "s": 50.92,
+     "e": 51.08,
+     "w": "way"
+    },
+    {
+     "s": 51.08,
+     "e": 51.22,
+     "w": "to"
+    },
+    {
+     "s": 51.22,
+     "e": 51.56,
+     "w": "someone"
+    },
+    {
+     "s": 51.56,
+     "e": 51.84,
+     "w": "who"
+    },
+    {
+     "s": 51.84,
+     "e": 52.04,
+     "w": "was"
+    },
+    {
+     "s": 52.04,
+     "e": 52.4,
+     "w": "not"
+    },
+    {
+     "s": 52.4,
+     "e": 52.76,
+     "w": "happy"
+    },
+    {
+     "s": 52.76,
+     "e": 53.04,
+     "w": "about"
+    },
+    {
+     "s": 53.04,
+     "e": 53.32,
+     "w": "it."
+    }
+   ]
   },
   {
-   "start": 50.0,
-   "end": 54.0,
-   "text": "all the way to someone who was not happy about it."
-  },
-  {
-   "start": 54.0,
-   "end": 56.0,
-   "text": "Parashuram"
+   "start": 54.48,
+   "end": 55.16,
+   "text": "Barashuram.",
+   "words": [
+    {
+     "s": 54.48,
+     "e": 55.16,
+     "w": "Barashuram."
+    }
+   ]
   }
  ]
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Dust, Film, Gradient, Stars } from "./lib/Backdrop";
 import { SHAPES } from "./lib/Flat";
-import { Diya, Flame, GlowDefs, GlowTrail, Rays, Yantra } from "./lib/Glow";
+import { Diya, Flame, GlowDefs, GlowTrail, Halo, Rays, Yantra } from "./lib/Glow";
 import { Temple } from "./lib/Temple";
 import { BigText, Captions, Word } from "./lib/Text";
 import { clamp, ease, easeIO, noise, Palette, PALETTES, prog } from "./lib/util";
@@ -39,7 +39,7 @@ const LayerView: React.FC<{ l: Layer; p: Palette; sceneFrames: number; svg: bool
   if (l.kind === "rays") return <g opacity={op}><Rays {...(l as any)} cx={l.x ?? 540} cy={l.y ?? 700} color={l.color ?? p.accent} /></g>;
   if (l.kind === "flame") return <g opacity={op}><Flame x={x} y={y} s={s} color={l.color ?? p.accent} seed={l.seed} /></g>;
   if (l.kind === "diya") return <g opacity={op}><Diya x={x} y={y} s={s} color={l.color ?? p.accent} seed={l.seed} /></g>;
-  if (l.kind === "glowdot") return <g opacity={op}><circle cx={x} cy={y} r={(l.r ?? 200) * s} fill={color2} filter="url(#blurXL)" /></g>;
+  if (l.kind === "glowdot") return <g opacity={op}><Halo cx={x} cy={y} r={(l.r ?? 200) * s * 1.8} color={color2} /></g>;
   if (l.kind === "rect") return <rect x={x - (l.w ?? 200) / 2} y={y - (l.h ?? 200) / 2} width={l.w ?? 200} height={l.h ?? 200} rx={l.rx ?? 0} fill={color} opacity={op} />;
   const Shape = SHAPES[l.kind]; if (!Shape) return null;
   return <g transform={tr} opacity={op}><Shape {...(l as any)} t={t} color={color} color2={color2} /></g>;

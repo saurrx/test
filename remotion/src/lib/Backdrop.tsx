@@ -22,23 +22,24 @@ export const Dust: React.FC<{ color: string; count?: number; rise?: number; seed
         const s = size * (0.4 + rnd(i, seed, 4));
         const tw = 0.35 + 0.65 * Math.abs(Math.sin(f / (12 + 20 * rnd(i, 5)) + i));
         return <div key={i} style={{ position: "absolute", left: x, top: y, width: s, height: s, borderRadius: "50%",
-          background: color, opacity: tw * 0.8, boxShadow: `0 0 ${s * 2}px ${color}` }} />;
+          background: `radial-gradient(circle, ${color} 0%, ${color} 25%, transparent 70%)`, opacity: tw * 0.8, transform: "scale(2.4)" }} />;
       })}
     </AbsoluteFill>
   );
 };
 
-// Film treatment: animated grain (low-res turbulence scaled up), vignette, slight flicker.
-export const Film: React.FC<{ grain?: number; vignette?: number; flicker?: number }> = ({ grain = 0.12, vignette = 0.7, flicker = 0.04 }) => {
-  const f = useCurrentFrame();
+// Film treatment: grain drawn on a small canvas (seeded per frame, no blend modes or SVG filters), vignette, slight flicker.
+export const Film: React.FC<{ grain?: number; vignette?: number; flicker?: number }> = ({ grain = 0.1, vignette = 0.6, flicker = 0.04 }) => {
+  const f = useCurrentFrame(); const ref = React.useRef<HTMLCanvasElement>(null);
+  React.useLayoutEffect(() => {
+    const c = ref.current?.getContext("2d"); if (!c) return;
+    const img = c.createImageData(180, 320); let h = (f + 1) * 2654435761 >>> 0;
+    for (let i = 0; i < img.data.length; i += 4) { h ^= h << 13; h >>>= 0; h ^= h >>> 17; h ^= h << 5; h >>>= 0; const v = h & 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255; }
+    c.putImageData(img, 0, 0);
+  }, [f]);
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      {grain > 0 && (
-        <svg width="100%" height="100%" viewBox="0 0 270 480" preserveAspectRatio="none" style={{ position: "absolute", opacity: grain, mixBlendMode: "overlay" }}>
-          <filter id="gr"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed={f % 97} /><feColorMatrix type="saturate" values="0" /></filter>
-          <rect width="270" height="480" filter="url(#gr)" />
-        </svg>
-      )}
+      {grain > 0 && <canvas ref={ref} width={180} height={320} style={{ position: "absolute", width: "100%", height: "100%", opacity: grain * 0.55 }} />}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 75% 65% at 50% 48%, transparent 45%, rgba(0,0,0,${vignette}) 100%)` }} />
       <AbsoluteFill style={{ background: "#000", opacity: Math.max(0, flicker * noise(f / 3, 9)) }} />
     </AbsoluteFill>

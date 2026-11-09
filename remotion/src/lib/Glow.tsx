@@ -38,21 +38,29 @@ export const GlowTrail: React.FC<{ shape?: string; cx?: number; cy?: number; r?:
     const fl = 0.9 + 0.1 * noise(f / 2, seed);
     return (
       <g opacity={fade * fl} fill="none" strokeLinecap="round" strokeLinejoin="round">
-        <path d={d} stroke={color} strokeWidth={width * 5} opacity={0.16} filter="url(#blurL)" />
-        <path d={d} stroke={color} strokeWidth={width * 2} opacity={0.55} filter="url(#blurS)" />
+        {glowStroke(d, color, width, 1.5)}
         <path d={d} stroke={core} strokeWidth={width * 0.45} />
-        {t < 1 && <circle cx={head[0]} cy={head[1]} r={width * 1.6} fill={core} filter="url(#blurS)" />}
-        {t < 1 && <circle cx={head[0]} cy={head[1]} r={width * 5} fill={color} opacity={0.5} filter="url(#blurL)" />}
+        {t < 1 && <Halo cx={head[0]} cy={head[1]} r={width * 9} color={color} opacity={0.9} />}
+        {t < 1 && <Halo cx={head[0]} cy={head[1]} r={width * 2.6} color={core} hard={0.3} />}
       </g>
     );
   };
 
-export const GlowDefs: React.FC = () => (
-  <defs>
-    <filter id="blurS" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9" /></filter>
-    <filter id="blurL" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="38" /></filter>
-    <filter id="blurXL" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="90" /></filter>
-  </defs>
+// Soft light without SVG blur filters (software rendering makes big blurs cost seconds per frame):
+// a radial gradient that fades to transparent. Works for circles and ellipses.
+export const Halo: React.FC<{ cx: number; cy: number; r: number; ry?: number; color: string; opacity?: number; hard?: number }> = ({ cx, cy, r, ry, color, opacity = 1, hard = 0 }) => {
+  const id = "h" + React.useId().replace(/[^a-zA-Z0-9]/g, "");
+  return (
+    <g>
+      <defs><radialGradient id={id}><stop offset={`${hard * 100}%`} stopColor={color} stopOpacity={1} /><stop offset="45%" stopColor={color} stopOpacity={0.35} /><stop offset="100%" stopColor={color} stopOpacity={0} /></radialGradient></defs>
+      <ellipse cx={cx} cy={cy} rx={r} ry={ry ?? r} fill={`url(#${id})`} opacity={opacity} />
+    </g>
+  );
+};
+export const GlowDefs: React.FC = () => null;
+// Fake glow for strokes: stacked wider, fainter copies of the same path.
+export const glowStroke = (d: string, color: string, w: number, k = 1) => (
+  <>{[[7, 0.05], [4.4, 0.08], [2.6, 0.14], [1.6, 0.26]].map(([m, o], i) => <path key={i} d={d} stroke={color} strokeWidth={w * m} opacity={o * k} />)}</>
 );
 
 // Oil-lamp flame with flicker and a breathing halo.
@@ -62,8 +70,8 @@ export const Flame: React.FC<{ x: number; y: number; s?: number; color?: string;
   const d = `M ${x - w} ${y} C ${x - w} ${y - h * 0.5}, ${x + sway - 4} ${y - h * 0.7}, ${x + sway} ${y - h} C ${x + sway + 4} ${y - h * 0.7}, ${x + w} ${y - h * 0.5}, ${x + w} ${y} C ${x + w} ${y + w * 0.9}, ${x - w} ${y + w * 0.9}, ${x - w} ${y} Z`;
   return (
     <g>
-      <circle cx={x} cy={y - h * 0.4} r={170 * s * k} fill={color} opacity={0.22} filter="url(#blurXL)" />
-      <circle cx={x} cy={y - h * 0.4} r={60 * s} fill={color} opacity={0.5} filter="url(#blurL)" />
+      <Halo cx={x} cy={y - h * 0.4} r={330 * s * k} color={color} opacity={0.5} />
+      <Halo cx={x} cy={y - h * 0.4} r={110 * s} color={color} opacity={0.8} />
       <path d={d} fill={color} />
       <path d={d} fill="#fff8e0" transform={`translate(${x} ${y}) scale(0.5) translate(${-x} ${-y})`} />
     </g>
@@ -105,14 +113,14 @@ export const Yantra: React.FC<{ cx?: number; cy?: number; r?: number; from?: num
         <circle cx={cx} cy={cy} r={10 * prog(t, 0.7, 1)} fill={color} stroke="none" />
       </g>
     );
-    return <g><g opacity={0.5} filter="url(#blurS)">{body}</g>{body}</g>;
+    return <g><g opacity={0.22} strokeWidth={18} style={{ strokeWidth: 18 }}>{body}</g>{body}<Halo cx={cx} cy={cy} r={r * 1.25} color={color} opacity={0.22 * t} /></g>;
   };
 
 // Rays of light fanning from a point.
 export const Rays: React.FC<{ cx?: number; cy?: number; color?: string; count?: number; len?: number; opacity?: number; spin?: number }> = ({ cx = 540, cy = 700, color = "#ffb648", count = 14, len = 1500, opacity = 0.18, spin = 0.1 }) => {
   const f = useCurrentFrame();
   return (
-    <g opacity={opacity} filter="url(#blurS)" transform={`rotate(${f * spin} ${cx} ${cy})`}>
+    <g opacity={opacity} transform={`rotate(${f * spin} ${cx} ${cy})`}>
       {Array.from({ length: count }).map((_, i) => {
         const a = (i / count) * Math.PI * 2, w = 0.05 + 0.05 * rnd(i, 4), k = 0.6 + 0.4 * Math.abs(Math.sin(f / 30 + i));
         return <path key={i} opacity={k} fill={color} d={`M${cx} ${cy} L${cx + len * Math.cos(a - w)} ${cy + len * Math.sin(a - w)} L${cx + len * Math.cos(a + w)} ${cy + len * Math.sin(a + w)} Z`} />;
