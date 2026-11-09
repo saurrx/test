@@ -7,13 +7,13 @@ PY=../.venv/bin/python; YT=../.venv/bin/yt-dlp
 LIST=data/reels_priority.tsv; [ -s "$LIST" ] || LIST=data/all_reels.tsv
 mkdir -p data/reels analysis
 fails=0
-while IFS=$'\t' read -r h s; do
+while IFS=$'\t' read -r h s <&3; do
   d="data/reels/$h"; mkdir -p "$d"
   if [ ! -s "$d/$s.mp4" ]; then
     ok=0
     for i in 1 2 3; do
       $YT -q --no-warnings ${COOKIES_BROWSER:+--cookies-from-browser $COOKIES_BROWSER} -f "b[height<=1280]/b" \
-        -o "$d/%(id)s.%(ext)s" --write-info-json "https://www.instagram.com/p/$s/" 2>>data/reels/_errors.log && { ok=1; break; }
+        -o "$d/%(id)s.%(ext)s" --write-info-json "https://www.instagram.com/p/$s/" </dev/null 2>>data/reels/_errors.log && { ok=1; break; }
       sleep $((i * 90))
     done
     if [ $ok = 1 ]; then fails=0; else
@@ -23,7 +23,7 @@ while IFS=$'\t' read -r h s; do
     fi
     sleep $((5 + RANDOM % 6))
   fi
-  nice -n 10 $PY scripts/analyze_reel.py "$d/$s.mp4" >> analysis/_pc_run.log 2>&1
+  nice -n 10 $PY scripts/analyze_reel.py "$d/$s.mp4" </dev/null >> analysis/_pc_run.log 2>&1
   echo "$(date -u +%FT%TZ) $(find data/reels -name '*.mp4' | wc -l) downloaded, $(ls analysis | grep -c __) analysed" > data/reels/_progress.txt
-done < "$LIST"
+done 3< "$LIST"
 echo "$(date -u +%FT%TZ) DONE" >> data/reels/_progress.txt

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Run a command on the owner's PC over Tailscale (bash, 5-minute cap unless PC_TIMEOUT is set): pc '<command>'
+exec timeout "${PC_TIMEOUT:-300}" ssh -n -o StrictHostKeyChecking=accept-new -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 -o ProxyCommand="tailscale nc %h %p" gamer@arch "bash -lc $(printf '%q' "$*")"

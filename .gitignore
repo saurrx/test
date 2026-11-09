@@ -17,3 +17,8 @@ analysis/_seed_run.log
 
 # per-creator download folders: metadata is force-added by scripts/autocommit.sh every 10 min
 data/reels/*/
+
+# keep finished reels and paid audio (a container reclaim must not lose them)
+!renders/best/*.mp4
+!makes/**/audio/*
+!bench/**/*.mp4
