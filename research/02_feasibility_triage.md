@@ -1,5 +1,7 @@
 # Feasibility triage: which reels we try to make, and which we only learn from
 
+> **Note (2026-11-09):** The owner has ruled that all visuals must be code-generated. For the 10-hour loop, use the C1–C4 code-feasibility tiers in `LOOP.md`. The tiers below still describe the reference reels themselves.
+
 Not every reel can be rebuilt in code. We don't skip the hard ones silently. Every reel gets a
 **production label**, every label maps to a **feasibility tier**, and we cross that with **virality**
 to decide where the 8-hour make loop spends its time.
