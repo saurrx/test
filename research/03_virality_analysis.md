@@ -66,3 +66,29 @@ Caveat: creators tend to make a "part 2" after a part 1 did well, so some of thi
 **F9. Topic (exploratory, few creators).** Shiva / Mahadev mentions: 2.3x (p = 0.025, but only 3 of 5 creators agree).
 Krishna / Mahabharat mentions: 0.44x (p = 0.023, 3 of 4 creators). Ram / Hanuman: 1.1x (null).
 Too few creators cover each topic to call this evidenced; treat as a lead: Shiva content may travel best for these accounts.
+
+## Iteration 5 (2026-11-09 22:27, video features, 140 analysed reels ≥ 7 days old, 16 creators)
+The analysed set is the balanced sample (each creator's biggest hits and flops first), so effect sizes are inflated;
+directions are what matter. Hits here = more than 2x the creator's median (52 reels); flops = under 0.6x (48 reels).
+
+**F10. Voice-led reels beat music-only reels by a wide margin (V18).** Within the 5 creators who post both kinds,
+voiced reels do far better (5 of 5 creators, p = 0.004). 94% of hits have a voiceover vs 71% of flops.
+→ P15 (`evidenced`): always voice-led.
+
+**F11. More visual change wins; hard-cut count alone does not (V12, V11).** Visual changes per 10 s (cuts, dissolves,
+big camera moves): rho +0.25, p = 0.019, q = 0.06, 11 of 16 creators; hits have twice the rate of flops (median 1.6 vs
+0.8 per 10 s). Hard cuts per 10 s: rho +0.09, p = 0.43 (null). → P16 (`evidenced`): a new picture at least every 6 s,
+ideally every 3–4 s; how you get there (cut, dissolve, camera move) doesn't matter.
+
+**F12. Starting the voice at 0.0 s is not best; a short beat first does better (V9, opposite to my prediction).**
+Time to first word vs views: rho +0.27, p = 0.024, 9 of 13 creators. Median views vs the creator's norm: voice at
+0–0.15 s: 1.0x (n = 80); 0.15–0.6 s: 2.6x (n = 25); 0.6–2 s: 4.9x (n = 9); later than 2 s: 1.1x (n = 14).
+Small groups, so treat the exact window as a lead. → P4 revised (`suggestive`): open with 0.3–1 s of picture, headline
+and sound before the first spoken word; never wait more than 2 s.
+
+**Nulls.** Motion in the first 3 s (V13, p = 0.83), loudness variation (V17, p = 0.46), speech pace (V10, p = 0.14;
+hits are if anything slower: 144 vs 161 words a minute).
+**Not testable.** Question / number / negation / "you" in the opening line (V6–V8, V16): my keyword detector fires on
+too few reels in too few creators (2–6). Needs hand or model labelling of opening lines; planned as hook-type labels.
+**Descriptive only.** Hindi reels: 28 hits to 13 flops; English: 21 to 21. Creators rarely post in both, so this cannot
+be separated from who the creator is.

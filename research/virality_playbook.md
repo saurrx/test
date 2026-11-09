@@ -8,7 +8,7 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P1 | Full reels run 60–90 s; never under 30 s | evidenced (correlational) | F1: rho +0.11 detrended, q = 0.014; 32% of 60–90 s reels beat 2x baseline vs 12% under 30 s |
 | P2 | Posting hour and weekday don't matter | null | F2: 1.03x and 0.95x, p > 0.7 |
 | P3 | Space posts out; avoid bursts | evidenced (weak) | F4: 1.38x detrended, q = 0.02, 11/17 creators |
-| P4 | Voice starts within 0.5 s; something changes on screen by 3 s; first frame is not dark | prior | QC gates; to be tested as V9, V13, C1 |
+| P4 | Open with 0.3–1 s of picture, headline and sound before the first word; never more than 2 s | suggestive | F12: rho +0.27, p = 0.024; voice at 0.15–0.6 s 2.6x vs 1.0x at 0 s (small groups) |
 | P5 | Captions: contrast ≥ 4.5, inside the safe area (y 260–1500 of 1920) | prior | QC gates |
 | P6 | Put a headline of 3–5 words, large and high-contrast, on the very first frame | prior (craft) | Hook lab 1: the only variant with a frame-1 headline won 3/3 judges; the 4.8M-view reference also opens with one |
 | P7 | Brightening the first frame alone does nothing; motion alone does little | prior (craft) | Hook lab 1: bright-only ranked last (3 pts), strike-at-0 mid (11) |
@@ -19,3 +19,5 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P12 | Hashtag count does not matter | null (interim, 324 reels) | F6: rho +0.06, p = 0.38 |
 | P13 | Caption calls to action (comment / follow / share) are not a lever | null (interim) | F8: all p > 0.1, unstable across creators |
 | P14 | Shiva / Mahadev topics may travel best; Krishna / Mahabharat worst, for these accounts | lead (exploratory) | F9: 2.3x and 0.44x, but only 3–5 creators each |
+| P15 | Always voice-led, never music-only | evidenced | F10: 5/5 creators, p = 0.004; 94% of hits vs 71% of flops have a voiceover |
+| P16 | A new picture at least every 6 s, ideally every 3–4 s; cut, dissolve or camera move all count | evidenced | F11: rho +0.25, q = 0.06, 11/16 creators; hits 1.6 vs flops 0.8 visual changes per 10 s. Hard cuts alone: null |

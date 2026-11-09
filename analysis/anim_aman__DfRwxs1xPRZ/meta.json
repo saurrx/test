@@ -252,7 +252,7 @@
    -13.7
   ]
  ],
- "analyzer_version": 2,
+ "analyzer_version": 3,
  "motion_per_s": [
   1.58,
   2.13,
@@ -286,5 +286,7 @@
  ],
  "motion_mean": 4.8,
  "motion_first3s": 2.19,
- "still_seconds": 0
+ "still_seconds": 0,
+ "view_changes": [],
+ "view_changes_per_10s": 0.0
 }
