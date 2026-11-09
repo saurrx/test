@@ -32,7 +32,7 @@ export const Figure: React.FC<SP> = ({ t, color, pose = "stand", anim = "idle", 
       {crown && <path d="M-16 -78 L-16 -98 L-8 -86 L0 -102 L8 -86 L16 -98 L16 -78 Z" fill={color} />}
       {prop === "staff" && <line x1={52} y1={-90} x2={52} y2={120} stroke={color} strokeWidth={6} strokeLinecap="round" />}
       {prop === "bun" && <circle cx={0} cy={-84} r={9} fill={color} />}
-      {prop === "axe" && <g><line x1={62} y1={-128} x2={62} y2={90} stroke={color} strokeWidth={8} strokeLinecap="round" /><path d="M62 -124 Q124 -132 128 -78 Q124 -30 62 -40 Q84 -80 62 -124 Z" fill={color} /><path d="M62 -112 Q30 -108 28 -80 Q32 -56 62 -56 Z" fill={color} /></g>}
+      {prop === "axe" && <g><line x1={62} y1={-120} x2={62} y2={90} stroke={color} strokeWidth={7} strokeLinecap="round" /><path d="M62 -116 Q106 -112 108 -84 Q106 -56 62 -52 Q78 -84 62 -116 Z" fill={color} /></g>}
     </g>
   );
 };

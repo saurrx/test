@@ -43,7 +43,7 @@ sc(t, trans="fade", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0
 t = T("इस") - 0.1; yd = T("युद्ध") - t
 sc(t, trans="punch", palette="blood", bg={"kind": "radial", "cy": 48}, cam={"z0": 1.0, "z1": 1.15, "shakeAt": yd, "shake": 28}, layers=[vbow(x=560, y=820, s=0.9), {"kind": "arrow", "x": 520, "y": 820, "color": "#fff1dd", "len": 520, "at": T("बाण") - t, "enter": "slide_l"}, txt("युद्ध", y=400, size=230, col="#ffe9d6", glow="#ff5a2a", at=yd)])
 # 8 Dasharath trembles and pleads; Parashuram does not listen
-t = T("राजा") - 0.1; sc(t, trans="fade", cam={"z0": 1.05, "z1": 1.0}, layers=[{"kind": "border", "x": 540, "y": 250}, fig(x=330, y=1080, s=2.6, crown=True, pose="kneel", anim="tremble"), fig(x=800, y=1020, s=3.0, color=DK, prop="axe"),
+t = T("राजा") - 0.1; sc(t, trans="fade", cam={"z0": 1.05, "z1": 1.0}, layers=[{"kind": "border", "x": 540, "y": 250}, fig(x=330, y=1080, s=2.6, crown=True, pose="pray", anim="tremble"), fig(x=800, y=1020, s=3.0, color=DK, prop="axe"),
    {"kind": "cross", "x": 560, "y": 760, "color": "#ff3b30", "size": 120, "width": 30, "at": T("पर", 3) - t + 0.6, "enter": "none"}, txt("विनती", x=330, y=620, size=110, at=T("विनती") - t, enter="pop")])
 # 9 Ram steps forward and takes the bow
 t = T("राम", 2) - 0.1; sc(t, trans="flash", palette="dusk", bg={"kind": "horizon"}, cam={"z0": 1.0, "z1": 1.12}, layers=[{"kind": "sun", "x": 540, "y": 720, "r": 250, "color": Y}, hills(), ram(x=380, y=1300, s=3.2, anim="walk", move={"x": 160, "over": 2.0}), vbow(x=820, y=980, s=0.5, at=T("धनुष", 4) - t, enter="pop")])
@@ -51,30 +51,30 @@ t = T("राम", 2) - 0.1; sc(t, trans="flash", palette="dusk", bg={"kind": "h
 t = T("एक", 3) - 0.1; sc(t, trans="punch", palette="dusk", bg={"kind": "radial", "cy": 42}, dust=True, cam={"z0": 1.15, "z1": 1.35}, layers=[{"kind": "rays", "x": 540, "y": 800, "opacity": 0.25}, ram(x=420, y=1300, s=3.3, pose="draw"), {"kind": "bow", "x": 640, "y": 1060, "s": 0.62, "color": "#bfe0ff", "color2": "#fff", "draw": 0.9, "enter": "none"},
    {"kind": "arrow", "x": 700, "y": 1060, "color": "#fff", "len": 300, "at": T("बाण", 2) - t, "enter": "fade"}, txt("एक पल", y=400, size=190, col="#fff1dd")])
 # 11 "this arrow will not go in vain"
-t = T("अब") - 0.1; sc(t, trans="cut", palette="night", bg={"kind": "radial", "cy": 50}, stars=True, cam={"z0": 1.2, "z1": 1.4}, layers=[{"kind": "glowdot", "x": 540, "y": 860, "r": 420, "color2": BL, "enter": "none"}, {"kind": "arrow", "x": 540, "y": 860, "s": 1.6, "color": "#fff", "len": 420, "enter": "slide_l"},
+t = T("अब") - 0.1; sc(t, trans="cut", palette="night", bg={"kind": "radial", "cy": 50}, stars=True, cam={"z0": 1.2, "z1": 1.4}, layers=[{"kind": "rays", "x": 540, "y": 860, "opacity": 0.22, "color": BL}, {"kind": "glowdot", "x": 540, "y": 860, "r": 520, "color2": BL, "enter": "none"}, {"kind": "arrow", "x": 540, "y": 860, "s": 1.6, "color": "#fff", "len": 420, "enter": "slide_l"},
    {"kind": "rings", "x": 760, "y": 860, "color": BL, "at": 1.6, "count": 4, "every": 14, "max": 700, "width": 8, "enter": "none"}, txt("खाली नहीं जाएगा", y=400, size=110, col="#f4f1ff", glow=BL, at=T("खाली") - t)])
 # 12 "which shall I destroy: your speed, or the worlds you won?"
 t = T("बताइए") - 0.1; g1 = T("गति") - t; l1 = T("लोक") - t
 sc(t, trans="fade", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0": 1.0, "z1": 1.06}, layers=[{"kind": "rect", "x": 540, "y": 900, "w": 6, "h": 900, "color": "#f4f1ff", "opacity": 0.4, "enter": "none"},
-   {"kind": "wave", "x": 280, "y": 860, "color": Y, "w": 420, "amp": 90, "fade": 600, "at": g1, "enter": "fade"}, txt("गति", x=280, y=1120, size=130, col=Y, glow=Y, at=g1, enter="pop"),
-   {"kind": "glowdot", "x": 800, "y": 860, "r": 200, "color2": BL, "at": l1, "enter": "fade"}, {"kind": "yantra", "x": 800, "y": 860, "r": 190, "at": l1, "draw": 0.8, "color": "#f4f1ff", "petals": 6, "triangles": 2}, txt("लोक", x=800, y=1120, size=130, col="#f4f1ff", glow=BL, at=l1, enter="pop"), txt("?", y=420, size=240, col="#f4f1ff", glow=BL, at=0.5)])
+   {"kind": "glowdot", "x": 280, "y": 860, "r": 220, "color2": Y, "opacity": 0.5, "enter": "none"}, {"kind": "wave", "x": 280, "y": 860, "color": Y, "w": 420, "amp": 90, "fade": 900, "enter": "none"}, {"kind": "birds", "x": 150, "y": 640, "color": Y, "count": 4, "enter": "none"}, txt("गति", x=280, y=1120, size=130, col=Y, glow=Y, at=g1, enter="pop"),
+   {"kind": "glowdot", "x": 800, "y": 860, "r": 220, "color2": BL, "opacity": 0.6, "enter": "none"}, {"kind": "yantra", "x": 800, "y": 860, "r": 190, "draw": 1.5, "color": "#f4f1ff", "petals": 6, "triangles": 2}, txt("लोक", x=800, y=1120, size=130, col="#f4f1ff", glow=BL, at=l1, enter="pop"), txt("क्या नष्ट करूँ?", y=400, size=110, col="#f4f1ff", glow=BL, at=0.2)])
 # 13 Parashuram's glow drains; he understands this is Vishnu himself
 t = T("परशुराम", 4) - 0.1; vs = T("विष्णु", 2) - t
 sc(t, trans="fade", palette="night", bg={"kind": "radial", "cy": 40}, stars=True, cam={"z0": 1.0, "z1": 1.15}, layers=[{"kind": "rays", "x": 660, "y": 760, "opacity": 0.22, "color": BL, "at": vs - 0.6, "enter": "fade"}, {"kind": "yantra", "x": 660, "y": 760, "r": 400, "at": vs - 0.8, "draw": 1.2, "color": "#bfe0ff", "spin": 0.6},
-   ram(x=660, y=1220, s=3.4, color="#0d1230"), para(x=240, y=1340, s=1.9, color="#3a1414", pose="kneel"), txt("विष्णु", y=400, size=200, col="#f4f1ff", glow=BL, at=vs)])
+   {"kind": "glowdot", "x": 660, "y": 800, "r": 420, "color2": BL, "opacity": 0.5, "enter": "none"}, ram(x=660, y=1220, s=3.4, color="#f4f1ff"), para(x=240, y=1340, s=1.9, color="#c9584a", pose="kneel"), txt("विष्णु", y=400, size=200, col="#f4f1ff", glow=BL, at=vs)])
 # 14 "leave me my speed; take the worlds"
 t = T("उन्होंने", 2) - 0.1; sc(t, trans="cut", palette="blood", bg={"kind": "radial", "cy": 55}, cam={"z0": 1.3, "z1": 1.2}, layers=[para(x=540, y=1150, s=3.4, pose="kneel"), txt("लोक ले लो", y=400, size=130, col="#ffe9d6", glow="#ff5a2a", at=T("लोक", 2) - t)])
 # 15 Ram lets the arrow fly
 t = T("राम", 4) - 0.1; rel = T("छोड़") - t
 sc(t, trans="punch", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0": 1.0, "z1": 1.1, "shakeAt": rel, "shake": 30}, layers=[{"kind": "arrow", "x": 200, "y": 860, "s": 1.3, "color": "#fff", "len": 420, "enter": "none", "at": rel, "move": {"x": 1400, "over": 0.5}},
-   {"kind": "trail", "shape": "line", "x": 540, "y": 860, "r": 520, "from": rel, "to": rel + 0.4, "width": 10, "color": BL}, {"kind": "rings", "x": 900, "y": 860, "color": BL, "at": rel + 0.35, "count": 5, "every": 8, "max": 1100, "enter": "none"}, ram(x=200, y=1320, s=2.6, color="#0d1230", pose="draw")])
+   {"kind": "trail", "shape": "line", "x": 540, "y": 860, "r": 520, "from": rel, "to": rel + 0.4, "width": 10, "color": BL}, {"kind": "rings", "x": 900, "y": 860, "color": BL, "at": rel + 0.35, "count": 5, "every": 8, "max": 1100, "enter": "none"}, ram(x=200, y=1320, s=2.6, color="#f4f1ff", pose="draw")])
 # 16 the warrior who won the earth 21 times bows his head and leaves
 t = T("और", 4) - 0.1; sc(t, trans="fade", palette="dusk", bg={"kind": "horizon"}, cam={"x0": -60, "x1": 60}, layers=[{"kind": "sun", "x": 300, "y": 760, "r": 170, "color": Y}, {"kind": "mountain", "x": 820, "y": 1260, "s": 0.9, "color": INK, "color2": "#e2603a", "enter": "none"}, hills(),
    para(x=420, y=1330, s=2.6, color=INK, pose="kneel", until=T("लौट") - t), para(x=420, y=1300, s=2.6, color=INK, anim="walk", at=T("लौट") - t, move={"x": 380, "s": 0.6}), txt("#", x=540, y=420, size=230, col="#fff1dd", at=T("इक्कीस") - t, count=[1, 21, 20], enter="pop")])
 # 17 part 3 tease
 t = T("भाग") - 0.1; sc(t, trans="flash", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0": 1.08, "z1": 1.0}, layers=[{"kind": "moon", "x": 820, "y": 380, "color": "#f4f1ff", "color2": "#0d1330", "r": 70}, {"kind": "tree", "x": 200, "y": 1250, "s": 2.0, "color": "#070b1c"}, {"kind": "tree", "x": 880, "y": 1330, "s": 1.7, "color": "#070b1c", "seed": 4}, hills("#070b1c", 1600),
    txt("भाग 3", y=420, size=220, col="#f4f1ff", glow=BL), txt("वनवास की असली वजह", y=900, size=100, col=Y, glow=Y, at=T("वनवास") - t, enter="pop"), txt("FOLLOW", y=1650, size=120, col="#f4f1ff", glow=BL, at=T("फ़ॉलो") - t)])
-END = 79.0 + LEAD; scenes = []
+END = words[-1]["e"] + 1.3; scenes = []
 for i, (at, k) in enumerate(S):
     k["dur"] = round((S[i + 1][0] if i + 1 < len(S) else END) - at, 3); scenes.append(k)
 assert all(s["dur"] > 0.4 for s in scenes), [s["dur"] for s in scenes]
