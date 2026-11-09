@@ -1,0 +1,28 @@
+{
+ "language": "hi",
+ "detected_language": "hi",
+ "language_prob": 0.362,
+ "word_count": 2,
+ "first_word_s": 11.76,
+ "speech_seconds": 2.8,
+ "wpm": 43,
+ "segments": [
+  {
+   "start": 11.76,
+   "end": 14.52,
+   "text": "इगनेशाय नमें",
+   "words": [
+    {
+     "s": 11.76,
+     "e": 13.16,
+     "w": "इगनेशाय"
+    },
+    {
+     "s": 13.16,
+     "e": 14.52,
+     "w": "नमें"
+    }
+   ]
+  }
+ ]
+}
