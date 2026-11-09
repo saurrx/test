@@ -33,3 +33,8 @@
 - Fable 5.2 was released 2026-11-09 (sources: The New Stack, Yahoo Finance, Anthropic's post on X). LOOP.md now assigns builder subagents to Fable and the grader to a different model.
 - The owner clarified that no reels are to be made until they say "go". I had started a Treg TTS call for a test reel; it was aborted before it ran, so nothing was spent.
 - Tailscale: the container joined the tailnet as `claude-cloud-reels`, and the PC is `arch`. SSH reached the PC but was refused by the tailnet policy for users `reels` and `saurrx`, so the policy needs an `ssh` accept rule. The container is untagged, so the restrictive grants aren't in effect yet.
+
+## 2026-11-09 — PC link works; owner answers on scope
+- SSH to the owner's PC works as `gamer@arch` over Tailscale (policy: accept rule for the owner's own devices). PC: 16 cores, 31 GB RAM, RTX 4060 8 GB, 505 GB free, ffmpeg/python3/node present, yt-dlp missing. Nothing has been installed or run there yet.
+- Owner decisions: no posting for now (virality is predicted and checked on held-out reels, not real views); no Treg top-up (audio must fit in $0.58: Gemini TTS, few reused Lyria clips, code-made music/SFX, keep $0.10 reserve); use Fable 5.2 for the build work.
+- `data/reels/*/` is now gitignored and `autocommit.sh` force-adds the `.info.json` metadata every 10 minutes, so in-progress downloads no longer show as untracked. Commit trailer updated.
