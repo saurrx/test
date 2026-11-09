@@ -8,3 +8,4 @@
 analysis/*/frames/
 analysis/*/frames_2s/
 __pycache__/
+.claude/settings.local.json
