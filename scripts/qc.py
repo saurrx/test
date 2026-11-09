@@ -33,7 +33,7 @@ def main():
     f0 = frame_gray(v, 0.05); nums["first_frame_luma"] = round(float(f0.mean()), 3) if f0 is not None else None
     checks["first_frame_not_black"] = f0 is not None and f0.mean() >= 0.06 and (f0 > 0.5).mean() >= 0.004
     if words:
-        nums["first_word_s"] = words[0]["s"]; checks["speaks_by_0.5s"] = words[0]["s"] <= 0.5
+        nums["first_word_s"] = words[0]["s"]; checks["first_word_by_1.5s"] = words[0]["s"] <= 1.5
         speech = sum(w["e"] - w["s"] for w in words); span = words[-1]["e"] - words[0]["s"]
         nums["wpm"] = round(60 * len(words) / max(span, 1)); checks["pace_120_to_200_wpm"] = 120 <= nums["wpm"] <= 200 or len(words) < 8
         gaps = [words[i + 1]["s"] - words[i]["e"] for i in range(len(words) - 1)]; nums["max_gap_s"] = round(max(gaps), 2) if gaps else 0

@@ -92,3 +92,20 @@ hits are if anything slower: 144 vs 161 words a minute).
 too few reels in too few creators (2–6). Needs hand or model labelling of opening lines; planned as hook-type labels.
 **Descriptive only.** Hindi reels: 28 hits to 13 flops; English: 21 to 21. Creators rarely post in both, so this cannot
 be separated from who the creator is.
+
+## Views-prediction model (2026-11-09 22:35) — `research/model.md`, `scripts/model.py`
+Ridge regression predicting views relative to the creator's median, scored on creators the model never saw.
+
+| Features | Reels | Ranking skill on unseen creators (per-creator Spearman) |
+|---|---|---|
+| Timing and history only (length, gap, previous reel) | 571 | 0.21 (11 of 14 creators positive); pooled across creators: about 0 |
+| + caption features | 372 | 0.14 (5 of 12) — captions add nothing |
+| Video features only (voice, visual change, beat before voice, cuts, loudness) | 140 | **0.36 (15 of 18 creators positive)**; pooled 0.24 |
+
+**What this says, plainly.** The measurable features carry real but modest signal. The best model ranks a creator's
+hits above their flops better than chance for 15 of 18 creators, and it does so on the hit/flop sample, which is the
+easy case. It cannot predict how many views a reel gets. Most of what separates a hit from a flop is not in these
+features: the idea, the opening line, and the story are not measured yet. The strongest weights match the tests:
+voiceover (+), visual change (+), a beat before the first word (+).
+**So "programming virality" today means:** follow the evidenced rules to avoid the known ways of losing (too short,
+music-only, static picture, no series), then compete on hook and story, where the evidence so far is only blind-judge craft.
