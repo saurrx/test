@@ -1,0 +1,187 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.997,
+ "word_count": 31,
+ "first_word_s": 0.0,
+ "speech_seconds": 11.7,
+ "wpm": 159,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 5.46,
+   "text": "Mbappé scores the final. France wins. Bet big. Change our lives.",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 0.68,
+     "w": "Mbappé"
+    },
+    {
+     "s": 0.68,
+     "e": 1.04,
+     "w": "scores"
+    },
+    {
+     "s": 1.04,
+     "e": 1.24,
+     "w": "the"
+    },
+    {
+     "s": 1.24,
+     "e": 1.64,
+     "w": "final."
+    },
+    {
+     "s": 1.9,
+     "e": 2.52,
+     "w": "France"
+    },
+    {
+     "s": 2.52,
+     "e": 3.0,
+     "w": "wins."
+    },
+    {
+     "s": 3.36,
+     "e": 3.5,
+     "w": "Bet"
+    },
+    {
+     "s": 3.5,
+     "e": 3.88,
+     "w": "big."
+    },
+    {
+     "s": 4.46,
+     "e": 4.64,
+     "w": "Change"
+    },
+    {
+     "s": 4.64,
+     "e": 4.9,
+     "w": "our"
+    },
+    {
+     "s": 4.9,
+     "e": 5.46,
+     "w": "lives."
+    }
+   ]
+  },
+  {
+   "start": 6.9,
+   "end": 8.98,
+   "text": "You want me to gamble everything I built?",
+   "words": [
+    {
+     "s": 6.9,
+     "e": 7.52,
+     "w": "You"
+    },
+    {
+     "s": 7.52,
+     "e": 7.66,
+     "w": "want"
+    },
+    {
+     "s": 7.66,
+     "e": 7.76,
+     "w": "me"
+    },
+    {
+     "s": 7.76,
+     "e": 7.88,
+     "w": "to"
+    },
+    {
+     "s": 7.88,
+     "e": 8.16,
+     "w": "gamble"
+    },
+    {
+     "s": 8.16,
+     "e": 8.48,
+     "w": "everything"
+    },
+    {
+     "s": 8.48,
+     "e": 8.7,
+     "w": "I"
+    },
+    {
+     "s": 8.7,
+     "e": 8.98,
+     "w": "built?"
+    }
+   ]
+  },
+  {
+   "start": 9.22,
+   "end": 13.38,
+   "text": "Call it an investment. Or sign nothing and watch me bury you.",
+   "words": [
+    {
+     "s": 9.22,
+     "e": 9.76,
+     "w": "Call"
+    },
+    {
+     "s": 9.76,
+     "e": 9.92,
+     "w": "it"
+    },
+    {
+     "s": 9.92,
+     "e": 10.04,
+     "w": "an"
+    },
+    {
+     "s": 10.04,
+     "e": 10.56,
+     "w": "investment."
+    },
+    {
+     "s": 10.96,
+     "e": 11.32,
+     "w": "Or"
+    },
+    {
+     "s": 11.32,
+     "e": 11.58,
+     "w": "sign"
+    },
+    {
+     "s": 11.58,
+     "e": 11.92,
+     "w": "nothing"
+    },
+    {
+     "s": 11.92,
+     "e": 12.28,
+     "w": "and"
+    },
+    {
+     "s": 12.28,
+     "e": 12.52,
+     "w": "watch"
+    },
+    {
+     "s": 12.52,
+     "e": 12.7,
+     "w": "me"
+    },
+    {
+     "s": 12.7,
+     "e": 13.06,
+     "w": "bury"
+    },
+    {
+     "s": 13.06,
+     "e": 13.38,
+     "w": "you."
+    }
+   ]
+  }
+ ]
+}

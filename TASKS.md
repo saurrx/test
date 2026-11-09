@@ -1,7 +1,16 @@
 # Tasks
 
 ## Now
-- Loop RUNNING: 2026-11-09T19:59Z → 2026-11-10T04:59Z (UTC). **Phase 0, step 1** (qc.py). Next: judge_pair.py, calibration, briefs, component library, prereg, checkpoint 0.
+- Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:42** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
+- **Iteration 1**: (a) run V1–V5 (CSV-only tests); (b) hook lab on the bell brief, craft hypotheses C1 + C4; (c) fix baseline defects in the library.
+- Iteration plan: 2 = full reel #1 (bell or aarti-style original); 3 = checkpoint 1; then alternate per LOOP.md.
+
+## How to work (for a restart)
+- Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.
+- Voice: `scripts/pc "cd ~/reels-loop/repo && ../.venv/bin/python scripts/voice.py tts <out_base> <voice> <rate> '<text>'"`, then copy the mp3 to `remotion/public/audio/`.
+- Judge: `scripts/judge.py pack|prompt|tally`, judges are Sonnet subagents, one per `jN` folder.
+- Data tests: `scripts/pc_sync.sh pull && python3 -I scripts/dataset.py && python3 -I scripts/vtest.py run ...`, then `vtest.py report`.
+- Watchdogs: A `trig_01W81GSJRHEHJ1JUPrxaG8Bc` (:56), B `trig_018B98jFa4hDE7PHcmLxUtpt` (:27), both enabled.
 
 ## Running in the background
 - PC `reels-worker` (systemd user unit on `arch`): balanced reel download + analysis v3. Check with `scripts/pc 'cat ~/reels-loop/repo/data/reels/_progress.txt'`; pull with `scripts/pc_sync.sh pull`.
