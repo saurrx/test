@@ -1,81 +1,1048 @@
 {
  "language": "en",
- "language_prob": 0.976,
+ "detected_language": "en",
+ "language_prob": 1.0,
+ "word_count": 185,
+ "first_word_s": 0.0,
+ "speech_seconds": 62.0,
+ "wpm": 179,
  "segments": [
   {
    "start": 0.0,
-   "end": 4.8,
-   "text": "If the apocalypse starts while you're driving a train, you might be the luckiest person alive."
+   "end": 4.5,
+   "text": "If the apocalypse starts while you're driving a train, you might be the luckiest person alive.",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 0.22,
+     "w": "If"
+    },
+    {
+     "s": 0.22,
+     "e": 0.32,
+     "w": "the"
+    },
+    {
+     "s": 0.32,
+     "e": 0.78,
+     "w": "apocalypse"
+    },
+    {
+     "s": 0.78,
+     "e": 1.18,
+     "w": "starts"
+    },
+    {
+     "s": 1.18,
+     "e": 1.44,
+     "w": "while"
+    },
+    {
+     "s": 1.44,
+     "e": 1.58,
+     "w": "you're"
+    },
+    {
+     "s": 1.58,
+     "e": 1.88,
+     "w": "driving"
+    },
+    {
+     "s": 1.88,
+     "e": 2.02,
+     "w": "a"
+    },
+    {
+     "s": 2.02,
+     "e": 2.28,
+     "w": "train,"
+    },
+    {
+     "s": 2.54,
+     "e": 2.88,
+     "w": "you"
+    },
+    {
+     "s": 2.88,
+     "e": 3.06,
+     "w": "might"
+    },
+    {
+     "s": 3.06,
+     "e": 3.22,
+     "w": "be"
+    },
+    {
+     "s": 3.22,
+     "e": 3.36,
+     "w": "the"
+    },
+    {
+     "s": 3.36,
+     "e": 3.76,
+     "w": "luckiest"
+    },
+    {
+     "s": 3.76,
+     "e": 4.12,
+     "w": "person"
+    },
+    {
+     "s": 4.12,
+     "e": 4.5,
+     "w": "alive."
+    }
+   ]
   },
   {
    "start": 4.8,
-   "end": 8.0,
-   "text": "Nothing can catch you, unless you forget one thing."
+   "end": 7.54,
+   "text": "Nothing can catch you, unless you forget one thing.",
+   "words": [
+    {
+     "s": 4.8,
+     "e": 5.2,
+     "w": "Nothing"
+    },
+    {
+     "s": 5.2,
+     "e": 5.46,
+     "w": "can"
+    },
+    {
+     "s": 5.46,
+     "e": 5.76,
+     "w": "catch"
+    },
+    {
+     "s": 5.76,
+     "e": 5.98,
+     "w": "you,"
+    },
+    {
+     "s": 6.1,
+     "e": 6.46,
+     "w": "unless"
+    },
+    {
+     "s": 6.46,
+     "e": 6.66,
+     "w": "you"
+    },
+    {
+     "s": 6.66,
+     "e": 6.92,
+     "w": "forget"
+    },
+    {
+     "s": 6.92,
+     "e": 7.2,
+     "w": "one"
+    },
+    {
+     "s": 7.2,
+     "e": 7.54,
+     "w": "thing."
+    }
+   ]
   },
   {
    "start": 8.0,
-   "end": 13.6,
-   "text": "Meet Joel. He's 45. He drives the night train from the city to the coast."
+   "end": 12.98,
+   "text": "Meet Joel. He's 45. He drives the night train from the city to the coast.",
+   "words": [
+    {
+     "s": 8.0,
+     "e": 8.6,
+     "w": "Meet"
+    },
+    {
+     "s": 8.6,
+     "e": 9.04,
+     "w": "Joel."
+    },
+    {
+     "s": 9.36,
+     "e": 9.7,
+     "w": "He's"
+    },
+    {
+     "s": 9.7,
+     "e": 10.12,
+     "w": "45."
+    },
+    {
+     "s": 10.44,
+     "e": 10.6,
+     "w": "He"
+    },
+    {
+     "s": 10.6,
+     "e": 10.96,
+     "w": "drives"
+    },
+    {
+     "s": 10.96,
+     "e": 11.12,
+     "w": "the"
+    },
+    {
+     "s": 11.12,
+     "e": 11.36,
+     "w": "night"
+    },
+    {
+     "s": 11.36,
+     "e": 11.7,
+     "w": "train"
+    },
+    {
+     "s": 11.7,
+     "e": 11.9,
+     "w": "from"
+    },
+    {
+     "s": 11.9,
+     "e": 12.08,
+     "w": "the"
+    },
+    {
+     "s": 12.08,
+     "e": 12.32,
+     "w": "city"
+    },
+    {
+     "s": 12.32,
+     "e": 12.48,
+     "w": "to"
+    },
+    {
+     "s": 12.48,
+     "e": 12.6,
+     "w": "the"
+    },
+    {
+     "s": 12.6,
+     "e": 12.98,
+     "w": "coast."
+    }
+   ]
   },
   {
-   "start": 13.6,
-   "end": 18.0,
-   "text": "200 passengers ride behind him. Every night is the same."
+   "start": 13.5,
+   "end": 15.76,
+   "text": "200 passengers ride behind him.",
+   "words": [
+    {
+     "s": 13.5,
+     "e": 14.06,
+     "w": "200"
+    },
+    {
+     "s": 14.06,
+     "e": 14.78,
+     "w": "passengers"
+    },
+    {
+     "s": 14.78,
+     "e": 15.16,
+     "w": "ride"
+    },
+    {
+     "s": 15.16,
+     "e": 15.48,
+     "w": "behind"
+    },
+    {
+     "s": 15.48,
+     "e": 15.76,
+     "w": "him."
+    }
+   ]
   },
   {
-   "start": 18.0,
-   "end": 21.4,
-   "text": "Check the brakes. Check the fuel for a coffee."
+   "start": 16.38,
+   "end": 20.74,
+   "text": "Every night is the same. Check the brakes. Check the fuel. Pour a coffee.",
+   "words": [
+    {
+     "s": 16.38,
+     "e": 16.84,
+     "w": "Every"
+    },
+    {
+     "s": 16.84,
+     "e": 17.1,
+     "w": "night"
+    },
+    {
+     "s": 17.1,
+     "e": 17.28,
+     "w": "is"
+    },
+    {
+     "s": 17.28,
+     "e": 17.4,
+     "w": "the"
+    },
+    {
+     "s": 17.4,
+     "e": 17.74,
+     "w": "same."
+    },
+    {
+     "s": 18.12,
+     "e": 18.32,
+     "w": "Check"
+    },
+    {
+     "s": 18.32,
+     "e": 18.46,
+     "w": "the"
+    },
+    {
+     "s": 18.46,
+     "e": 18.86,
+     "w": "brakes."
+    },
+    {
+     "s": 19.18,
+     "e": 19.38,
+     "w": "Check"
+    },
+    {
+     "s": 19.38,
+     "e": 19.54,
+     "w": "the"
+    },
+    {
+     "s": 19.54,
+     "e": 19.94,
+     "w": "fuel."
+    },
+    {
+     "s": 20.18,
+     "e": 20.24,
+     "w": "Pour"
+    },
+    {
+     "s": 20.24,
+     "e": 20.42,
+     "w": "a"
+    },
+    {
+     "s": 20.42,
+     "e": 20.74,
+     "w": "coffee."
+    }
+   ]
   },
   {
-   "start": 21.4,
-   "end": 24.0,
-   "text": "At 304, the radio crackled."
+   "start": 21.18,
+   "end": 23.48,
+   "text": "At 3.04, the radio crackled.",
+   "words": [
+    {
+     "s": 21.18,
+     "e": 21.64,
+     "w": "At"
+    },
+    {
+     "s": 21.64,
+     "e": 21.82,
+     "w": "3"
+    },
+    {
+     "s": 21.82,
+     "e": 22.16,
+     "w": ".04,"
+    },
+    {
+     "s": 22.44,
+     "e": 22.58,
+     "w": "the"
+    },
+    {
+     "s": 22.58,
+     "e": 22.9,
+     "w": "radio"
+    },
+    {
+     "s": 22.9,
+     "e": 23.48,
+     "w": "crackled."
+    }
+   ]
   },
   {
-   "start": 24.0,
-   "end": 27.0,
-   "text": "All trains, mass infection in the city."
+   "start": 23.86,
+   "end": 29.5,
+   "text": "All trains. Mass infection in the city. Do not stop. Do not open the doors.",
+   "words": [
+    {
+     "s": 23.86,
+     "e": 24.36,
+     "w": "All"
+    },
+    {
+     "s": 24.36,
+     "e": 24.82,
+     "w": "trains."
+    },
+    {
+     "s": 25.02,
+     "e": 25.46,
+     "w": "Mass"
+    },
+    {
+     "s": 25.46,
+     "e": 26.08,
+     "w": "infection"
+    },
+    {
+     "s": 26.08,
+     "e": 26.42,
+     "w": "in"
+    },
+    {
+     "s": 26.42,
+     "e": 26.58,
+     "w": "the"
+    },
+    {
+     "s": 26.58,
+     "e": 26.86,
+     "w": "city."
+    },
+    {
+     "s": 27.04,
+     "e": 27.16,
+     "w": "Do"
+    },
+    {
+     "s": 27.16,
+     "e": 27.48,
+     "w": "not"
+    },
+    {
+     "s": 27.48,
+     "e": 27.96,
+     "w": "stop."
+    },
+    {
+     "s": 28.14,
+     "e": 28.26,
+     "w": "Do"
+    },
+    {
+     "s": 28.26,
+     "e": 28.58,
+     "w": "not"
+    },
+    {
+     "s": 28.58,
+     "e": 29.0,
+     "w": "open"
+    },
+    {
+     "s": 29.0,
+     "e": 29.16,
+     "w": "the"
+    },
+    {
+     "s": 29.16,
+     "e": 29.5,
+     "w": "doors."
+    }
+   ]
   },
   {
-   "start": 27.0,
-   "end": 30.0,
-   "text": "Do not stop. Do not open the doors."
+   "start": 30.22,
+   "end": 34.16,
+   "text": "Joel's first thought was to stop at the next station and go back for his daughter.",
+   "words": [
+    {
+     "s": 30.22,
+     "e": 30.78,
+     "w": "Joel's"
+    },
+    {
+     "s": 30.78,
+     "e": 31.04,
+     "w": "first"
+    },
+    {
+     "s": 31.04,
+     "e": 31.32,
+     "w": "thought"
+    },
+    {
+     "s": 31.32,
+     "e": 31.58,
+     "w": "was"
+    },
+    {
+     "s": 31.58,
+     "e": 31.7,
+     "w": "to"
+    },
+    {
+     "s": 31.7,
+     "e": 31.96,
+     "w": "stop"
+    },
+    {
+     "s": 31.96,
+     "e": 32.1,
+     "w": "at"
+    },
+    {
+     "s": 32.1,
+     "e": 32.2,
+     "w": "the"
+    },
+    {
+     "s": 32.2,
+     "e": 32.4,
+     "w": "next"
+    },
+    {
+     "s": 32.4,
+     "e": 32.8,
+     "w": "station"
+    },
+    {
+     "s": 32.8,
+     "e": 33.26,
+     "w": "and"
+    },
+    {
+     "s": 33.26,
+     "e": 33.4,
+     "w": "go"
+    },
+    {
+     "s": 33.4,
+     "e": 33.58,
+     "w": "back"
+    },
+    {
+     "s": 33.58,
+     "e": 33.74,
+     "w": "for"
+    },
+    {
+     "s": 33.74,
+     "e": 33.9,
+     "w": "his"
+    },
+    {
+     "s": 33.9,
+     "e": 34.16,
+     "w": "daughter."
+    }
+   ]
   },
   {
-   "start": 30.0,
-   "end": 35.0,
-   "text": "Joel's first thought was to stop at the next station and go back for his daughter."
+   "start": 34.42,
+   "end": 39.94,
+   "text": "But every station is packed with people running from the city, and some of them are already infected.",
+   "words": [
+    {
+     "s": 34.42,
+     "e": 34.96,
+     "w": "But"
+    },
+    {
+     "s": 34.96,
+     "e": 35.22,
+     "w": "every"
+    },
+    {
+     "s": 35.22,
+     "e": 35.62,
+     "w": "station"
+    },
+    {
+     "s": 35.62,
+     "e": 35.84,
+     "w": "is"
+    },
+    {
+     "s": 35.84,
+     "e": 36.18,
+     "w": "packed"
+    },
+    {
+     "s": 36.18,
+     "e": 36.4,
+     "w": "with"
+    },
+    {
+     "s": 36.4,
+     "e": 36.76,
+     "w": "people"
+    },
+    {
+     "s": 36.76,
+     "e": 37.06,
+     "w": "running"
+    },
+    {
+     "s": 37.06,
+     "e": 37.32,
+     "w": "from"
+    },
+    {
+     "s": 37.32,
+     "e": 37.48,
+     "w": "the"
+    },
+    {
+     "s": 37.48,
+     "e": 37.76,
+     "w": "city,"
+    },
+    {
+     "s": 37.8,
+     "e": 38.38,
+     "w": "and"
+    },
+    {
+     "s": 38.38,
+     "e": 38.62,
+     "w": "some"
+    },
+    {
+     "s": 38.62,
+     "e": 38.74,
+     "w": "of"
+    },
+    {
+     "s": 38.74,
+     "e": 38.9,
+     "w": "them"
+    },
+    {
+     "s": 38.9,
+     "e": 39.08,
+     "w": "are"
+    },
+    {
+     "s": 39.08,
+     "e": 39.46,
+     "w": "already"
+    },
+    {
+     "s": 39.46,
+     "e": 39.94,
+     "w": "infected."
+    }
+   ]
   },
   {
-   "start": 35.0,
-   "end": 41.0,
-   "text": "But every station is packed with people running from the city, and some of them are already infected."
+   "start": 40.44,
+   "end": 46.64,
+   "text": "The train had one huge advantage. At 120 kilometers an hour, nothing on foot can keep up.",
+   "words": [
+    {
+     "s": 40.44,
+     "e": 40.9,
+     "w": "The"
+    },
+    {
+     "s": 40.9,
+     "e": 41.18,
+     "w": "train"
+    },
+    {
+     "s": 41.18,
+     "e": 41.46,
+     "w": "had"
+    },
+    {
+     "s": 41.46,
+     "e": 41.7,
+     "w": "one"
+    },
+    {
+     "s": 41.7,
+     "e": 42.08,
+     "w": "huge"
+    },
+    {
+     "s": 42.08,
+     "e": 42.58,
+     "w": "advantage."
+    },
+    {
+     "s": 42.94,
+     "e": 43.1,
+     "w": "At"
+    },
+    {
+     "s": 43.1,
+     "e": 43.82,
+     "w": "120"
+    },
+    {
+     "s": 43.82,
+     "e": 44.24,
+     "w": "kilometers"
+    },
+    {
+     "s": 44.24,
+     "e": 44.52,
+     "w": "an"
+    },
+    {
+     "s": 44.52,
+     "e": 44.76,
+     "w": "hour,"
+    },
+    {
+     "s": 45.08,
+     "e": 45.34,
+     "w": "nothing"
+    },
+    {
+     "s": 45.34,
+     "e": 45.58,
+     "w": "on"
+    },
+    {
+     "s": 45.58,
+     "e": 45.88,
+     "w": "foot"
+    },
+    {
+     "s": 45.88,
+     "e": 46.12,
+     "w": "can"
+    },
+    {
+     "s": 46.12,
+     "e": 46.36,
+     "w": "keep"
+    },
+    {
+     "s": 46.36,
+     "e": 46.64,
+     "w": "up."
+    }
+   ]
   },
   {
-   "start": 41.0,
-   "end": 47.0,
-   "text": "The train had one huge advantage. At 120 kilometers an hour, nothing on foot can keep up."
+   "start": 46.92,
+   "end": 52.62,
+   "text": "He checked what he had. Fuel for 2,000 kilometers. A dining car with food for a week.",
+   "words": [
+    {
+     "s": 46.92,
+     "e": 47.38,
+     "w": "He"
+    },
+    {
+     "s": 47.38,
+     "e": 47.66,
+     "w": "checked"
+    },
+    {
+     "s": 47.66,
+     "e": 47.82,
+     "w": "what"
+    },
+    {
+     "s": 47.82,
+     "e": 47.92,
+     "w": "he"
+    },
+    {
+     "s": 47.92,
+     "e": 48.22,
+     "w": "had."
+    },
+    {
+     "s": 48.36,
+     "e": 48.92,
+     "w": "Fuel"
+    },
+    {
+     "s": 48.92,
+     "e": 49.16,
+     "w": "for"
+    },
+    {
+     "s": 49.16,
+     "e": 49.4,
+     "w": "2"
+    },
+    {
+     "s": 49.4,
+     "e": 49.8,
+     "w": ",000"
+    },
+    {
+     "s": 49.8,
+     "e": 50.26,
+     "w": "kilometers."
+    },
+    {
+     "s": 50.56,
+     "e": 50.68,
+     "w": "A"
+    },
+    {
+     "s": 50.68,
+     "e": 51.0,
+     "w": "dining"
+    },
+    {
+     "s": 51.0,
+     "e": 51.4,
+     "w": "car"
+    },
+    {
+     "s": 51.4,
+     "e": 51.64,
+     "w": "with"
+    },
+    {
+     "s": 51.64,
+     "e": 51.96,
+     "w": "food"
+    },
+    {
+     "s": 51.96,
+     "e": 52.18,
+     "w": "for"
+    },
+    {
+     "s": 52.18,
+     "e": 52.32,
+     "w": "a"
+    },
+    {
+     "s": 52.32,
+     "e": 52.62,
+     "w": "week."
+    }
+   ]
   },
   {
-   "start": 47.0,
-   "end": 54.0,
-   "text": "He checked what he had. Fuel for 2,000 kilometers, a dining car with food for a week, full water tanks."
+   "start": 52.88,
+   "end": 56.5,
+   "text": "Full water tanks. Then he locked every door from the cab.",
+   "words": [
+    {
+     "s": 52.88,
+     "e": 53.12,
+     "w": "Full"
+    },
+    {
+     "s": 53.12,
+     "e": 53.44,
+     "w": "water"
+    },
+    {
+     "s": 53.44,
+     "e": 53.84,
+     "w": "tanks."
+    },
+    {
+     "s": 54.38,
+     "e": 54.68,
+     "w": "Then"
+    },
+    {
+     "s": 54.68,
+     "e": 54.84,
+     "w": "he"
+    },
+    {
+     "s": 54.84,
+     "e": 55.14,
+     "w": "locked"
+    },
+    {
+     "s": 55.14,
+     "e": 55.44,
+     "w": "every"
+    },
+    {
+     "s": 55.44,
+     "e": 55.7,
+     "w": "door"
+    },
+    {
+     "s": 55.7,
+     "e": 55.96,
+     "w": "from"
+    },
+    {
+     "s": 55.96,
+     "e": 56.08,
+     "w": "the"
+    },
+    {
+     "s": 56.08,
+     "e": 56.5,
+     "w": "cab."
+    }
+   ]
   },
   {
-   "start": 54.0,
-   "end": 61.0,
-   "text": "Then he locked every door from the cab. Speed, check, fuel, check, doors, check."
+   "start": 56.5,
+   "end": 60.66,
+   "text": "Speed. Check. Fuel. Check. Doors. Check.",
+   "words": [
+    {
+     "s": 56.5,
+     "e": 57.62,
+     "w": "Speed."
+    },
+    {
+     "s": 57.92,
+     "e": 58.22,
+     "w": "Check."
+    },
+    {
+     "s": 58.54,
+     "e": 58.92,
+     "w": "Fuel."
+    },
+    {
+     "s": 59.08,
+     "e": 59.32,
+     "w": "Check."
+    },
+    {
+     "s": 59.8,
+     "e": 60.18,
+     "w": "Doors."
+    },
+    {
+     "s": 60.38,
+     "e": 60.66,
+     "w": "Check."
+    }
+   ]
   },
   {
-   "start": 61.0,
-   "end": 66.0,
-   "text": "Joel had thought of everything. But Joel forgot one thing."
+   "start": 61.06,
+   "end": 62.38,
+   "text": "Joel had thought of everything.",
+   "words": [
+    {
+     "s": 61.06,
+     "e": 61.4,
+     "w": "Joel"
+    },
+    {
+     "s": 61.4,
+     "e": 61.62,
+     "w": "had"
+    },
+    {
+     "s": 61.62,
+     "e": 61.82,
+     "w": "thought"
+    },
+    {
+     "s": 61.82,
+     "e": 61.98,
+     "w": "of"
+    },
+    {
+     "s": 61.98,
+     "e": 62.38,
+     "w": "everything."
+    }
+   ]
   },
   {
-   "start": 66.0,
-   "end": 68.0,
-   "text": "What did he forget? Tell me in the comments."
+   "start": 62.94,
+   "end": 65.18,
+   "text": "But Joel forgot one thing.",
+   "words": [
+    {
+     "s": 62.94,
+     "e": 63.58,
+     "w": "But"
+    },
+    {
+     "s": 63.58,
+     "e": 63.98,
+     "w": "Joel"
+    },
+    {
+     "s": 63.98,
+     "e": 64.48,
+     "w": "forgot"
+    },
+    {
+     "s": 64.48,
+     "e": 64.86,
+     "w": "one"
+    },
+    {
+     "s": 64.86,
+     "e": 65.18,
+     "w": "thing."
+    }
+   ]
+  },
+  {
+   "start": 65.56,
+   "end": 68.04,
+   "text": "What did he forget? Tell me in the comments.",
+   "words": [
+    {
+     "s": 65.56,
+     "e": 66.2,
+     "w": "What"
+    },
+    {
+     "s": 66.2,
+     "e": 66.34,
+     "w": "did"
+    },
+    {
+     "s": 66.34,
+     "e": 66.48,
+     "w": "he"
+    },
+    {
+     "s": 66.48,
+     "e": 66.86,
+     "w": "forget?"
+    },
+    {
+     "s": 67.08,
+     "e": 67.3,
+     "w": "Tell"
+    },
+    {
+     "s": 67.3,
+     "e": 67.48,
+     "w": "me"
+    },
+    {
+     "s": 67.48,
+     "e": 67.62,
+     "w": "in"
+    },
+    {
+     "s": 67.62,
+     "e": 67.7,
+     "w": "the"
+    },
+    {
+     "s": 67.7,
+     "e": 68.04,
+     "w": "comments."
+    }
+   ]
   }
  ]
 }

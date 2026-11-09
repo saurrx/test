@@ -4,7 +4,7 @@
 - [ ] Waiting for the owner's "go" to start the 9-hour loop (`LOOP.md` v3). Nothing in the loop has run.
 
 ## On "go"
-1. Write loop start/end (UTC) in `LOOP.md`; create the two hourly watchdog wake-ups (30 min apart).
+1. Write loop start/end (UTC) in `LOOP.md`; enable the two watchdog wake-ups with `update_trigger enabled=true`: A `trig_01W81GSJRHEHJ1JUPrxaG8Bc` (fires at :56), B `trig_018B98jFa4hDE7PHcmLxUtpt` (fires at :27). Both exist and are disabled.
 2. Phase 0 (75 min): `scripts/qc.py`, `scripts/judge_pair.py`, judge calibration, `bench/briefs/`, component library + Gallery, `research/prereg.md`, checkpoint 0.
 3. Iterations per `LOOP.md`.
 
@@ -19,3 +19,7 @@
 - [x] Instagram downloads work from the PC without cookies
 - [x] Analyzer v3 (cut detector for dark footage, view changes, motion, Hindi-aware transcript with word timings, hook strip)
 - [x] Fable 5.2 review of the plan; `LOOP.md` v3
+- [x] Devanagari text renders correctly in Remotion on the PC (`@remotion/google-fonts`, Noto Sans Devanagari)
+- [x] WebGL shaders render on the PC only with `--gl=swangle` (software); GPU backends give no WebGL over SSH. A 30-frame 1080p shader clip takes 7 s including bundling
+- [x] Blind judge mechanism: a Sonnet 5.5 subagent reads two hook strips and returns a pick
+- [x] Watchdog wake-ups created (disabled until "go")

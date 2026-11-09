@@ -38,3 +38,15 @@
 - SSH to the owner's PC works as `gamer@arch` over Tailscale (policy: accept rule for the owner's own devices). PC: 16 cores, 31 GB RAM, RTX 4060 8 GB, 505 GB free, ffmpeg/python3/node present, yt-dlp missing. Nothing has been installed or run there yet.
 - Owner decisions: no posting for now (virality is predicted and checked on held-out reels, not real views); no Treg top-up (audio must fit in $0.58: Gemini TTS, few reused Lyria clips, code-made music/SFX, keep $0.10 reserve); use Fable 5.2 for the build work.
 - `data/reels/*/` is now gitignored and `autocommit.sh` force-adds the `.info.json` metadata every 10 minutes, so in-progress downloads no longer show as untracked. Commit trailer updated.
+
+## 2026-11-09 — PC pipeline built and tested; LOOP.md v3
+- **PC setup** (`~/reels-loop`, nothing system-wide): uv venv with yt-dlp, faster-whisper, edge-tts, opencv, scenedetect; repo copy synced by `scripts/pc_sync.sh`; `reels-worker` systemd user unit runs `scripts/pc_worker.sh` (download + analyse, about 1 reel a minute).
+- **Instagram**: works from the PC's home IP without cookies. Cookies stay off unless anonymous access is blocked (`COOKIES_BROWSER=firefox`), to avoid risking the owner's account.
+- **GPU not used**: the owner's `llama-server` holds 7.7 of 8 GB VRAM. I did not stop it. Whisper large-v3-turbo runs on CPU (8 threads), and WebGL renders through software (`--gl=swangle`), both fast enough.
+- **Remotion on the PC**: its bundled headless browser download was corrupt; use system Chromium (`--browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing`).
+- **Analyzer v3**: ffmpeg's scene score and PySceneDetect both missed cuts in dark footage (2–3 found in a reel that visibly changes every few seconds). Replaced with brightness-normalised frame-difference spikes, plus a "view changes" measure for dissolves and camera moves. Language is pinned to hi/en (Whisper was guessing pa/ur/sa/ms). Not yet validated against hand-counted cuts; that is a Phase 0 check.
+- **Bugs I made and fixed**: (1) the worker loop's commands read the reel list from stdin, corrupting creator names (`dartists_ai`); fixed with a separate file descriptor, bad folders deleted. (2) I briefly had two workers running; killed both and restarted one under systemd.
+- **Free voice fallback**: `edge-tts` (Microsoft neural voices, hi-IN and en-IN, sentence timestamps) works on the PC at no cost.
+- **Spend**: 1 Gemini TTS test call, $0.0006. Balance about $0.58.
+- **Judge test**: one blind Sonnet comparison picked the lower-performing reel's hook over a 414x hit. One data point, but it supports calibrating the judge before trusting it (Phase 0, step 3).
+- **Watchdogs**: two hourly scheduled tasks created and disabled until "go".
