@@ -13,5 +13,6 @@ dl() {
   echo "FAIL $h $s" >> data/reels/_failed.txt
 }
 export -f dl
-awk -F'\t' '{print $1" "$2}' data/all_reels.tsv | xargs -P 1 -n 2 bash -c 'dl "$0" "$1"; sleep 6'
+LIST=data/all_reels.tsv; [ -s data/reels_priority.tsv ] && LIST=data/reels_priority.tsv
+awk -F'\t' '{print $1" "$2}' "$LIST" | xargs -P 1 -n 2 bash -c 'dl "$0" "$1"; sleep 6'
 echo DONE
