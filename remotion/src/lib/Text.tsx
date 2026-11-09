@@ -25,11 +25,11 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
   const chunks = React.useMemo(() => chunkWords(words, max ?? (style === "pop" ? 3 : 5)), [words, max, style]);
   const c = chunks.find((k) => t >= k.s - 0.04 && t < k.e); if (!c) return null;
   const text = c.words.map((w) => w.w).join(" "); const pop = style === "pop";
-  const fs = size ?? (pop ? (text.length > 16 ? 96 : 124) : 68);
+  const fs = size ?? (pop ? (text.length > 16 ? 104 : 132) : 68);
   return (
     <>
     {/* soft dark pool behind the words so they read on any picture */}
-    <div style={{ position: "absolute", left: -100, right: -100, top: y - 260, height: 520, background: `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,${pop ? 0.45 : 0.78}) 0%, rgba(0,0,0,0) 100%)` }} />
+    <div style={{ position: "absolute", left: -100, right: -100, top: y - 260, height: 520, background: `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,${pop ? 0.62 : 0.78}) 0%, rgba(0,0,0,0) 100%)` }} />
     <div style={{ position: "absolute", left: 70, right: 70, top: y, transform: "translateY(-50%)", textAlign: "center", fontFamily: fontFor(style, text),
       fontSize: fs, lineHeight: pop ? 1.12 : 1.3, fontWeight: 800, letterSpacing: pop ? 1 : 3, textTransform: "uppercase", color: p.fg }}>
       {c.words.map((w, i) => {

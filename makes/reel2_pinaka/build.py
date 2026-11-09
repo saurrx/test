@@ -20,7 +20,8 @@ hills = lambda col=INK, y=1560: {"kind": "hills", "x": 540, "y": y, "color": col
 S = []
 def sc(at, **k): k.setdefault("bg", {"kind": "linear"}); S.append((at, k))
 # 1 hook: 5,000 men (headline inside the frame, over the crowd)
-sc(0.0, cam={"z0": 1.22, "z1": 1.0}, layers=[border(215), {"kind": "crowd", "x": 540, "y": 640, "count": 48, "cols": 8, "gap": 118, "rowGap": 112, "stagger": 0.3, "anim": "walk", "enter": "none"}, band(330, 250), txt("5,000 आदमी", y=330, size=170)])
+sc(0.0, cam={"z0": 1.2, "z1": 1.0}, layers=[{"kind": "glowdot", "x": 540, "y": 760, "r": 380, "color2": Y, "opacity": 0.75, "enter": "none"}, {"kind": "bow", "x": 590, "y": 760, "s": 0.78, "color": "#ffe08a", "color2": "#fff", "glow": False, "enter": "none"},
+   {"kind": "crowd", "x": 540, "y": 1560, "count": 32, "cols": 16, "gap": 64, "rowGap": 70, "s": 0.55, "stagger": 0.2, "anim": "walk", "enter": "none"}, txt("5,000 आदमी हारे", y=330, size=150)])
 # 2 ...to pull ONE bow
 t = T("सिर्फ़") - 0.1; sc(t, trans="punch", cam={"x0": -50, "x1": 50}, layers=[{"kind": "chest", "x": 720, "y": 900, "s": 0.9, "roll": 2.5, "enter": "slide_r", "move": {"x": -70}}, {"kind": "rope", "x": 150, "y": 880, "len": 280},
    {"kind": "crowd", "x": 190, "y": 860, "count": 6, "cols": 6, "gap": 62, "pose": "pull", "anim": "strain", "s": 0.95, "enter": "none"}, border(1180), txt("1 धनुष", y=330, size=170, at=T("एक") - t)])
@@ -53,8 +54,8 @@ t = T("फिर") - 0.1; sc(t, trans="fade", palette="dusk", bg={"kind": "horiz
 # 10 RAM
 t = T("राम") - 0.15; sc(t, trans="flash", palette="dusk", bg={"kind": "horizon"}, cam={"z0": 1.25, "z1": 1.35}, layers=[{"kind": "sun", "x": 540, "y": 760, "r": 300, "color": Y}, hills(), fig(x=540, y=1230, s=3.6, color=INK, crown=True, pose="stand"), txt("राम", y=330, size=260, col="#fff1dd")])
 # 11 lifted it like a flower
-t = T("उसने") - 0.1; sc(t, trans="cut", palette="dusk", bg={"kind": "horizon"}, cam={"z0": 1.0, "z1": 1.08}, layers=[{"kind": "sun", "x": 540, "y": 760, "r": 260, "color": Y}, hills(), fig(x=540, y=1300, s=3.3, color=INK, crown=True, pose="lift"),
-   {"kind": "bow", "x": 540, "y": 1100, "s": 0.6, "rot": 90, "color": INK, "color2": "#fff", "glow": False, "enter": "none", "move": {"y": -230, "over": 1.4}}, {"kind": "birds", "x": 60, "y": 420, "color": INK, "count": 5, "enter": "none"}])
+t = T("उसने") - 0.1; sc(t, trans="cut", palette="dusk", bg={"kind": "radial", "cy": 40}, dust=True, cam={"z0": 1.5, "z1": 1.7, "y0": -260, "y1": -330}, layers=[{"kind": "rays", "x": 540, "y": 700, "opacity": 0.25}, {"kind": "glowdot", "x": 540, "y": 760, "r": 380, "color2": Y, "opacity": 0.7, "enter": "none"}, fig(x=540, y=1300, s=3.3, color=INK, crown=True, pose="lift"),
+   {"kind": "bow", "x": 540, "y": 1100, "s": 0.6, "rot": 90, "color": "#ffe08a", "color2": "#fff", "glow": False, "enter": "none", "move": {"y": -230, "over": 1.4}}, txt("फूल जैसा", y=560, size=110, at=T("फूल") - t, enter="pop")])
 # 12 drew the string... and it broke
 t = T("प्रत्यंचा", 2) - 0.1; br = T("टूट") - t
 sc(t, trans="punch", palette="dusk", bg={"kind": "horizon"}, cam={"z0": 1.1, "z1": 1.3, "shakeAt": br, "shake": 36}, layers=[{"kind": "sun", "x": 540, "y": 760, "r": 260, "color": Y}, hills(), fig(x=430, y=1300, s=3.3, color=INK, crown=True, pose="draw"),
@@ -85,5 +86,5 @@ assert all(s["dur"] > 0.4 for s in scenes), [s["dur"] for s in scenes]
 sfx = [{"src": "audio/sfx_hit.mp3", "at": 0.0, "vol": 0.9}, {"src": "audio/sfx_hit.mp3", "at": T("सिर्फ़") - 0.1, "vol": 0.7}, {"src": "audio/sfx_boom.mp3", "at": T("पिनाक"), "vol": 0.8}, {"src": "audio/sfx_bell_low.mp3", "at": T("सीता"), "vol": 0.5},
        {"src": "audio/sfx_whoosh.mp3", "at": T("फिर") - 0.2, "vol": 0.5}, {"src": "audio/sfx_boom.mp3", "at": T("राम") - 0.1, "vol": 0.9}, {"src": "audio/sfx_riser.mp3", "at": T("टूट") - 2.0, "vol": 0.5}, {"src": "audio/sfx_crack.mp3", "at": T("टूट"), "vol": 1.0},
        {"src": "audio/sfx_crack.mp3", "at": T("आवाज़"), "vol": 0.8}, {"src": "audio/sfx_boom.mp3", "at": T("परशुराम") - 0.1, "vol": 1.0}, {"src": "audio/sfx_hit.mp3", "at": T("आगे") - 0.1, "vol": 0.8}]
-props = {"palette": "clay", "captions": {"style": "pop", "words": words, "y": 1440, "max": 3}, "audio": {"vo": "audio/reel2_vo.mp3", "music": "audio/music_epic.mp3", "musicVol": 0.2, "sfx": sfx}, "scenes": scenes}
+props = {"palette": "clay", "header": {"text": "रामायण · भाग 1", "color": "#ffcf5c"}, "captions": {"style": "pop", "words": words, "y": 1440, "max": 3}, "audio": {"vo": "audio/reel2_vo.mp3", "music": "audio/music_epic.mp3", "musicVol": 0.2, "sfx": sfx}, "scenes": scenes}
 (D / "reel.json").write_text(json.dumps(props, ensure_ascii=False)); print(len(scenes), "scenes", [s["dur"] for s in scenes])

@@ -1,0 +1,20 @@
+{
+ "clips": [
+  "renders/reel2_v2.mp4",
+  "renders/reel1_v3.mp4",
+  "data/ref/pinaka_ref.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "data/ref/pinaka_ref.mp4",
+   "B": "renders/reel2_v2.mp4",
+   "C": "renders/reel1_v3.mp4"
+  },
+  "j2": {
+   "A": "data/ref/pinaka_ref.mp4",
+   "B": "renders/reel1_v3.mp4",
+   "C": "renders/reel2_v2.mp4"
+  }
+ }
+}

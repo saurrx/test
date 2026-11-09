@@ -5,6 +5,7 @@ import { SHAPES } from "./lib/Flat";
 import { Diya, Flame, GlowDefs, GlowTrail, Halo, Rays, Yantra } from "./lib/Glow";
 import { Temple } from "./lib/Temple";
 import { BigText, Captions, Word } from "./lib/Text";
+import { fontFor } from "./lib/fonts";
 import { clamp, ease, easeIO, noise, Palette, PALETTES, prog } from "./lib/util";
 
 export type Layer = { kind: string; at?: number; until?: number; x?: number; y?: number; s?: number; rot?: number; opacity?: number; color?: string; color2?: string;
@@ -13,7 +14,7 @@ export type Scene = { dur: number; palette?: string; bg?: { kind?: "radial" | "l
   cam?: { z0?: number; z1?: number; x0?: number; x1?: number; y0?: number; y1?: number; shakeAt?: number; shake?: number }; layers?: Layer[];
   dust?: boolean | number; stars?: boolean; trans?: "cut" | "fade" | "flash" | "punch" };
 export type ReelProps = { palette?: string; scenes: Scene[]; captions?: { words: Word[]; style?: "serif" | "pop"; y?: number; max?: number; size?: number };
-  audio?: { vo?: string; music?: string; musicVol?: number; voVol?: number; sfx?: { src: string; at: number; vol?: number }[] }; film?: { grain?: number; vignette?: number }; duration?: number };
+  audio?: { vo?: string; music?: string; musicVol?: number; voVol?: number; sfx?: { src: string; at: number; vol?: number }[] }; film?: { grain?: number; vignette?: number }; duration?: number; header?: { text: string; color?: string } };
 
 const TEXT_KINDS = new Set(["text"]);
 
@@ -82,6 +83,12 @@ export const Reel: React.FC<ReelProps> = (props) => {
         return <Sequence key={i} from={from} durationInFrames={frames}><SceneView sc={sc} p={p} frames={frames} /></Sequence>;
       })}
       <Film grain={props.film?.grain ?? 0.1} vignette={props.film?.vignette ?? 0.6} />
+      {props.header && (
+        <div style={{ position: "absolute", top: 118, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+          <div style={{ fontFamily: fontFor("clean", props.header.text), fontWeight: 800, fontSize: 38, letterSpacing: 6, color: props.header.color ?? base.accent, background: "rgba(0,0,0,0.55)",
+            border: `2px solid ${props.header.color ?? base.accent}`, borderRadius: 40, padding: "8px 34px", textTransform: "uppercase" }}>{props.header.text}</div>
+        </div>
+      )}
       {props.captions && <Captions words={props.captions.words} style={props.captions.style} p={base} y={props.captions.y} max={props.captions.max} size={props.captions.size} />}
       {props.audio?.vo && <Audio src={staticFile(props.audio.vo)} volume={props.audio.voVol ?? 1} />}
       {props.audio?.music && <Audio src={staticFile(props.audio.music)} volume={props.audio.musicVol ?? 0.22} loop />}
