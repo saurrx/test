@@ -21,3 +21,10 @@
 - `scripts/prioritize_reels.py` writes `data/reels_priority.tsv`. Within each creator it puts the biggest hits and flops first (largest |log(views/median)|), then interleaves creators round-robin, so even a partial download gives a balanced, high-contrast sample for the virality analysis. `download_reels.sh` uses this list when it exists.
 - `scripts/setup_downloads.sh` runs the seed reels, then the seed analysis, then the full list, so only one Instagram client runs at a time. yt-dlp's `--sleep-requests` is set for the seed batch.
 - Still open if 429s persist: a residential IP (running on the owner's PC) or logged-in cookies would remove the blocker. Paid Instagram scrapers on Treg are not worth the budget, because the views and duration CSVs already cover the statistics.
+
+## 2026-11-09 — Tailscale link to the owner's PC (owner request)
+- Goal: run Instagram downloads (and later GPU transcription) on the owner's PC, which has a residential IP and a logged-in browser. That removes the datacenter-IP 429 blocker.
+- Installed Tailscale 1.92.3 (static binary) in the container. `tailscaled` runs in userspace networking with a SOCKS5 proxy on localhost:1055; `tailscale up --shields-up` means no inbound connections to the container are accepted.
+- Login is by browser link (the owner clicks to approve), so no auth key is stored in the repo, chat or environment variables.
+- Caveat: the Tailscale state lives in /var/lib/tailscale, which isn't in git. After a container reclaim the owner has to approve a new login link.
+- Rejected alternative: Claude's built-in Remote Control folders. None are configured, and the feature isn't available on every account.
