@@ -1,0 +1,202 @@
+{
+ "P01": {
+  "hit": "B",
+  "handle": "anchorlinedigital",
+  "hit_code": "DfCTMOFDrgx",
+  "flop_code": "Dd93qiUzCKG",
+  "hit_ratio": 414.4,
+  "flop_ratio": 0.19
+ },
+ "P02": {
+  "hit": "B",
+  "handle": "anchorlinedigital",
+  "hit_code": "DfFhpgVCZgU",
+  "flop_code": "DdzOrNjvI0X",
+  "hit_ratio": 91.9,
+  "flop_ratio": 0.19
+ },
+ "P03": {
+  "hit": "A",
+  "handle": "anim_aman",
+  "hit_code": "DfOiMdsRMFM",
+  "flop_code": "DfMiKRxxBGa",
+  "hit_ratio": 1237.5,
+  "flop_ratio": 0.56
+ },
+ "P04": {
+  "hit": "A",
+  "handle": "artandartists_ai",
+  "hit_code": "DeweiEayJ0G",
+  "flop_code": "DecY5x7khRO",
+  "hit_ratio": 2477.6,
+  "flop_ratio": 0.14
+ },
+ "P05": {
+  "hit": "A",
+  "handle": "artandartists_ai",
+  "hit_code": "De1zmmZy_QT",
+  "flop_code": "DedidFckZof",
+  "hit_ratio": 207.8,
+  "flop_ratio": 0.15
+ },
+ "P06": {
+  "hit": "B",
+  "handle": "astro_zova",
+  "hit_code": "DfKOKAKRk2d",
+  "flop_code": "DfGcS2bRTV8",
+  "hit_ratio": 89.6,
+  "flop_ratio": 0.43
+ },
+ "P07": {
+  "hit": "A",
+  "handle": "astro_zova",
+  "hit_code": "DfLe7n9RuLS",
+  "flop_code": "DfHEvihRkQW",
+  "hit_ratio": 17.8,
+  "flop_ratio": 0.5
+ },
+ "P08": {
+  "hit": "B",
+  "handle": "dayzero.story",
+  "hit_code": "DfB24tJN8dG",
+  "flop_code": "De_esygN5l4",
+  "hit_ratio": 123.6,
+  "flop_ratio": 0.01
+ },
+ "P09": {
+  "hit": "A",
+  "handle": "dayzero.story",
+  "hit_code": "DfKiIh9N2d2",
+  "flop_code": "DewO9zTNXeU",
+  "hit_ratio": 53.7,
+  "flop_ratio": 0.01
+ },
+ "P10": {
+  "hit": "A",
+  "handle": "devanshu.motion",
+  "hit_code": "DelhST6SPPT",
+  "flop_code": "De5c4KFS3z8",
+  "hit_ratio": 18.8,
+  "flop_ratio": 0.09
+ },
+ "P11": {
+  "hit": "B",
+  "handle": "devanshu.motion",
+  "hit_code": "Dey8ZsBSFxt",
+  "flop_code": "DeWEH8oyGN0",
+  "hit_ratio": 8.0,
+  "flop_ratio": 0.55
+ },
+ "P12": {
+  "hit": "A",
+  "handle": "feartalkies",
+  "hit_code": "De6ehfxAXgZ",
+  "flop_code": "DfE1XjkPwQ-",
+  "hit_ratio": 10.5,
+  "flop_ratio": 0.04
+ },
+ "P13": {
+  "hit": "B",
+  "handle": "feartalkies",
+  "hit_code": "De3-hbJkWLx",
+  "flop_code": "DfEXUWXIH9k",
+  "hit_ratio": 7.1,
+  "flop_ratio": 0.06
+ },
+ "P14": {
+  "hit": "B",
+  "handle": "kahiyo.in",
+  "hit_code": "De8p0J1FS7S",
+  "flop_code": "De6aRMqEq0v",
+  "hit_ratio": 55.9,
+  "flop_ratio": 0.02
+ },
+ "P15": {
+  "hit": "B",
+  "handle": "kahiyo.in",
+  "hit_code": "DegiglLCoM-",
+  "flop_code": "De4bLr-CUSI",
+  "hit_ratio": 23.9,
+  "flop_ratio": 0.03
+ },
+ "P16": {
+  "hit": "A",
+  "handle": "kathayug27",
+  "hit_code": "De9qY85zaQk",
+  "flop_code": "DfMw_ahzkN9",
+  "hit_ratio": 53.8,
+  "flop_ratio": 0.55
+ },
+ "P17": {
+  "hit": "A",
+  "handle": "mythospaths",
+  "hit_code": "DeNl62qqR8z",
+  "flop_code": "DfNtGtAKtOz",
+  "hit_ratio": 20.6,
+  "flop_ratio": 0.45
+ },
+ "P18": {
+  "hit": "B",
+  "handle": "mythospaths",
+  "hit_code": "DecR4I6KVRa",
+  "flop_code": "DevPhb5KFGc",
+  "hit_ratio": 19.2,
+  "flop_ratio": 0.52
+ },
+ "P19": {
+  "hit": "A",
+  "handle": "proxifai",
+  "hit_code": "DaebMLSTatC",
+  "flop_code": "DbVLWXbtTJW",
+  "hit_ratio": 4.9,
+  "flop_ratio": 0.16
+ },
+ "P20": {
+  "hit": "A",
+  "handle": "saurabh_fulara",
+  "hit_code": "Dd2584_h8Lr",
+  "flop_code": "De6oLF7oxo9",
+  "hit_ratio": 401.3,
+  "flop_ratio": 0.22
+ },
+ "P21": {
+  "hit": "B",
+  "handle": "therishikatha",
+  "hit_code": "DeYuy6WxXms",
+  "flop_code": "DePZxbAzSFH",
+  "hit_ratio": 82.4,
+  "flop_ratio": 0.01
+ },
+ "P22": {
+  "hit": "B",
+  "handle": "therishikatha",
+  "hit_code": "De8phEeIRf3",
+  "flop_code": "DdQnJhpThAc",
+  "hit_ratio": 76.8,
+  "flop_ratio": 0.01
+ },
+ "P23": {
+  "hit": "B",
+  "handle": "unlock.depths",
+  "hit_code": "De73NQsyWSU",
+  "flop_code": "DfAFsC_Bywe",
+  "hit_ratio": 1440.9,
+  "flop_ratio": 0.17
+ },
+ "P24": {
+  "hit": "B",
+  "handle": "visionmachina",
+  "hit_code": "DfBzp7Rx-NS",
+  "flop_code": "DFWOxq1Tt91",
+  "hit_ratio": 11937.4,
+  "flop_ratio": 0.1
+ },
+ "P25": {
+  "hit": "A",
+  "handle": "visionmachina",
+  "hit_code": "De5qkiNRfO7",
+  "flop_code": "DEqxgqMvkj-",
+  "hit_ratio": 1177.3,
+  "flop_ratio": 0.1
+ }
+}

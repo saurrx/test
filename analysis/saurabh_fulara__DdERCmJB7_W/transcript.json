@@ -1,0 +1,33 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.71,
+ "word_count": 3,
+ "first_word_s": 0.0,
+ "speech_seconds": 15.3,
+ "wpm": 12,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 15.34,
+   "text": "A FUCKING BROADER",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 1.0,
+     "w": "A"
+    },
+    {
+     "s": 14.12,
+     "e": 14.8,
+     "w": "FUCKING"
+    },
+    {
+     "s": 14.8,
+     "e": 15.34,
+     "w": "BROADER"
+    }
+   ]
+  }
+ ]
+}

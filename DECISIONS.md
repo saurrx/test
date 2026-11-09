@@ -50,3 +50,12 @@
 - **Spend**: 1 Gemini TTS test call, $0.0006. Balance about $0.58.
 - **Judge test**: one blind Sonnet comparison picked the lower-performing reel's hook over a 414x hit. One data point, but it supports calibrating the judge before trusting it (Phase 0, step 3).
 - **Watchdogs**: two hourly scheduled tasks created and disabled until "go".
+
+## 2026-11-09 — Loop running (iterations 1–2)
+- Spend so far: Gemini TTS test $0.0006, reel 1 voice $0.0141, Lyria music clip $0.04. Total about $0.055; balance about $0.53.
+- Voice: Gemini "Charon" for final reels (quality), free edge-tts for benchmark and hook-lab variants. I cannot hear audio, so voice and music quality are unverified by ear; QC covers loudness, pace and gaps only.
+- One Lyria clip ("temple bed") is looped and will be reused across glow-lane reels.
+- Renders: SVG blur filters cost seconds per frame in software rendering, so all glows are radial gradients and stacked strokes. A 62 s draft takes about 7.5 min on the PC.
+- Hook-lab judging uses a ranking by 3 blind judges (Borda count) instead of all pairwise comparisons, to save usage: one judge call ranks up to 9 clips.
+- A metadata-only scrape (`reels-meta` unit, one request every ~20 s) runs alongside the video worker to get captions and covers for all 832 reels.
+- BLOCKER (handled): worker restart at 20:52 killed tailscaled and autocommit. Both restart from saved state; the watchdog prompt covers this case.

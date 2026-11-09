@@ -1,0 +1,186 @@
+npm notice run npx
+npm notice run 'remotion' render build Reel ../renders/h1_v8_popcaps.mp4 --props=../makes/hook1/v8_popcaps.json --scale=0.5 --jpeg-quality=70 --crf=26 --gl=swangle --concurrency=6 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing
+Getting compositions
+Getting compositions
+Composition          Reel
+Codec                h264
+Output               ../renders/h1_v8_popcaps.mp4
+Concurrency          6x
+Rendered 0/159
+Rendered 1/159, time remaining: 7m 41s
+Rendered 2/159, time remaining: 9m 56s
+Rendered 3/159, time remaining: 10m 38s
+Rendered 4/159, time remaining: 11m 4s
+Rendered 5/159, time remaining: 11m 19s
+Rendered 6/159, time remaining: 11m 38s
+Rendered 7/159, time remaining: 11m 1s
+Rendered 8/159, time remaining: 10m 47s
+Rendered 9/159, time remaining: 10m 36s
+Rendered 10/159, time remaining: 10m 46s
+Rendered 11/159, time remaining: 11m 6s
+Rendered 12/159, time remaining: 11m 20s
+Rendered 13/159, time remaining: 11m 35s
+Rendered 14/159, time remaining: 11m 34s
+Rendered 15/159, time remaining: 11m 32s
+Rendered 16/159, time remaining: 11m 17s
+Rendered 17/159, time remaining: 11m 11s
+Rendered 18/159, time remaining: 10m 56s
+Rendered 19/159, time remaining: 10m 59s
+Rendered 20/159, time remaining: 10m 52s
+Rendered 21/159, time remaining: 10m 41s
+Rendered 22/159, time remaining: 10m 35s
+Rendered 23/159, time remaining: 10m 27s
+Rendered 24/159, time remaining: 10m 28s
+Rendered 25/159, time remaining: 10m 13s
+Rendered 26/159, time remaining: 10m 6s
+Rendered 27/159, time remaining: 10m 7s
+Rendered 28/159, time remaining: 10m 6s
+Rendered 29/159, time remaining: 10m 7s
+Rendered 30/159, time remaining: 10m 0s
+Rendered 31/159, time remaining: 9m 50s
+Rendered 32/159, time remaining: 9m 35s
+Rendered 33/159, time remaining: 9m 22s
+Rendered 34/159, time remaining: 9m 5s
+Rendered 35/159, time remaining: 9m 8s
+Rendered 36/159, time remaining: 8m 55s
+Rendered 37/159, time remaining: 8m 41s
+Rendered 38/159, time remaining: 8m 29s
+Rendered 39/159, time remaining: 8m 17s
+Rendered 40/159, time remaining: 8m 5s
+Rendered 41/159, time remaining: 7m 54s
+Rendered 42/159, time remaining: 7m 45s
+Rendered 43/159, time remaining: 7m 35s
+Rendered 44/159, time remaining: 7m 24s
+Rendered 45/159, time remaining: 7m 16s
+Rendered 46/159, time remaining: 7m 8s
+Rendered 47/159, time remaining: 6m 59s
+Rendered 48/159, time remaining: 6m 51s
+Rendered 49/159, time remaining: 6m 45s
+Rendered 50/159, time remaining: 6m 39s
+Rendered 51/159, time remaining: 6m 31s
+Rendered 52/159, time remaining: 6m 24s
+Rendered 53/159, time remaining: 6m 16s
+Rendered 54/159, time remaining: 6m 7s
+Rendered 55/159, time remaining: 5m 58s
+Rendered 56/159, time remaining: 5m 51s
+Rendered 57/159, time remaining: 5m 45s
+Rendered 58/159, time remaining: 5m 38s
+Rendered 59/159, time remaining: 5m 32s
+Rendered 60/159, time remaining: 5m 27s
+Rendered 61/159, time remaining: 5m 21s
+Rendered 62/159, time remaining: 5m 15s
+Rendered 63/159, time remaining: 5m 10s
+Rendered 64/159, time remaining: 5m 4s
+Rendered 65/159, time remaining: 4m 59s
+Rendered 66/159, time remaining: 4m 54s
+Rendered 67/159, time remaining: 4m 48s
+Rendered 68/159, time remaining: 4m 43s
+Rendered 69/159, time remaining: 4m 37s
+Rendered 70/159, time remaining: 4m 31s
+Rendered 71/159, time remaining: 4m 26s
+Rendered 72/159, time remaining: 4m 22s
+Rendered 73/159, time remaining: 4m 18s
+Rendered 74/159, time remaining: 4m 14s
+Rendered 75/159, time remaining: 4m 10s
+Rendered 76/159, time remaining: 4m 5s
+Rendered 77/159, time remaining: 4m 1s
+Rendered 78/159, time remaining: 3m 57s
+Rendered 79/159, time remaining: 3m 53s
+Rendered 80/159, time remaining: 3m 49s
+Rendered 81/159, time remaining: 3m 45s
+Rendered 82/159, time remaining: 3m 41s
+Rendered 83/159, time remaining: 3m 38s
+Rendered 84/159, time remaining: 3m 34s
+Rendered 85/159, time remaining: 3m 31s
+Rendered 86/159, time remaining: 3m 27s
+Rendered 87/159, time remaining: 3m 24s
+Rendered 88/159, time remaining: 3m 21s
+Rendered 89/159, time remaining: 3m 18s
+Rendered 90/159, time remaining: 3m 14s
+Rendered 91/159, time remaining: 3m 11s
+Rendered 92/159, time remaining: 3m 7s
+Rendered 93/159, time remaining: 3m 3s
+Rendered 94/159, time remaining: 2m 59s
+Rendered 95/159, time remaining: 2m 56s
+Rendered 96/159, time remaining: 2m 52s
+Rendered 97/159, time remaining: 2m 49s
+Rendered 98/159, time remaining: 2m 46s
+Rendered 99/159, time remaining: 2m 43s
+Rendered 100/159, time remaining: 2m 40s
+Rendered 101/159, time remaining: 2m 37s
+Rendered 102/159, time remaining: 2m 34s
+Rendered 103/159, time remaining: 2m 31s
+Rendered 104/159, time remaining: 2m 27s
+Rendered 105/159, time remaining: 2m 24s
+Rendered 106/159, time remaining: 2m 21s
+Rendered 107/159, time remaining: 2m 18s
+Rendered 108/159, time remaining: 2m 15s
+Rendered 109/159, time remaining: 2m 12s
+Rendered 110/159, time remaining: 2m 9s
+Rendered 111/159, time remaining: 2m 6s
+Rendered 112/159, time remaining: 2m 3s
+Rendered 113/159, time remaining: 2m 0s
+Rendered 114/159, time remaining: 1m 57s
+Rendered 115/159, time remaining: 1m 54s
+Rendered 116/159, time remaining: 1m 51s
+Rendered 117/159, time remaining: 1m 49s
+Rendered 118/159, time remaining: 1m 46s
+Rendered 119/159, time remaining: 1m 43s
+Rendered 120/159, time remaining: 1m 41s
+Rendered 121/159, time remaining: 1m 38s
+Rendered 122/159, time remaining: 1m 36s
+Rendered 123/159, time remaining: 1m 34s
+Rendered 124/159, time remaining: 1m 31s
+Rendered 125/159, time remaining: 1m 28s
+Rendered 126/159, time remaining: 1m 26s
+Rendered 127/159, time remaining: 1m 24s
+Rendered 128/159, time remaining: 1m 22s
+Rendered 129/159, time remaining: 1m 19s
+Rendered 130/159, time remaining: 1m 17s
+Rendered 131/159, time remaining: 1m 14s
+Rendered 132/159, time remaining: 1m 12s
+Rendered 133/159, time remaining: 1m 9s
+Rendered 134/159, time remaining: 1m 7s
+Rendered 135/159, time remaining: 1m 4s
+Rendered 135/159, time remaining: 1m 4s
+Rendered 135/159, time remaining: 1m 4s
+Rendered 135/159, time remaining: 1m 4s
+Rendered 136/159, time remaining: 1m 2s
+Rendered 137/159, time remaining: 59s
+Rendered 138/159, time remaining: 57s
+Rendered 138/159, time remaining: 57s
+Rendered 138/159, time remaining: 57s
+Rendered 138/159, time remaining: 57s
+Rendered 138/159, time remaining: 57s
+Rendered 139/159, time remaining: 54s
+Rendered 140/159, time remaining: 51s
+Rendered 141/159, time remaining: 49s
+Rendered 142/159, time remaining: 46s
+Rendered 143/159, time remaining: 43s
+Rendered 143/159, time remaining: 43s
+Rendered 144/159, time remaining: 40s
+Rendered 145/159, time remaining: 38s
+Rendered 145/159, time remaining: 38s
+Rendered 145/159, time remaining: 38s
+Rendered 146/159, time remaining: 35s
+Rendered 147/159, time remaining: 32s
+Rendered 148/159, time remaining: 29s
+Rendered 149/159, time remaining: 26s
+Rendered 149/159, time remaining: 26s
+Rendered 150/159, time remaining: 24s
+Rendered 151/159, time remaining: 21s
+Rendered 151/159, time remaining: 21s
+Rendered 152/159, time remaining: 18s
+Rendered 153/159, time remaining: 15s
+Rendered 153/159, time remaining: 15s
+Rendered 154/159, time remaining: 13s
+Rendered 155/159, time remaining: 10s
+Rendered 156/159, time remaining: 7s
+Rendered 156/159, time remaining: 7s
+Rendered 157/159, time remaining: 5s
+Rendered 158/159, time remaining: 2s
+Stitched 69/159
+Stitched 82/159
+Stitched 127/159
+Stitched 159/159
++                    ../renders/h1_v8_popcaps.mp4 971.3 kB

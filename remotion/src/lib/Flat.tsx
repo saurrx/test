@@ -149,16 +149,26 @@ export const Coins: React.FC<SP> = ({ t, color, count = 14, spread = 500, fall =
 export const Needle: React.FC<SP> = ({ t, color, color2, angle = 0, from = 0, len = 330 }) => { const a = from + (angle - from) * prog(t, 0, 16) + 3 * Math.sin(t / 4) * (1 - prog(t, 16, 40)); return (
   <g transform={`rotate(${a})`}><path d={`M0 ${-len} L26 0 L0 40 L-26 0 Z`} fill={color2} /><Halo cx={0} cy={-len} r={90} color={color2} opacity={0.8} /><circle r={16} fill={color} /></g>); };
 
-// Smooth human silhouette for the glow lane (devotee seen from behind or the side): no face, rim-lit.
+// Devotee silhouette for the glow lane: no face; hair bun, shawl, joined hands and a warm rim light make it read as a person.
 export const Person: React.FC<SP> = ({ t, color, color2, pose = "pray", rim = true }) => {
-  const br = 1 + 0.012 * Math.sin(t / 14); const armUp = pose === "ring" ? 1 : 0; const sw = pose === "ring" ? 6 * Math.sin(t / 3.2) : 0;
+  const br = 1 + 0.012 * Math.sin(t / 14); const sw = pose === "ring" ? 7 * Math.sin(t / 3.2) : 0; const st = { stroke: rim ? color2 : "none", strokeOpacity: 0.75, strokeWidth: 4, strokeLinejoin: "round" as const };
   return (
     <g transform={`scale(${br})`}>
-      {rim && <Halo cx={0} cy={-40} r={260} ry={420} color={color2} opacity={0.35} />}
-      <path d="M-120 330 L-104 60 Q-100 -36 -34 -52 L-30 -84 Q-66 -100 -66 -150 Q-66 -214 0 -214 Q66 -214 66 -150 Q66 -100 30 -84 L34 -52 Q100 -36 104 60 L120 330 Z" fill={color} stroke={rim ? color2 : "none"} strokeOpacity={0.7} strokeWidth={5} />
-      {pose === "pray" && <path d="M-96 40 Q-40 120 0 60 Q40 120 96 40 L84 110 Q0 190 -84 110 Z" fill={color} stroke={color2} strokeOpacity={0.5} strokeWidth={4} />}
-      {armUp === 1 && <path d={`M70 -30 Q150 -160 ${120 + sw} -330 L${150 + sw} -326 Q190 -150 104 20 Z`} fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />}
-      {pose === "hold" && <path d="M60 -10 Q160 20 230 -20 L236 6 Q160 60 70 40 Z" fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />}
+      {rim && <Halo cx={0} cy={-60} r={250} ry={400} color={color2} opacity={0.3} />}
+      {/* dhoti + torso */}
+      <path d="M-150 420 Q-128 250 -92 150 Q-128 60 -124 -40 Q-120 -96 -52 -108 L52 -108 Q120 -96 124 -40 Q128 60 92 150 Q128 250 150 420 Z" fill={color} {...st} />
+      {/* shawl across the chest */}
+      <path d="M-118 -70 Q-20 40 96 140 L70 176 Q-40 90 -124 -10 Z" fill={color2} opacity={0.3} />
+      <path d="M-112 250 Q0 290 112 250" fill="none" stroke={color2} strokeOpacity={0.35} strokeWidth={4} />
+      {/* neck, head, bun */}
+      <rect x={-22} y={-130} width={44} height={36} fill={color} />
+      <circle cx={0} cy={-178} r={58} fill={color} {...st} /><circle cx={0} cy={-246} r={22} fill={color} {...st} />
+      <path d="M-34 -100 Q0 -60 34 -100" fill="none" stroke={color2} strokeOpacity={0.8} strokeWidth={5} strokeDasharray="2 9" strokeLinecap="round" />
+      {pose === "pray" && <g><path d="M-116 -30 Q-80 60 -8 10 L-8 -44 Q-60 -10 -96 -70 Z" fill={color} {...st} /><path d="M116 -30 Q80 60 8 10 L8 -44 Q60 -10 96 -70 Z" fill={color} {...st} />
+        <path d="M0 -62 Q16 -30 10 14 L-10 14 Q-16 -30 0 -62 Z" fill={color2} opacity={0.9} /></g>}
+      {pose === "ring" && <g><path d={`M84 -86 Q150 -200 ${118 + sw} -372 L${150 + sw} -368 Q196 -190 122 -30 Z`} fill={color} {...st} /><circle cx={134 + sw} cy={-380} r={20} fill={color} {...st} />
+        <path d="M-120 -40 Q-150 70 -110 170 L-84 160 Q-110 70 -92 -50 Z" fill={color} {...st} /></g>}
+      {pose === "stand" && <g><path d="M-120 -40 Q-150 70 -110 170 L-84 160 Q-110 70 -92 -50 Z" fill={color} {...st} /><path d="M120 -40 Q150 70 110 170 L84 160 Q110 70 92 -50 Z" fill={color} {...st} /></g>}
     </g>
   );
 };

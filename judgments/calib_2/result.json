@@ -1,0 +1,16 @@
+[
+ {
+  "judge": 1,
+  "correct": 17,
+  "n": 25,
+  "accuracy": 0.68,
+  "p_one_sided": 0.0539
+ },
+ {
+  "judge": 2,
+  "correct": 16,
+  "n": 25,
+  "accuracy": 0.64,
+  "p_one_sided": 0.1148
+ }
+]

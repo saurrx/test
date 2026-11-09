@@ -29,3 +29,10 @@ previous reel) is registered as V22.
 **F4. A longer gap since the previous post goes with more views (V4, V21).**
 Raw: 1.27x, p = 0.12 (null). Detrended: 1.38x, p = 0.013, q = 0.02, stable leaving any creator out, but only 11 of 17
 creators agree in sign. → Rule P3 (`evidenced`, weak): don't post in bursts; space posts by at least the creator's usual gap.
+
+## Judge calibration 1 (2026-11-09 21:10, 25 hit/flop pairs from 15 creators, first 3 s + opening line only)
+Two blind Sonnet judges picked the real hit in **17/25 (68%, one-sided p = 0.054)** and **16/25 (64%, p = 0.11)**.
+Chance is 50%. This narrowly misses the pre-registered bar (p ≤ 0.05), so judge verdicts stay labelled **craft**:
+the judge is probably a little better than a coin at spotting real hits from the opening, but not reliably.
+Both judges said they relied on a curiosity gap or bold claim in the opening line plus legible on-screen hook text.
+To be repeated when about 50 pairs are available.
