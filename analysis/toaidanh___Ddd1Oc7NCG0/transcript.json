@@ -1,0 +1,351 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.985,
+ "word_count": 54,
+ "first_word_s": 3.86,
+ "speech_seconds": 22.1,
+ "wpm": 147,
+ "segments": [
+  {
+   "start": 3.86,
+   "end": 6.24,
+   "text": "Stay with me! We're almost there!",
+   "words": [
+    {
+     "s": 3.86,
+     "e": 3.96,
+     "w": "Stay"
+    },
+    {
+     "s": 3.96,
+     "e": 4.16,
+     "w": "with"
+    },
+    {
+     "s": 4.16,
+     "e": 4.36,
+     "w": "me!"
+    },
+    {
+     "s": 4.84,
+     "e": 5.52,
+     "w": "We're"
+    },
+    {
+     "s": 5.52,
+     "e": 5.86,
+     "w": "almost"
+    },
+    {
+     "s": 5.86,
+     "e": 6.24,
+     "w": "there!"
+    }
+   ]
+  },
+  {
+   "start": 19.99,
+   "end": 22.95,
+   "text": "Welcome to the Last Fortress.",
+   "words": [
+    {
+     "s": 19.99,
+     "e": 20.47,
+     "w": "Welcome"
+    },
+    {
+     "s": 20.47,
+     "e": 21.85,
+     "w": "to"
+    },
+    {
+     "s": 21.85,
+     "e": 21.99,
+     "w": "the"
+    },
+    {
+     "s": 21.99,
+     "e": 22.31,
+     "w": "Last"
+    },
+    {
+     "s": 22.31,
+     "e": 22.95,
+     "w": "Fortress."
+    }
+   ]
+  },
+  {
+   "start": 28.56,
+   "end": 29.92,
+   "text": "She doesn't have much time.",
+   "words": [
+    {
+     "s": 28.56,
+     "e": 29.0,
+     "w": "She"
+    },
+    {
+     "s": 29.0,
+     "e": 29.24,
+     "w": "doesn't"
+    },
+    {
+     "s": 29.24,
+     "e": 29.38,
+     "w": "have"
+    },
+    {
+     "s": 29.38,
+     "e": 29.58,
+     "w": "much"
+    },
+    {
+     "s": 29.58,
+     "e": 29.92,
+     "w": "time."
+    }
+   ]
+  },
+  {
+   "start": 30.1,
+   "end": 31.12,
+   "text": "The laboratory is ready.",
+   "words": [
+    {
+     "s": 30.1,
+     "e": 30.24,
+     "w": "The"
+    },
+    {
+     "s": 30.24,
+     "e": 30.58,
+     "w": "laboratory"
+    },
+    {
+     "s": 30.58,
+     "e": 30.9,
+     "w": "is"
+    },
+    {
+     "s": 30.9,
+     "e": 31.12,
+     "w": "ready."
+    }
+   ]
+  },
+  {
+   "start": 31.3,
+   "end": 33.56,
+   "text": "If she's our only chance, use her.",
+   "words": [
+    {
+     "s": 31.3,
+     "e": 31.44,
+     "w": "If"
+    },
+    {
+     "s": 31.44,
+     "e": 31.68,
+     "w": "she's"
+    },
+    {
+     "s": 31.68,
+     "e": 31.82,
+     "w": "our"
+    },
+    {
+     "s": 31.82,
+     "e": 32.06,
+     "w": "only"
+    },
+    {
+     "s": 32.06,
+     "e": 32.46,
+     "w": "chance,"
+    },
+    {
+     "s": 32.7,
+     "e": 33.34,
+     "w": "use"
+    },
+    {
+     "s": 33.34,
+     "e": 33.56,
+     "w": "her."
+    }
+   ]
+  },
+  {
+   "start": 34.22,
+   "end": 36.88,
+   "text": "If the experiment succeeds, humanity will live.",
+   "words": [
+    {
+     "s": 34.22,
+     "e": 34.56,
+     "w": "If"
+    },
+    {
+     "s": 34.56,
+     "e": 34.66,
+     "w": "the"
+    },
+    {
+     "s": 34.66,
+     "e": 35.1,
+     "w": "experiment"
+    },
+    {
+     "s": 35.1,
+     "e": 35.7,
+     "w": "succeeds,"
+    },
+    {
+     "s": 35.9,
+     "e": 36.34,
+     "w": "humanity"
+    },
+    {
+     "s": 36.34,
+     "e": 36.6,
+     "w": "will"
+    },
+    {
+     "s": 36.6,
+     "e": 36.88,
+     "w": "live."
+    }
+   ]
+  },
+  {
+   "start": 51.76,
+   "end": 53.74,
+   "text": "You came back! You're alive!",
+   "words": [
+    {
+     "s": 51.76,
+     "e": 52.12,
+     "w": "You"
+    },
+    {
+     "s": 52.12,
+     "e": 52.4,
+     "w": "came"
+    },
+    {
+     "s": 52.4,
+     "e": 52.8,
+     "w": "back!"
+    },
+    {
+     "s": 52.98,
+     "e": 53.24,
+     "w": "You're"
+    },
+    {
+     "s": 53.24,
+     "e": 53.74,
+     "w": "alive!"
+    }
+   ]
+  },
+  {
+   "start": 55.36,
+   "end": 57.22,
+   "text": "Can you hear me? It's me!",
+   "words": [
+    {
+     "s": 55.36,
+     "e": 55.7,
+     "w": "Can"
+    },
+    {
+     "s": 55.7,
+     "e": 55.84,
+     "w": "you"
+    },
+    {
+     "s": 55.84,
+     "e": 56.02,
+     "w": "hear"
+    },
+    {
+     "s": 56.02,
+     "e": 56.22,
+     "w": "me?"
+    },
+    {
+     "s": 56.4,
+     "e": 56.94,
+     "w": "It's"
+    },
+    {
+     "s": 56.94,
+     "e": 57.22,
+     "w": "me!"
+    }
+   ]
+  },
+  {
+   "start": 58.14,
+   "end": 62.58,
+   "text": "System Online. Location unknown. Please identify yourself.",
+   "words": [
+    {
+     "s": 58.14,
+     "e": 58.82,
+     "w": "System"
+    },
+    {
+     "s": 58.82,
+     "e": 59.24,
+     "w": "Online."
+    },
+    {
+     "s": 59.52,
+     "e": 60.08,
+     "w": "Location"
+    },
+    {
+     "s": 60.08,
+     "e": 60.5,
+     "w": "unknown."
+    },
+    {
+     "s": 61.1,
+     "e": 61.32,
+     "w": "Please"
+    },
+    {
+     "s": 61.32,
+     "e": 61.94,
+     "w": "identify"
+    },
+    {
+     "s": 61.94,
+     "e": 62.58,
+     "w": "yourself."
+    }
+   ]
+  },
+  {
+   "start": 62.92,
+   "end": 64.1,
+   "text": "Searching humanity.",
+   "words": [
+    {
+     "s": 62.92,
+     "e": 63.34,
+     "w": "Searching"
+    },
+    {
+     "s": 63.34,
+     "e": 64.1,
+     "w": "humanity."
+    }
+   ]
+  }
+ ]
+}

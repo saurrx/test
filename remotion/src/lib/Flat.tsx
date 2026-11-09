@@ -37,13 +37,13 @@ export const Figure: React.FC<SP> = ({ t, color, pose = "stand", anim = "idle", 
   );
 };
 
-export const Crowd: React.FC<SP> = ({ t, color, color2, count = 24, cols = 8, gap = 78, rowGap = 110, pose = "stand", anim = "idle", stagger = 1 }) => (
+export const Crowd: React.FC<SP> = ({ t, color, color2, count = 24, cols = 8, gap = 78, rowGap = 110, pose = "stand", anim = "idle", stagger = 1, crown, prop }) => (
   <g>
     {Array.from({ length: count }).map((_, i) => {
       const c = i % cols, r = Math.floor(i / cols), show = prog(t, i * stagger, i * stagger + 6);
       return show <= 0 ? null : (
         <g key={i} opacity={show} transform={`translate(${(c - (cols - 1) / 2) * gap + (r % 2 ? gap / 2 : 0)} ${r * rowGap}) scale(${0.55 + 0.45 * show})`}>
-          <Figure t={t + i * 3} color={color} color2={color2} pose={pose} anim={anim} seed={i} />
+          <Figure t={t + i * 3} color={color} color2={color2} pose={pose} anim={anim} seed={i} crown={crown} prop={prop} />
         </g>
       );
     })}

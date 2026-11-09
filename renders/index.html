@@ -1,1 +1,24 @@
-<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Reel renders</title><style>body{font:15px -apple-system,system-ui,sans-serif;background:#111;color:#eee;margin:0;padding:16px}h2{margin:28px 0 10px;font-weight:600}.g{display:flex;flex-wrap:wrap;gap:16px}.c{width:270px}video{width:270px;height:480px;background:#000;border-radius:8px}.n{font:13px ui-monospace,monospace;color:#aaa;margin-top:4px}</style><h1>Reel renders · 10 Nov</h1><p style="color:#aaa">Click a video to play with sound. Starting one pauses the others.</p><h2>Full reel — bell</h2><div class=g><div class=c><video controls preload=metadata playsinline src="reel1_v2.mp4"></video><div class=n>reel1_v2</div></div><div class=c><video controls preload=metadata playsinline src="reel1_v1.mp4"></video><div class=n>reel1_v1</div></div></div><h2>Hook lab 1 (first 5.3 s)</h2><div class=g><div class=c><video controls preload=metadata playsinline src="h1_v4_text.mp4"></video><div class=n>h1_v4_text</div></div><div class=c><video controls preload=metadata playsinline src="h1_v7_3shots.mp4"></video><div class=n>h1_v7_3shots</div></div><div class=c><video controls preload=metadata playsinline src="h1_v5_cross.mp4"></video><div class=n>h1_v5_cross</div></div><div class=c><video controls preload=metadata playsinline src="h1_v6_person.mp4"></video><div class=n>h1_v6_person</div></div><div class=c><video controls preload=metadata playsinline src="h1_v1_base.mp4"></video><div class=n>h1_v1_base</div></div><div class=c><video controls preload=metadata playsinline src="h1_v3_strike0.mp4"></video><div class=n>h1_v3_strike0</div></div><div class=c><video controls preload=metadata playsinline src="h1_v8_popcaps.mp4"></video><div class=n>h1_v8_popcaps</div></div><div class=c><video controls preload=metadata playsinline src="h1_v2_bright.mp4"></video><div class=n>h1_v2_bright</div></div></div><h2>Checkpoint 0</h2><div class=g><div class=c><video controls preload=metadata playsinline src="cp0_b1.mp4"></video><div class=n>cp0_b1</div></div><div class=c><video controls preload=metadata playsinline src="cp0_b2.mp4"></video><div class=n>cp0_b2</div></div><div class=c><video controls preload=metadata playsinline src="cp0_b3.mp4"></video><div class=n>cp0_b3</div></div></div><h2>Early tests</h2><div class=g><div class=c><video controls preload=metadata playsinline src="t_flat.mp4"></video><div class=n>t_flat</div></div><div class=c><video controls preload=metadata playsinline src="t_glow.mp4"></video><div class=n>t_glow</div></div></div><script>document.querySelectorAll("video").forEach(v=>v.addEventListener("play",()=>document.querySelectorAll("video").forEach(o=>o!==v&&o.pause())))</script>
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Reel renders</title>
+<style>body{font:15px -apple-system,system-ui,sans-serif;background:#111;color:#eee;margin:0;padding:16px}h2{margin:28px 0 10px;font-weight:600}.g{display:flex;flex-wrap:wrap;gap:16px}.c{width:270px}video{width:270px;height:480px;background:#000;border-radius:8px}.n{font:13px ui-monospace,monospace;color:#aaa;margin-top:4px}.new .n{color:#6f6}#st{color:#888}</style>
+<h1>Reel renders</h1><p id=st>Loading…</p><div id=root></div>
+<script>
+const G=[["Full reels",n=>/^reel/.test(n)],["Hook labs",n=>/^h\d/.test(n)],["Checkpoints",n=>/^cp/.test(n)],["Tests",n=>/^t_/.test(n)],["Other",n=>true]];
+const seen=new Map(),root=document.getElementById("root"),st=document.getElementById("st");let first=true;
+function sec(t){let s=document.getElementById("g_"+t);if(!s){s=document.createElement("section");s.id="g_"+t;s.innerHTML=`<h2>${t}</h2><div class=g></div>`;s.hidden=true;root.append(s);}return s;}
+G.forEach(g=>sec(g[0]));
+async function load(){
+  try{const l=await (await fetch("list.json",{cache:"no-store"})).json();
+  for(const {n,t} of l.slice().reverse()){
+    const old=seen.get(n);if(old===t)continue;
+    const g=G.find(g=>g[1](n))[0],s=sec(g);s.hidden=false;
+    let c=document.getElementById("v_"+n);
+    if(!c){c=document.createElement("div");c.id="v_"+n;c.className="c";s.querySelector(".g").prepend(c);}
+    c.innerHTML=`<video controls preload=metadata playsinline src="${n}.mp4?${t}"></video><div class=n>${n} · ${new Date(t*1000).toLocaleString([], {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}${first?"":" · NEW"}</div>`;
+    if(!first)c.classList.add("new");
+    c.querySelector("video").onplay=e=>document.querySelectorAll("video").forEach(o=>o!==e.target&&o.pause());
+    seen.set(n,t);}
+  first=false;st.textContent=`${l.length} renders · newest first · checks for new ones every 30 s · last check ${new Date().toLocaleTimeString()}`;
+  }catch(e){st.textContent="Couldn't reach the server: "+e}
+}
+load();setInterval(load,30000);
+</script>

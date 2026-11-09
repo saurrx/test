@@ -45,3 +45,9 @@ also does: rho +0.17, p = 0.0004, 11 of 13 creators, stable leaving any creator 
 Reading: after a hit, the next post gets a lift (audience spill-over, the algorithm, or the creator riding a topic).
 Caveat: hot streaks longer than the ±3-reel window would also produce this.
 → Rule P8 (`evidenced`, correlational): when a reel hits, post a closely related follow-up next (a "part 2"), don't change topic.
+
+**F6. Hashtag count: no effect (V15). Caption length: weak, unconfirmed (V14).** (21:38, 324 reels with captions so far)
+Hashtags: rho +0.06, p = 0.38, signs split 6/11 → null, as predicted. Caption length: rho +0.12, p = 0.048, the
+opposite of my prediction (longer captions do slightly better), only 10 of 17 creators agree. The caption sample is
+incomplete and not random (the scrape runs lowest-priority reels first), so both are re-run when all captions are in.
+→ P12 (`null` so far): don't spend effort on hashtags.

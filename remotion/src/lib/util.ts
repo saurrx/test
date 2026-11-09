@@ -23,5 +23,6 @@ export const PALETTES: Record<string, Palette> = {
   night: { bg: "#070b1c", bg2: "#1b2350", fg: "#f4f1ff", accent: "#ffd166", accent2: "#7aa2ff" },
   clay: { bg: "#7a2e12", bg2: "#b5522a", fg: "#fff6e6", accent: "#ffe9c4", accent2: "#2b0f06" }, // Warli: white on terracotta
   dusk: { bg: "#1d0f2e", bg2: "#e2603a", fg: "#fff1dd", accent: "#ffcf5c", accent2: "#12081f" },
+  blood: { bg: "#140404", bg2: "#7a1408", fg: "#ffe9d6", accent: "#ff5a2a", accent2: "#ffd24a" },
   storm: { bg: "#0b1016", bg2: "#2a3a4c", fg: "#eef6ff", accent: "#9fe3ff", accent2: "#ffd24a" },
 };
