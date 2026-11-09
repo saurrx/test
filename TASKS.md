@@ -5,10 +5,13 @@
 - Iterations 1–4 done (see `makes/LOG.md`): reel 1 final in `renders/best/`; checkpoint 1 = improved (6/9); hook labs 1–2; findings F1–F9.
 - **Treg is off** (permission prompts): free voice via `scripts/voice.py tts` on the PC, saved music loops, `scripts/synth.py`.
 - After any restart run `scripts/ensure_up.sh`. Renders: `scripts/render_bg.sh <job> <draft|final> <props> <name>...` then `scripts/render_get.sh <job> [wait]`; finals: `scripts/finish.sh <pc render name> <out name>` → `renders/best/`.
-- **Iteration 5 (started 22:15)**. In flight on the PC: job `r2final` (reel 2 final 1080p → then `scripts/finish.sh reel2_final reel2_pinaka_1080`, QC `--final`, judge with 3 judges vs `data/ref/pinaka_ref.mp4`), job `r3v1` (reel 3 draft, `makes/reel3_jal/`: view sheet, fix, judge vs `data/ref/aarti_ref.mp4` and reel 1, max 3 versions, then final).
-- Next: once `python3 -I scripts/dataset.py` shows ≥ 150 analysed, run V6–V13, V16–V18 exactly as in `research/prereg.md`, `vtest.py report`, write findings; then fit the views model (leave-one-creator-out) and write its accuracy.
-- Then: hook lab 3 (glow lane, Shiva: test P10 stakes line vs "you do X wrong" line), checkpoint 2 after iteration 6 (`bench/cp2.py` from cp1 + new scenes), reel 4 = part 2 of reel 2 or 3 (P8), calibration 2 when ≥ 45 pairs.
-- Final 30 minutes (from 04:25 UTC): checkpoint 3, `research/FINAL_REPORT.md`, ranked queue of originals, disable watchdogs.
+- Iteration 5 done 22:42: reel 2 final in `renders/best/`; reel 3 v1/v2 judged (beats reel 1, reference still ahead "clear"); V6–V18, V31–V37, V40–V41 run; views model in `research/model.md`.
+- **Iteration 6 (started 22:42)**. PC jobs in flight (collect with `scripts/render_get.sh <job> wait`):
+  - `r2fb` → `reel2b_final` (corrected header + 0.5 s lead-in): then `scripts/finish.sh reel2b_final reel2_pinaka_1080` (overwrites), QC `--final`.
+  - `r3final` → `reel3_final`: then `scripts/finish.sh reel3_final reel3_jal_1080`, QC `--final makes/reel3_jal/reel.json`, sheet, log.
+  - `r4v1` → `reel4_v1` draft (`makes/reel4_parashuram/`): view sheet, fix, judge (2 judges) vs `renders/reel2_v2.mp4` and `data/ref/pinaka_ref.mp4`, ≤ 3 versions, then final + finish as `reel4_parashuram_1080`.
+- Then: checkpoint 2 (`cp bench/cp1.py bench/cp2.py`, add keyword panels, lead-in, new scenes; judge vs cp1, 3 judges); hook lab 3 on reel 3's hook (stakes line vs "wrong" line, with/without the 0.5 s beat); calibration `calib_3` (34 pairs packed, 2 judges); reel 5 = Shiva part 2 if time.
+- Final 30 minutes (from 04:25 UTC): final checkpoint, `research/FINAL_REPORT.md`, ranked queue of originals, disable watchdogs A and B.
 
 ## How to work (for a restart)
 - Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.
