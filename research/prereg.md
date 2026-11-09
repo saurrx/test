@@ -1,6 +1,6 @@
 # Pre-registered hypotheses
 
-Written 2026-11-09 20:40 UTC, before any test was run. Each test is run once with the command shown
+Written 2026-11-09 20:29 UTC, before any test was run. Each test is run once with the command shown
 (`scripts/vtest.py`), on reels at least 7 days old, comparing reels **within the same creator**. Results, including
 nulls, go to `research/tests.jsonl` and `research/tests_table.md`. A rule is `evidenced` only if its corrected
 q-value (Benjamini–Hochberg over every test run) is ≤ 0.10 **and** its sign survives leaving any one creator out.
@@ -27,6 +27,18 @@ Tests that need analysed video are re-run once when at least 150 reels are analy
 | V16 | Addressing the viewer ("you/aap/tum") in the opening helps | positive | `run V16 hook_second_person --split binary` |
 | V17 | More loudness variation (drops and hits) helps | positive | `run V17 loud_sd --continuous` |
 | V18 | Voice-led reels beat music-only reels | positive | `run V18 has_speech --split binary` |
+
+### Follow-ups registered 2026-11-09 20:33 UTC, after V1–V5 and before running these
+V1 came out opposite to the prediction (longer reels do better) and V5 showed strong clustering, so both may be
+account-growth trends. These repeat them on **detrended** views: each reel against the creator's 6 nearest-in-time
+other reels (`virality_local`).
+
+| id | Claim | Expected | Command |
+|---|---|---|---|
+| V19 | Longer reels still do better after removing time trends | positive | `run V19 duration_s --continuous --outcome virality_local` |
+| V20 | A hit is followed by another hit even after removing trends (series / momentum effect) | positive | `run V20 prev_virality_local --continuous --outcome virality_local` |
+| V21 | Longer gap since the previous post helps, detrended | positive | `run V21 gap_prev_h --split median --outcome virality_local` |
+| V22 | Momentum, clean version: previous reel's detrended views vs this reel's views against a baseline that excludes the previous reel (registered 20:36 after spotting the flaw in V20; needs a new feature `virality_local_xprev`) | positive | `run V22 prev_virality_local --continuous --outcome virality_local_xprev` |
 
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).

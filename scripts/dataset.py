@@ -31,6 +31,11 @@ def main():
                       "prev_virality": "", "eligible": int(r["age_days"] >= MIN_AGE)})
         for i, r in enumerate(items):
             if i: r["prev_virality"] = items[i - 1]["virality"]
+            # detrended virality: views against the creator's 6 nearest-in-time OTHER reels (removes account growth and time trends)
+            nb = [items[j]["views"] for j in range(max(0, i - 3), min(len(items), i + 4)) if j != i]
+            r["virality_local"] = round(math.log(max(r["views"], 1) / (statistics.median(nb) or 1)), 4) if len(nb) >= 4 else ""
+        for i, r in enumerate(items):
+            r["prev_virality_local"] = items[i - 1]["virality_local"] if i else ""
     idx = {r["code"]: r for r in rows}
     for d in (ROOT / "analysis").glob("*__*"):
         r = idx.get(d.name.split("__")[-1])

@@ -50,15 +50,15 @@ def stat(groups, continuous, skip=None):
         num += s * w; den += w; signs.append(s)
     return (num / den if den else None), signs
 
-def run(tid, feature, split, continuous, where, note):
-    rows = [r for r in load(where) if r.get(feature, "") != ""]; groups = {}; vals = [float(r[feature]) for r in rows]
+def run(tid, feature, split, continuous, where, note, outcome="virality"):
+    rows = [r for r in load(where) if r.get(feature, "") != "" and r.get(outcome, "") != ""]; groups = {}; vals = [float(r[feature]) for r in rows]
     thr = None
     if not continuous:
         if split == "median":  # per-creator median split
             pass
         elif split != "binary": thr = float(split)
     by = {}
-    for r in rows: by.setdefault(r["creator"], []).append((float(r[feature]), float(r["virality"])))
+    for r in rows: by.setdefault(r["creator"], []).append((float(r[feature]), float(r[outcome])))
     for c, it in by.items():
         x = [a for a, _ in it]; y = [b for _, b in it]
         if not continuous:
@@ -67,7 +67,7 @@ def run(tid, feature, split, continuous, where, note):
             else: x = [int(a >= thr) for a in x]
         groups[c] = (x, y)
     obs, signs = stat(groups, continuous)
-    res = {"id": tid, "feature": feature, "kind": "spearman" if continuous else f"split:{split}", "where": where, "n": len(rows), "creators_used": len(signs), "note": note, "ts": time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())}
+    res = {"id": tid, "feature": feature, "kind": "spearman" if continuous else f"split:{split}", "where": where, "outcome": outcome, "n": len(rows), "creators_used": len(signs), "note": note, "ts": time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())}
     if obs is None: res.update({"statistic": None, "p": None, "verdict": "not testable yet (too few reels per creator)"})
     else:
         rnd = random.Random(1); B = 5000; ge = 0
@@ -106,4 +106,4 @@ if __name__ == "__main__":
     else:
         opt = lambda k, d=None: a[a.index(k) + 1] if k in a else d
         where = [a[i + 1] for i, x in enumerate(a) if x == "--where"]
-        run(a[1], a[2], opt("--split", "median"), "--continuous" in a, where, opt("--note", ""))
+        run(a[1], a[2], opt("--split", "median"), "--continuous" in a, where, opt("--note", ""), opt("--outcome", "virality"))

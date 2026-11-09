@@ -1,7 +1,7 @@
 # Tasks
 
 ## Now
-- Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:42** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
+- Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:30** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
 - **Iteration 1**: (a) run V1–V5 (CSV-only tests); (b) hook lab on the bell brief, craft hypotheses C1 + C4; (c) fix baseline defects in the library.
 - Iteration plan: 2 = full reel #1 (bell or aarti-style original); 3 = checkpoint 1; then alternate per LOOP.md.
 
