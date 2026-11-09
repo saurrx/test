@@ -1,0 +1,5 @@
+{"palette":"glow","captions":{"style":"serif","words":[{"s":0.1,"e":0.5,"w":"You've"},{"s":0.5,"e":0.8,"w":"been"},{"s":0.8,"e":1.1,"w":"doing"},{"s":1.1,"e":1.6,"w":"Aarti","emph":true},{"s":1.6,"e":2.2,"w":"wrong.","emph":true},{"s":2.6,"e":2.9,"w":"Four"},{"s":2.9,"e":3.3,"w":"circles"},{"s":3.3,"e":3.5,"w":"at"},{"s":3.5,"e":3.7,"w":"his"},{"s":3.7,"e":4.2,"w":"feet."}]},
+"scenes":[
+ {"dur":2.4,"bg":{"kind":"temple","idol":"murti"},"dust":true,"cam":{"z0":1.0,"z1":1.12},"layers":[{"kind":"trail","shape":"scribble","y":880,"r":300,"from":0.2,"to":2.2,"seed":3}]},
+ {"dur":2.6,"trans":"flash","bg":{"kind":"temple","idol":"murti"},"dust":true,"cam":{"z0":1.5,"z1":1.6,"y0":-380,"y1":-380},"layers":[{"kind":"trail","shape":"circle","y":1240,"r":190,"loops":4,"from":0.1,"to":2.2,"width":10},{"kind":"text","text":"4","x":830,"y":1180,"size":220,"font":"serif","glow":"#ffb648","at":0.3,"color":"#fff4dc"}]}
+]}

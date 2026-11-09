@@ -1,0 +1,6 @@
+{"palette":"clay","captions":{"style":"pop","words":[{"s":0.1,"e":0.6,"w":"5,000"},{"s":0.6,"e":1.1,"w":"men."},{"s":1.6,"e":1.9,"w":"To"},{"s":1.9,"e":2.2,"w":"pull"},{"s":2.2,"e":2.5,"w":"ONE"},{"s":2.5,"e":3.0,"w":"bow."},{"s":3.3,"e":3.7,"w":"Ram"},{"s":3.7,"e":4.1,"w":"lifted"},{"s":4.1,"e":4.3,"w":"it"},{"s":4.3,"e":4.9,"w":"alone."}],"y":1420},
+"scenes":[
+ {"dur":1.5,"bg":{"kind":"linear"},"layers":[{"kind":"crowd","x":540,"y":620,"count":40,"cols":8,"s":1.1,"stagger":0.6,"enter":"none"},{"kind":"border","x":540,"y":300},{"kind":"border","x":540,"y":1620,"rot":180}]},
+ {"dur":1.7,"trans":"punch","bg":{"kind":"linear"},"cam":{"x0":-60,"x1":60},"layers":[{"kind":"chest","x":700,"y":1000,"s":0.9,"roll":3,"enter":"slide_r"},{"kind":"rope","x":140,"y":980,"len":300},{"kind":"crowd","x":200,"y":960,"count":5,"cols":5,"gap":66,"pose":"pull","anim":"strain","s":0.9,"enter":"none"}]},
+ {"dur":2.0,"trans":"flash","palette":"dusk","bg":{"kind":"horizon"},"cam":{"z0":1.0,"z1":1.15,"shakeAt":1.2},"layers":[{"kind":"sun","x":540,"y":900,"r":260,"color":"#ffcf5c"},{"kind":"hills","x":540,"y":1500,"color":"#12081f"},{"kind":"figure","x":540,"y":1280,"s":3.2,"pose":"lift","crown":true,"color":"#12081f"},{"kind":"bow","x":540,"y":900,"s":0.55,"rot":90,"color":"#12081f","color2":"#ffcf5c","breakAt":36,"enter":"none"}]}
+]}
