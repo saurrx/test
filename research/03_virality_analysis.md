@@ -151,3 +151,14 @@ not scale with reach the way likes do (0.27 per 1,000 views on big hits vs 0.41 
 "comment the number" ending is not what marks a hit (see also F8).
 **F19. Accounts grow: later reels do better than earlier ones (V45).** rho +0.49, p = 0.0002, 12 of 18 creators.
 This is why every other test compares a reel with its neighbours in time.
+
+## F20 (iteration 7, 23:45Z): hits open on a darker, more saturated first frame. `evidenced`
+Pre-registered as V46–V49 with the opposite expectation for brightness (craft belief C1 said "bright wins").
+Measured on the first frame of 164 analysed reels (17 creators, each compared with its own median):
+- **Brightness: darker is better.** rho −0.31, p 0.0008 (0.005 after correction), stable leaving each creator out, 11/17 creators agree.
+  Holds with the trend-removed outcome (rho −0.28, p 0.005). Median brightness: flops 0.33, middle 0.22, hits 0.22 (0 = black, 1 = white).
+- **Colour: more saturated is better.** rho +0.26, p 0.003; trend-removed rho +0.32, p 0.001, 11/14 creators. Median saturation: flops 0.41, hits 0.47–0.50.
+- Contrast: leans negative, not significant (p 0.055). Fine detail in the top two thirds (text proxy): null.
+- Reading: the flops are the pale, washed-out, flat-lit frames. Hits open on a deep, rich image (dark ground, strong colour).
+  This is a correlation inside creators, on a sample chosen as 3 biggest hits + 3 biggest flops first, so the size is likely overstated.
+- Our reels: first frames measure brightness 0.17–0.39 and saturation 0.57–0.72, already on the "hit" side. C1 ("bright first frame wins") is retired.

@@ -76,6 +76,10 @@ These describe what a viral reel looks like afterwards; they are not levers.
 | V43 | A creator's viral reels have a LOWER like rate (likes per view): they reach people outside the fan base | negative | `run V43 like_rate --continuous` |
 | V44 | A creator's viral reels have a LOWER comment rate (comments per 1,000 views) | negative | `run V44 comment_rate --continuous` |
 | V45 | Later reels in a creator's history do better than earlier ones (account growth) | positive | `run V45 reel_index_frac --continuous` |
+| V46 | A brighter first frame does better (real-reel version of craft belief C1) | positive | `run V46 ff_luma --continuous` |
+| V47 | A more colourful (saturated) first frame does better | positive | `run V47 ff_sat --continuous` |
+| V48 | A first frame with more contrast (spread of brightness) does better | positive | `run V48 ff_contrast --continuous` |
+| V49 | A first frame with more fine detail in the top/middle third (proxy for on-screen text) does better | positive | `run V49 ff_detail --continuous` |
 
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).

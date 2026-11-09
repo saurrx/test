@@ -71,3 +71,9 @@
 - Already bought, so unaffected: voice for reels 1 and 2. Total Treg spend: about $0.11 (2 voices $0.029, 2 music clips $0.08, 1 test $0.0006). Balance about $0.47.
 - Second worker restart at about 21:50 killed the chained render job. Renders now run as detached systemd jobs on the PC (`scripts/render_bg.sh` / `render_get.sh`), and `scripts/ensure_up.sh` restores Tailscale and autocommit.
 - Final files: `scripts/finish.sh` normalises to −14 LUFS and caps the bitrate at 3.5 Mbps; film grain made the raw 1080p render 139 MB.
+
+## 2026-11-09 23:46Z: first-frame test overturned a craft belief
+- What: pre-registered V46–V49 (first-frame brightness, saturation, contrast, detail) and ran them on 164 real reels.
+- Result: darker and more saturated first frames do better (both survive correction and the trend-removed outcome). I had predicted "brighter wins".
+- Action: playbook P19 added; craft belief C1 retired; no change needed to our reels (already dark and saturated).
+- Also: `scripts/playbook_check.py` added so every reel is checked against the mechanical playbook rules before judging.
