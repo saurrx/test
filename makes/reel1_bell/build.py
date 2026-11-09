@@ -5,6 +5,8 @@ import json, sys
 from pathlib import Path
 D = Path(__file__).parent; G, W, DARK, RED = "#ffb648", "#fff4dc", "#1a0f08", "#ff3b30"
 words = json.load(open(D / "audio/vo.words.json"))
+LEAD = 0.5  # P4: half a second of picture, headline and sound before the first word
+for w in words: w["s"] = round(w["s"] + LEAD, 3); w["e"] = round(w["e"] + LEAD, 3)
 def T(tok, n=1):  # start time of the n-th occurrence of a word
     k = 0
     for w in words:
@@ -25,7 +27,7 @@ def sc(at, **k): S.append((at, k))
 # --- hook: headline on frame 1, three shots in 2.7 s
 sc(0.0, bg=temple(g=1.9), dust=True, cam={"z0": 1.28, "z1": 1.16, "y0": -60, "y1": -60}, layers=[glow(y=700), bell(swing=20, speed=3.4, y=720, s=1.1),
    txt("YOU RING IT WRONG", y=300, size=150, font="pop", col=W, enter="slam", width=980, glow="#ff6a1f", at=0.0)])
-sc(1.55, trans="punch", bg=temple(g=1.9), dust=True, cam={"z0": 1.0, "z1": 1.06, "shakeAt": 0.2, "shake": 18}, layers=[glow(y=700), bell(swing=20, speed=3.4, y=700, s=1.1),
+sc(1.55 + LEAD, trans="punch", bg=temple(g=1.9), dust=True, cam={"z0": 1.0, "z1": 1.06, "shakeAt": 0.2, "shake": 18}, layers=[glow(y=700), bell(swing=20, speed=3.4, y=700, s=1.1),
    {"kind": "cross", "x": 540, "y": 740, "color": RED, "size": 250, "at": 0.15, "enter": "none"}])
 # --- most of us hit it three, four times and walk in
 t = T("Most"); sc(t - 0.1, trans="flash", bg=temple(g=1.6), dust=True, cam={"z0": 1.05, "z1": 1.0}, layers=[glow(y=640, r=420), bell(y=600, s=0.95, swing=26, speed=2.2),
@@ -38,7 +40,7 @@ t = T("But"); sc(t - 0.1, trans="fade", bg=temple("murti", 2, 1.2), dust=True, c
    {"kind": "glowdot", "x": 540, "y": 430, "r": 70, "color2": W, "at": T("doorbell") - t - 0.3, "enter": "pop"},
    {"kind": "cross", "x": 540, "y": 430, "color": RED, "size": 170, "width": 34, "at": T("doorbell") - t + 0.15, "enter": "none"}])
 # --- there is a mantra for it
-t = T("There"); sc(t - 0.1, trans="fade", bg=rad(46), dust=True, cam={"z0": 1.15, "z1": 1.0}, layers=[{"kind": "yantra", "x": 540, "y": 850, "r": 430, "draw": 2.2}, txt("MANTRA", y=850, size=120, at=T("mantra") - t, enter="fade")])
+t = T("There"); sc(t - 0.1, trans="fade", bg=rad(46), dust=True, cam={"z0": 1.15, "z1": 1.0}, layers=[glow(y=850, r=560, o=0.55), {"kind": "rays", "x": 540, "y": 850, "opacity": 0.16}, {"kind": "yantra", "x": 540, "y": 850, "r": 430, "draw": 1.2}, txt("MANTRA", y=850, size=120, at=T("mantra") - t, enter="fade")])
 # --- the mantra itself, in Devanagari
 t = T("Aagamaartham"); sc(t - 0.15, trans="flash", bg=rad(42), dust=40, cam={"z0": 1.0, "z1": 1.1}, layers=[{"kind": "rays", "x": 540, "y": 780, "opacity": 0.14}, {"kind": "yantra", "x": 540, "y": 720, "r": 500, "draw": 0.1, "opacity": 0.3},
    txt("आगमार्थं तु देवानां", y=560, size=132, col=W, at=0.1, enter="fade", width=1000), txt("गमनार्थं तु रक्षसाम्", y=860, size=132, col=G, at=T("Gamanaartham") - t, enter="fade", width=1000),
@@ -69,7 +71,7 @@ sc(t - 0.1, trans="punch", bg=temple(g=1.4), dust=True, cam={"z0": 1.08, "z1": 1
    txt("#s", x=830, y=430, size=170, font="serif", col=W, at=c7 - 0.2, count=[1, 7, 150], enter="pop")])
 # --- sound cuts your thoughts; silence is the real darshan
 t = T("Tradition"); sil = T("silence") - t
-sc(t - 0.1, trans="fade", bg=rad(40), dust=True, cam={"z0": 1.0, "z1": 1.12}, layers=[person(y=1720, s=1.45, pose="pray"),
+sc(t - 0.1, trans="fade", bg=rad(40), dust=True, cam={"z0": 1.0, "z1": 1.12}, layers=[glow(y=820, r=560, o=0.5), person(y=1720, s=1.45, pose="pray"),
    {"kind": "trail", "shape": "scribble", "x": 540, "y": 800, "r": 300, "from": 0.2, "to": sil - 0.3, "width": 7, "seed": 4, "fadeAt": sil - 0.2, "color": "#ff8a3c"},
    {"kind": "rings", "x": 540, "y": 800, "color": W, "at": sil - 0.25, "count": 2, "max": 900, "enter": "none"},
    {"kind": "yantra", "x": 540, "y": 760, "r": 360, "at": sil, "draw": 1.6}, txt("SILENCE", y=300, size=130, at=sil, enter="fade")])
@@ -86,15 +88,15 @@ t = T("Tomorrow,") - 0.1; st = T("once,", 3) - t
 sc(t, trans="flash", bg=temple(g=1.8), dust=True, cam={"z0": 1.1, "z1": 1.0}, layers=[glow(y=820), bell(y=800, s=0.9, swing=1, strikeAt=int(st * 30)), {"kind": "rings", "x": 540, "y": 960, "color": G, "at": st, "count": 8, "every": 18, "max": 1100, "width": 8, "enter": "none"},
    txt("1 STOP  ·  2 RING ONCE", y=215, size=62, at=0.2, enter="fade", width=1040), txt("3 STAND TILL SILENT", y=300, size=62, at=0.5, enter="fade", width=1040), txt("4 RIGHT FOOT FIRST", y=385, size=62, at=0.8, enter="fade", width=1040),
    txt("#s ?", x=860, y=640, size=150, font="serif", col=W, at=T("count") - t, count=[1, 9, 110], enter="pop"), txt("COMMENT THE NUMBER", y=1580, size=84, font="pop", col=G, at=T("Comment") - t, enter="slam", width=1000)])
-END = 62.3
+END = 62.3 + LEAD
 scenes = []
 for i, (at, k) in enumerate(S):
     nxt = S[i + 1][0] if i + 1 < len(S) else END; k["dur"] = round(nxt - at, 3); scenes.append(k)
 assert all(s["dur"] > 0.4 for s in scenes), [s["dur"] for s in scenes]
-sfx = [{"src": "audio/sfx_bell.mp3", "at": 0.0, "vol": 0.55}, {"src": "audio/sfx_hit.mp3", "at": 1.55, "vol": 0.8}, {"src": "audio/sfx_whoosh.mp3", "at": T("There") - 0.3, "vol": 0.4}, {"src": "audio/sfx_riser.mp3", "at": T("Aagamaartham") - 2.0, "vol": 0.3},
+sfx = [{"src": "audio/sfx_bell.mp3", "at": 0.0, "vol": 0.55}, {"src": "audio/sfx_hit.mp3", "at": 1.55 + LEAD, "vol": 0.8}, {"src": "audio/sfx_whoosh.mp3", "at": T("There") - 0.3, "vol": 0.4}, {"src": "audio/sfx_riser.mp3", "at": T("Aagamaartham") - 2.0, "vol": 0.3},
        {"src": "audio/sfx_boom.mp3", "at": T("So") - 0.1, "vol": 0.6}, {"src": "audio/sfx_hit.mp3", "at": T("One.") - 0.1, "vol": 0.7}, {"src": "audio/sfx_hit.mp3", "at": T("Two.") - 0.1, "vol": 0.7}, {"src": "audio/sfx_bell_low.mp3", "at": T("once."), "vol": 0.9},
        {"src": "audio/sfx_hit.mp3", "at": T("Three.") - 0.1, "vol": 0.7}, {"src": "audio/sfx_hit.mp3", "at": T("Four.") - 0.1, "vol": 0.7}, {"src": "audio/sfx_boom.mp3", "at": T("you."), "vol": 0.8}, {"src": "audio/sfx_bell_low.mp3", "at": T("once,", 3), "vol": 0.9}]
-props = {"palette": "glow", "captions": {"style": "serif", "words": words, "y": 1250, "size": 86, "max": 4}, "audio": {"vo": "audio/reel1_vo.mp3", "music": "audio/music_temple.mp3", "musicVol": 0.2, "sfx": sfx}, "scenes": scenes}
+props = {"palette": "glow", "captions": {"style": "serif", "words": words, "y": 1250, "size": 86, "max": 4}, "audio": {"vo": "audio/reel1_vo.mp3", "voAt": LEAD, "music": "audio/music_temple.mp3", "musicVol": 0.2, "sfx": sfx}, "scenes": scenes}
 if len(sys.argv) > 1 and sys.argv[1] == "hook":
     cut = T("But") - 0.1; hs = []; acc = 0
     for s in scenes:

@@ -1,6 +1,6 @@
 import React from "react";
 import { noise, prog, rnd } from "./util";
-import { Halo } from "./Glow";
+import { BRASS, COPPER, Halo, STONE, useShade } from "./Glow";
 
 // All shapes draw around (0,0) in their own space; Layer positions and scales them. `t` = frames since the layer appeared.
 type SP = { t: number; color: string; color2: string; [k: string]: any };
@@ -121,17 +121,17 @@ export const Border: React.FC<SP> = ({ t, color, w = 1080, n = 18 }) => (<g>{Arr
 export const Bell: React.FC<SP> = ({ t, color, color2, swing = 10, speed = 7, strikeAt }) => {
   let a = swing * Math.sin(t / speed);
   if (strikeAt !== undefined && t >= strikeAt) a += 24 * Math.exp(-(t - strikeAt) / 18) * Math.cos((t - strikeAt) / 3.2);
+  const [bd, bf] = useShade(BRASS);
   return (
-    <g>
+    <g>{bd}
       <line x1={0} y1={-420} x2={0} y2={-250} stroke={color} strokeWidth={10} />
       <g transform={`rotate(${a} 0 -250)`}>
         <Halo cx={0} cy={0} r={420} color={color2} opacity={0.35} />
-        <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L210 150 L170 60 Q150 -120 70 -190 Q40 -210 40 -250 Z" fill={color} stroke={color2} strokeWidth={6} />
-        <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L-90 150 Q-80 -60 -20 -235 Z" fill={color2} opacity={0.55} />
-        <path d="M-70 -190 Q-150 -120 -170 60 L-196 120 L-150 120 Q-140 -60 -50 -200 Z" fill="#fff6d8" opacity={0.5} />
-        <path d="M60 -180 Q130 -110 150 60 L186 140 L120 140 Q120 -40 50 -200 Z" fill="#000" opacity={0.25} />
+        <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L210 150 L170 60 Q150 -120 70 -190 Q40 -210 40 -250 Z" fill={bf} stroke="#3a2408" strokeWidth={4} />
+        <path d="M-210 150 L210 150 L196 120 L-196 120 Z" fill="#000" opacity={0.25} />
+        <ellipse cx={0} cy={150} rx={210} ry={22} fill="#1a0f05" /><ellipse cx={0} cy={146} rx={196} ry={15} fill="#4a310c" />
         <path d="M-196 120 L196 120" stroke={color2} strokeWidth={7} opacity={0.8} /><path d="M-150 20 L150 20" stroke={color2} strokeWidth={4} opacity={0.5} />
-        <g transform={`rotate(${-a * 1.6} 0 100)`}><line x1={0} y1={100} x2={0} y2={190} stroke={color2} strokeWidth={8} /><circle cx={0} cy={200} r={26} fill={color2} /></g>
+        <g transform={`rotate(${-a * 1.6} 0 100)`}><line x1={0} y1={120} x2={0} y2={196} stroke="#c08a2a" strokeWidth={8} /><circle cx={0} cy={206} r={26} fill="#e9c46a" /><circle cx={-8} cy={198} r={8} fill="#fff6d8" opacity={0.8} /></g>
       </g>
     </g>
   );
@@ -243,14 +243,14 @@ export const Thali: React.FC<SP> = ({ t, color2, wicks = 5, r = 240 }) => (
 
 // Shivling on its base (yoni-pitha) with the water spout to one side. `wet` 0..1 adds a sheen and a trickle off the spout.
 export const Lingam: React.FC<SP> = ({ t, color, color2, wet = 0, spout = -1 }) => {
-  const k = Math.min(1, wet) * prog(t, 0, 20);
+  const k = Math.min(1, wet) * prog(t, 0, 20); const [sd, sf] = useShade(STONE);
   return (
-    <g>
+    <g>{sd}
       <Halo cx={0} cy={-120} r={420} ry={520} color={color2} opacity={0.4} />
       <path d={`M${spout * 150} 150 L${spout * 420} 150 Q${spout * 470} 170 ${spout * 420} 196 L${spout * 150} 210 Z`} fill={color} stroke={color2} strokeOpacity={0.6} strokeWidth={5} />
-      <ellipse cx={0} cy={180} rx={290} ry={70} fill={color} stroke={color2} strokeOpacity={0.6} strokeWidth={5} />
-      <path d="M-120 170 L-120 -170 Q-120 -310 0 -310 Q120 -310 120 -170 L120 170 Q0 215 -120 170 Z" fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />
-      <path d="M-86 150 L-86 -170 Q-84 -270 -20 -288 Q-60 -240 -60 -160 L-60 160 Z" fill={color2} opacity={0.28 + 0.3 * k} />
+      <ellipse cx={0} cy={196} rx={300} ry={74} fill="#050302" /><ellipse cx={0} cy={180} rx={290} ry={70} fill={sf} stroke={color2} strokeOpacity={0.5} strokeWidth={4} /><ellipse cx={0} cy={172} rx={236} ry={50} fill="#0b0705" opacity={0.7} />
+      <path d="M-120 170 L-120 -170 Q-120 -310 0 -310 Q120 -310 120 -170 L120 170 Q0 215 -120 170 Z" fill={sf} stroke={color2} strokeOpacity={0.45} strokeWidth={3} />
+      <path d="M-74 120 L-74 -170 Q-72 -262 -30 -284 Q-52 -236 -52 -160 L-52 130 Z" fill="#fff1d6" opacity={0.16 + 0.3 * k} />
       {[0, 1, 2].map((i) => <path key={i} d={`M-66 ${-150 + i * 30} Q0 ${-136 + i * 30} 66 ${-150 + i * 30}`} fill="none" stroke="#efe6d2" strokeWidth={11} strokeLinecap="round" opacity={0.85} />)}
       <circle cx={0} cy={-120} r={13} fill="#c4281a" />
       <path d="M40 150 L40 -180 Q40 -262 84 -200 L96 150 Z" fill="#000" opacity={0.28} />
@@ -266,11 +266,12 @@ export const Lingam: React.FC<SP> = ({ t, color, color2, wet = 0, spout = -1 }) 
 export const Lota: React.FC<SP> = ({ t, color = "#b8652a", color2, tilt = 55, drop = 620, pourAt = 12, broken = 0, thick = 12 }) => {
   const a = tilt * prog(t, 0, 14); const p = prog(t, pourAt, pourAt + 12); const lip: [number, number] = [-118, -38];
   const gaps = broken ? `${40 + 30 * Math.abs(noise(t / 3, 5))} ${50 + 40 * Math.abs(noise(t / 2, 9))}` : undefined;
+  const [cd, cf] = useShade(COPPER); const body = color === "#b8652a" ? cf : color;
   return (
-    <g>
+    <g>{cd}
       <g transform={`rotate(${-a})`}>
         <Halo cx={0} cy={0} r={230} color={color2} opacity={0.45} />
-        <path d="M-96 -40 Q-150 40 -100 110 Q0 170 100 110 Q150 40 96 -40 Q60 -70 70 -100 L-70 -100 Q-60 -70 -96 -40 Z" fill={color} stroke="#ffd9a0" strokeOpacity={0.8} strokeWidth={5} />
+        <path d="M-96 -40 Q-150 40 -100 110 Q0 170 100 110 Q150 40 96 -40 Q60 -70 70 -100 L-70 -100 Q-60 -70 -96 -40 Z" fill={body} stroke="#3a1806" strokeWidth={4} />
         <ellipse cx={0} cy={-100} rx={78} ry={16} fill="#5a2a0c" stroke="#ffd9a0" strokeOpacity={0.8} strokeWidth={4} />
         <path d="M-70 10 Q0 40 70 10" fill="none" stroke="#ffd9a0" strokeWidth={5} opacity={0.6} /><path d="M-80 -20 Q-110 40 -78 96" fill="none" stroke="#fff1d6" strokeWidth={9} opacity={0.5} strokeLinecap="round" />
       </g>

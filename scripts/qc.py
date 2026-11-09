@@ -36,7 +36,7 @@ def main():
     dark = []
     for sec in range(0, int(d)):
         g = frame_gray(v, sec + 0.5, 54, 96)
-        if g is not None and (g.mean() < 0.035 or (g > 0.35).mean() < 0.003): dark.append(sec)
+        if g is not None and (g.mean() < 0.06 or (g > 0.35).mean() < 0.01): dark.append(sec)
     nums["dark_seconds"] = dark[:12]; checks["no_dark_seconds"] = len(dark) == 0
     if words:
         nums["first_word_s"] = words[0]["s"]; checks["first_word_by_1.5s"] = words[0]["s"] <= 1.5

@@ -71,7 +71,7 @@ sc(t, trans="punch", bg=rad(48), dust=True, cam={"z0": 1.0, "z1": 1.08}, layers=
 # why: the channel carries what was offered; you never step across it
 t = T("Why?") - 0.1; stp = T("You") - t
 sc(t, trans="fade", bg=rad(60), dust=True, cam={"z0": 1.5, "z1": 1.7, "x0": -200, "x1": -260, "y0": 120, "y1": 160}, layers=[glow(x=300, y=1000, r=420, o=0.5), lingam(y=900, s=1.0, wet=1), txt("WHY?", x=540, y=400, size=130, panel=True, font="pop", enter="slam", until=1.0)])
-sc(T("You") - 0.1, trans="cut", bg=rad(70), cam={"z0": 1.0, "z1": 1.1}, layers=[{"kind": "rect", "x": 540, "y": 1010, "w": 1080, "h": 46, "color": "#3a2412", "enter": "none"}, {"kind": "river", "x": 540, "y": 990, "color": BLUE, "w": 1100, "rows": 1, "enter": "none"},
+sc(T("You") - 0.1, trans="cut", bg=rad(70), cam={"z0": 1.0, "z1": 1.1}, layers=[glow(y=1000, r=620, o=0.5), {"kind": "rect", "x": 540, "y": 1010, "w": 1080, "h": 46, "color": "#3a2412", "enter": "none"}, {"kind": "river", "x": 540, "y": 990, "color": BLUE, "w": 1100, "rows": 1, "enter": "none"},
    {"kind": "feet", "x": 540, "y": 1650, "s": 1.25, "color": "#0c0705", "color2": G, "stepAt": 9999, "enter": "rise"}, cross(y=760, size=200, width=40, at=T("across") - T("You") + 0.1), txt("NEVER CROSS IT", y=400, size=110, panel=True, font="pop", at=T("never", 1) - T("You"), enter="slam", glow="#ff6a1f")])
 # part two tease
 t = T("In") - 0.1; sc(t, trans="flash", palette="night", bg={"kind": "linear"}, stars=True, cam={"z0": 1.1, "z1": 1.0}, layers=[{"kind": "mandir", "x": 540, "y": 1180, "s": 1.05, "color": "#090d22", "color2": "#ffcf5c", "enter": "none"}, {"kind": "moon", "x": 830, "y": 300, "color": "#f4f1ff", "color2": "#0d1330", "r": 60},

@@ -1,0 +1,5 @@
+{"palette":"glow","scenes":[
+ {"dur":1.2,"bg":{"kind":"temple","idol":"none","glow":1.8},"layers":[{"kind":"glowdot","x":540,"y":760,"r":520,"color2":"#ffb648","opacity":0.5,"enter":"none"},{"kind":"bell","x":540,"y":760,"s":1.2,"color":"#1a0f08","color2":"#ffb648","swing":14,"enter":"none"}]},
+ {"dur":1.2,"bg":{"kind":"temple","idol":"none","glow":1.8},"layers":[{"kind":"glowdot","x":540,"y":820,"r":480,"color2":"#ffb648","opacity":0.5,"enter":"none"},{"kind":"lingam","x":540,"y":860,"s":1.0,"color":"#120a07","color2":"#ffb648","wet":1,"enter":"none"},{"kind":"lota","x":700,"y":520,"s":0.8,"color":"#b8652a","color2":"#ffb648","drop":230,"pourAt":2,"thick":8,"enter":"none"}]},
+ {"dur":1.2,"bg":{"kind":"temple","idol":"murti","glow":1.6,"lamps":3},"layers":[]}
+]}

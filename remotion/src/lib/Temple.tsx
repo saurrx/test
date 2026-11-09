@@ -1,12 +1,13 @@
 import React from "react";
 import { useCurrentFrame } from "remotion";
-import { Diya, Halo } from "./Glow";
+import { BRONZE, Diya, Halo, STONE, useShade } from "./Glow";
 import { noise } from "./util";
 
 // A temple sanctum built from primitives: brick wall, alcove arch, pillars, steps, altar and an abstract idol
 // (crowned silhouette with gold rim light, no facial features), lit by flickering lamps.
 export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; warm?: string; lamps?: number; glow?: number }> = ({ idol = "murti", warm = "#ffb648", lamps = 2, glow = 1 }) => {
   const f = useCurrentFrame(); const fl = 0.85 + 0.15 * noise(f / 3, 21);
+  const [pd, pf] = useShade([[0, "#0c0705"], [0.3, "#5a3a22"], [0.6, "#24160d"], [1, "#080403"]]); const [md, mf] = useShade(BRONZE); const [ld, lf] = useShade(STONE);
   const bricks: React.ReactNode[] = [];
   for (let r = 0; r < 26; r++) for (let c = -1; c < 7; c++) {
     const x = c * 180 + (r % 2 ? 90 : 0), y = r * 74;
@@ -14,7 +15,7 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
   }
   return (
     <g>
-      <rect width={1080} height={1920} fill="#0b0605" />
+      {pd}{md}{ld}<rect width={1080} height={1920} fill="#0b0605" />
       <g opacity={0.9}>{bricks}</g>
       {/* warm light pool from the lamps */}
       <Halo cx={540} cy={1000} r={760} ry={1050} color={warm} opacity={0.42 * fl * glow} />
@@ -33,7 +34,7 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
       {/* pillars */}
       {[110, 906].map((x) => (
         <g key={x}>
-          <rect x={x} y={420} width={64} height={1100} fill="#1c110a" /><rect x={x - 14} y={400} width={92} height={36} fill="#2c1b0f" /><rect x={x - 14} y={1500} width={92} height={36} fill="#2c1b0f" />
+          <rect x={x} y={420} width={64} height={1100} fill={pf} /><rect x={x - 14} y={400} width={92} height={36} fill="#2c1b0f" /><rect x={x - 14} y={1500} width={92} height={36} fill="#2c1b0f" />
           <rect x={x} y={420} width={10} height={1100} fill={warm} opacity={0.12 * fl} />
         </g>
       ))}
@@ -41,7 +42,7 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
       {idol === "murti" && (
         <g>
           <Halo cx={540} cy={900} r={420} ry={640} color={warm} opacity={0.3 * fl * glow} />
-          <path id="murti" d="M540 520 L575 600 Q640 610 640 700 Q640 770 600 800 Q720 830 730 980 L745 1320 L335 1320 L350 980 Q360 830 480 800 Q440 770 440 700 Q440 610 505 600 Z" fill="#150c07" stroke={warm} strokeOpacity={0.55 * fl} strokeWidth={5} />
+          <path id="murti" d="M540 520 L575 600 Q640 610 640 700 Q640 770 600 800 Q720 830 730 980 L745 1320 L335 1320 L350 980 Q360 830 480 800 Q440 770 440 700 Q440 610 505 600 Z" fill={mf} stroke={warm} strokeOpacity={0.55 * fl} strokeWidth={5} />
           <path d="M470 610 Q540 560 610 610" fill="none" stroke={warm} strokeWidth={8} opacity={0.8 * fl} />
           <circle cx={540} cy={585} r={12} fill={warm} opacity={fl} />
           {/* garland */}
@@ -52,7 +53,7 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
       {idol === "lingam" && (
         <g>
           <Halo cx={540} cy={1000} r={400} ry={560} color={warm} opacity={0.3 * fl * glow} />
-          <path d="M440 1260 L440 900 Q440 780 540 780 Q640 780 640 900 L640 1260 Z" fill="#120a07" stroke={warm} strokeOpacity={0.5 * fl} strokeWidth={5} />
+          <path d="M440 1260 L440 900 Q440 780 540 780 Q640 780 640 900 L640 1260 Z" fill={lf} stroke={warm} strokeOpacity={0.5 * fl} strokeWidth={5} />
           <ellipse cx={540} cy={1270} rx={250} ry={52} fill="#1b100a" stroke={warm} strokeOpacity={0.4} strokeWidth={4} />
           {[0, 1, 2].map((i) => <path key={i} d={`M478 ${930 + i * 26} L602 ${930 + i * 26}`} stroke="#e8e0d0" strokeWidth={9} strokeLinecap="round" opacity={0.75} />)}
         </g>

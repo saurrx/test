@@ -58,6 +58,15 @@ export const Halo: React.FC<{ cx: number; cy: number; r: number; ry?: number; co
   );
 };
 export const GlowDefs: React.FC = () => null;
+// Cylinder-style shading: a horizontal gradient with one highlight band. Returns [defs element, fill url].
+export const useShade = (stops: [number, string][]): [React.ReactElement, string] => {
+  const id = "s" + React.useId().replace(/[^a-zA-Z0-9]/g, "");
+  return [<defs key={id}><linearGradient id={id} x1="0" y1="0" x2="1" y2="0">{stops.map(([o, c], i) => <stop key={i} offset={`${o * 100}%`} stopColor={c} />)}</linearGradient></defs>, `url(#${id})`];
+};
+export const BRASS: [number, string][] = [[0, "#4a310c"], [0.22, "#f6d98a"], [0.42, "#c08a2a"], [0.75, "#6b4712"], [1, "#2a1a06"]];
+export const STONE: [number, string][] = [[0, "#1c120d"], [0.24, "#7a5f4c"], [0.5, "#2a1c15"], [1, "#070403"]];
+export const COPPER: [number, string][] = [[0, "#4a1f08"], [0.25, "#ffb37a"], [0.5, "#b8652a"], [1, "#3a1806"]];
+export const BRONZE: [number, string][] = [[0, "#1a0f08"], [0.3, "#6b4420"], [0.6, "#24150b"], [1, "#090504"]];
 // Fake glow for strokes: stacked wider, fainter copies of the same path.
 export const glowStroke = (d: string, color: string, w: number, k = 1) => (
   <>{[[7, 0.05], [4.4, 0.08], [2.6, 0.14], [1.6, 0.26]].map(([m, o], i) => <path key={i} d={d} stroke={color} strokeWidth={w * m} opacity={o * k} />)}</>
