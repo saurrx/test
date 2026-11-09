@@ -34,8 +34,15 @@ def main():
             # detrended virality: views against the creator's 6 nearest-in-time OTHER reels (removes account growth and time trends)
             nb = [items[j]["views"] for j in range(max(0, i - 3), min(len(items), i + 4)) if j != i]
             r["virality_local"] = round(math.log(max(r["views"], 1) / (statistics.median(nb) or 1)), 4) if len(nb) >= 4 else ""
+            # same, but the baseline leaves out the previous reel (for a clean momentum test)
+            nb2 = [items[j]["views"] for j in range(max(0, i - 4), min(len(items), i + 4)) if j not in (i, i - 1)]
+            r["virality_local_xprev"] = round(math.log(max(r["views"], 1) / (statistics.median(nb2) or 1)), 4) if len(nb2) >= 4 else ""
         for i, r in enumerate(items):
-            r["prev_virality_local"] = items[i - 1]["virality_local"] if i else ""
+            # previous reel's own detrended score, with a baseline that leaves out THIS reel
+            if i:
+                nb3 = [items[j]["views"] for j in range(max(0, i - 5), min(len(items), i + 3)) if j not in (i, i - 1)]
+                r["prev_virality_local"] = round(math.log(max(items[i - 1]["views"], 1) / (statistics.median(nb3) or 1)), 4) if len(nb3) >= 4 else ""
+            else: r["prev_virality_local"] = ""
     idx = {r["code"]: r for r in rows}
     for d in (ROOT / "analysis").glob("*__*"):
         r = idx.get(d.name.split("__")[-1])

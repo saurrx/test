@@ -1,0 +1,632 @@
+{
+ "palette": "clay",
+ "captions": {
+  "style": "pop",
+  "words": [
+   {
+    "s": 0.095,
+    "e": 0.402,
+    "w": "PAANCH",
+    "emph": true
+   },
+   {
+    "s": 0.402,
+    "e": 0.72,
+    "w": "HAZAAR",
+    "emph": true
+   },
+   {
+    "s": 0.8,
+    "e": 1.277,
+    "w": "AADMI."
+   },
+   {
+    "s": 2.17,
+    "e": 2.534,
+    "w": "SIRF"
+   },
+   {
+    "s": 2.591,
+    "e": 2.795,
+    "w": "EK",
+    "emph": true
+   },
+   {
+    "s": 2.795,
+    "e": 3.227,
+    "w": "DHANUSH"
+   },
+   {
+    "s": 3.227,
+    "e": 3.693,
+    "w": "KHEENCHNE"
+   },
+   {
+    "s": 3.693,
+    "e": 3.841,
+    "w": "KE"
+   },
+   {
+    "s": 3.852,
+    "e": 4.136,
+    "w": "LIYE."
+   },
+   {
+    "s": 5.034,
+    "e": 5.273,
+    "w": "YEH"
+   },
+   {
+    "s": 5.284,
+    "e": 5.5,
+    "w": "THA"
+   },
+   {
+    "s": 5.5,
+    "e": 5.909,
+    "w": "PINAKA,",
+    "emph": true
+   },
+   {
+    "s": 5.977,
+    "e": 6.534,
+    "w": "MAHADEV"
+   },
+   {
+    "s": 6.557,
+    "e": 6.705,
+    "w": "KA"
+   },
+   {
+    "s": 6.705,
+    "e": 7.114,
+    "w": "DHANUSH."
+   },
+   {
+    "s": 7.966,
+    "e": 8.364,
+    "w": "RAJA"
+   },
+   {
+    "s": 8.364,
+    "e": 8.693,
+    "w": "JANAK"
+   },
+   {
+    "s": 8.693,
+    "e": 8.83,
+    "w": "NE"
+   },
+   {
+    "s": 8.83,
+    "e": 9.182,
+    "w": "KAHA,"
+   },
+   {
+    "s": 9.375,
+    "e": 9.614,
+    "w": "JO"
+   },
+   {
+    "s": 9.659,
+    "e": 9.92,
+    "w": "ISE"
+   },
+   {
+    "s": 9.932,
+    "e": 10.511,
+    "w": "UTHAYEGA,"
+   },
+   {
+    "s": 10.67,
+    "e": 10.977,
+    "w": "WAHI"
+   },
+   {
+    "s": 10.977,
+    "e": 11.375,
+    "w": "SITA",
+    "emph": true
+   },
+   {
+    "s": 11.375,
+    "e": 11.557,
+    "w": "SE"
+   },
+   {
+    "s": 11.557,
+    "e": 11.875,
+    "w": "VIVAH"
+   },
+   {
+    "s": 11.886,
+    "e": 12.352,
+    "w": "KAREGA."
+   },
+   {
+    "s": 13.295,
+    "e": 13.545,
+    "w": "KOI"
+   },
+   {
+    "s": 13.545,
+    "e": 13.886,
+    "w": "RAJA"
+   },
+   {
+    "s": 13.966,
+    "e": 14.216,
+    "w": "ISE"
+   },
+   {
+    "s": 14.216,
+    "e": 14.523,
+    "w": "HILA"
+   },
+   {
+    "s": 14.523,
+    "e": 14.682,
+    "w": "BHI"
+   },
+   {
+    "s": 14.682,
+    "e": 14.955,
+    "w": "NAHI"
+   },
+   {
+    "s": 14.955,
+    "e": 15.318,
+    "w": "PAAYA."
+   },
+   {
+    "s": 16.261,
+    "e": 16.466,
+    "w": "PHIR"
+   },
+   {
+    "s": 16.511,
+    "e": 16.739,
+    "w": "AAYE"
+   },
+   {
+    "s": 16.739,
+    "e": 17.068,
+    "w": "RAM.",
+    "emph": true
+   },
+   {
+    "s": 17.92,
+    "e": 18.33,
+    "w": "DHANUSH"
+   },
+   {
+    "s": 18.352,
+    "e": 18.852,
+    "w": "UTHAYA,"
+   },
+   {
+    "s": 18.977,
+    "e": 19.148,
+    "w": "AUR"
+   },
+   {
+    "s": 19.159,
+    "e": 19.364,
+    "w": "WOH"
+   },
+   {
+    "s": 19.364,
+    "e": 19.648,
+    "w": "TOOT",
+    "emph": true
+   },
+   {
+    "s": 19.659,
+    "e": 19.977,
+    "w": "GAYA."
+   }
+  ],
+  "y": 1440
+ },
+ "audio": {
+  "vo": "audio/b2_pinaka_hinglish.mp3",
+  "music": "audio/bed_folk.mp3",
+  "musicVol": 0.2,
+  "sfx": [
+   {
+    "src": "audio/sfx_hit.mp3",
+    "at": 0.1
+   },
+   {
+    "src": "audio/sfx_whoosh.mp3",
+    "at": 4.9,
+    "vol": 0.6
+   },
+   {
+    "src": "audio/sfx_riser.mp3",
+    "at": 17.6,
+    "vol": 0.5
+   },
+   {
+    "src": "audio/sfx_crack.mp3",
+    "at": 19.4,
+    "vol": 1.0
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "bg": {
+    "kind": "linear"
+   },
+   "cam": {
+    "z0": 1.25,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "border",
+     "x": 540,
+     "y": 250
+    },
+    {
+     "kind": "crowd",
+     "x": 540,
+     "y": 520,
+     "count": 56,
+     "cols": 8,
+     "gap": 118,
+     "rowGap": 118,
+     "s": 1.0,
+     "stagger": 0.45,
+     "anim": "walk",
+     "enter": "none"
+    },
+    {
+     "kind": "rect",
+     "x": 540,
+     "y": 1050,
+     "w": 1080,
+     "h": 330,
+     "color": "#2b0f06",
+     "opacity": 0.82,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "5,000 MEN. ONE BOW.",
+     "x": 540,
+     "y": 1050,
+     "size": 150,
+     "font": "pop",
+     "color": "#ffe9c4",
+     "glow": "#ff6a1f",
+     "at": 0.0,
+     "textEnter": "slam",
+     "width": 980
+    }
+   ],
+   "dur": 2.2
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "linear"
+   },
+   "cam": {
+    "x0": -50,
+    "x1": 50
+   },
+   "layers": [
+    {
+     "kind": "chest",
+     "x": 720,
+     "y": 900,
+     "s": 0.9,
+     "roll": 2.5,
+     "enter": "slide_r",
+     "move": {
+      "x": -60
+     }
+    },
+    {
+     "kind": "rope",
+     "x": 150,
+     "y": 880,
+     "len": 280
+    },
+    {
+     "kind": "crowd",
+     "x": 190,
+     "y": 860,
+     "count": 6,
+     "cols": 6,
+     "gap": 62,
+     "pose": "pull",
+     "anim": "strain",
+     "s": 0.95,
+     "enter": "none"
+    },
+    {
+     "kind": "border",
+     "x": 540,
+     "y": 1180
+    }
+   ],
+   "dur": 2.8
+  },
+  {
+   "trans": "flash",
+   "palette": "dusk",
+   "bg": {
+    "kind": "radial",
+    "cy": 45
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.15
+   },
+   "layers": [
+    {
+     "kind": "rays",
+     "x": 540,
+     "y": 820,
+     "opacity": 0.22
+    },
+    {
+     "kind": "bow",
+     "x": 600,
+     "y": 820,
+     "s": 0.95,
+     "color": "#12081f",
+     "color2": "#ffcf5c",
+     "enter": "pop"
+    }
+   ],
+   "dur": 3.0
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "linear"
+   },
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.08
+   },
+   "layers": [
+    {
+     "kind": "palace",
+     "x": 540,
+     "y": 720,
+     "s": 1.05,
+     "color": "#ffe9c4",
+     "color2": "#7a2e12"
+    },
+    {
+     "kind": "figure",
+     "x": 330,
+     "y": 1130,
+     "s": 2.3,
+     "crown": true,
+     "pose": "point",
+     "enter": "rise"
+    },
+    {
+     "kind": "figure",
+     "x": 760,
+     "y": 1150,
+     "s": 2.0,
+     "prop": "bun",
+     "pose": "stand",
+     "at": 2.9,
+     "enter": "pop"
+    },
+    {
+     "kind": "rings",
+     "x": 760,
+     "y": 1100,
+     "at": 2.9,
+     "count": 2,
+     "max": 320,
+     "color": "#ffe9c4"
+    }
+   ],
+   "dur": 5.3
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "linear"
+   },
+   "cam": {
+    "z0": 1.05,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "bow",
+     "x": 540,
+     "y": 1180,
+     "s": 0.5,
+     "rot": 90,
+     "color": "#2b0f06",
+     "color2": "#2b0f06",
+     "glow": false,
+     "enter": "none"
+    },
+    {
+     "kind": "figure",
+     "x": 250,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "lift",
+     "anim": "tremble",
+     "enter": "none",
+     "until": 1.0
+    },
+    {
+     "kind": "figure",
+     "x": 250,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "fall",
+     "at": 1.0,
+     "enter": "none"
+    },
+    {
+     "kind": "figure",
+     "x": 540,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "lift",
+     "anim": "tremble",
+     "enter": "none",
+     "until": 1.6
+    },
+    {
+     "kind": "figure",
+     "x": 540,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "fall",
+     "at": 1.6,
+     "enter": "none"
+    },
+    {
+     "kind": "figure",
+     "x": 830,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "lift",
+     "anim": "tremble",
+     "enter": "none",
+     "until": 2.2
+    },
+    {
+     "kind": "figure",
+     "x": 830,
+     "y": 980,
+     "s": 1.8,
+     "crown": true,
+     "pose": "fall",
+     "at": 2.2,
+     "enter": "none"
+    }
+   ],
+   "dur": 3.0
+  },
+  {
+   "trans": "flash",
+   "palette": "dusk",
+   "bg": {
+    "kind": "horizon"
+   },
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.1
+   },
+   "layers": [
+    {
+     "kind": "sun",
+     "x": 540,
+     "y": 880,
+     "r": 250,
+     "color": "#ffcf5c"
+    },
+    {
+     "kind": "hills",
+     "x": 540,
+     "y": 1560,
+     "color": "#12081f"
+    },
+    {
+     "kind": "figure",
+     "x": 540,
+     "y": 1300,
+     "s": 3.4,
+     "pose": "stand",
+     "crown": true,
+     "color": "#12081f",
+     "enter": "rise"
+    }
+   ],
+   "dur": 1.6
+  },
+  {
+   "trans": "cut",
+   "palette": "dusk",
+   "bg": {
+    "kind": "horizon"
+   },
+   "cam": {
+    "z0": 1.1,
+    "z1": 1.25,
+    "shakeAt": 1.55,
+    "shake": 34
+   },
+   "layers": [
+    {
+     "kind": "sun",
+     "x": 540,
+     "y": 880,
+     "r": 250,
+     "color": "#ffcf5c"
+    },
+    {
+     "kind": "hills",
+     "x": 540,
+     "y": 1560,
+     "color": "#12081f"
+    },
+    {
+     "kind": "figure",
+     "x": 540,
+     "y": 1300,
+     "s": 3.4,
+     "pose": "lift",
+     "crown": true,
+     "color": "#12081f",
+     "enter": "none"
+    },
+    {
+     "kind": "bow",
+     "x": 540,
+     "y": 900,
+     "s": 0.6,
+     "rot": 90,
+     "color": "#12081f",
+     "color2": "#fff",
+     "breakAt": 46,
+     "enter": "drop"
+    },
+    {
+     "kind": "bolt",
+     "x": 300,
+     "y": 0,
+     "color": "#fff",
+     "at": 1.55,
+     "until": 2.3,
+     "enter": "none"
+    },
+    {
+     "kind": "bolt",
+     "x": 800,
+     "y": 0,
+     "color": "#fff",
+     "at": 1.7,
+     "until": 2.5,
+     "seed": 5,
+     "enter": "none"
+    }
+   ],
+   "dur": 3.1
+  }
+ ]
+}

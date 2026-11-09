@@ -12,3 +12,5 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P5 | Captions: contrast ≥ 4.5, inside the safe area (y 260–1500 of 1920) | prior | QC gates |
 | P6 | Put a headline of 3–5 words, large and high-contrast, on the very first frame | prior (craft) | Hook lab 1: the only variant with a frame-1 headline won 3/3 judges; the 4.8M-view reference also opens with one |
 | P7 | Brightening the first frame alone does nothing; motion alone does little | prior (craft) | Hook lab 1: bright-only ranked last (3 pts), strike-at-0 mid (11) |
+| P8 | After a hit, post a closely related follow-up next ("part 2"); end story reels on a hook for the next part | evidenced (correlational) | F5: rho +0.17 between consecutive reels' detrended views, p = 0.0004, 11/13 creators |
+| P9 | Judge verdicts are craft opinions, not view predictions | calibration | Blind judges picked the real hit from the first 3 s in 64–68% of 25 pairs (chance 50%) |

@@ -1,0 +1,28 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.641,
+ "word_count": 2,
+ "first_word_s": 3.21,
+ "speech_seconds": 0.3,
+ "wpm": null,
+ "segments": [
+  {
+   "start": 3.21,
+   "end": 3.51,
+   "text": "Thank you.",
+   "words": [
+    {
+     "s": 3.21,
+     "e": 3.41,
+     "w": "Thank"
+    },
+    {
+     "s": 3.41,
+     "e": 3.51,
+     "w": "you."
+    }
+   ]
+  }
+ ]
+}

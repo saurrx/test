@@ -36,3 +36,12 @@ Chance is 50%. This narrowly misses the pre-registered bar (p ≤ 0.05), so judg
 the judge is probably a little better than a coin at spotting real hits from the opening, but not reliably.
 Both judges said they relied on a curiosity gap or bold claim in the opening line plus legible on-screen hook text.
 To be repeated when about 50 pairs are available.
+
+## Iteration 3 (2026-11-09 21:18)
+
+**F5. Short-range momentum is real (V22, the clean version of V20).**
+With baselines that exclude each other's reel, a reel that beats its local baseline tends to be followed by one that
+also does: rho +0.17, p = 0.0004, 11 of 13 creators, stable leaving any creator out (n = 570).
+Reading: after a hit, the next post gets a lift (audience spill-over, the algorithm, or the creator riding a topic).
+Caveat: hot streaks longer than the ±3-reel window would also produce this.
+→ Rule P8 (`evidenced`, correlational): when a reel hits, post a closely related follow-up next (a "part 2"), don't change topic.

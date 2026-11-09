@@ -29,15 +29,15 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
   return (
     <>
     {/* soft dark pool behind the words so they read on any picture */}
-    <div style={{ position: "absolute", left: -100, right: -100, top: y - 260, height: 520, background: `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,${pop ? 0.42 : 0.62}) 0%, rgba(0,0,0,0) 100%)` }} />
+    <div style={{ position: "absolute", left: -100, right: -100, top: y - 260, height: 520, background: `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,${pop ? 0.45 : 0.78}) 0%, rgba(0,0,0,0) 100%)` }} />
     <div style={{ position: "absolute", left: 70, right: 70, top: y, transform: "translateY(-50%)", textAlign: "center", fontFamily: fontFor(style, text),
-      fontSize: fs, lineHeight: pop ? 1.12 : 1.3, fontWeight: pop ? 800 : 600, letterSpacing: pop ? 1 : 3, textTransform: "uppercase", color: p.fg }}>
+      fontSize: fs, lineHeight: pop ? 1.12 : 1.3, fontWeight: 800, letterSpacing: pop ? 1 : 3, textTransform: "uppercase", color: p.fg }}>
       {c.words.map((w, i) => {
         const said = t >= w.s - 0.03, active = t >= w.s - 0.03 && t < w.e + 0.08, k = spring({ frame: f - Math.round((w.s - 0.03) * fps), fps, config: { damping: 13, stiffness: 220, mass: 0.6 } });
         const col = w.emph || (pop && active) ? p.accent : p.fg;
         return (
           <span key={i} style={{ display: "inline-block", margin: pop ? "0 14px" : "0 10px", color: col,
-            opacity: pop ? (said ? 1 : 0) : said ? 1 : 0.28, transform: pop ? `scale(${said ? 0.6 + 0.4 * k : 0.6}) rotate(${said ? (1 - k) * (i % 2 ? 4 : -4) : 0}deg)` : `translateY(${said ? (1 - k) * 10 : 10}px)`,
+            opacity: said ? 1 : 0, transform: pop ? `scale(${said ? 0.6 + 0.4 * k : 0.6}) rotate(${said ? (1 - k) * (i % 2 ? 4 : -4) : 0}deg)` : `translateY(${said ? (1 - k) * 10 : 10}px)`,
             textShadow: pop ? `0 6px 0 rgba(0,0,0,.55), 0 0 28px rgba(0,0,0,.8)${w.emph || active ? `, 0 0 34px ${p.accent}` : ""}` : `0 0 22px rgba(0,0,0,.95), 0 2px 6px rgba(0,0,0,.9)${w.emph ? `, 0 0 26px ${p.accent}` : ""}`,
             WebkitTextStroke: pop ? "2px rgba(0,0,0,.35)" : undefined }}>{w.w}</span>
         );

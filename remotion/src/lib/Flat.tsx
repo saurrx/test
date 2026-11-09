@@ -173,4 +173,11 @@ export const Person: React.FC<SP> = ({ t, color, color2, pose = "pray", rim = tr
   );
 };
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person };
+// A sound wave that rings out: amplitude decays over `fade` frames. Shows "the sound till it is gone".
+export const Wave: React.FC<SP> = ({ t, color, w = 900, amp = 150, fade = 200, cycles = 9 }) => {
+  const k = Math.max(0, 1 - t / fade); let d = "";
+  for (let i = 0; i <= 120; i++) { const u = i / 120, x = (u - 0.5) * w, env = Math.sin(Math.PI * u) * k; d += `${i ? "L" : "M"}${x.toFixed(1)} ${(amp * env * Math.sin(u * cycles * Math.PI * 2 - t / 2.2)).toFixed(1)} `; }
+  return <g fill="none" strokeLinecap="round"><path d={d} stroke={color} strokeWidth={34} opacity={0.08} /><path d={d} stroke={color} strokeWidth={16} opacity={0.2} /><path d={d} stroke="#fff6d8" strokeWidth={6} /></g>;
+};
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave };

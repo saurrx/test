@@ -22,6 +22,14 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
       <path d="M250 1500 L250 640 Q250 330 540 330 Q830 330 830 640 L830 1500 Z" fill="#050203" />
       <path d="M250 1500 L250 640 Q250 330 540 330 Q830 330 830 640 L830 1500" fill="none" stroke="#6b4420" strokeWidth={16} />
       <path d="M214 1500 L214 640 Q214 290 540 290 Q866 290 866 640 L866 1500" fill="none" stroke="#3a2412" strokeWidth={10} />
+      {/* lit back wall inside the alcove */}
+      <Halo cx={540} cy={820} r={330} ry={520} color={warm} opacity={0.22 * fl * glow} />
+      {/* toran: mango leaves and marigolds strung across the arch */}
+      {Array.from({ length: 17 }).map((_, i) => { const u = i / 16, x = 262 + u * 556, y = 566 - 150 * Math.sin(Math.PI * u) * 0.0 + 44 * Math.sin(Math.PI * u) + 3 * Math.sin(f / 16 + i);
+        return i % 2 === 0 ? <path key={`l${i}`} d={`M${x} ${y} q-13 34 0 66 q13 -32 0 -66 Z`} fill="#3f8f3a" stroke="#1d4d1f" strokeWidth={2} /> : <g key={`m${i}`}><circle cx={x} cy={y + 14} r={13} fill="#f08a1c" /><circle cx={x} cy={y + 14} r={6} fill="#ffd24a" /></g>; })}
+      <path d={`M262 566 Q540 ${660} 818 566`} fill="none" stroke="#7a5a1c" strokeWidth={4} />
+      {/* hanging lamps */}
+      {[330, 750].map((x, i) => (<g key={x}><line x1={x} y1={400} x2={x} y2={650} stroke="#6b4420" strokeWidth={4} /><Halo cx={x} cy={672} r={120} color={warm} opacity={0.55 * (0.85 + 0.15 * noise(f / 3, 30 + i))} /><path d={`M${x - 22} 650 L${x + 22} 650 L${x + 14} 684 L${x - 14} 684 Z`} fill="#8a5a1c" /><circle cx={x} cy={664} r={8} fill="#fff1c9" /></g>))}
       {/* pillars */}
       {[110, 906].map((x) => (
         <g key={x}>
@@ -55,6 +63,12 @@ export const Temple: React.FC<{ idol?: "murti" | "lingam" | "lamp" | "none"; war
       {/* altar + steps */}
       <rect x={300} y={1320} width={480} height={70} fill="#24160d" /><rect x={300} y={1320} width={480} height={8} fill={warm} opacity={0.35 * fl} />
       <rect x={190} y={1500} width={700} height={50} fill="#1d120b" /><rect x={120} y={1550} width={840} height={60} fill="#170e09" /><rect x={0} y={1610} width={1080} height={310} fill="#0e0806" />
+      {/* floor tiles in perspective, catching the lamp light */}
+      {Array.from({ length: 9 }).map((_, i) => <line key={`fv${i}`} x1={540 + (i - 4) * 130} y1={1612} x2={540 + (i - 4) * 330} y2={1920} stroke={warm} strokeOpacity={0.1} strokeWidth={3} />)}
+      {[1660, 1730, 1830].map((y) => <line key={y} x1={0} x2={1080} y1={y} y2={y} stroke={warm} strokeOpacity={0.08} strokeWidth={3} />)}
+      <Halo cx={540} cy={1640} r={520} ry={120} color={warm} opacity={0.28 * fl * glow} />
+      {/* saffron cloth on the altar */}
+      <path d="M330 1320 L750 1320 L720 1392 L360 1392 Z" fill="#c4521a" opacity={0.85} /><path d="M330 1320 L750 1320" stroke="#ffd24a" strokeWidth={6} />
       {[...Array(9)].map((_, i) => <circle key={i} cx={340 + i * 50} cy={1308} r={11} fill={i % 2 ? "#d9541e" : "#f0b23a"} opacity={0.9} />)}
       {lamps >= 1 && <Diya x={170} y={1492} s={0.9} color={warm} seed={1} />}
       {lamps >= 2 && <Diya x={910} y={1492} s={0.9} color={warm} seed={2} />}
