@@ -1,0 +1,66 @@
+{
+ "name": "hook2",
+ "judges": 3,
+ "order": [
+  "renders/h2_f_stakes_headline.mp4",
+  "renders/h2_e_stakes_payoff.mp4",
+  "renders/h2_b_number_bow.mp4",
+  "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+  "renders/h2_c_question.mp4",
+  "renders/h2_g_number_dusk.mp4",
+  "renders/h2_d_nobody_told.mp4",
+  "renders/h2_a_number_crowd.mp4"
+ ],
+ "borda": {
+  "renders/h2_a_number_crowd.mp4": 2,
+  "renders/h2_b_number_bow.mp4": 14,
+  "renders/h2_c_question.mp4": 8,
+  "renders/h2_d_nobody_told.mp4": 5,
+  "renders/h2_e_stakes_payoff.mp4": 16,
+  "renders/h2_f_stakes_headline.mp4": 20,
+  "renders/h2_g_number_dusk.mp4": 8,
+  "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg": 11
+ },
+ "first_place_votes": {
+  "renders/h2_a_number_crowd.mp4": 0,
+  "renders/h2_b_number_bow.mp4": 1,
+  "renders/h2_c_question.mp4": 0,
+  "renders/h2_d_nobody_told.mp4": 0,
+  "renders/h2_e_stakes_payoff.mp4": 0,
+  "renders/h2_f_stakes_headline.mp4": 2,
+  "renders/h2_g_number_dusk.mp4": 0,
+  "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg": 0
+ },
+ "per_judge": [
+  [
+   "renders/h2_f_stakes_headline.mp4",
+   "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+   "renders/h2_e_stakes_payoff.mp4",
+   "renders/h2_c_question.mp4",
+   "renders/h2_d_nobody_told.mp4",
+   "renders/h2_b_number_bow.mp4",
+   "renders/h2_g_number_dusk.mp4",
+   "renders/h2_a_number_crowd.mp4"
+  ],
+  [
+   "renders/h2_f_stakes_headline.mp4",
+   "renders/h2_e_stakes_payoff.mp4",
+   "renders/h2_b_number_bow.mp4",
+   "renders/h2_g_number_dusk.mp4",
+   "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+   "renders/h2_d_nobody_told.mp4",
+   "renders/h2_a_number_crowd.mp4",
+   "renders/h2_c_question.mp4"
+  ],
+  [
+   "renders/h2_b_number_bow.mp4",
+   "renders/h2_f_stakes_headline.mp4",
+   "renders/h2_e_stakes_payoff.mp4",
+   "renders/h2_c_question.mp4",
+   "renders/h2_g_number_dusk.mp4",
+   "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+   "renders/h2_a_number_crowd.mp4",
+   "renders/h2_d_nobody_told.mp4"
+  ]
+ ]
+}

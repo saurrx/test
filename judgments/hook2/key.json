@@ -1,0 +1,45 @@
+{
+ "clips": [
+  "renders/h2_a_number_crowd.mp4",
+  "renders/h2_b_number_bow.mp4",
+  "renders/h2_c_question.mp4",
+  "renders/h2_d_nobody_told.mp4",
+  "renders/h2_e_stakes_payoff.mp4",
+  "renders/h2_f_stakes_headline.mp4",
+  "renders/h2_g_number_dusk.mp4",
+  "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg"
+ ],
+ "whole": false,
+ "key": {
+  "j1": {
+   "A": "renders/h2_f_stakes_headline.mp4",
+   "B": "renders/h2_c_question.mp4",
+   "C": "renders/h2_g_number_dusk.mp4",
+   "D": "renders/h2_e_stakes_payoff.mp4",
+   "E": "renders/h2_d_nobody_told.mp4",
+   "F": "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+   "G": "renders/h2_a_number_crowd.mp4",
+   "H": "renders/h2_b_number_bow.mp4"
+  },
+  "j2": {
+   "A": "renders/h2_g_number_dusk.mp4",
+   "B": "renders/h2_d_nobody_told.mp4",
+   "C": "renders/h2_b_number_bow.mp4",
+   "D": "renders/h2_f_stakes_headline.mp4",
+   "E": "renders/h2_a_number_crowd.mp4",
+   "F": "renders/h2_e_stakes_payoff.mp4",
+   "G": "renders/h2_c_question.mp4",
+   "H": "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg"
+  },
+  "j3": {
+   "A": "renders/h2_f_stakes_headline.mp4",
+   "B": "analysis/kathayug27__De9qY85zaQk/hook_strip.jpg",
+   "C": "renders/h2_a_number_crowd.mp4",
+   "D": "renders/h2_g_number_dusk.mp4",
+   "E": "renders/h2_b_number_bow.mp4",
+   "F": "renders/h2_c_question.mp4",
+   "G": "renders/h2_e_stakes_payoff.mp4",
+   "H": "renders/h2_d_nobody_told.mp4"
+  }
+ }
+}

@@ -1,0 +1,186 @@
+npm notice run npx
+npm notice run 'remotion' render build_3821 Reel ../renders/h2_b_number_bow.mp4 --props=../makes/hook2/b_number_bow.json --scale=0.5 --jpeg-quality=70 --crf=26 --gl=swangle --concurrency=4 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing
+Getting compositions
+Getting compositions
+Composition          Reel
+Codec                h264
+Output               ../renders/h2_b_number_bow.mp4
+Concurrency          4x
+Rendered 0/156
+Rendered 1/156, time remaining: 7m 5s
+Rendered 2/156, time remaining: 7m 12s
+Rendered 3/156, time remaining: 7m 15s
+Rendered 4/156, time remaining: 8m 57s
+Rendered 5/156, time remaining: 9m 59s
+Rendered 6/156, time remaining: 10m 53s
+Rendered 7/156, time remaining: 11m 35s
+Rendered 8/156, time remaining: 11m 45s
+Rendered 9/156, time remaining: 11m 8s
+Rendered 10/156, time remaining: 10m 52s
+Rendered 11/156, time remaining: 10m 31s
+Rendered 12/156, time remaining: 10m 19s
+Rendered 13/156, time remaining: 9m 56s
+Rendered 14/156, time remaining: 10m 5s
+Rendered 15/156, time remaining: 10m 7s
+Rendered 16/156, time remaining: 9m 54s
+Rendered 17/156, time remaining: 9m 48s
+Rendered 18/156, time remaining: 9m 48s
+Rendered 19/156, time remaining: 9m 51s
+Rendered 20/156, time remaining: 9m 45s
+Rendered 21/156, time remaining: 9m 44s
+Rendered 22/156, time remaining: 9m 30s
+Rendered 23/156, time remaining: 9m 18s
+Rendered 24/156, time remaining: 9m 9s
+Rendered 25/156, time remaining: 9m 0s
+Rendered 26/156, time remaining: 8m 48s
+Rendered 27/156, time remaining: 8m 40s
+Rendered 28/156, time remaining: 8m 44s
+Rendered 29/156, time remaining: 8m 45s
+Rendered 30/156, time remaining: 8m 53s
+Rendered 31/156, time remaining: 8m 49s
+Rendered 32/156, time remaining: 8m 47s
+Rendered 33/156, time remaining: 8m 44s
+Rendered 34/156, time remaining: 8m 41s
+Rendered 35/156, time remaining: 8m 40s
+Rendered 36/156, time remaining: 8m 33s
+Rendered 37/156, time remaining: 8m 24s
+Rendered 38/156, time remaining: 8m 36s
+Rendered 39/156, time remaining: 8m 46s
+Rendered 40/156, time remaining: 8m 47s
+Rendered 41/156, time remaining: 8m 51s
+Rendered 42/156, time remaining: 9m 1s
+Rendered 43/156, time remaining: 9m 11s
+Rendered 44/156, time remaining: 9m 21s
+Rendered 45/156, time remaining: 9m 29s
+Rendered 46/156, time remaining: 9m 15s
+Rendered 47/156, time remaining: 9m 4s
+Rendered 48/156, time remaining: 8m 54s
+Rendered 49/156, time remaining: 8m 45s
+Rendered 50/156, time remaining: 8m 34s
+Rendered 51/156, time remaining: 8m 23s
+Rendered 52/156, time remaining: 8m 14s
+Rendered 53/156, time remaining: 8m 3s
+Rendered 54/156, time remaining: 7m 54s
+Rendered 55/156, time remaining: 7m 45s
+Rendered 56/156, time remaining: 7m 35s
+Rendered 57/156, time remaining: 7m 26s
+Rendered 58/156, time remaining: 7m 17s
+Rendered 59/156, time remaining: 7m 7s
+Rendered 60/156, time remaining: 6m 58s
+Rendered 61/156, time remaining: 6m 50s
+Rendered 62/156, time remaining: 6m 46s
+Rendered 63/156, time remaining: 6m 41s
+Rendered 64/156, time remaining: 6m 37s
+Rendered 65/156, time remaining: 6m 31s
+Rendered 66/156, time remaining: 6m 25s
+Rendered 67/156, time remaining: 6m 20s
+Rendered 68/156, time remaining: 6m 14s
+Rendered 69/156, time remaining: 6m 7s
+Rendered 70/156, time remaining: 6m 1s
+Rendered 71/156, time remaining: 5m 53s
+Rendered 72/156, time remaining: 5m 46s
+Rendered 73/156, time remaining: 5m 38s
+Rendered 74/156, time remaining: 5m 31s
+Rendered 75/156, time remaining: 5m 24s
+Rendered 76/156, time remaining: 5m 16s
+Rendered 77/156, time remaining: 5m 9s
+Rendered 78/156, time remaining: 5m 2s
+Rendered 79/156, time remaining: 4m 57s
+Rendered 80/156, time remaining: 4m 51s
+Rendered 81/156, time remaining: 4m 45s
+Rendered 82/156, time remaining: 4m 38s
+Rendered 83/156, time remaining: 4m 32s
+Rendered 84/156, time remaining: 4m 26s
+Rendered 85/156, time remaining: 4m 20s
+Rendered 86/156, time remaining: 4m 14s
+Rendered 87/156, time remaining: 4m 9s
+Rendered 88/156, time remaining: 4m 4s
+Rendered 89/156, time remaining: 3m 58s
+Rendered 90/156, time remaining: 3m 53s
+Rendered 91/156, time remaining: 3m 48s
+Rendered 92/156, time remaining: 3m 43s
+Rendered 93/156, time remaining: 3m 38s
+Rendered 94/156, time remaining: 3m 33s
+Rendered 95/156, time remaining: 3m 28s
+Rendered 96/156, time remaining: 3m 23s
+Rendered 97/156, time remaining: 3m 18s
+Rendered 98/156, time remaining: 3m 13s
+Rendered 99/156, time remaining: 3m 8s
+Rendered 100/156, time remaining: 3m 4s
+Rendered 101/156, time remaining: 2m 59s
+Rendered 102/156, time remaining: 2m 55s
+Rendered 103/156, time remaining: 2m 51s
+Rendered 104/156, time remaining: 2m 47s
+Rendered 105/156, time remaining: 2m 43s
+Rendered 106/156, time remaining: 2m 40s
+Rendered 107/156, time remaining: 2m 36s
+Rendered 108/156, time remaining: 2m 33s
+Rendered 109/156, time remaining: 2m 29s
+Rendered 110/156, time remaining: 2m 25s
+Rendered 111/156, time remaining: 2m 21s
+Rendered 112/156, time remaining: 2m 17s
+Rendered 113/156, time remaining: 2m 13s
+Rendered 114/156, time remaining: 2m 10s
+Rendered 115/156, time remaining: 2m 6s
+Rendered 116/156, time remaining: 2m 3s
+Rendered 117/156, time remaining: 1m 59s
+Rendered 118/156, time remaining: 1m 56s
+Rendered 119/156, time remaining: 1m 52s
+Rendered 119/156, time remaining: 1m 52s
+Rendered 120/156, time remaining: 1m 48s
+Rendered 121/156, time remaining: 1m 45s
+Rendered 121/156, time remaining: 1m 45s
+Rendered 122/156, time remaining: 1m 41s
+Rendered 123/156, time remaining: 1m 38s
+Rendered 123/156, time remaining: 1m 38s
+Rendered 124/156, time remaining: 1m 34s
+Rendered 125/156, time remaining: 1m 31s
+Rendered 125/156, time remaining: 1m 31s
+Rendered 126/156, time remaining: 1m 27s
+Rendered 127/156, time remaining: 1m 24s
+Rendered 127/156, time remaining: 1m 24s
+Rendered 127/156, time remaining: 1m 24s
+Rendered 128/156, time remaining: 1m 21s
+Rendered 129/156, time remaining: 1m 17s
+Rendered 130/156, time remaining: 1m 14s
+Rendered 130/156, time remaining: 1m 14s
+Rendered 131/156, time remaining: 1m 11s
+Rendered 131/156, time remaining: 1m 11s
+Rendered 132/156, time remaining: 1m 8s
+Rendered 133/156, time remaining: 1m 5s
+Rendered 134/156, time remaining: 1m 1s
+Rendered 135/156, time remaining: 58s
+Rendered 135/156, time remaining: 58s
+Rendered 136/156, time remaining: 55s
+Rendered 136/156, time remaining: 55s
+Rendered 137/156, time remaining: 52s
+Rendered 138/156, time remaining: 49s
+Rendered 138/156, time remaining: 49s
+Rendered 139/156, time remaining: 46s
+Rendered 140/156, time remaining: 43s
+Rendered 140/156, time remaining: 43s
+Rendered 141/156, time remaining: 40s
+Rendered 142/156, time remaining: 38s
+Rendered 142/156, time remaining: 38s
+Rendered 143/156, time remaining: 35s
+Rendered 144/156, time remaining: 32s
+Rendered 145/156, time remaining: 29s
+Rendered 146/156, time remaining: 26s
+Rendered 147/156, time remaining: 23s
+Rendered 147/156, time remaining: 23s
+Rendered 148/156, time remaining: 21s
+Rendered 149/156, time remaining: 18s
+Rendered 150/156, time remaining: 15s
+Rendered 150/156, time remaining: 15s
+Rendered 150/156, time remaining: 15s
+Rendered 151/156, time remaining: 12s
+Rendered 152/156, time remaining: 10s
+Rendered 153/156, time remaining: 7s
+Rendered 153/156, time remaining: 7s
+Rendered 154/156, time remaining: 5s
+Rendered 155/156, time remaining: 2s
+Rendered 155/156, time remaining: 2s
+Stitched 68/156
+Stitched 125/156
+Stitched 156/156
++                    ../renders/h2_b_number_bow.mp4 1 MB

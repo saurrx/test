@@ -14,3 +14,5 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P7 | Brightening the first frame alone does nothing; motion alone does little | prior (craft) | Hook lab 1: bright-only ranked last (3 pts), strike-at-0 mid (11) |
 | P8 | After a hit, post a closely related follow-up next ("part 2"); end story reels on a hook for the next part | evidenced (correlational) | F5: rho +0.17 between consecutive reels' detrended views, p = 0.0004, 11/13 creators |
 | P9 | Judge verdicts are craft opinions, not view predictions | calibration | Blind judges picked the real hit from the first 3 s in 64–68% of 25 pairs (chance 50%) |
+| P10 | Open on stakes with a concrete number and a contrast ("5,000 men failed. One prince."), not a bare fact, a question, or generic clickbait ("nobody told you this") | prior (craft) | Hook lab 2: both stakes variants ranked 1–2 of 8; generic clickbait 7th; plain number 8th; all 3 judges picked the stakes line as the strongest words |
+| P11 | Put the headline over one strong focal image (glowing bow, sun), fully inside the frame from frame 1 | prior (craft) | Hook lab 2 judge fixes (3/3) |

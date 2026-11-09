@@ -55,7 +55,7 @@ export const BigText: React.FC<{ t: number; text: string; color: string; glow?: 
     let shown = text;
     if (count) { const v = Math.round(interpolate(t, [0, count[2]], [count[0], count[1]], { ...clamp, easing: (x) => 1 - Math.pow(1 - x, 3) })); shown = text.replace("#", v.toLocaleString("en-IN")); }
     if (enter === "type") shown = shown.slice(0, Math.floor(shown.length * prog(t, 0, Math.max(8, shown.length * 1.4), (x) => x)));
-    const sc = enter === "slam" ? 2.2 - 1.2 * k : enter === "pop" ? 0.5 + 0.5 * k : 1;
+    const sc = enter === "slam" ? 1.45 - 0.45 * k : enter === "pop" ? 0.5 + 0.5 * k : 1;
     return (
       <div style={{ width, marginLeft: -width / 2, textAlign: "center", transform: `translateY(-50%) scale(${sc})`, opacity: enter === "fade" ? prog(t, 0, 14) : Math.min(1, t / 3) }}>
         <div style={{ fontFamily: fontFor(style, shown), fontSize: size, lineHeight: 1.05, fontWeight: 800, color, textTransform: "uppercase", letterSpacing: style === "serif" ? 6 : 1,
