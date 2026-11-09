@@ -9,3 +9,8 @@ analysis/*/frames/
 analysis/*/frames_2s/
 __pycache__/
 .claude/settings.local.json
+
+# background logs churn constantly; keep them local
+data/reels/_download.log
+data/seed/_download.log
+analysis/_seed_run.log
