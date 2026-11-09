@@ -1,0 +1,7 @@
+{"palette":"glow","scenes":[
+ {"dur":1.5,"palette":"dusk","bg":{"kind":"horizon"},"stars":true,"cam":{"z0":1.0,"z1":1.1},"layers":[{"kind":"moon","x":820,"y":330,"color":"#fff1dd","color2":"#3a1f3e","r":70},{"kind":"mandir","x":540,"y":1180,"s":1.25,"color":"#12081f","color2":"#ffcf5c","enter":"none"},{"kind":"birds","x":100,"y":500,"color":"#12081f","count":5,"enter":"none"}]},
+ {"dur":1.5,"bg":{"kind":"solid"},"cam":{"z0":1.0,"z1":1.15},"layers":[{"kind":"doorway","x":540,"y":1000,"color":"#080403","color2":"#ffb648","enter":"none"},{"kind":"person","x":540,"y":1500,"s":1.0,"pose":"stand","color":"#080403","color2":"#ffb648","enter":"none"}]},
+ {"dur":1.5,"bg":{"kind":"radial","cy":70},"cam":{"z0":1.0,"z1":1.1},"layers":[{"kind":"rect","x":540,"y":1500,"w":1080,"h":70,"color":"#2a1a10","enter":"none"},{"kind":"feet","x":540,"y":1700,"s":1.3,"color":"#0c0705","color2":"#ffb648","stepAt":10,"enter":"none"}]},
+ {"dur":1.5,"bg":{"kind":"temple","idol":"none","glow":1.8},"cam":{"z0":1.9,"z1":1.8,"y0":-250,"y1":-250},"layers":[{"kind":"bell","x":540,"y":520,"s":0.9,"color":"#1a0f08","color2":"#ffb648","swing":8,"enter":"none"},{"kind":"hand","x":560,"y":1050,"s":0.9,"color":"#0c0705","color2":"#ffb648","pull":1,"enter":"none"}]},
+ {"dur":1.5,"bg":{"kind":"radial","cy":50},"cam":{"z0":1.0,"z1":1.1},"layers":[{"kind":"thali","x":540,"y":900,"color2":"#ffb648","wicks":5,"enter":"pop"},{"kind":"trail","shape":"circle","y":900,"r":380,"loops":2,"from":0.1,"to":1.4}]}
+]}

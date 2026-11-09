@@ -2,9 +2,11 @@
 
 ## Now
 - Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:30** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
-- Iteration 1 done 20:38 (V1–V5, V19–V21; hook lab 1: frame-1 headline wins).
-- **Iteration 2 (now)**: full reel #1 `makes/reel1_bell/` (original, 60–70 s per P1, glow lane, headline on frame 1 per P6): script → Gemini voice → align on PC → 1 Lyria music clip → props → draft → QC → final 1080p → `renders/best/`.
-- Then iteration 3: hook lab 2 on the Pinaka brief (C3 line variants, bigger captions) + checkpoint 1 + calibration if ≥ 20 pairs + V22 and analysed-feature tests.
+- Iterations 1–2 done (see `makes/LOG.md`). Reel 1 closed as `hard` after 3 versions (v1 < v2 < v3 by blind judges, still loses to the reference on scene variety).
+- **Iteration 3 (started 21:24)**: new scene types built (mandir exterior, doorway, feet, hand, thali). In flight on the PC: (1) `reel1_final` 1080p render then checkpoint-1 drafts `cp1_b1..3` (log: scratchpad/final1.log; if lost, re-run `scripts/render2.sh makes/reel1_bell/reel.json reel1_final final` and the cp1 line), (2) hook lab 2 `h2_*` (7 variants, Pinaka, line test).
+  Next: QC + judge hook lab 2 (3 judges, include `analysis/kathayug27__De9qY85zaQk/hook_strip.jpg`); judge cp1 vs cp0 (3 briefs × 3 judges, pairwise, `--whole`); copy reel1_final to `renders/best/`.
+- Iteration 4: reel 2 = Pinaka story, flat lane + new scenes, 60–75 s, ends on a "part 2" hook (P8). Use `scripts/render2.sh` (own bundle dir) for all renders.
+- When `data/features.csv` shows ≥ 150 analysed: run V6–V18 per prereg, then fit the views model.
 
 ## How to work (for a restart)
 - Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.

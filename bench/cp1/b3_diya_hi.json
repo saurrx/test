@@ -422,10 +422,12 @@
    },
    "layers": [
     {
-     "kind": "diya",
+     "kind": "thali",
      "x": 540,
-     "y": 1180,
-     "s": 2.4,
+     "y": 1640,
+     "color2": "#ffb648",
+     "wicks": 5,
+     "r": 150,
      "enter": "none"
     },
     {
@@ -520,11 +522,11 @@
   },
   {
    "trans": "fade",
+   "palette": "dusk",
    "bg": {
-    "kind": "temple",
-    "idol": "none",
-    "lamps": 2
+    "kind": "horizon"
    },
+   "stars": true,
    "dust": true,
    "cam": {
     "z0": 1.0,
@@ -532,21 +534,22 @@
    },
    "layers": [
     {
-     "kind": "diya",
+     "kind": "mandir",
      "x": 540,
-     "y": 1180,
-     "s": 2.8,
-     "lean": 22,
-     "leanAt": 30,
+     "y": 1000,
+     "s": 0.95,
+     "color": "#12081f",
+     "color2": "#ffcf5c",
      "enter": "none"
     },
     {
-     "kind": "yantra",
+     "kind": "diya",
      "x": 540,
-     "y": 800,
-     "r": 300,
-     "draw": 1.5,
-     "opacity": 0.6
+     "y": 1640,
+     "s": 2.4,
+     "lean": 22,
+     "leanAt": 30,
+     "enter": "none"
     }
    ],
    "dur": 3.8

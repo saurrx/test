@@ -180,4 +180,65 @@ export const Wave: React.FC<SP> = ({ t, color, w = 900, amp = 150, fade = 200, c
   return <g fill="none" strokeLinecap="round"><path d={d} stroke={color} strokeWidth={34} opacity={0.08} /><path d={d} stroke={color} strokeWidth={16} opacity={0.2} /><path d={d} stroke="#fff6d8" strokeWidth={6} /></g>;
 };
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave };
+// Temple seen from outside: stepped shikhara with kalash and flag, side shrines, steps, a glowing doorway. Pure silhouette.
+export const Mandir: React.FC<SP> = ({ t, color, color2, door = true, flag = true }) => {
+  const tiers = 9; const parts: React.ReactNode[] = [];
+  for (let i = 0; i < tiers; i++) { const w = 330 - i * 30, y = -200 - i * 62; parts.push(<path key={i} d={`M${-w / 2} ${y} L${-w / 2 + 14} ${y - 62} L${w / 2 - 14} ${y - 62} L${w / 2} ${y} Z`} fill={color} />); parts.push(<rect key={`b${i}`} x={-w / 2 - 8} y={y - 6} width={w + 16} height={10} fill={color} />); }
+  const top = -200 - tiers * 62; const wave = 10 * Math.sin(t / 6);
+  return (
+    <g>
+      {door && <Halo cx={0} cy={60} r={420} ry={520} color={color2} opacity={0.5} />}
+      {[-330, 330].map((x) => <g key={x}><rect x={x - 90} y={-60} width={180} height={300} fill={color} /><path d={`M${x - 100} -60 L${x - 60} -220 L${x} -300 L${x + 60} -220 L${x + 100} -60 Z`} fill={color} /><circle cx={x} cy={-316} r={14} fill={color} /></g>)}
+      <rect x={-200} y={-200} width={400} height={440} fill={color} />
+      {parts}
+      <path d={`M-40 ${top} Q0 ${top - 70} 40 ${top} Z`} fill={color} /><circle cx={0} cy={top - 52} r={18} fill={color2} /><line x1={0} y1={top - 60} x2={0} y2={top - 190} stroke={color} strokeWidth={6} />
+      {flag && <path d={`M0 ${top - 190} L${110} ${top - 165 + wave} L0 ${top - 130} Z`} fill="#e8641c" />}
+      {door && <path d="M-80 240 L-80 40 Q0 -70 80 40 L80 240 Z" fill={color2} />}
+      {door && <path d="M-80 240 L-80 40 Q0 -70 80 40 L80 240 Z" fill="#fff6d8" opacity={0.55} transform="translate(0 60) scale(0.7) translate(0 26)" />}
+      {[0, 1, 2, 3].map((i) => <rect key={i} x={-300 - i * 60} y={240 + i * 34} width={600 + i * 120} height={34} fill={color} opacity={1 - i * 0.04} />)}
+    </g>
+  );
+};
+// Looking through a dark doorway into the lit sanctum: jambs, lintel, threshold. Everything beyond is glow.
+export const Doorway: React.FC<SP> = ({ t, color, color2, open = 1 }) => {
+  const k = Math.min(1, open) * prog(t, 0, 24); const half = 300 * k;
+  return (
+    <g>
+      <Halo cx={0} cy={-80} r={900} ry={1300} color={color2} opacity={0.85 * k} />
+      <path d={`M${-half} 620 L${-half} -520 Q0 ${-520 - 330 * k} ${half} -520 L${half} 620 Z`} fill={color2} opacity={0.9 * k} />
+      <path d={`M${-half * 0.6} 620 L${-half * 0.6} -400 Q0 ${-400 - 240 * k} ${half * 0.6} -400 L${half * 0.6} 620 Z`} fill="#fff6d8" opacity={0.6 * k} />
+      {/* the wall around the opening */}
+      <path d={`M-700 -1200 L700 -1200 L700 900 L-700 900 Z M${-half} 620 L${-half} -520 Q0 ${-520 - 330 * k} ${half} -520 L${half} 620 Z`} fill={color} fillRule="evenodd" />
+      <path d={`M${-half} 620 L${-half} -520 Q0 ${-520 - 330 * k} ${half} -520 L${half} 620`} fill="none" stroke={color2} strokeOpacity={0.8} strokeWidth={10} />
+      <rect x={-700} y={620} width={1400} height={60} fill="#2a1a10" /><rect x={-700} y={620} width={1400} height={8} fill={color2} opacity={0.6} />
+    </g>
+  );
+};
+// Two bare feet seen from behind/above; `step` 0..1 moves the right foot forward over a threshold.
+export const Feet: React.FC<SP> = ({ t, color, color2, stepAt = 20 }) => {
+  const k = prog(t, stepAt, stepAt + 16); const foot = (x: number, y: number, flip: number) => (
+    <g transform={`translate(${x} ${y}) scale(${flip} 1)`}><path d="M-46 120 Q-70 20 -50 -70 Q-30 -150 20 -150 Q66 -150 60 -60 Q54 30 50 120 Q0 170 -46 120 Z" fill={color} stroke={color2} strokeOpacity={0.8} strokeWidth={5} />
+      {[0, 1, 2, 3, 4].map((i) => <circle key={i} cx={-44 + i * 24} cy={-166 + Math.abs(i - 1.5) * 9} r={i === 0 ? 17 : 12} fill={color} stroke={color2} strokeOpacity={0.8} strokeWidth={4} />)}</g>);
+  return <g>{foot(-110, 0, -1)}{foot(110, -330 * k - 40 * Math.sin(Math.PI * k), 1)}</g>;
+};
+// A hand and forearm reaching up (side view), rim-lit. Fingers are a simple curled shape: enough to read as a hand.
+export const Hand: React.FC<SP> = ({ t, color, color2, pull = 0 }) => {
+  const dy = pull ? 26 * Math.sin(t / 3.2) : 0;
+  return (
+    <g transform={`translate(0 ${dy})`}>
+      <path d="M-70 520 L-52 80 Q-60 -10 -40 -60 L-34 -150 Q-30 -180 -8 -178 Q10 -176 10 -150 L12 -196 Q14 -224 36 -222 Q56 -220 54 -192 L54 -168 Q60 -194 80 -190 Q98 -186 94 -158 L88 -100 Q110 -120 124 -104 Q134 -90 116 -64 L84 -6 Q70 40 66 80 L84 520 Z" fill={color} stroke={color2} strokeOpacity={0.8} strokeWidth={5} strokeLinejoin="round" />
+      <path d="M-46 110 Q10 140 70 110" fill="none" stroke={color2} strokeOpacity={0.9} strokeWidth={7} strokeDasharray="3 12" strokeLinecap="round" />
+    </g>
+  );
+};
+// Brass aarti plate from above with a ring of small flames.
+export const Thali: React.FC<SP> = ({ t, color2, wicks = 5, r = 240 }) => (
+  <g>
+    <Halo cx={0} cy={0} r={r * 2.4} color={color2} opacity={0.5} />
+    <circle r={r} fill="#8a5a1c" stroke="#d9a441" strokeWidth={10} /><circle r={r * 0.8} fill="none" stroke="#d9a441" strokeWidth={4} opacity={0.7} /><circle r={r * 0.2} fill="#c4521a" />
+    {Array.from({ length: wicks }).map((_, i) => { const a = (i / wicks) * Math.PI * 2 - Math.PI / 2, x = r * 0.56 * Math.cos(a), y = r * 0.56 * Math.sin(a), k = 1 + 0.2 * noise(t / 2.5, i);
+      return <g key={i}><Halo cx={x} cy={y} r={70 * k} color={color2} opacity={0.9} /><circle cx={x} cy={y} r={20 * k} fill={color2} /><circle cx={x} cy={y} r={9} fill="#fff8e0" /></g>; })}
+  </g>
+);
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person, wave: Wave, mandir: Mandir, doorway: Doorway, feet: Feet, hand: Hand, thali: Thali };

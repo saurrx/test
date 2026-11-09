@@ -332,34 +332,28 @@
   {
    "trans": "flash",
    "bg": {
-    "kind": "radial",
-    "cy": 42
+    "kind": "solid"
    },
    "dust": true,
    "cam": {
     "z0": 1.0,
-    "z1": 1.12
+    "z1": 1.14
    },
    "layers": [
     {
-     "kind": "rays",
+     "kind": "doorway",
      "x": 540,
-     "y": 700,
-     "opacity": 0.2
-    },
-    {
-     "kind": "yantra",
-     "x": 540,
-     "y": 700,
-     "r": 400,
-     "draw": 1.2
+     "y": 1000,
+     "color": "#080403",
+     "color2": "#ffb648",
+     "enter": "none"
     },
     {
      "kind": "person",
      "x": 540,
-     "y": 1740,
-     "s": 1.5,
-     "pose": "pray",
+     "y": 1620,
+     "s": 1.2,
+     "pose": "stand",
      "color": "#0c0705",
      "color2": "#ffb648",
      "enter": "none"
@@ -509,45 +503,31 @@
   },
   {
    "trans": "fade",
+   "palette": "dusk",
    "bg": {
-    "kind": "temple",
-    "idol": "none",
-    "lamps": 3
+    "kind": "horizon"
    },
-   "dust": true,
+   "stars": true,
    "cam": {
-    "z0": 1.1,
+    "z0": 1.12,
     "z1": 1.0
    },
    "layers": [
     {
-     "kind": "glowdot",
-     "x": 540,
-     "y": 660,
-     "r": 460,
-     "color2": "#ffb648",
-     "opacity": 0.5,
-     "enter": "none"
+     "kind": "moon",
+     "x": 840,
+     "y": 300,
+     "color": "#fff1dd",
+     "color2": "#3a1f3e",
+     "r": 64
     },
     {
-     "kind": "bell",
+     "kind": "mandir",
      "x": 540,
-     "y": 660,
-     "s": 1.05,
-     "color": "#1a0f08",
-     "color2": "#ffb648",
-     "swing": 1,
-     "strikeAt": 42,
-     "enter": "none"
-    },
-    {
-     "kind": "person",
-     "x": 540,
-     "y": 1690,
-     "s": 1.15,
-     "pose": "pray",
-     "color": "#0c0705",
-     "color2": "#ffb648",
+     "y": 1330,
+     "s": 1.2,
+     "color": "#12081f",
+     "color2": "#ffcf5c",
      "enter": "none"
     },
     {
@@ -564,7 +544,7 @@
     {
      "kind": "rings",
      "x": 540,
-     "y": 840,
+     "y": 1400,
      "color": "#ffb648",
      "at": 1.45,
      "count": 3,

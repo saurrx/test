@@ -28,8 +28,8 @@ save(b, {"palette": "glow", "captions": {"style": "serif", "words": words(b), "y
     {"kind": "bell", "x": 540, "y": 720, "s": 1.1, "color": "#1a0f08", "color2": G, "swing": 22, "speed": 3.2, "enter": "none"},
     {"kind": "cross", "x": 540, "y": 760, "color": "#ff3b30", "size": 240, "at": 1.6, "enter": "none"}]},
   {"trans": "fade", "bg": {"kind": "temple", "idol": "murti", "lamps": 2, "glow": 1.2}, "dust": True, "cam": {"z0": 1.0, "z1": 1.1}, "layers": []},
-  {"trans": "flash", "bg": {"kind": "radial", "cy": 42}, "dust": True, "cam": {"z0": 1.0, "z1": 1.12}, "layers": [
-    {"kind": "rays", "x": 540, "y": 700, "opacity": 0.2}, {"kind": "yantra", "x": 540, "y": 700, "r": 400, "draw": 1.2}, P(y=1740, s=1.5), {"kind": "text", "text": "YOU", "x": 540, "y": 700, "size": 240, "font": "pop", "color": W, "glow": "#ff6a1f", "at": 0.7, "textEnter": "slam"}]},
+  {"trans": "flash", "bg": {"kind": "solid"}, "dust": True, "cam": {"z0": 1.0, "z1": 1.14}, "layers": [
+    {"kind": "doorway", "x": 540, "y": 1000, "color": "#080403", "color2": G, "enter": "none"}, P(y=1620, s=1.2, pose="stand"), {"kind": "text", "text": "YOU", "x": 540, "y": 700, "size": 240, "font": "pop", "color": W, "glow": "#ff6a1f", "at": 0.7, "textEnter": "slam"}]},
   {"trans": "punch", "bg": {"kind": "temple", "idol": "none", "lamps": 2}, "cam": {"z0": 1.25, "z1": 1.3, "shakeAt": 0.65, "shake": 18}, "layers": [
     {"kind": "glowdot", "x": 540, "y": 640, "r": 480, "color2": G, "opacity": 0.6, "enter": "none"}, {"kind": "bell", "x": 540, "y": 640, "s": 1.1, "color": "#1a0f08", "color2": G, "swing": 2, "strikeAt": 18, "enter": "none"},
     {"kind": "rings", "x": 540, "y": 830, "color": G, "at": 0.65, "count": 5, "max": 1000}]},
@@ -38,10 +38,10 @@ save(b, {"palette": "glow", "captions": {"style": "serif", "words": words(b), "y
     {"kind": "chakras", "x": 360, "y": 1560, "at": 1.6, "every": 14, "gap": 150, "r": 26, "enter": "none"}, {"kind": "wave", "x": 540, "y": 1010, "color": G, "fade": 170, "w": 900, "amp": 70, "enter": "fade"},
     {"kind": "text", "text": "#", "count": [1, 7, 110], "x": 820, "y": 620, "size": 380, "font": "serif", "color": W, "glow": G, "at": 1.6, "textEnter": "pop"},
     {"kind": "rings", "x": 360, "y": 800, "color": G, "at": 0.2, "count": 7, "every": 22, "max": 900, "width": 8}]},
-  {"trans": "fade", "bg": {"kind": "temple", "idol": "none", "lamps": 3}, "dust": True, "cam": {"z0": 1.1, "z1": 1.0}, "layers": [
-    {"kind": "glowdot", "x": 540, "y": 660, "r": 460, "color2": G, "opacity": 0.5, "enter": "none"}, {"kind": "bell", "x": 540, "y": 660, "s": 1.05, "color": "#1a0f08", "color2": G, "swing": 1, "strikeAt": 42, "enter": "none"}, P(),
+  {"trans": "fade", "palette": "dusk", "bg": {"kind": "horizon"}, "stars": True, "cam": {"z0": 1.12, "z1": 1.0}, "layers": [
+    {"kind": "moon", "x": 840, "y": 300, "color": "#fff1dd", "color2": "#3a1f3e", "r": 64}, {"kind": "mandir", "x": 540, "y": 1330, "s": 1.2, "color": "#12081f", "color2": "#ffcf5c", "enter": "none"},
     {"kind": "wave", "x": 540, "y": 1000, "color": G, "at": 1.45, "fade": 110, "w": 900, "amp": 90, "enter": "fade"},
-    {"kind": "rings", "x": 540, "y": 840, "color": G, "at": 1.45, "count": 3, "every": 30, "max": 1100, "width": 10},
+    {"kind": "rings", "x": 540, "y": 1400, "color": G, "at": 1.45, "count": 3, "every": 30, "max": 1100, "width": 10},
     {"kind": "text", "text": "ONCE", "x": 540, "y": 1560, "size": 120, "font": "serif", "color": G, "at": 1.4, "textEnter": "fade", "opacity": 0.0}]}])})
 
 # ---- b2: Pinaka (flat / Warli, Hinglish)
@@ -96,10 +96,10 @@ save(b, {"palette": "glow", "captions": {"style": "serif", "words": words(b), "y
     {"kind": "diya", "x": 440, "y": 1180, "s": 2.6, "lean": 26, "leanAt": 20, "enter": "none"}, lab("पूर्व", 860, 560, 1.0, "#12081f", 110),
     {"kind": "arrow", "x": 640, "y": 960, "color": "#fff1dd", "len": 260, "at": 1.2, "enter": "slide_l"}]},
   {"trans": "flash", "bg": {"kind": "radial", "cy": 45}, "dust": True, "cam": {"z0": 1.0, "z1": 1.08}, "layers": [
-    {"kind": "diya", "x": 540, "y": 1180, "s": 2.4, "enter": "none"}, {"kind": "needle", "x": 540, "y": 860, "color": W, "color2": G, "angle": 0, "from": 90, "enter": "none"},
+    {"kind": "thali", "x": 540, "y": 1640, "color2": G, "wicks": 5, "r": 150, "enter": "none"}, {"kind": "needle", "x": 540, "y": 860, "color": W, "color2": G, "angle": 0, "from": 90, "enter": "none"},
     lab("उत्तर", 540, 400, 0.3, G, 120), {"kind": "coins", "x": 540, "y": 1050, "color": "#ffd24a", "at": 1.2, "enter": "none"}]},
   {"trans": "cut", "palette": "storm", "bg": {"kind": "radial", "cy": 50}, "cam": {"z0": 1.0, "z1": 1.15, "shakeAt": 2.3, "shake": 24}, "layers": [
     {"kind": "diya", "x": 540, "y": 900, "s": 2.6, "color": "#9fb8c8", "lean": 0, "enter": "none"}, {"kind": "needle", "x": 540, "y": 640, "color": W, "color2": "#ff3b30", "angle": 180, "from": 0, "enter": "none"},
     lab("दक्षिण", 540, 1180, 0.4, "#ff6b60", 120), {"kind": "cross", "x": 540, "y": 800, "color": "#ff3b30", "size": 300, "at": 2.3, "enter": "none"}]},
-  {"trans": "fade", "bg": {"kind": "temple", "idol": "none", "lamps": 2}, "dust": True, "cam": {"z0": 1.0, "z1": 1.12}, "layers": [
-    {"kind": "diya", "x": 540, "y": 1180, "s": 2.8, "lean": 22, "leanAt": 30, "enter": "none"}, {"kind": "yantra", "x": 540, "y": 800, "r": 300, "draw": 1.5, "opacity": 0.6}]}])})
+  {"trans": "fade", "palette": "dusk", "bg": {"kind": "horizon"}, "stars": True, "dust": True, "cam": {"z0": 1.0, "z1": 1.12}, "layers": [
+    {"kind": "mandir", "x": 540, "y": 1000, "s": 0.95, "color": "#12081f", "color2": "#ffcf5c", "enter": "none"}, {"kind": "diya", "x": 540, "y": 1640, "s": 2.4, "lean": 22, "leanAt": 30, "enter": "none"}]}])})
