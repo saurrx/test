@@ -1,0 +1,566 @@
+{
+ "palette": "glow",
+ "captions": {
+  "style": "serif",
+  "words": [
+   {
+    "s": 0.6,
+    "e": 1.048,
+    "w": "दीया"
+   },
+   {
+    "s": 1.06,
+    "e": 1.579,
+    "w": "हमेशा"
+   },
+   {
+    "s": 1.591,
+    "e": 2.003,
+    "w": "पूर्व",
+    "emph": true
+   },
+   {
+    "s": 2.015,
+    "e": 2.31,
+    "w": "दिशा"
+   },
+   {
+    "s": 2.322,
+    "e": 2.428,
+    "w": "में"
+   },
+   {
+    "s": 2.44,
+    "e": 2.652,
+    "w": "ही"
+   },
+   {
+    "s": 2.664,
+    "e": 2.947,
+    "w": "क्यों"
+   },
+   {
+    "s": 2.958,
+    "e": 3.348,
+    "w": "जलाते"
+   },
+   {
+    "s": 3.359,
+    "e": 3.666,
+    "w": "हैं?"
+   },
+   {
+    "s": 4.477,
+    "e": 5.125,
+    "w": "मान्यता"
+   },
+   {
+    "s": 5.137,
+    "e": 5.42,
+    "w": "है,"
+   },
+   {
+    "s": 5.55,
+    "e": 5.845,
+    "w": "लौ"
+   },
+   {
+    "s": 5.857,
+    "e": 6.269,
+    "w": "पूर्व",
+    "emph": true
+   },
+   {
+    "s": 6.281,
+    "e": 6.505,
+    "w": "की"
+   },
+   {
+    "s": 6.517,
+    "e": 6.717,
+    "w": "ओर"
+   },
+   {
+    "s": 6.729,
+    "e": 7.142,
+    "w": "हो,"
+   },
+   {
+    "s": 7.366,
+    "e": 7.602,
+    "w": "तो"
+   },
+   {
+    "s": 7.614,
+    "e": 7.944,
+    "w": "आयु",
+    "emph": true
+   },
+   {
+    "s": 7.956,
+    "e": 8.345,
+    "w": "बढ़ती"
+   },
+   {
+    "s": 8.357,
+    "e": 8.581,
+    "w": "है।"
+   },
+   {
+    "s": 9.394,
+    "e": 9.831,
+    "w": "उत्तर",
+    "emph": true
+   },
+   {
+    "s": 9.842,
+    "e": 10.066,
+    "w": "की"
+   },
+   {
+    "s": 10.078,
+    "e": 10.479,
+    "w": "ओर,"
+   },
+   {
+    "s": 10.668,
+    "e": 10.821,
+    "w": "तो"
+   },
+   {
+    "s": 10.833,
+    "e": 11.305,
+    "w": "धन।",
+    "emph": true
+   },
+   {
+    "s": 12.118,
+    "e": 12.425,
+    "w": "पर"
+   },
+   {
+    "s": 12.437,
+    "e": 12.92,
+    "w": "दक्षिण",
+    "emph": true
+   },
+   {
+    "s": 12.932,
+    "e": 13.144,
+    "w": "की"
+   },
+   {
+    "s": 13.156,
+    "e": 13.604,
+    "w": "ओर?"
+   },
+   {
+    "s": 14.418,
+    "e": 14.783,
+    "w": "कभी",
+    "emph": true
+   },
+   {
+    "s": 14.795,
+    "e": 15.302,
+    "w": "नहीं।",
+    "emph": true
+   },
+   {
+    "s": 16.116,
+    "e": 16.493,
+    "w": "आज"
+   },
+   {
+    "s": 16.505,
+    "e": 17.036,
+    "w": "शाम,"
+   },
+   {
+    "s": 17.166,
+    "e": 17.531,
+    "w": "अपने"
+   },
+   {
+    "s": 17.543,
+    "e": 17.826,
+    "w": "दीये"
+   },
+   {
+    "s": 17.838,
+    "e": 18.015,
+    "w": "की"
+   },
+   {
+    "s": 18.026,
+    "e": 18.345,
+    "w": "दिशा"
+   },
+   {
+    "s": 18.357,
+    "e": 18.993,
+    "w": "देखिए।"
+   }
+  ],
+  "y": 1330,
+  "size": 84,
+  "max": 4
+ },
+ "audio": {
+  "vo": "audio/b3_diya_hi.mp3",
+  "music": "audio/music_temple.mp3",
+  "musicVol": 0.16,
+  "sfx": [
+   {
+    "src": "audio/sfx_bell.mp3",
+    "at": 0.0,
+    "vol": 0.4
+   },
+   {
+    "src": "audio/sfx_boom.mp3",
+    "at": 14.4,
+    "vol": 0.9
+   }
+  ],
+  "voAt": 0.5
+ },
+ "scenes": [
+  {
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 2,
+    "glow": 1.8
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.25,
+    "z1": 1.1
+   },
+   "layers": [
+    {
+     "kind": "text",
+     "text": "दीया किस दिशा में?",
+     "x": 540,
+     "y": 400,
+     "size": 112,
+     "font": "pop",
+     "color": "#fff4dc",
+     "glow": "#ff6a1f",
+     "at": 0.0,
+     "textEnter": "slam",
+     "width": 980
+    },
+    {
+     "kind": "glowdot",
+     "x": 540,
+     "y": 880,
+     "r": 460,
+     "color2": "#ffb648",
+     "opacity": 0.6,
+     "enter": "none"
+    },
+    {
+     "kind": "diya",
+     "x": 540,
+     "y": 980,
+     "s": 3.2,
+     "enter": "none"
+    }
+   ],
+   "dur": 2.7
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "radial",
+    "cy": 50
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.15,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "yantra",
+     "x": 540,
+     "y": 820,
+     "r": 430,
+     "draw": 0.8,
+     "opacity": 0.5
+    },
+    {
+     "kind": "diya",
+     "x": 540,
+     "y": 900,
+     "s": 2.6,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "पूर्व",
+     "x": 900,
+     "y": 820,
+     "size": 84,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": null,
+     "at": 0.1,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "text",
+     "text": "उत्तर",
+     "x": 540,
+     "y": 330,
+     "size": 84,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": null,
+     "at": 0.3,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "text",
+     "text": "पश्चिम",
+     "x": 170,
+     "y": 820,
+     "size": 84,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": null,
+     "at": 0.5,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "text",
+     "text": "दक्षिण",
+     "x": 540,
+     "y": 1120,
+     "size": 84,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": null,
+     "at": 0.7,
+     "textEnter": "fade",
+     "panel": true
+    }
+   ],
+   "dur": 1.8
+  },
+  {
+   "trans": "fade",
+   "palette": "dusk",
+   "bg": {
+    "kind": "horizon"
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.1
+   },
+   "layers": [
+    {
+     "kind": "sun",
+     "x": 880,
+     "y": 1050,
+     "r": 190,
+     "color": "#ffcf5c",
+     "move": {
+      "y": -260
+     },
+     "enter": "fade"
+    },
+    {
+     "kind": "hills",
+     "x": 540,
+     "y": 1560,
+     "color": "#12081f"
+    },
+    {
+     "kind": "diya",
+     "x": 440,
+     "y": 1180,
+     "s": 2.6,
+     "lean": 26,
+     "leanAt": 20,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "पूर्व",
+     "x": 860,
+     "y": 560,
+     "size": 110,
+     "font": "serif",
+     "color": "#12081f",
+     "glow": null,
+     "at": 1.0,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "arrow",
+     "x": 640,
+     "y": 960,
+     "color": "#fff1dd",
+     "len": 260,
+     "at": 1.2,
+     "enter": "slide_l"
+    }
+   ],
+   "dur": 4.9
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "radial",
+    "cy": 45
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.08
+   },
+   "layers": [
+    {
+     "kind": "thali",
+     "x": 540,
+     "y": 1640,
+     "color2": "#ffb648",
+     "wicks": 5,
+     "r": 150,
+     "enter": "none"
+    },
+    {
+     "kind": "needle",
+     "x": 540,
+     "y": 860,
+     "color": "#fff4dc",
+     "color2": "#ffb648",
+     "angle": 0,
+     "from": 90,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "उत्तर",
+     "x": 540,
+     "y": 400,
+     "size": 120,
+     "font": "serif",
+     "color": "#ffb648",
+     "glow": null,
+     "at": 0.3,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "coins",
+     "x": 540,
+     "y": 1050,
+     "color": "#ffd24a",
+     "at": 1.2,
+     "enter": "none"
+    }
+   ],
+   "dur": 2.7
+  },
+  {
+   "trans": "cut",
+   "palette": "storm",
+   "bg": {
+    "kind": "radial",
+    "cy": 50
+   },
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.15,
+    "shakeAt": 2.3,
+    "shake": 24
+   },
+   "layers": [
+    {
+     "kind": "diya",
+     "x": 540,
+     "y": 900,
+     "s": 2.6,
+     "color": "#9fb8c8",
+     "lean": 0,
+     "enter": "none"
+    },
+    {
+     "kind": "needle",
+     "x": 540,
+     "y": 640,
+     "color": "#fff4dc",
+     "color2": "#ff3b30",
+     "angle": 180,
+     "from": 0,
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "दक्षिण",
+     "x": 540,
+     "y": 1180,
+     "size": 120,
+     "font": "serif",
+     "color": "#ff6b60",
+     "glow": null,
+     "at": 0.4,
+     "textEnter": "fade",
+     "panel": true
+    },
+    {
+     "kind": "cross",
+     "x": 540,
+     "y": 800,
+     "color": "#ff3b30",
+     "size": 300,
+     "at": 2.3,
+     "enter": "none"
+    }
+   ],
+   "dur": 4.0
+  },
+  {
+   "trans": "fade",
+   "palette": "dusk",
+   "bg": {
+    "kind": "horizon"
+   },
+   "stars": true,
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.12
+   },
+   "layers": [
+    {
+     "kind": "mandir",
+     "x": 540,
+     "y": 1000,
+     "s": 0.95,
+     "color": "#12081f",
+     "color2": "#ffcf5c",
+     "enter": "none"
+    },
+    {
+     "kind": "diya",
+     "x": 540,
+     "y": 1640,
+     "s": 2.4,
+     "lean": 22,
+     "leanAt": 30,
+     "enter": "none"
+    }
+   ],
+   "dur": 3.8
+  }
+ ]
+}

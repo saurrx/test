@@ -1,0 +1,572 @@
+{
+ "palette": "glow",
+ "captions": {
+  "style": "serif",
+  "words": [
+   {
+    "s": 0.596,
+    "e": 0.851,
+    "w": "You've"
+   },
+   {
+    "s": 0.851,
+    "e": 1.152,
+    "w": "been"
+   },
+   {
+    "s": 1.152,
+    "e": 1.511,
+    "w": "ringing"
+   },
+   {
+    "s": 1.511,
+    "e": 1.615,
+    "w": "the"
+   },
+   {
+    "s": 1.615,
+    "e": 2.055,
+    "w": "temple"
+   },
+   {
+    "s": 2.055,
+    "e": 2.298,
+    "w": "bell",
+    "emph": true
+   },
+   {
+    "s": 2.298,
+    "e": 2.68,
+    "w": "wrong.",
+    "emph": true
+   },
+   {
+    "s": 3.544,
+    "e": 3.637,
+    "w": "It"
+   },
+   {
+    "s": 3.648,
+    "e": 3.799,
+    "w": "is"
+   },
+   {
+    "s": 3.799,
+    "e": 4.076,
+    "w": "not"
+   },
+   {
+    "s": 4.076,
+    "e": 4.181,
+    "w": "to"
+   },
+   {
+    "s": 4.181,
+    "e": 4.47,
+    "w": "wake"
+   },
+   {
+    "s": 4.47,
+    "e": 4.609,
+    "w": "the"
+   },
+   {
+    "s": 4.609,
+    "e": 4.991,
+    "w": "god."
+   },
+   {
+    "s": 5.824,
+    "e": 5.917,
+    "w": "It"
+   },
+   {
+    "s": 5.94,
+    "e": 6.09,
+    "w": "is"
+   },
+   {
+    "s": 6.09,
+    "e": 6.218,
+    "w": "to"
+   },
+   {
+    "s": 6.218,
+    "e": 6.495,
+    "w": "wake"
+   },
+   {
+    "s": 6.507,
+    "e": 6.75,
+    "w": "you.",
+    "emph": true
+   },
+   {
+    "s": 7.618,
+    "e": 7.873,
+    "w": "One"
+   },
+   {
+    "s": 7.919,
+    "e": 8.278,
+    "w": "clear"
+   },
+   {
+    "s": 8.278,
+    "e": 8.764,
+    "w": "strike."
+   },
+   {
+    "s": 9.609,
+    "e": 10.095,
+    "w": "Tradition"
+   },
+   {
+    "s": 10.095,
+    "e": 10.465,
+    "w": "says"
+   },
+   {
+    "s": 10.477,
+    "e": 10.639,
+    "w": "the"
+   },
+   {
+    "s": 10.697,
+    "e": 10.998,
+    "w": "echo"
+   },
+   {
+    "s": 10.998,
+    "e": 11.495,
+    "w": "lasts"
+   },
+   {
+    "s": 11.542,
+    "e": 11.924,
+    "w": "seven",
+    "emph": true
+   },
+   {
+    "s": 11.924,
+    "e": 12.433,
+    "w": "seconds."
+   },
+   {
+    "s": 13.232,
+    "e": 13.486,
+    "w": "One"
+   },
+   {
+    "s": 13.486,
+    "e": 13.775,
+    "w": "for"
+   },
+   {
+    "s": 13.868,
+    "e": 14.123,
+    "w": "each"
+   },
+   {
+    "s": 14.134,
+    "e": 14.493,
+    "w": "chakra."
+   },
+   {
+    "s": 15.28,
+    "e": 15.465,
+    "w": "So"
+   },
+   {
+    "s": 15.5,
+    "e": 16.032,
+    "w": "tomorrow,"
+   },
+   {
+    "s": 16.241,
+    "e": 16.518,
+    "w": "ring"
+   },
+   {
+    "s": 16.518,
+    "e": 16.657,
+    "w": "it"
+   },
+   {
+    "s": 16.657,
+    "e": 17.109,
+    "w": "once.",
+    "emph": true
+   },
+   {
+    "s": 17.931,
+    "e": 18.127,
+    "w": "And"
+   },
+   {
+    "s": 18.127,
+    "e": 18.532,
+    "w": "stand"
+   },
+   {
+    "s": 18.532,
+    "e": 18.995,
+    "w": "still,"
+   },
+   {
+    "s": 19.204,
+    "e": 19.389,
+    "w": "till"
+   },
+   {
+    "s": 19.412,
+    "e": 19.539,
+    "w": "it"
+   },
+   {
+    "s": 19.539,
+    "e": 20.014,
+    "w": "fades."
+   }
+  ],
+  "y": 1250,
+  "size": 86,
+  "max": 4
+ },
+ "audio": {
+  "vo": "audio/b1_bell_en.mp3",
+  "music": "audio/music_temple.mp3",
+  "musicVol": 0.16,
+  "sfx": [
+   {
+    "src": "audio/sfx_bell.mp3",
+    "at": 0.0,
+    "vol": 0.5
+   },
+   {
+    "src": "audio/sfx_bell_low.mp3",
+    "at": 8.2,
+    "vol": 0.9
+   },
+   {
+    "src": "audio/sfx_bell_low.mp3",
+    "at": 16.7,
+    "vol": 0.8
+   }
+  ],
+  "voAt": 0.5
+ },
+ "scenes": [
+  {
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 2
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.2,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "text",
+     "text": "YOU RING IT WRONG",
+     "x": 540,
+     "y": 380,
+     "size": 128,
+     "font": "pop",
+     "color": "#fff4dc",
+     "glow": "#ff6a1f",
+     "at": 0.0,
+     "textEnter": "slam",
+     "width": 980
+    },
+    {
+     "kind": "glowdot",
+     "x": 540,
+     "y": 700,
+     "r": 520,
+     "color2": "#ffb648",
+     "opacity": 0.5,
+     "enter": "none"
+    },
+    {
+     "kind": "bell",
+     "x": 540,
+     "y": 720,
+     "s": 1.1,
+     "color": "#1a0f08",
+     "color2": "#ffb648",
+     "swing": 22,
+     "speed": 3.2,
+     "enter": "none"
+    },
+    {
+     "kind": "cross",
+     "x": 540,
+     "y": 760,
+     "color": "#ff3b30",
+     "size": 240,
+     "at": 1.6,
+     "enter": "none"
+    }
+   ],
+   "dur": 2.8
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "temple",
+    "idol": "murti",
+    "lamps": 2,
+    "glow": 1.2
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.1
+   },
+   "layers": [],
+   "dur": 3.0
+  },
+  {
+   "trans": "flash",
+   "bg": {
+    "kind": "solid"
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.14
+   },
+   "layers": [
+    {
+     "kind": "doorway",
+     "x": 540,
+     "y": 1000,
+     "color": "#080403",
+     "color2": "#ffb648",
+     "enter": "none"
+    },
+    {
+     "kind": "person",
+     "x": 540,
+     "y": 1620,
+     "s": 1.2,
+     "pose": "stand",
+     "color": "#0c0705",
+     "color2": "#ffb648",
+     "enter": "none"
+    },
+    {
+     "kind": "text",
+     "text": "YOU",
+     "x": 540,
+     "y": 700,
+     "size": 240,
+     "font": "pop",
+     "color": "#fff4dc",
+     "glow": "#ff6a1f",
+     "at": 0.7,
+     "textEnter": "slam"
+    }
+   ],
+   "dur": 1.8
+  },
+  {
+   "trans": "punch",
+   "bg": {
+    "kind": "temple",
+    "idol": "none",
+    "lamps": 2
+   },
+   "cam": {
+    "z0": 1.25,
+    "z1": 1.3,
+    "shakeAt": 0.65,
+    "shake": 18
+   },
+   "layers": [
+    {
+     "kind": "glowdot",
+     "x": 540,
+     "y": 640,
+     "r": 480,
+     "color2": "#ffb648",
+     "opacity": 0.6,
+     "enter": "none"
+    },
+    {
+     "kind": "bell",
+     "x": 540,
+     "y": 640,
+     "s": 1.1,
+     "color": "#1a0f08",
+     "color2": "#ffb648",
+     "swing": 2,
+     "strikeAt": 18,
+     "enter": "none"
+    },
+    {
+     "kind": "rings",
+     "x": 540,
+     "y": 830,
+     "color": "#ffb648",
+     "at": 0.65,
+     "count": 5,
+     "max": 1000
+    }
+   ],
+   "dur": 2.0
+  },
+  {
+   "trans": "fade",
+   "bg": {
+    "kind": "radial",
+    "cy": 50
+   },
+   "dust": true,
+   "cam": {
+    "z0": 1.0,
+    "z1": 1.08
+   },
+   "layers": [
+    {
+     "kind": "glowdot",
+     "x": 360,
+     "y": 800,
+     "r": 420,
+     "color2": "#ffb648",
+     "opacity": 0.35,
+     "enter": "none"
+    },
+    {
+     "kind": "person",
+     "x": 360,
+     "y": 1500,
+     "s": 2.3,
+     "pose": "pray",
+     "color": "#0c0705",
+     "color2": "#ffb648",
+     "enter": "none"
+    },
+    {
+     "kind": "chakras",
+     "x": 360,
+     "y": 1560,
+     "at": 1.6,
+     "every": 14,
+     "gap": 150,
+     "r": 26,
+     "enter": "none"
+    },
+    {
+     "kind": "wave",
+     "x": 540,
+     "y": 1010,
+     "color": "#ffb648",
+     "fade": 170,
+     "w": 900,
+     "amp": 70,
+     "enter": "fade"
+    },
+    {
+     "kind": "text",
+     "text": "#",
+     "count": [
+      1,
+      7,
+      110
+     ],
+     "x": 820,
+     "y": 620,
+     "size": 380,
+     "font": "serif",
+     "color": "#fff4dc",
+     "glow": "#ffb648",
+     "at": 1.6,
+     "textEnter": "pop"
+    },
+    {
+     "kind": "rings",
+     "x": 360,
+     "y": 800,
+     "color": "#ffb648",
+     "at": 0.2,
+     "count": 7,
+     "every": 22,
+     "max": 900,
+     "width": 8
+    }
+   ],
+   "dur": 5.7
+  },
+  {
+   "trans": "fade",
+   "palette": "dusk",
+   "bg": {
+    "kind": "horizon"
+   },
+   "stars": true,
+   "cam": {
+    "z0": 1.12,
+    "z1": 1.0
+   },
+   "layers": [
+    {
+     "kind": "moon",
+     "x": 840,
+     "y": 300,
+     "color": "#fff1dd",
+     "color2": "#3a1f3e",
+     "r": 64
+    },
+    {
+     "kind": "mandir",
+     "x": 540,
+     "y": 1330,
+     "s": 1.2,
+     "color": "#12081f",
+     "color2": "#ffcf5c",
+     "enter": "none"
+    },
+    {
+     "kind": "wave",
+     "x": 540,
+     "y": 1000,
+     "color": "#ffb648",
+     "at": 1.45,
+     "fade": 110,
+     "w": 900,
+     "amp": 90,
+     "enter": "fade"
+    },
+    {
+     "kind": "rings",
+     "x": 540,
+     "y": 1400,
+     "color": "#ffb648",
+     "at": 1.45,
+     "count": 3,
+     "every": 30,
+     "max": 1100,
+     "width": 10
+    },
+    {
+     "kind": "text",
+     "text": "ONCE",
+     "x": 540,
+     "y": 1560,
+     "size": 120,
+     "font": "serif",
+     "color": "#ffb648",
+     "at": 1.4,
+     "textEnter": "fade",
+     "opacity": 0.0
+    }
+   ],
+   "dur": 5.6
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "name": "r5_v1",
+ "judges": 2,
+ "order": [
+  "renders/reel3_v2.mp4",
+  "data/ref/aarti_ref.mp4",
+  "renders/reel5_v1.mp4"
+ ],
+ "borda": {
+  "renders/reel5_v1.mp4": 1,
+  "renders/reel3_v2.mp4": 3,
+  "data/ref/aarti_ref.mp4": 2
+ },
+ "first_place_votes": {
+  "renders/reel5_v1.mp4": 0,
+  "renders/reel3_v2.mp4": 1,
+  "data/ref/aarti_ref.mp4": 1
+ },
+ "per_judge": [
+  [
+   "data/ref/aarti_ref.mp4",
+   "renders/reel3_v2.mp4",
+   "renders/reel5_v1.mp4"
+  ],
+  [
+   "renders/reel3_v2.mp4",
+   "renders/reel5_v1.mp4",
+   "data/ref/aarti_ref.mp4"
+  ]
+ ]
+}

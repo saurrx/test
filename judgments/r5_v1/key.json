@@ -1,0 +1,20 @@
+{
+ "clips": [
+  "renders/reel5_v1.mp4",
+  "renders/reel3_v2.mp4",
+  "data/ref/aarti_ref.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "data/ref/aarti_ref.mp4",
+   "B": "renders/reel5_v1.mp4",
+   "C": "renders/reel3_v2.mp4"
+  },
+  "j2": {
+   "A": "data/ref/aarti_ref.mp4",
+   "B": "renders/reel3_v2.mp4",
+   "C": "renders/reel5_v1.mp4"
+  }
+ }
+}
