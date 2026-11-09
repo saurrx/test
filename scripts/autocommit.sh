@@ -9,7 +9,7 @@ while true; do
   if ! git diff --cached --quiet; then
     git commit -qm "Auto-snapshot: background job outputs
 
-Co-Authored-By: Claude <noreply@anthropic.com>
+Co-Authored-By: Claude Fable 5.2 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01Gy5RgGBibuvxR5H9sESUN3" && { git pull -q --rebase -X theirs origin "$B" || git rebase --abort; git push -q origin "$B"; }
   fi
   sleep 600
