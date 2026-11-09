@@ -25,8 +25,8 @@ rad = lambda cy=46: {"kind": "radial", "cy": cy}
 night = dict(palette="night", bg={"kind": "linear"}, stars=True)
 S = []
 def sc(at, **k): S.append((at, k))
-def hero(tok, n, kind, label, **ik):  # big object + number + keyword
-    t = T(tok) - 0.1; sc(t, trans="punch", bg=rad(46), dust=True, cam={"z0": 1.0, "z1": 1.12}, layers=[glow(), {"kind": "rays", "x": 540, "y": 880, "opacity": 0.14}, item(kind, **ik), step(n), txt(label, x=620, y=400, at=0.45)])
+def hero(tok, n, kind, label, occ=1, **ik):  # big object + number + keyword
+    t = T(tok, occ) - 0.1; sc(t, trans="punch", bg=rad(46), dust=True, cam={"z0": 1.0, "z1": 1.12}, layers=[glow(), {"kind": "rays", "x": 540, "y": 880, "opacity": 0.14}, item(kind, **ik), step(n), txt(label, x=620, y=400, at=0.45)])
 def banned(at, kind, label=None, **ik):  # the object, small, crossed out beside the Shivling
     L = [glow(y=820, o=0.45), lingam(x=400, y=880, s=0.72), item(kind, **{"x": 800, "y": 820, "s": 0.62, "enter": "none", **ik}), cross(x=800, y=820, size=170, width=36, at=0.25)]
     if label: L.append(txt(label, y=400, at=0.3))
@@ -56,7 +56,7 @@ t = T("Shiva", 5) - 0.1; sc(t, trans="flash", palette="blood", bg={"kind": "radi
    {"kind": "bolt", "x": 300, "y": 0, "color": "#ffd24a", "at": 0.5, "until": 1.6, "enter": "none"}, txt("SHANKHACHUDA", y=1650, size=96, col="#ffe9d6", glow="#ff5a2a", at=T("Shankhachuda") - t)])
 banned(T("And", 1) - 0.1, "conch", "NO CONCH WATER", s=0.4)
 # 5 broken rice
-hero("Five.", 5, "rice", "BROKEN RICE", s=1.7, broken=1)
+hero("Five.", 5, "rice", "BROKEN RICE", occ=2, s=1.7, broken=1)
 t = T("Every") - 0.1; sc(t, trans="cut", bg=rad(46), dust=True, cam={"z0": 1.12, "z1": 1.0}, layers=[glow(), item("rice", s=1.7, enter="none"), {"kind": "rings", "x": 540, "y": 880, "color": G, "at": 0.4, "count": 2, "max": 600, "enter": "none"}, txt("WHOLE GRAINS ONLY", y=400, col=G, at=T("whole") - t - 0.3)])
 t = T("A", 1) - 0.1; sc(t, trans="cut", bg=temple(g=1.6), dust=True, cam={"z0": 1.0, "z1": 1.08}, layers=[glow(y=820, o=0.45), lingam(x=400, y=880, s=0.72), item("rice", x=800, y=820, s=0.75, enter="none", broken=1), cross(x=800, y=820, size=170, width=36, at=0.3)])
 # what he accepts
@@ -76,7 +76,7 @@ for i, (at, k) in enumerate(S):
     k["dur"] = round((S[i + 1][0] if i + 1 < len(S) else END) - at, 3); scenes.append(k)
 assert all(s["dur"] > 0.4 for s in scenes), [(i, s["dur"]) for i, s in enumerate(scenes)]
 hit = lambda tok, n=1, v=0.7: {"src": "audio/sfx_hit.mp3", "at": T(tok, n) - 0.1, "vol": v}
-sfx = [{"src": "audio/sfx_bell.mp3", "at": 0.0, "vol": 0.5}, hit("never", 1, 0.9), hit("One."), hit("Two."), hit("Three."), hit("Four."), hit("Five."), {"src": "audio/sfx_crack.mp3", "at": T("Shiva", 5) + 0.4, "vol": 0.7},
+sfx = [{"src": "audio/sfx_bell.mp3", "at": 0.0, "vol": 0.5}, hit("never", 1, 0.9), hit("One."), hit("Two."), hit("Three."), hit("Four."), hit("Five.", 2), {"src": "audio/sfx_crack.mp3", "at": T("Shiva", 5) + 0.4, "vol": 0.7},
        {"src": "audio/sfx_bell_low.mp3", "at": T("So"), "vol": 0.7}, {"src": "audio/sfx_boom.mp3", "at": T("In", 2) - 0.1, "vol": 0.7}, hit("Follow.")]
 props = {"palette": "glow", "header": {"text": "SHIVA · PART 2"}, "captions": {"style": "serif", "words": words, "y": 1440, "size": 86, "max": 4}, "audio": {"vo": "audio/reel5_vo.mp3", "voAt": LEAD, "music": "audio/music_temple.mp3", "musicVol": 0.2, "sfx": sfx}, "scenes": scenes}
 (D / "reel.json").write_text(json.dumps(props, ensure_ascii=False)); print(len(scenes), "scenes; longest", max(s["dur"] for s in scenes), "s; mean", round(sum(s["dur"] for s in scenes) / len(scenes), 2))
