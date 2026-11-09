@@ -9,7 +9,7 @@ case "$1" in
   push) rsync -az -e "$SSH" --exclude node_modules --exclude out --exclude '*.mp4' --exclude .git \
           scripts remotion data/all_reels.tsv data/reels_priority.tsv data/creators data/seed/urls.txt "$R/" --relative ;;
   pull) rsync -az -e "$SSH" --exclude 'frames/' --exclude 'frames_2s/' "$R/analysis/" analysis/
-        rsync -az -e "$SSH" --include '*/' --include '*.info.json' --include '*.jpg' --include '_failed.txt' --include '_progress.txt' --exclude '*' "$R/data/reels/" data/reels/
-        rsync -az -e "$SSH" "$R/renders/" renders/ 2>/dev/null || true ;;
+        rsync -az -e "$SSH" --include '*/' --include '*.info.json' --include '_failed.txt' --include '_progress.txt' --exclude '*' "$R/data/reels/" data/reels/
+        rsync -az -T /tmp -e "$SSH" --max-size=40m --exclude "*_final.mp4" --exclude "build*" "$R/renders/" renders/ 2>/dev/null || true ;;
   *) echo "usage: $0 push|pull"; exit 1 ;;
 esac

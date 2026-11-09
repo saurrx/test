@@ -22,3 +22,7 @@ data/reels/*/
 !renders/best/*.mp4
 !makes/**/audio/*
 !bench/**/*.mp4
+
+# rsync temp files and raw final renders stay out of git
+renders/.*
+*.mp4.*
