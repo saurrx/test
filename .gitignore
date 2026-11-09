@@ -1,0 +1,10 @@
+# media is re-downloadable via scripts; keep repo light
+*.mp4
+*.webm
+*.m4a
+*.wav
+*.part
+*.ytdl
+analysis/*/frames/
+analysis/*/frames_2s/
+__pycache__/
