@@ -29,7 +29,7 @@ export const Captions: React.FC<{ words: Word[]; style?: "serif" | "pop"; p: Pal
   return (
     <>
     {/* soft dark pool behind the words so they read on any picture */}
-    <div style={{ position: "absolute", left: -100, right: -100, top: y - 260, height: 520, background: `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,${pop ? 0.62 : 0.78}) 0%, rgba(0,0,0,0) 100%)` }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: y - 190, height: 380, background: pop ? "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 30%, rgba(0,0,0,0.72) 70%, rgba(0,0,0,0) 100%)" : `radial-gradient(ellipse 55% 50% at 50% 50%, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0) 100%)`, transform: pop ? undefined : "scale(1.4, 1.37)" }} />
     <div style={{ position: "absolute", left: 70, right: 70, top: y, transform: "translateY(-50%)", textAlign: "center", fontFamily: fontFor(style, text),
       fontSize: fs, lineHeight: pop ? 1.12 : 1.3, fontWeight: 800, letterSpacing: pop ? 1 : 3, textTransform: "uppercase", color: p.fg }}>
       {c.words.map((w, i) => {
