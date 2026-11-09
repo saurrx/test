@@ -113,7 +113,7 @@ export const Yantra: React.FC<{ cx?: number; cy?: number; r?: number; from?: num
         <circle cx={cx} cy={cy} r={10 * prog(t, 0.7, 1)} fill={color} stroke="none" />
       </g>
     );
-    return <g><g opacity={0.22} strokeWidth={18} style={{ strokeWidth: 18 }}>{body}</g>{body}<Halo cx={cx} cy={cy} r={r * 1.25} color={color} opacity={0.22 * t} /></g>;
+    return <g><Halo cx={cx} cy={cy} r={r * 1.35} color={color} opacity={0.3 * t} />{body}</g>;
   };
 
 // Rays of light fanning from a point.

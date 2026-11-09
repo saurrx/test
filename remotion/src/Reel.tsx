@@ -64,7 +64,7 @@ const SceneView: React.FC<{ sc: Scene; p: Palette; frames: number }> = ({ sc, p,
         <AbsoluteFill>{layers.map((l, i) => <LayerView key={i} l={l} p={p} sceneFrames={frames} svg={false} />)}</AbsoluteFill>
         {sc.dust && <Dust color={p.accent} count={typeof sc.dust === "number" ? sc.dust : 36} />}
       </AbsoluteFill>
-      {tr === "flash" && <AbsoluteFill style={{ background: "#fff", opacity: 0.9 * (1 - prog(f, 0, 6)) }} />}
+      {tr === "flash" && <AbsoluteFill style={{ background: p.fg, opacity: 0.75 * (1 - prog(f, 0, 5)) }} />}
     </AbsoluteFill>
   );
 };

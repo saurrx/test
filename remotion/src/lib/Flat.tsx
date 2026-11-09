@@ -127,6 +127,9 @@ export const Bell: React.FC<SP> = ({ t, color, color2, swing = 10, speed = 7, st
       <g transform={`rotate(${a} 0 -250)`}>
         <Halo cx={0} cy={0} r={420} color={color2} opacity={0.35} />
         <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L210 150 L170 60 Q150 -120 70 -190 Q40 -210 40 -250 Z" fill={color} stroke={color2} strokeWidth={6} />
+        <path d="M-40 -250 Q-40 -210 -70 -190 Q-150 -120 -170 60 L-210 150 L-90 150 Q-80 -60 -20 -235 Z" fill={color2} opacity={0.55} />
+        <path d="M-70 -190 Q-150 -120 -170 60 L-196 120 L-150 120 Q-140 -60 -50 -200 Z" fill="#fff6d8" opacity={0.5} />
+        <path d="M60 -180 Q130 -110 150 60 L186 140 L120 140 Q120 -40 50 -200 Z" fill="#000" opacity={0.25} />
         <path d="M-196 120 L196 120" stroke={color2} strokeWidth={7} opacity={0.8} /><path d="M-150 20 L150 20" stroke={color2} strokeWidth={4} opacity={0.5} />
         <g transform={`rotate(${-a * 1.6} 0 100)`}><line x1={0} y1={100} x2={0} y2={190} stroke={color2} strokeWidth={8} /><circle cx={0} cy={200} r={26} fill={color2} /></g>
       </g>
@@ -146,4 +149,18 @@ export const Coins: React.FC<SP> = ({ t, color, count = 14, spread = 500, fall =
 export const Needle: React.FC<SP> = ({ t, color, color2, angle = 0, from = 0, len = 330 }) => { const a = from + (angle - from) * prog(t, 0, 16) + 3 * Math.sin(t / 4) * (1 - prog(t, 16, 40)); return (
   <g transform={`rotate(${a})`}><path d={`M0 ${-len} L26 0 L0 40 L-26 0 Z`} fill={color2} /><Halo cx={0} cy={-len} r={90} color={color2} opacity={0.8} /><circle r={16} fill={color} /></g>); };
 
-export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle };
+// Smooth human silhouette for the glow lane (devotee seen from behind or the side): no face, rim-lit.
+export const Person: React.FC<SP> = ({ t, color, color2, pose = "pray", rim = true }) => {
+  const br = 1 + 0.012 * Math.sin(t / 14); const armUp = pose === "ring" ? 1 : 0; const sw = pose === "ring" ? 6 * Math.sin(t / 3.2) : 0;
+  return (
+    <g transform={`scale(${br})`}>
+      {rim && <Halo cx={0} cy={-40} r={260} ry={420} color={color2} opacity={0.35} />}
+      <path d="M-120 330 L-104 60 Q-100 -36 -34 -52 L-30 -84 Q-66 -100 -66 -150 Q-66 -214 0 -214 Q66 -214 66 -150 Q66 -100 30 -84 L34 -52 Q100 -36 104 60 L120 330 Z" fill={color} stroke={rim ? color2 : "none"} strokeOpacity={0.7} strokeWidth={5} />
+      {pose === "pray" && <path d="M-96 40 Q-40 120 0 60 Q40 120 96 40 L84 110 Q0 190 -84 110 Z" fill={color} stroke={color2} strokeOpacity={0.5} strokeWidth={4} />}
+      {armUp === 1 && <path d={`M70 -30 Q150 -160 ${120 + sw} -330 L${150 + sw} -326 Q190 -150 104 20 Z`} fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />}
+      {pose === "hold" && <path d="M60 -10 Q160 20 230 -20 L236 6 Q160 60 70 40 Z" fill={color} stroke={color2} strokeOpacity={0.7} strokeWidth={5} />}
+    </g>
+  );
+};
+
+export const SHAPES: Record<string, React.FC<SP>> = { figure: Figure, crowd: Crowd, bow: Bow, chest: Chest, hills: Hills, mountain: Mountain, sun: Sun, moon: Moon, palace: Palace, throne: Throne, tree: Tree, bolt: Bolt, rings: Rings, fire: Fire, river: River, arrow: Arrow, rope: Rope, birds: Birds, border: Border, bell: Bell, chakras: Chakras, cross: Cross, coins: Coins, needle: Needle, person: Person };

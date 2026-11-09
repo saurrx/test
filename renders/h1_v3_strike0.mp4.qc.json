@@ -1,0 +1,34 @@
+{
+ "video": "renders/h1_v3_strike0.mp4",
+ "pass": true,
+ "failed": [],
+ "checks": {
+  "moves_in_first_second": true,
+  "no_long_still": true,
+  "visual_change_by_3s": true,
+  "first_frame_not_black": true,
+  "speaks_by_0.5s": true,
+  "pace_120_to_200_wpm": true,
+  "no_dead_air_over_1.5s": true,
+  "voice_not_cut_off": true,
+  "caption_in_safe_area": true,
+  "caption_contrast_ge_4.5": true
+ },
+ "numbers": {
+  "duration": 5.35,
+  "cuts": 1,
+  "cuts_per_10s": 1.87,
+  "view_changes_per_10s": 0.0,
+  "motion_mean": 6.29,
+  "motion_first3s": 9.08,
+  "still_seconds": 0,
+  "first_visual_change_s": 3.0,
+  "first_frame_luma": 0.207,
+  "first_word_s": 0.096,
+  "wpm": 191,
+  "max_gap_s": 0.86,
+  "caption_contrast": 6.4,
+  "lufs": -16.6,
+  "peak_db": -5.4
+ }
+}

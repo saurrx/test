@@ -1,0 +1,49 @@
+{
+ "clips": [
+  "renders/h1_v1_base.mp4",
+  "renders/h1_v2_bright.mp4",
+  "renders/h1_v3_strike0.mp4",
+  "renders/h1_v4_text.mp4",
+  "renders/h1_v5_cross.mp4",
+  "renders/h1_v6_person.mp4",
+  "renders/h1_v7_3shots.mp4",
+  "renders/h1_v8_popcaps.mp4",
+  "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg"
+ ],
+ "whole": false,
+ "key": {
+  "j1": {
+   "A": "renders/h1_v2_bright.mp4",
+   "B": "renders/h1_v8_popcaps.mp4",
+   "C": "renders/h1_v7_3shots.mp4",
+   "D": "renders/h1_v4_text.mp4",
+   "E": "renders/h1_v5_cross.mp4",
+   "F": "renders/h1_v3_strike0.mp4",
+   "G": "renders/h1_v1_base.mp4",
+   "H": "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+   "I": "renders/h1_v6_person.mp4"
+  },
+  "j2": {
+   "A": "renders/h1_v3_strike0.mp4",
+   "B": "renders/h1_v2_bright.mp4",
+   "C": "renders/h1_v4_text.mp4",
+   "D": "renders/h1_v1_base.mp4",
+   "E": "renders/h1_v7_3shots.mp4",
+   "F": "renders/h1_v5_cross.mp4",
+   "G": "renders/h1_v6_person.mp4",
+   "H": "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+   "I": "renders/h1_v8_popcaps.mp4"
+  },
+  "j3": {
+   "A": "renders/h1_v4_text.mp4",
+   "B": "renders/h1_v8_popcaps.mp4",
+   "C": "renders/h1_v5_cross.mp4",
+   "D": "analysis/therishikatha__De8phEeIRf3/hook_strip.jpg",
+   "E": "renders/h1_v2_bright.mp4",
+   "F": "renders/h1_v3_strike0.mp4",
+   "G": "renders/h1_v1_base.mp4",
+   "H": "renders/h1_v6_person.mp4",
+   "I": "renders/h1_v7_3shots.mp4"
+  }
+ }
+}
