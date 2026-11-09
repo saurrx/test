@@ -1,96 +1,936 @@
 {
  "language": "en",
- "language_prob": 0.975,
+ "detected_language": "en",
+ "language_prob": 0.971,
+ "word_count": 164,
+ "first_word_s": 10.96,
+ "speech_seconds": 45.4,
+ "wpm": 217,
  "segments": [
   {
    "start": 10.96,
-   "end": 13.86,
-   "text": "Ain't nobody movin' it like me, I'm a Sumerian"
+   "end": 13.62,
+   "text": "Ain't nobody movin' it like me, I'm a Sumerian",
+   "words": [
+    {
+     "s": 10.96,
+     "e": 11.3,
+     "w": "Ain't"
+    },
+    {
+     "s": 11.3,
+     "e": 11.62,
+     "w": "nobody"
+    },
+    {
+     "s": 11.62,
+     "e": 12.08,
+     "w": "movin'"
+    },
+    {
+     "s": 12.1,
+     "e": 12.22,
+     "w": "it"
+    },
+    {
+     "s": 12.22,
+     "e": 12.4,
+     "w": "like"
+    },
+    {
+     "s": 12.4,
+     "e": 12.58,
+     "w": "me,"
+    },
+    {
+     "s": 12.7,
+     "e": 12.82,
+     "w": "I'm"
+    },
+    {
+     "s": 12.82,
+     "e": 13.0,
+     "w": "a"
+    },
+    {
+     "s": 13.0,
+     "e": 13.62,
+     "w": "Sumerian"
+    }
+   ]
   },
   {
-   "start": 13.86,
-   "end": 16.34,
-   "text": "I don't think you fellas understand me, I'm an Ariel"
+   "start": 13.62,
+   "end": 16.28,
+   "text": "I don't think you fellas understand me, I'm an aerial",
+   "words": [
+    {
+     "s": 13.62,
+     "e": 14.1,
+     "w": "I"
+    },
+    {
+     "s": 14.1,
+     "e": 14.28,
+     "w": "don't"
+    },
+    {
+     "s": 14.28,
+     "e": 14.44,
+     "w": "think"
+    },
+    {
+     "s": 14.44,
+     "e": 14.58,
+     "w": "you"
+    },
+    {
+     "s": 14.58,
+     "e": 14.86,
+     "w": "fellas"
+    },
+    {
+     "s": 14.86,
+     "e": 15.38,
+     "w": "understand"
+    },
+    {
+     "s": 15.38,
+     "e": 15.62,
+     "w": "me,"
+    },
+    {
+     "s": 15.72,
+     "e": 15.86,
+     "w": "I'm"
+    },
+    {
+     "s": 15.86,
+     "e": 15.96,
+     "w": "an"
+    },
+    {
+     "s": 15.96,
+     "e": 16.28,
+     "w": "aerial"
+    }
+   ]
   },
   {
-   "start": 16.34,
-   "end": 19.1,
-   "text": "My methods is barbarian, my suit extraterrestrial"
+   "start": 16.28,
+   "end": 19.04,
+   "text": "My methods is barbarian, my suit extraterrestrial",
+   "words": [
+    {
+     "s": 16.28,
+     "e": 16.54,
+     "w": "My"
+    },
+    {
+     "s": 16.54,
+     "e": 16.84,
+     "w": "methods"
+    },
+    {
+     "s": 16.84,
+     "e": 17.08,
+     "w": "is"
+    },
+    {
+     "s": 17.08,
+     "e": 17.72,
+     "w": "barbarian,"
+    },
+    {
+     "s": 17.84,
+     "e": 17.98,
+     "w": "my"
+    },
+    {
+     "s": 17.98,
+     "e": 18.14,
+     "w": "suit"
+    },
+    {
+     "s": 18.14,
+     "e": 19.04,
+     "w": "extraterrestrial"
+    }
+   ]
   },
   {
-   "start": 19.1,
-   "end": 22.14,
-   "text": "I'm in and out of the physical world, like it's the Marriott"
+   "start": 19.04,
+   "end": 21.92,
+   "text": "I'm in and out of the physical world like it's the Marriott",
+   "words": [
+    {
+     "s": 19.04,
+     "e": 19.36,
+     "w": "I'm"
+    },
+    {
+     "s": 19.36,
+     "e": 19.5,
+     "w": "in"
+    },
+    {
+     "s": 19.5,
+     "e": 19.68,
+     "w": "and"
+    },
+    {
+     "s": 19.68,
+     "e": 19.88,
+     "w": "out"
+    },
+    {
+     "s": 19.88,
+     "e": 20.04,
+     "w": "of"
+    },
+    {
+     "s": 20.04,
+     "e": 20.08,
+     "w": "the"
+    },
+    {
+     "s": 20.08,
+     "e": 20.4,
+     "w": "physical"
+    },
+    {
+     "s": 20.4,
+     "e": 20.84,
+     "w": "world"
+    },
+    {
+     "s": 20.84,
+     "e": 21.1,
+     "w": "like"
+    },
+    {
+     "s": 21.1,
+     "e": 21.3,
+     "w": "it's"
+    },
+    {
+     "s": 21.3,
+     "e": 21.42,
+     "w": "the"
+    },
+    {
+     "s": 21.42,
+     "e": 21.92,
+     "w": "Marriott"
+    }
+   ]
   },
   {
-   "start": 22.14,
-   "end": 24.9,
-   "text": "Still I put it on my back, like it's a f***ing chariot"
+   "start": 21.92,
+   "end": 24.68,
+   "text": "Still I put it on my back like it's a f***ing chariot",
+   "words": [
+    {
+     "s": 21.92,
+     "e": 22.42,
+     "w": "Still"
+    },
+    {
+     "s": 22.42,
+     "e": 22.56,
+     "w": "I"
+    },
+    {
+     "s": 22.56,
+     "e": 22.74,
+     "w": "put"
+    },
+    {
+     "s": 22.74,
+     "e": 22.86,
+     "w": "it"
+    },
+    {
+     "s": 22.86,
+     "e": 23.02,
+     "w": "on"
+    },
+    {
+     "s": 23.02,
+     "e": 23.2,
+     "w": "my"
+    },
+    {
+     "s": 23.2,
+     "e": 23.4,
+     "w": "back"
+    },
+    {
+     "s": 23.4,
+     "e": 23.56,
+     "w": "like"
+    },
+    {
+     "s": 23.56,
+     "e": 23.78,
+     "w": "it's"
+    },
+    {
+     "s": 23.78,
+     "e": 23.86,
+     "w": "a"
+    },
+    {
+     "s": 23.86,
+     "e": 24.26,
+     "w": "f***ing"
+    },
+    {
+     "s": 24.26,
+     "e": 24.68,
+     "w": "chariot"
+    }
+   ]
   },
   {
-   "start": 24.9,
-   "end": 27.44,
-   "text": "See the thousand versions of me die, I had to bury em"
+   "start": 24.68,
+   "end": 27.48,
+   "text": "Seen a thousand virgins of me die, I had to bury em",
+   "words": [
+    {
+     "s": 24.68,
+     "e": 25.2,
+     "w": "Seen"
+    },
+    {
+     "s": 25.2,
+     "e": 25.32,
+     "w": "a"
+    },
+    {
+     "s": 25.32,
+     "e": 25.54,
+     "w": "thousand"
+    },
+    {
+     "s": 25.54,
+     "e": 25.9,
+     "w": "virgins"
+    },
+    {
+     "s": 25.9,
+     "e": 26.08,
+     "w": "of"
+    },
+    {
+     "s": 26.08,
+     "e": 26.28,
+     "w": "me"
+    },
+    {
+     "s": 26.28,
+     "e": 26.52,
+     "w": "die,"
+    },
+    {
+     "s": 26.66,
+     "e": 26.7,
+     "w": "I"
+    },
+    {
+     "s": 26.7,
+     "e": 26.82,
+     "w": "had"
+    },
+    {
+     "s": 26.82,
+     "e": 26.96,
+     "w": "to"
+    },
+    {
+     "s": 26.96,
+     "e": 27.24,
+     "w": "bury"
+    },
+    {
+     "s": 27.24,
+     "e": 27.48,
+     "w": "em"
+    }
+   ]
   },
   {
-   "start": 27.44,
-   "end": 30.14,
-   "text": "I'm purgin' out the axis, like I had a dose of psyllium"
+   "start": 27.48,
+   "end": 30.16,
+   "text": "I'm purgin' out the axis like I had a dose of psyllium",
+   "words": [
+    {
+     "s": 27.48,
+     "e": 27.64,
+     "w": "I'm"
+    },
+    {
+     "s": 27.64,
+     "e": 27.94,
+     "w": "purgin'"
+    },
+    {
+     "s": 27.98,
+     "e": 28.16,
+     "w": "out"
+    },
+    {
+     "s": 28.16,
+     "e": 28.3,
+     "w": "the"
+    },
+    {
+     "s": 28.3,
+     "e": 28.62,
+     "w": "axis"
+    },
+    {
+     "s": 28.62,
+     "e": 28.9,
+     "w": "like"
+    },
+    {
+     "s": 28.9,
+     "e": 29.02,
+     "w": "I"
+    },
+    {
+     "s": 29.02,
+     "e": 29.22,
+     "w": "had"
+    },
+    {
+     "s": 29.22,
+     "e": 29.34,
+     "w": "a"
+    },
+    {
+     "s": 29.34,
+     "e": 29.54,
+     "w": "dose"
+    },
+    {
+     "s": 29.54,
+     "e": 29.78,
+     "w": "of"
+    },
+    {
+     "s": 29.78,
+     "e": 30.16,
+     "w": "psyllium"
+    }
+   ]
   },
   {
-   "start": 30.14,
-   "end": 31.94,
-   "text": "She's sayin' that I'll never make it out"
+   "start": 30.16,
+   "end": 33.1,
+   "text": "She sayin' that I'll never make it out, now don't be silly, man",
+   "words": [
+    {
+     "s": 30.16,
+     "e": 30.34,
+     "w": "She"
+    },
+    {
+     "s": 30.34,
+     "e": 30.66,
+     "w": "sayin'"
+    },
+    {
+     "s": 30.72,
+     "e": 30.9,
+     "w": "that"
+    },
+    {
+     "s": 30.9,
+     "e": 31.08,
+     "w": "I'll"
+    },
+    {
+     "s": 31.08,
+     "e": 31.38,
+     "w": "never"
+    },
+    {
+     "s": 31.38,
+     "e": 31.66,
+     "w": "make"
+    },
+    {
+     "s": 31.66,
+     "e": 31.78,
+     "w": "it"
+    },
+    {
+     "s": 31.78,
+     "e": 31.94,
+     "w": "out,"
+    },
+    {
+     "s": 32.02,
+     "e": 32.12,
+     "w": "now"
+    },
+    {
+     "s": 32.12,
+     "e": 32.34,
+     "w": "don't"
+    },
+    {
+     "s": 32.34,
+     "e": 32.48,
+     "w": "be"
+    },
+    {
+     "s": 32.48,
+     "e": 32.84,
+     "w": "silly,"
+    },
+    {
+     "s": 32.9,
+     "e": 33.1,
+     "w": "man"
+    }
+   ]
   },
   {
-   "start": 31.94,
-   "end": 33.74,
-   "text": "Now don't be silly, man"
+   "start": 37.5,
+   "end": 41.22,
+   "text": "Yeah, you wanna read between the lines, you gotta take off the full scab",
+   "words": [
+    {
+     "s": 37.5,
+     "e": 37.86,
+     "w": "Yeah,"
+    },
+    {
+     "s": 38.18,
+     "e": 38.3,
+     "w": "you"
+    },
+    {
+     "s": 38.3,
+     "e": 38.56,
+     "w": "wanna"
+    },
+    {
+     "s": 38.56,
+     "e": 38.84,
+     "w": "read"
+    },
+    {
+     "s": 38.84,
+     "e": 39.12,
+     "w": "between"
+    },
+    {
+     "s": 39.12,
+     "e": 39.3,
+     "w": "the"
+    },
+    {
+     "s": 39.3,
+     "e": 39.56,
+     "w": "lines,"
+    },
+    {
+     "s": 39.7,
+     "e": 39.72,
+     "w": "you"
+    },
+    {
+     "s": 39.72,
+     "e": 39.9,
+     "w": "gotta"
+    },
+    {
+     "s": 39.9,
+     "e": 40.2,
+     "w": "take"
+    },
+    {
+     "s": 40.2,
+     "e": 40.38,
+     "w": "off"
+    },
+    {
+     "s": 40.38,
+     "e": 40.52,
+     "w": "the"
+    },
+    {
+     "s": 40.52,
+     "e": 40.8,
+     "w": "full"
+    },
+    {
+     "s": 40.8,
+     "e": 41.22,
+     "w": "scab"
+    }
+   ]
   },
   {
-   "start": 33.74,
-   "end": 39.56,
-   "text": "Yeah, you wanna read between the lines"
+   "start": 41.22,
+   "end": 43.9,
+   "text": "The paper not enough for me, I be where the tools at",
+   "words": [
+    {
+     "s": 41.22,
+     "e": 41.42,
+     "w": "The"
+    },
+    {
+     "s": 41.42,
+     "e": 41.72,
+     "w": "paper"
+    },
+    {
+     "s": 41.72,
+     "e": 41.96,
+     "w": "not"
+    },
+    {
+     "s": 41.96,
+     "e": 42.28,
+     "w": "enough"
+    },
+    {
+     "s": 42.28,
+     "e": 42.44,
+     "w": "for"
+    },
+    {
+     "s": 42.44,
+     "e": 42.58,
+     "w": "me,"
+    },
+    {
+     "s": 42.72,
+     "e": 42.78,
+     "w": "I"
+    },
+    {
+     "s": 42.78,
+     "e": 42.94,
+     "w": "be"
+    },
+    {
+     "s": 42.94,
+     "e": 43.14,
+     "w": "where"
+    },
+    {
+     "s": 43.14,
+     "e": 43.3,
+     "w": "the"
+    },
+    {
+     "s": 43.3,
+     "e": 43.56,
+     "w": "tools"
+    },
+    {
+     "s": 43.56,
+     "e": 43.9,
+     "w": "at"
+    }
+   ]
   },
   {
-   "start": 39.56,
-   "end": 41.24,
-   "text": "You gotta take off the full scab"
+   "start": 43.9,
+   "end": 46.7,
+   "text": "The safest option's definitely not where my crew's at",
+   "words": [
+    {
+     "s": 43.9,
+     "e": 44.18,
+     "w": "The"
+    },
+    {
+     "s": 44.18,
+     "e": 44.44,
+     "w": "safest"
+    },
+    {
+     "s": 44.44,
+     "e": 45.04,
+     "w": "option's"
+    },
+    {
+     "s": 45.04,
+     "e": 45.38,
+     "w": "definitely"
+    },
+    {
+     "s": 45.38,
+     "e": 45.74,
+     "w": "not"
+    },
+    {
+     "s": 45.74,
+     "e": 45.88,
+     "w": "where"
+    },
+    {
+     "s": 45.88,
+     "e": 46.08,
+     "w": "my"
+    },
+    {
+     "s": 46.08,
+     "e": 46.52,
+     "w": "crew's"
+    },
+    {
+     "s": 46.52,
+     "e": 46.7,
+     "w": "at"
+    }
+   ]
   },
   {
-   "start": 41.24,
-   "end": 43.94,
-   "text": "The paper, not enough for me, I'd be where the tools at"
+   "start": 46.7,
+   "end": 49.46,
+   "text": "Spaceship only flies out if I'm puttin' this cruise in",
+   "words": [
+    {
+     "s": 46.7,
+     "e": 47.38,
+     "w": "Spaceship"
+    },
+    {
+     "s": 47.38,
+     "e": 47.58,
+     "w": "only"
+    },
+    {
+     "s": 47.58,
+     "e": 47.92,
+     "w": "flies"
+    },
+    {
+     "s": 47.92,
+     "e": 48.06,
+     "w": "out"
+    },
+    {
+     "s": 48.06,
+     "e": 48.24,
+     "w": "if"
+    },
+    {
+     "s": 48.24,
+     "e": 48.38,
+     "w": "I'm"
+    },
+    {
+     "s": 48.38,
+     "e": 48.7,
+     "w": "puttin'"
+    },
+    {
+     "s": 48.74,
+     "e": 48.88,
+     "w": "this"
+    },
+    {
+     "s": 48.88,
+     "e": 49.16,
+     "w": "cruise"
+    },
+    {
+     "s": 49.16,
+     "e": 49.46,
+     "w": "in"
+    }
+   ]
   },
   {
-   "start": 43.98,
-   "end": 46.84,
-   "text": "This type of shop should definitely not wear my tools at"
+   "start": 49.46,
+   "end": 52.42,
+   "text": "Rockin' never stops, we bumpin' Eregaba, we'll go",
+   "words": [
+    {
+     "s": 49.46,
+     "e": 50.12,
+     "w": "Rockin'"
+    },
+    {
+     "s": 50.22,
+     "e": 50.32,
+     "w": "never"
+    },
+    {
+     "s": 50.32,
+     "e": 50.62,
+     "w": "stops,"
+    },
+    {
+     "s": 50.62,
+     "e": 50.8,
+     "w": "we"
+    },
+    {
+     "s": 50.8,
+     "e": 51.16,
+     "w": "bumpin'"
+    },
+    {
+     "s": 51.24,
+     "e": 51.7,
+     "w": "Eregaba,"
+    },
+    {
+     "s": 51.7,
+     "e": 52.08,
+     "w": "we'll"
+    },
+    {
+     "s": 52.08,
+     "e": 52.42,
+     "w": "go"
+    }
+   ]
   },
   {
-   "start": 46.84,
-   "end": 49.6,
-   "text": "Spaceship only flies out if I'm puttin' the screws in"
+   "start": 52.42,
+   "end": 57.36,
+   "text": "The noise is an extension of me, call it kazoo",
+   "words": [
+    {
+     "s": 52.42,
+     "e": 53.0,
+     "w": "The"
+    },
+    {
+     "s": 53.0,
+     "e": 55.5,
+     "w": "noise"
+    },
+    {
+     "s": 55.5,
+     "e": 55.64,
+     "w": "is"
+    },
+    {
+     "s": 55.64,
+     "e": 55.78,
+     "w": "an"
+    },
+    {
+     "s": 55.78,
+     "e": 56.22,
+     "w": "extension"
+    },
+    {
+     "s": 56.22,
+     "e": 56.46,
+     "w": "of"
+    },
+    {
+     "s": 56.46,
+     "e": 56.64,
+     "w": "me,"
+    },
+    {
+     "s": 56.72,
+     "e": 56.86,
+     "w": "call"
+    },
+    {
+     "s": 56.86,
+     "e": 57.0,
+     "w": "it"
+    },
+    {
+     "s": 57.0,
+     "e": 57.36,
+     "w": "kazoo"
+    }
+   ]
   },
   {
-   "start": 49.6,
-   "end": 52.48,
-   "text": "Rockin' never stops, we bumpin' LA, Dabaloo, go"
-  },
-  {
-   "start": 52.48,
-   "end": 54.92,
-   "text": "Dabaloo, Dabaloo, Dabaloo, go"
-  },
-  {
-   "start": 54.92,
-   "end": 57.48,
-   "text": "The noise is an extension of me callin' Kazooie"
-  },
-  {
-   "start": 57.48,
-   "end": 61.32,
-   "text": "I'm nowhere, nobody can touch me like I just got the flu, damn"
+   "start": 57.36,
+   "end": 60.76,
+   "text": "I know when nobody can touch me like that, just got the flu, damn",
+   "words": [
+    {
+     "s": 57.36,
+     "e": 57.64,
+     "w": "I"
+    },
+    {
+     "s": 57.64,
+     "e": 57.86,
+     "w": "know"
+    },
+    {
+     "s": 57.86,
+     "e": 58.04,
+     "w": "when"
+    },
+    {
+     "s": 58.04,
+     "e": 58.42,
+     "w": "nobody"
+    },
+    {
+     "s": 58.42,
+     "e": 58.64,
+     "w": "can"
+    },
+    {
+     "s": 58.64,
+     "e": 58.88,
+     "w": "touch"
+    },
+    {
+     "s": 58.88,
+     "e": 59.04,
+     "w": "me"
+    },
+    {
+     "s": 59.04,
+     "e": 59.22,
+     "w": "like"
+    },
+    {
+     "s": 59.22,
+     "e": 59.34,
+     "w": "that,"
+    },
+    {
+     "s": 59.38,
+     "e": 59.56,
+     "w": "just"
+    },
+    {
+     "s": 59.56,
+     "e": 59.72,
+     "w": "got"
+    },
+    {
+     "s": 59.72,
+     "e": 59.88,
+     "w": "the"
+    },
+    {
+     "s": 59.88,
+     "e": 60.26,
+     "w": "flu,"
+    },
+    {
+     "s": 60.46,
+     "e": 60.76,
+     "w": "damn"
+    }
+   ]
   }
  ]
 }

@@ -1,0 +1,155 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.997,
+ "word_count": 26,
+ "first_word_s": 0.46,
+ "speech_seconds": 15.2,
+ "wpm": 102,
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 10.82,
+   "text": "In a place where time fades, the air holds something unforgettable, a scent that speaks of mystery, power, and serenity.",
+   "words": [
+    {
+     "s": 0.46,
+     "e": 1.0,
+     "w": "In"
+    },
+    {
+     "s": 1.0,
+     "e": 1.14,
+     "w": "a"
+    },
+    {
+     "s": 1.14,
+     "e": 1.46,
+     "w": "place"
+    },
+    {
+     "s": 1.46,
+     "e": 1.68,
+     "w": "where"
+    },
+    {
+     "s": 1.68,
+     "e": 2.02,
+     "w": "time"
+    },
+    {
+     "s": 2.02,
+     "e": 2.6,
+     "w": "fades,"
+    },
+    {
+     "s": 3.26,
+     "e": 3.34,
+     "w": "the"
+    },
+    {
+     "s": 3.34,
+     "e": 3.62,
+     "w": "air"
+    },
+    {
+     "s": 3.62,
+     "e": 4.06,
+     "w": "holds"
+    },
+    {
+     "s": 4.06,
+     "e": 4.52,
+     "w": "something"
+    },
+    {
+     "s": 4.52,
+     "e": 5.12,
+     "w": "unforgettable,"
+    },
+    {
+     "s": 5.74,
+     "e": 6.26,
+     "w": "a"
+    },
+    {
+     "s": 6.26,
+     "e": 6.7,
+     "w": "scent"
+    },
+    {
+     "s": 6.7,
+     "e": 6.96,
+     "w": "that"
+    },
+    {
+     "s": 6.96,
+     "e": 7.4,
+     "w": "speaks"
+    },
+    {
+     "s": 7.4,
+     "e": 7.6,
+     "w": "of"
+    },
+    {
+     "s": 7.6,
+     "e": 8.12,
+     "w": "mystery,"
+    },
+    {
+     "s": 8.64,
+     "e": 9.42,
+     "w": "power,"
+    },
+    {
+     "s": 9.66,
+     "e": 10.16,
+     "w": "and"
+    },
+    {
+     "s": 10.16,
+     "e": 10.82,
+     "w": "serenity."
+    }
+   ]
+  },
+  {
+   "start": 13.18,
+   "end": 18.04,
+   "text": "It's more than a fragrance, Santalum.",
+   "words": [
+    {
+     "s": 13.18,
+     "e": 13.8,
+     "w": "It's"
+    },
+    {
+     "s": 13.8,
+     "e": 14.02,
+     "w": "more"
+    },
+    {
+     "s": 14.02,
+     "e": 14.18,
+     "w": "than"
+    },
+    {
+     "s": 14.18,
+     "e": 14.34,
+     "w": "a"
+    },
+    {
+     "s": 14.34,
+     "e": 14.92,
+     "w": "fragrance,"
+    },
+    {
+     "s": 17.42,
+     "e": 18.04,
+     "w": "Santalum."
+    }
+   ]
+  }
+ ]
+}

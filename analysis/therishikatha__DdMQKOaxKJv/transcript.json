@@ -1,0 +1,28 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.763,
+ "word_count": 2,
+ "first_word_s": 2.1,
+ "speech_seconds": 2.4,
+ "wpm": 49,
+ "segments": [
+  {
+   "start": 2.1,
+   "end": 4.54,
+   "text": "Namah Shivaya",
+   "words": [
+    {
+     "s": 2.1,
+     "e": 3.28,
+     "w": "Namah"
+    },
+    {
+     "s": 3.28,
+     "e": 4.54,
+     "w": "Shivaya"
+    }
+   ]
+  }
+ ]
+}

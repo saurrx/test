@@ -1,16 +1,112 @@
 {
  "language": "en",
- "language_prob": 0.973,
+ "detected_language": "en",
+ "language_prob": 0.992,
+ "word_count": 16,
+ "first_word_s": 4.66,
+ "speech_seconds": 21.6,
+ "wpm": 44,
  "segments": [
   {
    "start": 4.66,
-   "end": 6.66,
-   "text": "Why break her gift?"
+   "end": 5.92,
+   "text": "Why break her gift?",
+   "words": [
+    {
+     "s": 4.66,
+     "e": 5.18,
+     "w": "Why"
+    },
+    {
+     "s": 5.18,
+     "e": 5.46,
+     "w": "break"
+    },
+    {
+     "s": 5.46,
+     "e": 5.6,
+     "w": "her"
+    },
+    {
+     "s": 5.6,
+     "e": 5.92,
+     "w": "gift?"
+    }
+   ]
   },
   {
-   "start": 7.24,
-   "end": 27.59,
-   "text": "Rama is not in them. Then is he inside you? Love it, Hanamai."
+   "start": 7.12,
+   "end": 12.06,
+   "text": "Rama is not in them. Then is he inside you?",
+   "words": [
+    {
+     "s": 7.12,
+     "e": 7.76,
+     "w": "Rama"
+    },
+    {
+     "s": 7.76,
+     "e": 8.0,
+     "w": "is"
+    },
+    {
+     "s": 8.0,
+     "e": 8.18,
+     "w": "not"
+    },
+    {
+     "s": 8.18,
+     "e": 8.34,
+     "w": "in"
+    },
+    {
+     "s": 8.34,
+     "e": 8.54,
+     "w": "them."
+    },
+    {
+     "s": 10.56,
+     "e": 11.12,
+     "w": "Then"
+    },
+    {
+     "s": 11.12,
+     "e": 11.26,
+     "w": "is"
+    },
+    {
+     "s": 11.26,
+     "e": 11.36,
+     "w": "he"
+    },
+    {
+     "s": 11.36,
+     "e": 11.7,
+     "w": "inside"
+    },
+    {
+     "s": 11.7,
+     "e": 12.06,
+     "w": "you?"
+    }
+   ]
+  },
+  {
+   "start": 12.24,
+   "end": 27.65,
+   "text": "beloved Hanamai",
+   "words": [
+    {
+     "s": 12.24,
+     "e": 12.74,
+     "w": "beloved"
+    },
+    {
+     "s": 27.17,
+     "e": 27.65,
+     "w": "Hanamai"
+    }
+   ]
   }
  ]
 }
