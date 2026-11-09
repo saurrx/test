@@ -1,10 +1,7 @@
 {
  "video": "renders/best/reel1_bell_1080.mp4",
- "pass": false,
- "failed": [
-  "loudness_-16_to_-12",
-  "peak_below_-1"
- ],
+ "pass": true,
+ "failed": [],
  "checks": {
   "moves_in_first_second": true,
   "no_long_still": true,
@@ -16,25 +13,25 @@
   "voice_not_cut_off": true,
   "caption_in_safe_area": true,
   "caption_contrast_ge_4.5": true,
-  "loudness_-16_to_-12": false,
-  "peak_below_-1": false,
+  "loudness_-16_to_-12": true,
+  "peak_below_-1": true,
   "is_1080x1920": true
  },
  "numbers": {
-  "duration": 62.36,
-  "cuts": 15,
-  "cuts_per_10s": 2.41,
+  "duration": 62.4,
+  "cuts": 17,
+  "cuts_per_10s": 2.72,
   "view_changes_per_10s": 2.22,
-  "motion_mean": 6.47,
-  "motion_first3s": 12.5,
+  "motion_mean": 6.39,
+  "motion_first3s": 12.43,
   "still_seconds": 0,
   "first_visual_change_s": 1.1,
-  "first_frame_luma": 0.253,
+  "first_frame_luma": 0.252,
   "first_word_s": 0.0,
   "wpm": 140,
   "max_gap_s": 1.16,
   "caption_contrast": 15.7,
-  "lufs": -17.2,
-  "peak_db": -0.4
+  "lufs": -14.7,
+  "peak_db": -1.3
  }
 }

@@ -40,6 +40,10 @@ subagents are used only for parallel hook variants and for blind judging, and ju
 If the PC drops: fall back to cloud rendering (4 vCPUs, slower drafts) and the reels already analysed. If the
 container is reclaimed: Tailscale needs a new login link from the owner; until then the loop runs cloud-only.
 
+## Treg is off for the rest of the loop (2026-11-09 22:00)
+Treg calls can still raise a permission prompt, and a prompt would stall an unattended loop. From now on the loop
+makes **no Treg calls**: voice is free `edge-tts` on the PC, music is the two saved Lyria loops plus `scripts/synth.py`.
+
 ## Two visual lanes (what code is good at)
 - **Lane A, "glow temple"**: dark scene, simple 3D or layered 2D forms, glowing light trails, sacred geometry
   (yantras, mandalas), serif captions. Reference: therishikatha (4.8M-view Aarti reel).

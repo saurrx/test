@@ -64,3 +64,10 @@
 - After 3 attempts reel 1 improved each time by blind judgment (v1 < v2 < v3) but still loses clearly to the 4.8M-view reference. Per the 3-attempt rule it is closed and logged as `hard`.
 - What blocks it (both judges, both rounds): one repeated composition. So iteration 3 builds new scene types (temple exterior, doorway/threshold, hand close-up, different backdrops) before making reel 2. Alternative skipped: more polish on the same temple set (judged "close" gains only).
 - Judging uses 2 judges for whole-reel rankings and 3 for hook tournaments and checkpoints, to save usage.
+
+## 2026-11-09 22:00 — Treg removed from the unattended loop (owner: prompts keep appearing)
+- Treg calls can raise a permission prompt even with allow rules for every tool under both connector names (added to project and user settings). A prompt blocks the turn until someone answers, which would stall the loop.
+- **Fallback, now the default: the loop makes no Treg calls.** Voice = free `edge-tts` on the PC (`scripts/voice.py tts`, Hindi and Indian-English voices, word timings). Music = the two Lyria loops already bought and saved in git (`music_temple.mp3`, `music_epic.mp3`) plus `scripts/synth.py`. The watchdog prompts no longer check the Treg balance.
+- Already bought, so unaffected: voice for reels 1 and 2. Total Treg spend: about $0.11 (2 voices $0.029, 2 music clips $0.08, 1 test $0.0006). Balance about $0.47.
+- Second worker restart at about 21:50 killed the chained render job. Renders now run as detached systemd jobs on the PC (`scripts/render_bg.sh` / `render_get.sh`), and `scripts/ensure_up.sh` restores Tailscale and autocommit.
+- Final files: `scripts/finish.sh` normalises to −14 LUFS and caps the bitrate at 3.5 Mbps; film grain made the raw 1080p render 139 MB.
