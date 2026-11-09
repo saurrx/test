@@ -14,3 +14,6 @@ __pycache__/
 data/reels/_download.log
 data/seed/_download.log
 analysis/_seed_run.log
+
+# per-creator download folders: metadata is force-added by scripts/autocommit.sh every 10 min
+data/reels/*/
