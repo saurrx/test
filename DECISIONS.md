@@ -28,3 +28,8 @@
 - Login is by browser link (the owner clicks to approve), so no auth key is stored in the repo, chat or environment variables.
 - Caveat: the Tailscale state lives in /var/lib/tailscale, which isn't in git. After a container reclaim the owner has to approve a new login link.
 - Rejected alternative: Claude's built-in Remote Control folders. None are configured, and the feature isn't available on every account.
+
+## 2026-11-09 — Fable 5.2 for builders; Tailscale test
+- Fable 5.2 was released 2026-11-09 (sources: The New Stack, Yahoo Finance, Anthropic's post on X). LOOP.md now assigns builder subagents to Fable and the grader to a different model.
+- The owner clarified that no reels are to be made until they say "go". I had started a Treg TTS call for a test reel; it was aborted before it ran, so nothing was spent.
+- Tailscale: the container joined the tailnet as `claude-cloud-reels`, and the PC is `arch`. SSH reached the PC but was refused by the tailnet policy for users `reels` and `saurrx`, so the policy needs an `ssh` accept rule. The container is untagged, so the restrictive grants aren't in effect yet.

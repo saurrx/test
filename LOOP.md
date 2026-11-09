@@ -63,6 +63,17 @@ Every iteration must change the playbook, the pipeline code, or both.
 | **C3** | cinematic AI stills or video, 3D renders, painterly art | stylised substitute: three.js/shader scenes, silhouettes, light rays, particles, "shadow-play" or "ink" look. Keep the story, hook and pacing; change the visual style |
 | **C4** | real people on camera, the creator's own face, real-event footage | study only: transfer the hook, structure and pacing into a C1–C3 original |
 
+## Models and machines
+- **Builder subagents use Claude Fable** (`model: "fable"`). Fable 5.2 was released 2026-11-09: about 30% faster than
+  5.1, priced at $8/$40 per million tokens, with stronger coding scores. The builder writes the Remotion and shader
+  code, so this is the role where the strongest coder matters most. At the first build, record which Fable version
+  the alias actually serves.
+- **The grader is a fresh subagent on a different model** from the builder (e.g. Opus), so it is not anchored on the
+  builder's choices. Routine work (data crunching, labelling, file plumbing) uses cheaper models such as Sonnet or
+  Haiku, to save usage.
+- **Owner's PC over Tailscale (`arch`):** runs Instagram downloads (home IP plus browser cookies) and GPU transcription.
+  Results are copied back over Tailscale. If the PC is unreachable, fall back to the slow cloud downloader.
+
 ## Getting better each iteration (checked, not hoped)
 - The newest make must beat the previous best on at least one grading dimension, and must not regress more than 1 point on any other.
 - Each pipeline improvement becomes a reusable component or script, not a one-off.
