@@ -13,3 +13,7 @@ This is an experimental sandbox repo with no real data. The owner wants Claude t
 - Before any job that makes many calls, run `mcp__Treg__balance` and estimate cost from `catalog_get`.
 - Log spend in `DECISIONS.md` (what, how many calls, $).
 - If the balance would drop below $0.10, or a planned job costs more than the remaining balance, stop that job and tell the owner how much to top up and why. Everything else continues.
+
+## Research references
+- @mo-sidd (YouTube) is one reference for the Claude + Remotion method, not the template. Don't anchor on it.
+- Which reels to rebuild vs only study: follow `research/02_feasibility_triage.md` (tiers T1–T4, 3-iteration time-box).
