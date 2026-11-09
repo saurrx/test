@@ -1,96 +1,675 @@
 {
  "language": "en",
- "language_prob": 0.973,
+ "detected_language": "en",
+ "language_prob": 0.839,
+ "word_count": 130,
+ "first_word_s": 0.98,
+ "speech_seconds": 62.8,
+ "wpm": 124,
  "segments": [
   {
    "start": 0.98,
-   "end": 4.26,
-   "text": "Run it up, then sign it up"
+   "end": 28.18,
+   "text": "Run it up. The sun is up. So when it down, get your money up. I put money down. On all of us. On what I love. Your problems are just not the same to us. We're dealing with things you ain't seen before. We're feeling the weight of our ancestors. We're healing with ways that don't last too long. No help for the weak but the link is strong. Plenty here for it for all of us.",
+   "words": [
+    {
+     "s": 0.98,
+     "e": 1.16,
+     "w": "Run"
+    },
+    {
+     "s": 1.16,
+     "e": 1.32,
+     "w": "it"
+    },
+    {
+     "s": 1.32,
+     "e": 1.62,
+     "w": "up."
+    },
+    {
+     "s": 2.38,
+     "e": 2.78,
+     "w": "The"
+    },
+    {
+     "s": 2.78,
+     "e": 2.98,
+     "w": "sun"
+    },
+    {
+     "s": 2.98,
+     "e": 3.16,
+     "w": "is"
+    },
+    {
+     "s": 3.16,
+     "e": 3.42,
+     "w": "up."
+    },
+    {
+     "s": 4.44,
+     "e": 4.54,
+     "w": "So"
+    },
+    {
+     "s": 4.54,
+     "e": 4.74,
+     "w": "when"
+    },
+    {
+     "s": 4.74,
+     "e": 4.84,
+     "w": "it"
+    },
+    {
+     "s": 4.84,
+     "e": 5.14,
+     "w": "down,"
+    },
+    {
+     "s": 5.76,
+     "e": 6.18,
+     "w": "get"
+    },
+    {
+     "s": 6.18,
+     "e": 6.3,
+     "w": "your"
+    },
+    {
+     "s": 6.3,
+     "e": 6.6,
+     "w": "money"
+    },
+    {
+     "s": 6.6,
+     "e": 6.9,
+     "w": "up."
+    },
+    {
+     "s": 7.72,
+     "e": 7.98,
+     "w": "I"
+    },
+    {
+     "s": 7.98,
+     "e": 8.14,
+     "w": "put"
+    },
+    {
+     "s": 8.14,
+     "e": 8.4,
+     "w": "money"
+    },
+    {
+     "s": 8.4,
+     "e": 8.74,
+     "w": "down."
+    },
+    {
+     "s": 9.58,
+     "e": 9.98,
+     "w": "On"
+    },
+    {
+     "s": 9.98,
+     "e": 10.16,
+     "w": "all"
+    },
+    {
+     "s": 10.16,
+     "e": 10.3,
+     "w": "of"
+    },
+    {
+     "s": 10.3,
+     "e": 10.58,
+     "w": "us."
+    },
+    {
+     "s": 13.04,
+     "e": 13.44,
+     "w": "On"
+    },
+    {
+     "s": 13.44,
+     "e": 13.64,
+     "w": "what"
+    },
+    {
+     "s": 13.64,
+     "e": 13.76,
+     "w": "I"
+    },
+    {
+     "s": 13.76,
+     "e": 13.9,
+     "w": "love."
+    },
+    {
+     "s": 15.9,
+     "e": 16.12,
+     "w": "Your"
+    },
+    {
+     "s": 16.12,
+     "e": 16.44,
+     "w": "problems"
+    },
+    {
+     "s": 16.44,
+     "e": 16.58,
+     "w": "are"
+    },
+    {
+     "s": 16.58,
+     "e": 16.7,
+     "w": "just"
+    },
+    {
+     "s": 16.7,
+     "e": 16.86,
+     "w": "not"
+    },
+    {
+     "s": 16.86,
+     "e": 17.02,
+     "w": "the"
+    },
+    {
+     "s": 17.02,
+     "e": 17.18,
+     "w": "same"
+    },
+    {
+     "s": 17.18,
+     "e": 17.38,
+     "w": "to"
+    },
+    {
+     "s": 17.38,
+     "e": 17.52,
+     "w": "us."
+    },
+    {
+     "s": 17.72,
+     "e": 18.12,
+     "w": "We're"
+    },
+    {
+     "s": 18.12,
+     "e": 18.16,
+     "w": "dealing"
+    },
+    {
+     "s": 18.16,
+     "e": 18.34,
+     "w": "with"
+    },
+    {
+     "s": 18.34,
+     "e": 18.56,
+     "w": "things"
+    },
+    {
+     "s": 18.56,
+     "e": 18.7,
+     "w": "you"
+    },
+    {
+     "s": 18.7,
+     "e": 18.84,
+     "w": "ain't"
+    },
+    {
+     "s": 18.84,
+     "e": 18.94,
+     "w": "seen"
+    },
+    {
+     "s": 18.94,
+     "e": 19.24,
+     "w": "before."
+    },
+    {
+     "s": 19.46,
+     "e": 19.72,
+     "w": "We're"
+    },
+    {
+     "s": 19.72,
+     "e": 19.92,
+     "w": "feeling"
+    },
+    {
+     "s": 19.92,
+     "e": 20.1,
+     "w": "the"
+    },
+    {
+     "s": 20.1,
+     "e": 20.3,
+     "w": "weight"
+    },
+    {
+     "s": 20.3,
+     "e": 20.46,
+     "w": "of"
+    },
+    {
+     "s": 20.46,
+     "e": 20.58,
+     "w": "our"
+    },
+    {
+     "s": 20.58,
+     "e": 20.92,
+     "w": "ancestors."
+    },
+    {
+     "s": 21.32,
+     "e": 21.56,
+     "w": "We're"
+    },
+    {
+     "s": 21.56,
+     "e": 21.7,
+     "w": "healing"
+    },
+    {
+     "s": 21.7,
+     "e": 21.9,
+     "w": "with"
+    },
+    {
+     "s": 21.9,
+     "e": 22.06,
+     "w": "ways"
+    },
+    {
+     "s": 22.06,
+     "e": 22.2,
+     "w": "that"
+    },
+    {
+     "s": 22.2,
+     "e": 22.34,
+     "w": "don't"
+    },
+    {
+     "s": 22.34,
+     "e": 22.52,
+     "w": "last"
+    },
+    {
+     "s": 22.52,
+     "e": 22.68,
+     "w": "too"
+    },
+    {
+     "s": 22.68,
+     "e": 22.9,
+     "w": "long."
+    },
+    {
+     "s": 23.12,
+     "e": 23.24,
+     "w": "No"
+    },
+    {
+     "s": 23.24,
+     "e": 23.44,
+     "w": "help"
+    },
+    {
+     "s": 23.44,
+     "e": 23.64,
+     "w": "for"
+    },
+    {
+     "s": 23.64,
+     "e": 23.66,
+     "w": "the"
+    },
+    {
+     "s": 23.66,
+     "e": 25.58,
+     "w": "weak"
+    },
+    {
+     "s": 25.58,
+     "e": 25.76,
+     "w": "but"
+    },
+    {
+     "s": 25.76,
+     "e": 25.9,
+     "w": "the"
+    },
+    {
+     "s": 25.9,
+     "e": 26.08,
+     "w": "link"
+    },
+    {
+     "s": 26.08,
+     "e": 26.2,
+     "w": "is"
+    },
+    {
+     "s": 26.2,
+     "e": 26.44,
+     "w": "strong."
+    },
+    {
+     "s": 26.74,
+     "e": 27.04,
+     "w": "Plenty"
+    },
+    {
+     "s": 27.04,
+     "e": 27.2,
+     "w": "here"
+    },
+    {
+     "s": 27.2,
+     "e": 27.44,
+     "w": "for"
+    },
+    {
+     "s": 27.44,
+     "e": 27.54,
+     "w": "it"
+    },
+    {
+     "s": 27.54,
+     "e": 27.68,
+     "w": "for"
+    },
+    {
+     "s": 27.68,
+     "e": 27.9,
+     "w": "all"
+    },
+    {
+     "s": 27.9,
+     "e": 28.04,
+     "w": "of"
+    },
+    {
+     "s": 28.04,
+     "e": 28.18,
+     "w": "us."
+    }
+   ]
   },
   {
-   "start": 4.26,
-   "end": 7.78,
-   "text": "So when it down, get your money up"
-  },
-  {
-   "start": 7.78,
-   "end": 13.18,
-   "text": "I put money down, on all of us"
-  },
-  {
-   "start": 13.18,
-   "end": 17.62,
-   "text": "On what I lost, your problems are just not the same to us"
-  },
-  {
-   "start": 17.62,
-   "end": 19.38,
-   "text": "We're dealing with things you ain't seen before"
-  },
-  {
-   "start": 19.38,
-   "end": 21.22,
-   "text": "We're feeling the weight of our instances"
-  },
-  {
-   "start": 21.22,
-   "end": 22.98,
-   "text": "We're here to work, wasting our lives to long"
-  },
-  {
-   "start": 22.98,
-   "end": 24.74,
-   "text": "Don't happen the time in the diabetes"
-  },
-  {
-   "start": 24.74,
-   "end": 26.66,
-   "text": "No help for the weak, but the liquor's strong"
-  },
-  {
-   "start": 26.66,
-   "end": 28.26,
-   "text": "Plenty here for it for all of us"
-  },
-  {
-   "start": 28.26,
-   "end": 29.62,
-   "text": "Now bring out the drums in it"
-  },
-  {
-   "start": 29.62,
-   "end": 32.02,
-   "text": "My homies got intuition that they say wouldn't work"
-  },
-  {
-   "start": 32.02,
-   "end": 33.06,
-   "text": "Bring out the guns in it"
-  },
-  {
-   "start": 33.06,
-   "end": 34.02,
-   "text": "Get a low number clip"
-  },
-  {
-   "start": 34.02,
-   "end": 34.9,
-   "text": "I'm gon' show up the place"
-  },
-  {
-   "start": 34.9,
-   "end": 59.44,
-   "text": "But I'm gonna ditch all the parameters"
-  },
-  {
-   "start": 59.44,
-   "end": 62.85,
-   "text": "Then sign these up"
-  },
-  {
-   "start": 62.85,
-   "end": 64.05,
-   "text": "Get your money, y'all"
+   "start": 28.18,
+   "end": 63.73,
+   "text": "Now bring out the drums in it. My homies got wrist doing shit that they said wouldn't work. Bring out the guns in it. Get a load up a clip. I'm gonna show up the place when I'm in the ditch of the planners. The sun is up. Get your money up.",
+   "words": [
+    {
+     "s": 28.18,
+     "e": 28.52,
+     "w": "Now"
+    },
+    {
+     "s": 28.52,
+     "e": 28.72,
+     "w": "bring"
+    },
+    {
+     "s": 28.72,
+     "e": 28.86,
+     "w": "out"
+    },
+    {
+     "s": 28.86,
+     "e": 28.96,
+     "w": "the"
+    },
+    {
+     "s": 28.96,
+     "e": 29.2,
+     "w": "drums"
+    },
+    {
+     "s": 29.2,
+     "e": 29.34,
+     "w": "in"
+    },
+    {
+     "s": 29.34,
+     "e": 29.46,
+     "w": "it."
+    },
+    {
+     "s": 29.58,
+     "e": 29.84,
+     "w": "My"
+    },
+    {
+     "s": 29.84,
+     "e": 30.18,
+     "w": "homies"
+    },
+    {
+     "s": 30.18,
+     "e": 30.32,
+     "w": "got"
+    },
+    {
+     "s": 30.32,
+     "e": 30.52,
+     "w": "wrist"
+    },
+    {
+     "s": 30.52,
+     "e": 30.66,
+     "w": "doing"
+    },
+    {
+     "s": 30.66,
+     "e": 30.86,
+     "w": "shit"
+    },
+    {
+     "s": 30.86,
+     "e": 31.04,
+     "w": "that"
+    },
+    {
+     "s": 31.04,
+     "e": 31.2,
+     "w": "they"
+    },
+    {
+     "s": 31.2,
+     "e": 31.36,
+     "w": "said"
+    },
+    {
+     "s": 31.36,
+     "e": 31.66,
+     "w": "wouldn't"
+    },
+    {
+     "s": 31.66,
+     "e": 31.86,
+     "w": "work."
+    },
+    {
+     "s": 32.04,
+     "e": 32.3,
+     "w": "Bring"
+    },
+    {
+     "s": 32.3,
+     "e": 32.46,
+     "w": "out"
+    },
+    {
+     "s": 32.46,
+     "e": 32.54,
+     "w": "the"
+    },
+    {
+     "s": 32.54,
+     "e": 32.8,
+     "w": "guns"
+    },
+    {
+     "s": 32.8,
+     "e": 32.92,
+     "w": "in"
+    },
+    {
+     "s": 32.92,
+     "e": 33.06,
+     "w": "it."
+    },
+    {
+     "s": 33.22,
+     "e": 33.36,
+     "w": "Get"
+    },
+    {
+     "s": 33.36,
+     "e": 33.48,
+     "w": "a"
+    },
+    {
+     "s": 33.48,
+     "e": 33.64,
+     "w": "load"
+    },
+    {
+     "s": 33.64,
+     "e": 33.78,
+     "w": "up"
+    },
+    {
+     "s": 33.78,
+     "e": 33.86,
+     "w": "a"
+    },
+    {
+     "s": 33.86,
+     "e": 34.02,
+     "w": "clip."
+    },
+    {
+     "s": 34.18,
+     "e": 34.24,
+     "w": "I'm"
+    },
+    {
+     "s": 34.24,
+     "e": 34.32,
+     "w": "gonna"
+    },
+    {
+     "s": 34.32,
+     "e": 34.46,
+     "w": "show"
+    },
+    {
+     "s": 34.46,
+     "e": 34.62,
+     "w": "up"
+    },
+    {
+     "s": 34.62,
+     "e": 34.74,
+     "w": "the"
+    },
+    {
+     "s": 34.74,
+     "e": 34.98,
+     "w": "place"
+    },
+    {
+     "s": 34.98,
+     "e": 35.12,
+     "w": "when"
+    },
+    {
+     "s": 35.12,
+     "e": 35.26,
+     "w": "I'm"
+    },
+    {
+     "s": 37.27,
+     "e": 37.35,
+     "w": "in"
+    },
+    {
+     "s": 37.35,
+     "e": 37.41,
+     "w": "the"
+    },
+    {
+     "s": 37.41,
+     "e": 37.65,
+     "w": "ditch"
+    },
+    {
+     "s": 37.65,
+     "e": 37.75,
+     "w": "of"
+    },
+    {
+     "s": 37.75,
+     "e": 37.89,
+     "w": "the"
+    },
+    {
+     "s": 37.89,
+     "e": 38.23,
+     "w": "planners."
+    },
+    {
+     "s": 59.52,
+     "e": 59.64,
+     "w": "The"
+    },
+    {
+     "s": 59.64,
+     "e": 59.88,
+     "w": "sun"
+    },
+    {
+     "s": 59.88,
+     "e": 60.02,
+     "w": "is"
+    },
+    {
+     "s": 60.02,
+     "e": 60.3,
+     "w": "up."
+    },
+    {
+     "s": 62.77,
+     "e": 63.09,
+     "w": "Get"
+    },
+    {
+     "s": 63.09,
+     "e": 63.21,
+     "w": "your"
+    },
+    {
+     "s": 63.21,
+     "e": 63.51,
+     "w": "money"
+    },
+    {
+     "s": 63.51,
+     "e": 63.73,
+     "w": "up."
+    }
+   ]
   }
  ]
 }

@@ -1,11 +1,83 @@
 {
  "language": "en",
- "language_prob": 0.869,
+ "detected_language": "en",
+ "language_prob": 0.985,
+ "word_count": 13,
+ "first_word_s": 0.0,
+ "speech_seconds": 5.5,
+ "wpm": 143,
  "segments": [
   {
    "start": 0.0,
-   "end": 6.0,
-   "text": "You cannot reason with a tiger when your head is in its mouth!"
+   "end": 5.46,
+   "text": "You cannot reason with a tiger when your head is in its mouth!",
+   "words": [
+    {
+     "s": 0.0,
+     "e": 0.52,
+     "w": "You"
+    },
+    {
+     "s": 0.52,
+     "e": 1.04,
+     "w": "cannot"
+    },
+    {
+     "s": 1.04,
+     "e": 1.68,
+     "w": "reason"
+    },
+    {
+     "s": 1.68,
+     "e": 2.06,
+     "w": "with"
+    },
+    {
+     "s": 2.06,
+     "e": 2.32,
+     "w": "a"
+    },
+    {
+     "s": 2.32,
+     "e": 2.74,
+     "w": "tiger"
+    },
+    {
+     "s": 2.74,
+     "e": 3.52,
+     "w": "when"
+    },
+    {
+     "s": 3.52,
+     "e": 3.78,
+     "w": "your"
+    },
+    {
+     "s": 3.78,
+     "e": 4.18,
+     "w": "head"
+    },
+    {
+     "s": 4.18,
+     "e": 4.46,
+     "w": "is"
+    },
+    {
+     "s": 4.46,
+     "e": 4.64,
+     "w": "in"
+    },
+    {
+     "s": 4.64,
+     "e": 4.92,
+     "w": "its"
+    },
+    {
+     "s": 4.92,
+     "e": 5.46,
+     "w": "mouth!"
+    }
+   ]
   }
  ]
 }

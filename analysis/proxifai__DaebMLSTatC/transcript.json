@@ -1,0 +1,194 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.999,
+ "word_count": 31,
+ "first_word_s": 1.23,
+ "speech_seconds": 13.8,
+ "wpm": 135,
+ "segments": [
+  {
+   "start": 1.23,
+   "end": 6.63,
+   "text": "Meet Adam Rakeem, currently handcuffed to Ian.",
+   "words": [
+    {
+     "s": 1.23,
+     "e": 1.87,
+     "w": "Meet"
+    },
+    {
+     "s": 1.87,
+     "e": 2.21,
+     "w": "Adam"
+    },
+    {
+     "s": 2.21,
+     "e": 2.75,
+     "w": "Rakeem,"
+    },
+    {
+     "s": 2.83,
+     "e": 5.37,
+     "w": "currently"
+    },
+    {
+     "s": 5.37,
+     "e": 6.13,
+     "w": "handcuffed"
+    },
+    {
+     "s": 6.13,
+     "e": 6.33,
+     "w": "to"
+    },
+    {
+     "s": 6.33,
+     "e": 6.63,
+     "w": "Ian."
+    }
+   ]
+  },
+  {
+   "start": 9.11,
+   "end": 12.29,
+   "text": "His digital twin just scored at the World Cup.",
+   "words": [
+    {
+     "s": 9.11,
+     "e": 9.69,
+     "w": "His"
+    },
+    {
+     "s": 9.69,
+     "e": 10.07,
+     "w": "digital"
+    },
+    {
+     "s": 10.07,
+     "e": 10.41,
+     "w": "twin"
+    },
+    {
+     "s": 10.41,
+     "e": 10.77,
+     "w": "just"
+    },
+    {
+     "s": 10.77,
+     "e": 11.25,
+     "w": "scored"
+    },
+    {
+     "s": 11.25,
+     "e": 11.47,
+     "w": "at"
+    },
+    {
+     "s": 11.47,
+     "e": 11.59,
+     "w": "the"
+    },
+    {
+     "s": 11.59,
+     "e": 11.89,
+     "w": "World"
+    },
+    {
+     "s": 11.89,
+     "e": 12.29,
+     "w": "Cup."
+    }
+   ]
+  },
+  {
+   "start": 12.61,
+   "end": 15.35,
+   "text": "Did a flip. Crowd went insane.",
+   "words": [
+    {
+     "s": 12.61,
+     "e": 13.03,
+     "w": "Did"
+    },
+    {
+     "s": 13.03,
+     "e": 13.19,
+     "w": "a"
+    },
+    {
+     "s": 13.19,
+     "e": 13.39,
+     "w": "flip."
+    },
+    {
+     "s": 13.93,
+     "e": 14.31,
+     "w": "Crowd"
+    },
+    {
+     "s": 14.31,
+     "e": 14.73,
+     "w": "went"
+    },
+    {
+     "s": 14.73,
+     "e": 15.35,
+     "w": "insane."
+    }
+   ]
+  },
+  {
+   "start": 15.69,
+   "end": 18.17,
+   "text": "One of them is having a very different Tuesday.",
+   "words": [
+    {
+     "s": 15.69,
+     "e": 16.13,
+     "w": "One"
+    },
+    {
+     "s": 16.13,
+     "e": 16.21,
+     "w": "of"
+    },
+    {
+     "s": 16.21,
+     "e": 16.43,
+     "w": "them"
+    },
+    {
+     "s": 16.43,
+     "e": 16.63,
+     "w": "is"
+    },
+    {
+     "s": 16.63,
+     "e": 16.85,
+     "w": "having"
+    },
+    {
+     "s": 16.85,
+     "e": 17.01,
+     "w": "a"
+    },
+    {
+     "s": 17.01,
+     "e": 17.35,
+     "w": "very"
+    },
+    {
+     "s": 17.35,
+     "e": 17.75,
+     "w": "different"
+    },
+    {
+     "s": 17.75,
+     "e": 18.17,
+     "w": "Tuesday."
+    }
+   ]
+  }
+ ]
+}
