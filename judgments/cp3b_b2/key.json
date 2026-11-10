@@ -1,0 +1,21 @@
+{
+ "clips": [
+  "renders/cp3b_b2.mp4",
+  "renders/cp1_b2.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "renders/cp1_b2.mp4",
+   "B": "renders/cp3b_b2.mp4"
+  },
+  "j2": {
+   "A": "renders/cp1_b2.mp4",
+   "B": "renders/cp3b_b2.mp4"
+  },
+  "j3": {
+   "A": "renders/cp3b_b2.mp4",
+   "B": "renders/cp1_b2.mp4"
+  }
+ }
+}
