@@ -2,8 +2,8 @@
 
 ## Now
 Loop FINISHED at 2026-11-10T04:59Z. Read `research/FINAL_REPORT.md` first.
-- Finals: `renders/best/reel{1..7}_*_1080.mp4` (reel 7 = Hindi edition of reel 5; if `reel7_never_hi_1080.mp4` is missing, run `scripts/render_get.sh r7f` then `scripts/finish.sh reel7_final reel7_never_hi_1080`).
-- Watchdog scheduled tasks disabled at the end. Treg is hard-blocked by deny rules in `.claude/settings.json` (delete them to re-enable).
+- Finals: `renders/best/reel{1..7}_*_1080.mp4` (reel 7 = Hindi edition of reel 5). Reels 2 and 4 each have one black frame to fix before posting.
+- Watchdog scheduled tasks disabled at the end. PC services `reels-worker2` and `reels-meta` stopped and disabled (05:15Z). Treg is hard-blocked by deny rules in `.claude/settings.json` (delete them to re-enable).
 - Next session ideas: post reel 5 first; A/B the first frame; continue the Shiva series (part 4 "why Shiva wears the moon" was promised in reel 6).
 
 ## How to work (for a restart)

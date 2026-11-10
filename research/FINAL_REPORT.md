@@ -14,7 +14,7 @@ Sources: `LOOP.md`, `makes/LOG.md`, `research/03_virality_analysis.md`, `researc
 - What did not work: reel 1 never closed the gap to its reference. Reel 6 came last in 9 of 9 judgments. The blind judge cannot spot real hits (59%, near chance). About 2 hours near the end were lost to cloud worker restarts.
 
 ## 2. Reels made (originals only)
-All finals are 1080x1920 and live at `renders/best/<name>_1080.mp4`. Reels 1, 3, 5 and 6 pass every automatic check (loudness, contrast, no dark seconds, no black frames). Reels 2 and 4 were re-rendered at the end to remove black gaps (reel 2 had 7) and are down to **one** single black frame each (reel 2 at frame 1425 = 47.5 s, which also trips the dark-second check; reel 4 at frame 486 = 16.2 s). Barely visible, but not clean: fix with `scripts/lift_dark_starts.py` on the affected scene and re-render before posting. Reel 7 (Hindi) final was still rendering on the PC at the end; fetch with `scripts/render_get.sh r7f` then `scripts/finish.sh reel7_final reel7_never_hi_1080`.
+All finals are 1080x1920 and live at `renders/best/<name>_1080.mp4`. Reels 1, 3, 5 and 6 pass every automatic check (loudness, contrast, no dark seconds, no black frames). Reels 2 and 4 were re-rendered at the end to remove black gaps (reel 2 had 7) and are down to **one** single black frame each (reel 2 at frame 1425 = 47.5 s, which also trips the dark-second check; reel 4 at frame 486 = 16.2 s). Barely visible, but not clean: fix with `scripts/lift_dark_starts.py` on the affected scene and re-render before posting. Reel 7 (Hindi) finished just after the loop ended (05:20Z) and passes every check: `renders/best/reel7_never_hi_1080.mp4`.
 
 | # | Reel | Language | Length | Status | Blind-judge record |
 |---|---|---|---|---|---|
@@ -24,7 +24,7 @@ All finals are 1080x1920 and live at `renders/best/<name>_1080.mp4`. Reels 1, 3,
 | 4 | Parashuram vs Ram, Ramayan part 2 (`reel4_parashuram`) | Hindi | 72 s | Final | Both judges put the real 480K reel last. Reel 4 vs reel 2 split 1–1 ("close") |
 | 5 | "5 things never to offer Shiva", Shiva part 2 (`reel5_never`) | English | 68 s | Final. Best reel | v1 came last. v3 split. In the fair 01:32 comparison it scored 7 points vs 6 for the 4.8M reference (1 of 3 first places). 2nd behind the reference in 6 of 6 later judgments, always ahead of reel 6. 1st in 3/3 judgments vs reel 7 and the 480K reel |
 | 6 | Om Namah Shivaya, Shiva part 3 (`reel6_mantra`) | English | 68 s | Finished as is. Time-box reached after 4 judged versions | Last in 9 of 9 judgments (v4–v6). Judges called it abstract, with sparse word-card frames and a weak hook |
-| 7 | Hindi edition of reel 5 (`reel7_never_hi`) | Hindi | about 75 s | Draft passed QC. Final was rendering at report time | Beat the real 480K-view Hindi reel in 3 of 3 judgments (2nd behind reel 5 each time) |
+| 7 | Hindi edition of reel 5 (`reel7_never_hi`) | Hindi | about 75 s | Final passes every check (`reel7_never_hi_1080.mp4`) | Beat the real 480K-view Hindi reel in 3 of 3 judgments (2nd behind reel 5 each time) |
 
 Note: when this report was written, the local checkout held reels 1–5 in `renders/best/`. If reel 6 or reel 7 is missing, fetch it from the PC: `scripts/render_get.sh r7f`, then `scripts/finish.sh reel7_final reel7_never_hi_1080` (see `TASKS.md`).
 
