@@ -19,7 +19,9 @@ def scenes(cuts, end, specs):
         sc = dict(sc); sc["dur"] = round((cuts[i + 1] if i + 1 < len(cuts) else end) - cuts[i], 3); out.append(sc)
     return out
 def save(b, props):
-    props["audio"]["voAt"] = LEAD
+    props["audio"]["voAt"] = LEAD; props["fixedText"] = True
+    if b.startswith("b3"):  # the dusk scene opened near-black (dark-second check): light it and cut in instead of fading
+        s2 = props["scenes"][2]; s2["trans"] = "cut"; s2["layers"].insert(0, {"kind": "glowdot", "x": 540, "y": 1000, "r": 760, "color2": "#ff9a3c", "opacity": 0.75, "enter": "none"})
     for x in props["audio"].get("sfx", []):
         if x["at"] > 0.05: x["at"] = round(x["at"] + LEAD, 3)
     (OUT / f"{b}.json").write_text(json.dumps(props, ensure_ascii=False, indent=1)); print(OUT / f"{b}.json")

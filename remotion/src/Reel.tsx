@@ -14,7 +14,7 @@ export type Scene = { dur: number; palette?: string; bg?: { kind?: "radial" | "l
   cam?: { z0?: number; z1?: number; x0?: number; x1?: number; y0?: number; y1?: number; shakeAt?: number; shake?: number }; layers?: Layer[];
   dust?: boolean | number; stars?: boolean; trans?: "cut" | "fade" | "flash" | "punch" };
 export type ReelProps = { palette?: string; scenes: Scene[]; captions?: { words: Word[]; style?: "serif" | "pop"; y?: number; max?: number; size?: number };
-  audio?: { vo?: string; voAt?: number; music?: string; musicVol?: number; voVol?: number; sfx?: { src: string; at: number; vol?: number }[] }; film?: { grain?: number; vignette?: number }; duration?: number; header?: { text: string; color?: string } };
+  audio?: { vo?: string; voAt?: number; music?: string; musicVol?: number; voVol?: number; sfx?: { src: string; at: number; vol?: number }[] }; film?: { grain?: number; vignette?: number }; duration?: number; header?: { text: string; color?: string }; fixedText?: boolean };
 
 const TEXT_KINDS = new Set(["text"]);
 
@@ -46,7 +46,7 @@ const LayerView: React.FC<{ l: Layer; p: Palette; sceneFrames: number; svg: bool
   return <g transform={tr} opacity={op}><Shape {...(l as any)} t={t} color={color} color2={color2} /></g>;
 };
 
-const SceneView: React.FC<{ sc: Scene; p: Palette; frames: number }> = ({ sc, p, frames }) => {
+const SceneView: React.FC<{ sc: Scene; p: Palette; frames: number; fixedText?: boolean }> = ({ sc, p, frames, fixedText }) => {
   const f = useCurrentFrame(); const c = sc.cam ?? {}; const k = prog(f, 0, frames, easeIO);
   const z = interpolate(k, [0, 1], [c.z0 ?? 1.0, c.z1 ?? 1.06]), cx = interpolate(k, [0, 1], [c.x0 ?? 0, c.x1 ?? 0]), cy = interpolate(k, [0, 1], [c.y0 ?? 0, c.y1 ?? 0]);
   let sx = 0, sy = 0; if (c.shakeAt !== undefined) { const st = f - c.shakeAt * 30; if (st >= 0 && st < 22) { const amp = (c.shake ?? 26) * (1 - st / 22); sx = amp * noise(f * 1.7, 1); sy = amp * noise(f * 1.9, 2); } }
@@ -62,9 +62,10 @@ const SceneView: React.FC<{ sc: Scene; p: Palette; frames: number }> = ({ sc, p,
           {bg.kind === "temple" && <Temple idol={bg.idol} lamps={bg.lamps} warm={p.accent} glow={bg.glow} />}
           {layers.map((l, i) => <LayerView key={i} l={l} p={p} sceneFrames={frames} svg />)}
         </svg>
-        <AbsoluteFill>{layers.map((l, i) => <LayerView key={i} l={l} p={p} sceneFrames={frames} svg={false} />)}</AbsoluteFill>
+        {!fixedText && <AbsoluteFill>{layers.map((l, i) => <LayerView key={i} l={l} p={p} sceneFrames={frames} svg={false} />)}</AbsoluteFill>}
         {sc.dust && <Dust color={p.accent} count={typeof sc.dust === "number" ? sc.dust : 36} />}
       </AbsoluteFill>
+      {fixedText && <AbsoluteFill style={{ transform: `translate(${sx}px, ${sy}px)` }}>{layers.map((l, i) => <LayerView key={i} l={l} p={p} sceneFrames={frames} svg={false} />)}</AbsoluteFill>}
       {tr === "flash" && <AbsoluteFill style={{ background: p.fg, opacity: 0.75 * (1 - prog(f, 0, 5)) }} />}
     </AbsoluteFill>
   );
@@ -80,7 +81,7 @@ export const Reel: React.FC<ReelProps> = (props) => {
       {props.scenes.map((sc, i) => {
         const from = Math.round(at * fps), frames = Math.round(sc.dur * fps); at += sc.dur;
         const p = sc.palette ? PALETTES[sc.palette] ?? base : base;
-        return <Sequence key={i} from={from} durationInFrames={frames}><SceneView sc={sc} p={p} frames={frames} /></Sequence>;
+        return <Sequence key={i} from={from} durationInFrames={frames}><SceneView sc={sc} p={p} frames={frames} fixedText={props.fixedText} /></Sequence>;
       })}
       <Film grain={props.film?.grain ?? 0.1} vignette={props.film?.vignette ?? 0.6} />
       {props.header && (
