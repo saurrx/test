@@ -15,6 +15,8 @@ SETS = {
  "B + caption": ["log_duration", "log_gap", "prev_virality_local", "cap_is_series", "log_caption_chars", "caption_hashtags", "cap_cta_comment", "cap_cta_follow", "topic_shiva", "topic_ram", "topic_krishna"],
  "C + video": ["log_duration", "log_gap", "prev_virality_local", "has_speech", "view_changes_per_10s", "cuts_per_10s", "first_word_beat", "motion_first3s", "wpm_z", "loud_sd"],
  "D video only": ["log_duration", "has_speech", "view_changes_per_10s", "cuts_per_10s", "first_word_beat", "motion_first3s", "loud_sd"],
+ "E video + first frame": ["log_duration", "has_speech", "view_changes_per_10s", "cuts_per_10s", "first_word_beat", "motion_first3s", "loud_sd", "ff_luma", "ff_sat"],
+ "F first frame only": ["ff_luma", "ff_sat"],
 }
 for r in rows:
     d, g, c, fw, w = num(r, "duration_s"), num(r, "gap_prev_h"), num(r, "caption_chars"), num(r, "first_word_s"), num(r, "wpm")
