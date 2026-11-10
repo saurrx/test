@@ -28,3 +28,8 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 Within creators, hits open darker (mean brightness about 0.2 of full white) and more saturated (about 0.45–0.5) than flops
 (0.33 and 0.41). Keep the first frame's mean brightness under about 0.3 with strong colour; the headline supplies the bright accent.
 Never go below the "dark second" limit in `qc.py` (the frame must still read). Check: `ff_luma`, `ff_sat` in `scripts/dataset.py`.
+
+### P20. Concrete beats abstract: build on things the viewer does, not on meanings. `prior` (craft judges, 9 of 9 judgments)
+Reel 5 ("5 things you must never offer to Shiva": objects, red crosses, a list to save) beat reel 6 ("the mantra is your body": syllables and
+element words) in 9 of 9 blind judgments across three versions, with both passing every mechanical rule. Mechanical rules are necessary, not sufficient.
+Pick topics where every beat is a physical object or action the viewer has done; avoid beats that can only be shown as a word on a background.
