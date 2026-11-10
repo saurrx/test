@@ -1,0 +1,88 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.639,
+ "word_count": 14,
+ "first_word_s": 1.6,
+ "speech_seconds": 37.6,
+ "wpm": 22,
+ "segments": [
+  {
+   "start": 1.6,
+   "end": 39.22,
+   "text": "hurt too many people it's no one then let me make sure they can't",
+   "words": [
+    {
+     "s": 1.6,
+     "e": 2.04,
+     "w": "hurt"
+    },
+    {
+     "s": 32.12,
+     "e": 32.32,
+     "w": "too"
+    },
+    {
+     "s": 32.32,
+     "e": 32.52,
+     "w": "many"
+    },
+    {
+     "s": 32.52,
+     "e": 32.96,
+     "w": "people"
+    },
+    {
+     "s": 32.96,
+     "e": 33.68,
+     "w": "it's"
+    },
+    {
+     "s": 35.28,
+     "e": 35.48,
+     "w": "no"
+    },
+    {
+     "s": 35.48,
+     "e": 35.84,
+     "w": "one"
+    },
+    {
+     "s": 35.84,
+     "e": 36.76,
+     "w": "then"
+    },
+    {
+     "s": 38.04,
+     "e": 38.18,
+     "w": "let"
+    },
+    {
+     "s": 38.18,
+     "e": 38.34,
+     "w": "me"
+    },
+    {
+     "s": 38.34,
+     "e": 38.58,
+     "w": "make"
+    },
+    {
+     "s": 38.58,
+     "e": 38.68,
+     "w": "sure"
+    },
+    {
+     "s": 38.68,
+     "e": 38.84,
+     "w": "they"
+    },
+    {
+     "s": 38.84,
+     "e": 39.22,
+     "w": "can't"
+    }
+   ]
+  }
+ ]
+}

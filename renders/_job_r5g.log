@@ -1,0 +1,15 @@
+npm notice run npx
+npm notice run 'remotion' bundle src/index.ts --out-dir build_r5g
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Bundling 6%
+Bundling 16%
+Bundling 60%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 98%
++ /home/gamer/reels-loop/repo/remotion/build_r5g
