@@ -37,10 +37,10 @@ def banned(at, kind, label=None, v=0, **ik):  # four different "refused" picture
         L = [glow(y=820, o=0.5), lingam(y=980, s=0.8), item(kind, **{"x": 540, "y": 560, "s": (sm or 0.62) * 0.9, "enter": "drop", "move": {"x": 380, "y": 900, "rot": 70, "over": 1.1}, "exit": "fade", **ik}), cross(x=540, y=600, size=200, width=38, at=0.2, until=0.9)]; kw = dict(bg=temple(g=1.8), cam={"z0": 1.25, "z1": 1.35, "y0": -40, "y1": -60})
     else:         # night, the object dims out under a cold moon
         L = [glow(y=880, o=0.35, c=BLUE), {"kind": "moon", "x": 860, "y": 330, "s": 0.5, "color": W, "enter": "none"}, item(kind, **{"s": (sm or 0.62) * 1.8, "enter": "none", "exit": "fade", **ik}), cross(y=880, size=380, width=50, at=0.35)]; kw = dict(**night, cam={"z0": 1.0, "z1": 1.1})
-    if label: L.append(txt(label, y=400, at=0.3))
+    if label: L.append(txt(label, y=520 if v == 2 else 400, at=0.3))
     sc(at, trans="cut", dust=True, layers=L, **kw)
 # hook
-sc(0.0, bg=temple(g=1.9), dust=True, cam={"z0": 1.0, "z1": 1.1}, layers=[glow(y=820), lingam(y=880), txt("NEVER OFFER THESE TO SHIVA", y=390, size=104)])
+sc(0.0, bg=temple(g=2.0), dust=True, cam={"z0": 1.28, "z1": 1.0, "y0": -60, "y1": 0}, layers=[glow(y=820, o=0.75), {"kind": "rays", "x": 540, "y": 860, "opacity": 0.16}, lingam(y=900, s=1.05), {"kind": "text", "text": "5", "x": 540, "y": 330, "size": 300, "font": "serif", "color": G, "glow": "#ff6a1f", "textEnter": "slam"}, txt("NEVER OFFER THESE TO SHIVA", y=560, size=112, at=0.12)])
 sc(T("never") - 0.1, trans="punch", bg=temple(g=1.9), dust=True, cam={"z0": 1.35, "z1": 1.45, "y0": -80, "y1": -80, "shakeAt": 0.3, "shake": 14}, layers=[glow(y=820), lingam(y=880),
    item("flower", x=250, y=640, s=0.45, enter="pop", at=0.1), item("conch", x=850, y=640, s=0.36, enter="pop", at=0.3), item("bowls", x=540, y=1240, s=0.5, enter="pop", at=0.5), cross(y=860, size=330, width=44, at=0.7)])
 t = T("Most") - 0.1; sc(t, trans="fade", bg=temple("lingam", 1.5, 3), dust=True, cam={"z0": 1.0, "z1": 1.1}, layers=[{"kind": "person", "x": 540, "y": 1700, "s": 1.15, "pose": "pray", "color": "#0c0705", "color2": G, "enter": "none"}, txt("AT LEAST 1 OF 5", y=400, at=T("least") - t - 0.2)])
