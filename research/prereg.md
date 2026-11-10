@@ -80,6 +80,10 @@ These describe what a viral reel looks like afterwards; they are not levers.
 | V47 | A more colourful (saturated) first frame does better | positive | `run V47 ff_sat --continuous` |
 | V48 | A first frame with more contrast (spread of brightness) does better | positive | `run V48 ff_contrast --continuous` |
 | V49 | A first frame with more fine detail in the top/middle third (proxy for on-screen text) does better | positive | `run V49 ff_detail --continuous` |
+| V50 | Reels whose last 10 s promise a next part or tell the viewer to follow for more do better (model-labelled ending, blind to views) | positive | `run V50 end_next --split binary` |
+| V51 | Reels that end on a question to the viewer do better | positive | `run V51 end_question --split binary` |
+| V52 | Reels that end on a moral, lesson or blessing do worse than those ending on a twist or open loop | negative | `run V52 end_moral --split binary` |
+| V53 | Reels that end by asking for comments ("comment Jai Shri Ram", "type yes") do no better (matches F8, F18) | null | `run V53 end_comment --split binary` |
 
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).

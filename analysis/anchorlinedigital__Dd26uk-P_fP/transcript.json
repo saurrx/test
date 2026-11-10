@@ -1,0 +1,140 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.989,
+ "word_count": 16,
+ "first_word_s": 2.45,
+ "speech_seconds": 6.1,
+ "wpm": 158,
+ "segments": [
+  {
+   "start": 2.45,
+   "end": 3.13,
+   "text": "Seriously?",
+   "words": [
+    {
+     "s": 2.45,
+     "e": 3.13,
+     "w": "Seriously?"
+    }
+   ]
+  },
+  {
+   "start": 3.69,
+   "end": 4.61,
+   "text": "Torch is in the hall.",
+   "words": [
+    {
+     "s": 3.69,
+     "e": 3.97,
+     "w": "Torch"
+    },
+    {
+     "s": 3.97,
+     "e": 4.09,
+     "w": "is"
+    },
+    {
+     "s": 4.09,
+     "e": 4.21,
+     "w": "in"
+    },
+    {
+     "s": 4.21,
+     "e": 4.29,
+     "w": "the"
+    },
+    {
+     "s": 4.29,
+     "e": 4.61,
+     "w": "hall."
+    }
+   ]
+  },
+  {
+   "start": 18.05,
+   "end": 18.57,
+   "text": "Ryan!",
+   "words": [
+    {
+     "s": 18.05,
+     "e": 18.57,
+     "w": "Ryan!"
+    }
+   ]
+  },
+  {
+   "start": 19.23,
+   "end": 20.37,
+   "text": "What happened?",
+   "words": [
+    {
+     "s": 19.23,
+     "e": 19.95,
+     "w": "What"
+    },
+    {
+     "s": 19.95,
+     "e": 20.37,
+     "w": "happened?"
+    }
+   ]
+  },
+  {
+   "start": 25.67,
+   "end": 26.83,
+   "text": "Got your attention?",
+   "words": [
+    {
+     "s": 25.67,
+     "e": 26.27,
+     "w": "Got"
+    },
+    {
+     "s": 26.27,
+     "e": 26.47,
+     "w": "your"
+    },
+    {
+     "s": 26.47,
+     "e": 26.83,
+     "w": "attention?"
+    }
+   ]
+  },
+  {
+   "start": 27.65,
+   "end": 28.37,
+   "text": "Exactly.",
+   "words": [
+    {
+     "s": 27.65,
+     "e": 28.37,
+     "w": "Exactly."
+    }
+   ]
+  },
+  {
+   "start": 28.77,
+   "end": 29.71,
+   "text": "Now keep it.",
+   "words": [
+    {
+     "s": 28.77,
+     "e": 28.93,
+     "w": "Now"
+    },
+    {
+     "s": 28.93,
+     "e": 29.37,
+     "w": "keep"
+    },
+    {
+     "s": 29.37,
+     "e": 29.71,
+     "w": "it."
+    }
+   ]
+  }
+ ]
+}
