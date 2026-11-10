@@ -38,6 +38,9 @@ def main():
         g = frame_gray(v, sec + 0.5, 54, 96)
         if g is not None and (g.mean() < 0.06 or (g > 0.35).mean() < 0.01): dark.append(sec)
     nums["dark_seconds"] = dark[:12]; checks["no_dark_seconds"] = len(dark) == 0
+    # single black frames (a one-frame flicker at a cut): every frame is scanned, not one per second
+    bf = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(video), "-vf", "scale=180:320,blackframe=amount=95:threshold=40", "-an", "-f", "null", "-"], capture_output=True, text=True).stderr
+    black = sorted({int(x) for x in re.findall(r"frame:(\d+) pblack", bf)}); nums["black_frames"] = black[:20]; checks["no_black_frames"] = len(black) == 0
     if words:
         nums["first_word_s"] = words[0]["s"]; checks["first_word_by_1.5s"] = words[0]["s"] <= 1.5
         speech = sum(w["e"] - w["s"] for w in words); span = words[-1]["e"] - words[0]["s"]

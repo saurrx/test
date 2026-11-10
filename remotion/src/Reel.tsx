@@ -79,7 +79,7 @@ export const Reel: React.FC<ReelProps> = (props) => {
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       {props.scenes.map((sc, i) => {
-        const from = Math.round(at * fps), frames = Math.round(sc.dur * fps); at += sc.dur;
+        const from = Math.round(at * fps), frames = Math.max(1, Math.round((at + sc.dur) * fps) - from); at += sc.dur;  // no rounding gap: a gap showed as one black frame
         const p = sc.palette ? PALETTES[sc.palette] ?? base : base;
         return <Sequence key={i} from={from} durationInFrames={frames}><SceneView sc={sc} p={p} frames={frames} fixedText={props.fixedText} /></Sequence>;
       })}
