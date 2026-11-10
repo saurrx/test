@@ -1,17 +1,13 @@
 # Tasks
 
 ## Now
-- Loop RUNNING 2026-11-09T19:59Z → 2026-11-10T04:59Z. **Phase 0 done at 20:30** (judge calibration deferred: only 6 hit/flop pairs analysed so far; run `scripts/calib.py pack calib_2` once `data/features.csv` shows ≥ 100 analysed).
-- Iterations 1–4 done (see `makes/LOG.md`): reel 1 final in `renders/best/`; checkpoint 1 = improved (6/9); hook labs 1–2; findings F1–F9.
-- **Treg is off** (permission prompts): free voice via `scripts/voice.py tts` on the PC, saved music loops, `scripts/synth.py`.
-- After any restart run `scripts/ensure_up.sh`. Renders: `scripts/render_bg.sh <job> <draft|final> <props> <name>...` then `scripts/render_get.sh <job> [wait]`; finals: `scripts/finish.sh <pc render name> <out name>` → `renders/best/`.
-- Iteration 5 done 22:42: reel 2 final in `renders/best/`; reel 3 v1/v2 judged (beats reel 1, reference still ahead "clear"); V6–V18, V31–V37, V40–V41 run; views model in `research/model.md`.
-- **Iteration 6 (started 22:42)**. PC jobs in flight (collect with `scripts/render_get.sh <job> wait`):
-  - `r2fb` → `reel2b_final` (corrected header + 0.5 s lead-in): then `scripts/finish.sh reel2b_final reel2_pinaka_1080` (overwrites), QC `--final`.
-  - `r3final` → `reel3_final`: then `scripts/finish.sh reel3_final reel3_jal_1080`, QC `--final makes/reel3_jal/reel.json`, sheet, log.
-  - `r4v1` → `reel4_v1` draft (`makes/reel4_parashuram/`): view sheet, fix, judge (2 judges) vs `renders/reel2_v2.mp4` and `data/ref/pinaka_ref.mp4`, ≤ 3 versions, then final + finish as `reel4_parashuram_1080`.
-- Then: checkpoint 2 (`cp bench/cp1.py bench/cp2.py`, add keyword panels, lead-in, new scenes; judge vs cp1, 3 judges); hook lab 3 on reel 3's hook (stakes line vs "wrong" line, with/without the 0.5 s beat); calibration `calib_3` (34 pairs packed, 2 judges); reel 5 = Shiva part 2 if time.
-- Final 30 minutes (from 04:25 UTC): final checkpoint, `research/FINAL_REPORT.md`, ranked queue of originals, disable watchdogs A and B.
+Loop RUNNING (started 2026-11-09T19:59Z, ends 2026-11-10T04:59Z). Iteration 8 as of 00:05Z.
+- In progress: reel 5 v3 draft (PC job `r5v3`) -> QC, `scripts/playbook_check.py`, 2 blind judges vs `renders/reel3_v2.mp4` + `data/ref/aarti_ref.mp4`; if it does not beat reel 3, one more version, then final (`render_bg.sh ... final`, `finish.sh ... reel5_never_1080`).
+- In progress: PC job `v4` (`reel1c_final`, `reel3c_final`): judge against current finals before replacing them.
+- Next: checkpoint 3 (`bench/cp3/*.json` ready; render 3 drafts, judge vs cp1, 3 judges), hook lab 3, reel 6 if time.
+- Virality: F20 done this iteration. Next ideas: refit `scripts/model.py` with first-frame features; rerun the report near the end.
+- From 04:25Z: `research/FINAL_REPORT.md`, push, disable the two watchdog scheduled tasks.
+- No Treg calls. Render at most 2 jobs at once on the PC (3 at once took over 15 minutes each).
 
 ## How to work (for a restart)
 - Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.
