@@ -175,9 +175,9 @@ only 1–4 creators have both kinds of ending (V50 next-part: 2 creators, p 0.60
   Whether a signature ending helps can only be answered across accounts (too few here) or by posting.
 - Playbook stays as is: P8 (series / next part) rests on the caption evidence in F7, not on this test.
 
-## F22 (iteration 9, 01:10Z): a denser first five seconds leans positive; short first sentence is null. `suggestive` / `null`
+## F22 (iteration 9, 01:10Z): a denser first five seconds: weak lean, flat medians; short first sentence: null. `null`
 Pre-registered V54, V55 (voice-led reels only).
 - **Words spoken in the first 5 s**: rho +0.17, p 0.09, 143 reels, 14 creators, 9/14 agree, sign stable leaving each creator out. Not significant, same direction as F12
-  (a short beat, then speech): hits get to the point quickly. Medians are in the table printed by the run (see `research/tests.jsonl`).
+  (a short beat, then speech): hits get to the point quickly. But the medians are flat (flops 13 words, middle 12, hits 13), so the effect, if any, is small.
 - **Short first sentence (ends within 2.5 s)**: 0.9x, p 0.89, 3/8 creators. Null. The length of the opening sentence does not matter; how much is said early might.
-- Use: keep the 0.3–1 s lead-in (P4) but do not pad after it; aim for 11+ words inside the first 5 s.
+- Use: no new rule. Our reels already sit at the typical 12–13 words in the first 5 s.
