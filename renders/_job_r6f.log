@@ -1,0 +1,15 @@
+npm notice run npx
+npm notice run 'remotion' bundle src/index.ts --out-dir build_r6f
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Bundling 6%
+Bundling 15%
+Bundling 58%
+Bundling 64%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
++ /home/gamer/reels-loop/repo/remotion/build_r6f

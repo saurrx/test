@@ -1,0 +1,23 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.43,
+ "word_count": 1,
+ "first_word_s": 0.82,
+ "speech_seconds": 0.5,
+ "wpm": null,
+ "segments": [
+  {
+   "start": 0.82,
+   "end": 1.32,
+   "text": "You",
+   "words": [
+    {
+     "s": 0.82,
+     "e": 1.32,
+     "w": "You"
+    }
+   ]
+  }
+ ]
+}

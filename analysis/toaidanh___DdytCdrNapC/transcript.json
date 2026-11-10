@@ -1,0 +1,397 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.997,
+ "word_count": 66,
+ "first_word_s": 1.65,
+ "speech_seconds": 24.1,
+ "wpm": 164,
+ "segments": [
+  {
+   "start": 1.65,
+   "end": 4.59,
+   "text": "Zeus is dropping lightning like he's juggling hot potatoes",
+   "words": [
+    {
+     "s": 1.65,
+     "e": 1.99,
+     "w": "Zeus"
+    },
+    {
+     "s": 1.99,
+     "e": 2.23,
+     "w": "is"
+    },
+    {
+     "s": 2.23,
+     "e": 2.45,
+     "w": "dropping"
+    },
+    {
+     "s": 2.45,
+     "e": 2.89,
+     "w": "lightning"
+    },
+    {
+     "s": 2.89,
+     "e": 3.21,
+     "w": "like"
+    },
+    {
+     "s": 3.21,
+     "e": 3.41,
+     "w": "he's"
+    },
+    {
+     "s": 3.41,
+     "e": 3.73,
+     "w": "juggling"
+    },
+    {
+     "s": 3.73,
+     "e": 3.99,
+     "w": "hot"
+    },
+    {
+     "s": 3.99,
+     "e": 4.59,
+     "w": "potatoes"
+    }
+   ]
+  },
+  {
+   "start": 4.59,
+   "end": 7.79,
+   "text": "Aedes is complaining that his kingdom needs tomatoes",
+   "words": [
+    {
+     "s": 4.59,
+     "e": 5.43,
+     "w": "Aedes"
+    },
+    {
+     "s": 5.43,
+     "e": 5.63,
+     "w": "is"
+    },
+    {
+     "s": 5.63,
+     "e": 6.11,
+     "w": "complaining"
+    },
+    {
+     "s": 6.11,
+     "e": 6.39,
+     "w": "that"
+    },
+    {
+     "s": 6.39,
+     "e": 6.53,
+     "w": "his"
+    },
+    {
+     "s": 6.53,
+     "e": 6.93,
+     "w": "kingdom"
+    },
+    {
+     "s": 6.93,
+     "e": 7.25,
+     "w": "needs"
+    },
+    {
+     "s": 7.25,
+     "e": 7.79,
+     "w": "tomatoes"
+    }
+   ]
+  },
+  {
+   "start": 7.79,
+   "end": 11.09,
+   "text": "Hercules is flexing but he tripped upon a sandal",
+   "words": [
+    {
+     "s": 7.79,
+     "e": 8.73,
+     "w": "Hercules"
+    },
+    {
+     "s": 8.73,
+     "e": 9.01,
+     "w": "is"
+    },
+    {
+     "s": 9.01,
+     "e": 9.47,
+     "w": "flexing"
+    },
+    {
+     "s": 9.47,
+     "e": 9.65,
+     "w": "but"
+    },
+    {
+     "s": 9.65,
+     "e": 9.75,
+     "w": "he"
+    },
+    {
+     "s": 9.75,
+     "e": 10.13,
+     "w": "tripped"
+    },
+    {
+     "s": 10.13,
+     "e": 10.47,
+     "w": "upon"
+    },
+    {
+     "s": 10.47,
+     "e": 10.65,
+     "w": "a"
+    },
+    {
+     "s": 10.65,
+     "e": 11.09,
+     "w": "sandal"
+    }
+   ]
+  },
+  {
+   "start": 11.09,
+   "end": 14.33,
+   "text": "And the chaos in Olympus is too ridiculous to handle",
+   "words": [
+    {
+     "s": 11.09,
+     "e": 11.31,
+     "w": "And"
+    },
+    {
+     "s": 11.31,
+     "e": 11.45,
+     "w": "the"
+    },
+    {
+     "s": 11.45,
+     "e": 11.91,
+     "w": "chaos"
+    },
+    {
+     "s": 11.91,
+     "e": 12.15,
+     "w": "in"
+    },
+    {
+     "s": 12.15,
+     "e": 12.63,
+     "w": "Olympus"
+    },
+    {
+     "s": 12.63,
+     "e": 12.73,
+     "w": "is"
+    },
+    {
+     "s": 12.73,
+     "e": 12.93,
+     "w": "too"
+    },
+    {
+     "s": 12.93,
+     "e": 13.55,
+     "w": "ridiculous"
+    },
+    {
+     "s": 13.55,
+     "e": 13.89,
+     "w": "to"
+    },
+    {
+     "s": 13.89,
+     "e": 14.33,
+     "w": "handle"
+    }
+   ]
+  },
+  {
+   "start": 14.33,
+   "end": 17.15,
+   "text": "Oh, mythological madness in the afternoon",
+   "words": [
+    {
+     "s": 14.33,
+     "e": 14.71,
+     "w": "Oh,"
+    },
+    {
+     "s": 14.89,
+     "e": 15.49,
+     "w": "mythological"
+    },
+    {
+     "s": 15.49,
+     "e": 15.93,
+     "w": "madness"
+    },
+    {
+     "s": 15.93,
+     "e": 16.23,
+     "w": "in"
+    },
+    {
+     "s": 16.23,
+     "e": 16.45,
+     "w": "the"
+    },
+    {
+     "s": 16.45,
+     "e": 17.15,
+     "w": "afternoon"
+    }
+   ]
+  },
+  {
+   "start": 17.85,
+   "end": 20.65,
+   "text": "We are racing up Mount Olympus to the moon",
+   "words": [
+    {
+     "s": 17.85,
+     "e": 18.19,
+     "w": "We"
+    },
+    {
+     "s": 18.19,
+     "e": 18.37,
+     "w": "are"
+    },
+    {
+     "s": 18.37,
+     "e": 18.69,
+     "w": "racing"
+    },
+    {
+     "s": 18.69,
+     "e": 18.87,
+     "w": "up"
+    },
+    {
+     "s": 18.87,
+     "e": 19.09,
+     "w": "Mount"
+    },
+    {
+     "s": 19.09,
+     "e": 19.63,
+     "w": "Olympus"
+    },
+    {
+     "s": 19.63,
+     "e": 19.87,
+     "w": "to"
+    },
+    {
+     "s": 19.87,
+     "e": 20.23,
+     "w": "the"
+    },
+    {
+     "s": 20.23,
+     "e": 20.65,
+     "w": "moon"
+    }
+   ]
+  },
+  {
+   "start": 20.65,
+   "end": 23.97,
+   "text": "With a Hermes sprint and a Minotaur roar",
+   "words": [
+    {
+     "s": 20.65,
+     "e": 21.23,
+     "w": "With"
+    },
+    {
+     "s": 21.23,
+     "e": 21.35,
+     "w": "a"
+    },
+    {
+     "s": 21.35,
+     "e": 22.01,
+     "w": "Hermes"
+    },
+    {
+     "s": 22.01,
+     "e": 22.37,
+     "w": "sprint"
+    },
+    {
+     "s": 22.37,
+     "e": 22.85,
+     "w": "and"
+    },
+    {
+     "s": 22.85,
+     "e": 22.97,
+     "w": "a"
+    },
+    {
+     "s": 22.97,
+     "e": 23.51,
+     "w": "Minotaur"
+    },
+    {
+     "s": 23.51,
+     "e": 23.97,
+     "w": "roar"
+    }
+   ]
+  },
+  {
+   "start": 23.97,
+   "end": 26.45,
+   "text": "We're coming straight through the mythological door",
+   "words": [
+    {
+     "s": 23.97,
+     "e": 24.57,
+     "w": "We're"
+    },
+    {
+     "s": 24.57,
+     "e": 24.77,
+     "w": "coming"
+    },
+    {
+     "s": 24.77,
+     "e": 25.09,
+     "w": "straight"
+    },
+    {
+     "s": 25.09,
+     "e": 25.31,
+     "w": "through"
+    },
+    {
+     "s": 25.31,
+     "e": 25.39,
+     "w": "the"
+    },
+    {
+     "s": 25.39,
+     "e": 26.07,
+     "w": "mythological"
+    },
+    {
+     "s": 26.07,
+     "e": 26.45,
+     "w": "door"
+    }
+   ]
+  }
+ ]
+}

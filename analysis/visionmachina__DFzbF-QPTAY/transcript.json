@@ -1,0 +1,43 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.996,
+ "word_count": 5,
+ "first_word_s": 2.13,
+ "speech_seconds": 1.4,
+ "wpm": 221,
+ "segments": [
+  {
+   "start": 2.13,
+   "end": 3.49,
+   "text": "You ever gut a fish?",
+   "words": [
+    {
+     "s": 2.13,
+     "e": 2.59,
+     "w": "You"
+    },
+    {
+     "s": 2.59,
+     "e": 2.79,
+     "w": "ever"
+    },
+    {
+     "s": 2.79,
+     "e": 2.99,
+     "w": "gut"
+    },
+    {
+     "s": 2.99,
+     "e": 3.19,
+     "w": "a"
+    },
+    {
+     "s": 3.19,
+     "e": 3.49,
+     "w": "fish?"
+    }
+   ]
+  }
+ ]
+}
