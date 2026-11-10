@@ -88,3 +88,8 @@
 - Why: allow rules did not stop the prompts. The loop has made no Treg call since 22:00Z and does not need one.
 - Fallback already in use: voice = free `edge-tts` on the PC; music = the two saved loops + `scripts/synth.py`; if the PC is down, cloud rendering and the audio already in git.
 - To use Treg again later: delete the two deny lines. Balance is untouched (about $0.47).
+
+## 2026-11-10 01:22Z: judge strips fixed to show the real opening frame
+- What: `scripts/judge.py --whole` strips now start with the frame at 0.3 s, then 11 evenly spread frames. Before, the first frame shown was about 2.8 s into a 68 s clip.
+- Effect on earlier results: all whole-reel judgments (reels 1–6 vs references) were made without the opening frame, for every clip alike. Hook-lab and checkpoint results on 20 s clips were less affected (first frame at about 0.9 s). Earlier verdicts stand as logged but are weaker evidence about hooks.
+- Also: one judge agent must do one judgment. An agent given two folders returned the same answer twice.

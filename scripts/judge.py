@@ -18,8 +18,10 @@ def strip(src, dst, whole):
     else:
         if whole:
             d = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src], capture_output=True, text=True).stdout)
-            vf = f"fps={12 / max(d, 0.1):.4f},scale=270:480,tile=6x2"
-            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-vf", vf, "-frames:v", "1", str(dst)], check=True)
+            # frame 1 is the real opening (0.3 s), then 11 frames spread evenly (the old fps filter started ~d/24 in, hiding the opening)
+            import tempfile; tmp = tempfile.mkdtemp(); times = [0.3] + [d * (i + 0.5) / 11.5 for i in range(1, 12)]
+            for i, t in enumerate(times): subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{min(t, d - 0.2):.2f}", "-i", src, "-frames:v", "1", "-vf", "scale=270:480", f"{tmp}/{i:02d}.jpg"], check=True)
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{tmp}/%02d.jpg", "-vf", "tile=6x2", "-frames:v", "1", str(dst)], check=True)
         else:
             subprocess.run(["ffmpeg", "-y", "-v", "error", "-t", "3", "-i", src, "-vf", "fps=4,scale=270:480,tile=6x2", "-frames:v", "1", str(dst)], check=True)
 
