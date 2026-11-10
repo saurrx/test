@@ -1,6 +1,6 @@
 # 9-hour self-improving reel loop (v3, awaiting owner "go")
 
-Status: **RUNNING** since 2026-11-09T19:59Z.
+Status: **FINISHED** (ran 2026-11-09T19:59Z to 2026-11-10T04:59Z). Results: `research/FINAL_REPORT.md`.
 Runner: session_01Gy5RgGBibuvxR5H9sESUN3.
 
 - Loop start (UTC): 2026-11-09T19:59Z
