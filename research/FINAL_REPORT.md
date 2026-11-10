@@ -14,7 +14,7 @@ Sources: `LOOP.md`, `makes/LOG.md`, `research/03_virality_analysis.md`, `researc
 - What did not work: reel 1 never closed the gap to its reference. Reel 6 came last in 9 of 9 judgments. The blind judge cannot spot real hits (59%, near chance). About 2 hours near the end were lost to cloud worker restarts.
 
 ## 2. Reels made (originals only)
-All finals are 1080x1920 and live at `renders/best/<name>_1080.mp4`. Every final passes automatic QC: loudness, contrast, no dark seconds, no black frames. Reels 2, 3, 4 and 6 were re-rendered at the end to remove one-frame black gaps.
+All finals are 1080x1920 and live at `renders/best/<name>_1080.mp4`. Reels 1, 3, 5 and 6 pass every automatic check (loudness, contrast, no dark seconds, no black frames). Reels 2 and 4 were re-rendered at the end to remove black gaps (reel 2 had 7) and are down to **one** single black frame each (reel 2 at frame 1425 = 47.5 s, which also trips the dark-second check; reel 4 at frame 486 = 16.2 s). Barely visible, but not clean: fix with `scripts/lift_dark_starts.py` on the affected scene and re-render before posting. Reel 7 (Hindi) final was still rendering on the PC at the end; fetch with `scripts/render_get.sh r7f` then `scripts/finish.sh reel7_final reel7_never_hi_1080`.
 
 | # | Reel | Language | Length | Status | Blind-judge record |
 |---|---|---|---|---|---|
