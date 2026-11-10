@@ -1,0 +1,21 @@
+npm notice run npx
+npm notice run 'remotion' render build_r5f Reel ../renders/reel5_final.mp4 --props=../makes/reel5_never/reel.json --crf=18 --gl=swangle --concurrency=6 --browser-executable=/usr/bin/chromium --chrome-mode=chrome-for-testing
+Getting compositions
+Getting compositions
+Composition          Reel
+Codec                h264
+Output               ../renders/reel5_final.mp4
+Concurrency          6x
+Rendered 0/2042
+Rendered 1/2042, time remaining: 34h 49m 21s
+Rendered 2/2042, time remaining: 36h 47m 29s
+Rendered 3/2042, time remaining: 37h 26m 28s
+Rendered 4/2042, time remaining: 37h 45m 42s
+Rendered 5/2042, time remaining: 37h 56m 52s
+Rendered 6/2042, time remaining: 38h 4m 1s
+Rendered 7/2042, time remaining: 33h 43m 50s
+Rendered 8/2042, time remaining: 30h 15m 42s
+Rendered 9/2042, time remaining: 27h 37m 50s
+Rendered 10/2042, time remaining: 25h 31m 23s
+Rendered 11/2042, time remaining: 23h 48m 3s
+Rendered 12/2042, time remaining: 22h 21m 55s

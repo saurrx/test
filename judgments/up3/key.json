@@ -1,0 +1,17 @@
+{
+ "clips": [
+  "renders/best/reel3_jal_1080.mp4",
+  "renders/reel3c_final_540.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "renders/reel3c_final_540.mp4",
+   "B": "renders/best/reel3_jal_1080.mp4"
+  },
+  "j2": {
+   "A": "renders/reel3c_final_540.mp4",
+   "B": "renders/best/reel3_jal_1080.mp4"
+  }
+ }
+}

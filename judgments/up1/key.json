@@ -1,0 +1,17 @@
+{
+ "clips": [
+  "renders/best/reel1_bell_1080.mp4",
+  "renders/reel1c_final_540.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "renders/best/reel1_bell_1080.mp4",
+   "B": "renders/reel1c_final_540.mp4"
+  },
+  "j2": {
+   "A": "renders/reel1c_final_540.mp4",
+   "B": "renders/best/reel1_bell_1080.mp4"
+  }
+ }
+}

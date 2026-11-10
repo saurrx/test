@@ -1,0 +1,23 @@
+{
+ "language": "en",
+ "detected_language": "en",
+ "language_prob": 0.616,
+ "word_count": 1,
+ "first_word_s": 0.37,
+ "speech_seconds": 1.4,
+ "wpm": 43,
+ "segments": [
+  {
+   "start": 0.37,
+   "end": 1.75,
+   "text": "Oh",
+   "words": [
+    {
+     "s": 0.37,
+     "e": 1.75,
+     "w": "Oh"
+    }
+   ]
+  }
+ ]
+}
