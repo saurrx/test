@@ -82,3 +82,9 @@
 - What: kept the new reel 3 final (shaded, lit) although both blind judgments picked the previous one by the key.
 - Why: the judges' written reasons describe the new version's features, the old file fails the darkness QC check, and judge calibration is near chance. QC is the firmer signal here.
 - Skipped: a third judgment (usage is better spent on checkpoint 3). The old final is recoverable from git.
+
+## 2026-11-10 00:55Z: Treg hard-blocked (owner asked again to get rid of the prompts)
+- What: removed the Treg allow rules and added deny rules for both Treg server names in `.claude/settings.json` and the user settings. A Treg call is now refused automatically; no prompt can appear and nothing can wait on one.
+- Why: allow rules did not stop the prompts. The loop has made no Treg call since 22:00Z and does not need one.
+- Fallback already in use: voice = free `edge-tts` on the PC; music = the two saved loops + `scripts/synth.py`; if the PC is down, cloud rendering and the audio already in git.
+- To use Treg again later: delete the two deny lines. Balance is untouched (about $0.47).
