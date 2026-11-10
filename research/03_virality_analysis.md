@@ -166,3 +166,11 @@ Measured on the first frame of 164 analysed reels (17 creators, each compared wi
   leave-one-creator-out score (video only 0.31, 14/18 creators → with first frame 0.27, 12/18; first frame alone 0.13, 9/18).
   The within-creator correlation is real in this sample, but the absolute values do not transfer across creators (each has its own look).
   Label lowered from `evidenced` to `suggestive`: "don't open on a pale, washed-out frame relative to your own usual look".
+
+## F21 (iteration 8, 00:35Z): ending type cannot be tested inside creators: it is a house style. `underpowered`
+Pre-registered V50–V53. A model labelled the last 10 s of speech of 170 analysed reels, blind to views (next-part/follow 60, question 42,
+moral/blessing 20, comment ask 27, lyrics 21 dropped). Result: every test is underpowered because creators almost never vary their ending:
+only 1–4 creators have both kinds of ending (V50 next-part: 2 creators, p 0.60; V51 question: 4 creators, p 0.65; V52 moral: 1; V53 comment: 1).
+- What this does tell us: the ending is a fixed signature per account (always "follow for part 2", or always a question), not a per-reel choice.
+  Whether a signature ending helps can only be answered across accounts (too few here) or by posting.
+- Playbook stays as is: P8 (series / next part) rests on the caption evidence in F7, not on this test.
