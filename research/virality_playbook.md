@@ -24,7 +24,7 @@ Rules the make track must apply. `evidenced` = passed the pre-registered test wi
 | P17 | Aim for likeability, not just a stop: hits earn about 1 like per 20 views vs a norm of 1 per 45. Give the viewer something worth saving or agreeing with (a usable rule, a satisfying pay-off) | evidenced (after-the-fact marker) | F17: rho +0.40, 15/17 creators; like rate 5.0–6.4% on hits vs 2.2–2.4% otherwise |
 | P18 | Do not design endings around collecting comments | evidenced / null | F18: comment rate is lower on hits; F8: caption CTAs show no effect |
 
-### P19. Open on a deep, richly coloured frame, not a pale one. `suggestive` (F20; failed the held-out model check)
+### P19. Open on a deep, richly coloured frame, not a pale one. `evidenced`, small effect (F20, replicated in F23 on 218 reels)
 Within creators, hits open darker (mean brightness about 0.2 of full white) and more saturated (about 0.45–0.5) than flops
 (0.33 and 0.41). Keep the first frame's mean brightness under about 0.3 with strong colour; the headline supplies the bright accent.
 Never go below the "dark second" limit in `qc.py` (the frame must still read). Check: `ff_luma`, `ff_sat` in `scripts/dataset.py`.

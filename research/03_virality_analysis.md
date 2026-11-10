@@ -181,3 +181,19 @@ Pre-registered V54, V55 (voice-led reels only).
   (a short beat, then speech): hits get to the point quickly. But the medians are flat (flops 13 words, middle 12, hits 13), so the effect, if any, is small.
 - **Short first sentence (ends within 2.5 s)**: 0.9x, p 0.89, 3/8 creators. Null. The length of the opening sentence does not matter; how much is said early might.
 - Use: no new rule. Our reels already sit at the typical 12–13 words in the first 5 s.
+
+## F23 (iteration 10, 02:00Z): replication on the larger sample (218 analysed, eligible reels; was 140–164)
+The PC kept analysing reels in the background, so the video tests were re-run unchanged (ids ending in `r`).
+| Finding | First run | Larger sample | Verdict |
+|---|---|---|---|
+| More picture changes per 10 s (F11) | rho +0.25, p 0.019 | rho +0.20, **p 0.010**, 11/17 creators | **holds** |
+| Darker first frame (F20) | rho −0.31, p 0.0008 | rho −0.25, **p 0.0006**, 13/17 | **holds** |
+| More saturated first frame (F20) | rho +0.26, p 0.003 | rho +0.22, **p 0.006**, 12/17 | **holds** |
+| More words in the first 5 s (F22) | rho +0.17, p 0.09 | rho +0.19, **p 0.017**, 11/17 | strengthened to `suggestive` |
+| Short beat before the first word (F12) | rho +0.27, p 0.024 | rho +0.16, p 0.053, 11/16 | weakened, still leans the same way |
+| Hard cuts per 10 s | null | rho +0.12, p 0.11 | still null |
+| Speaking pace, motion in first 3 s, loudness variation | null | null (p 0.51, 0.79, 0.91) | still null |
+- Views model, leave-one-creator-out, per-creator score: video only 0.22 (13/19 creators), video + first frame **0.26** (13/19), timing + history 0.22.
+  With more data the first-frame features now add a little instead of hurting, so F20 is back to `evidenced`, with a small effect.
+  The earlier 0.31 for "video only" has come down to 0.22: the first estimate was optimistic. Honest summary: these features rank a creator's reels
+  only slightly better than chance.
