@@ -84,6 +84,8 @@ These describe what a viral reel looks like afterwards; they are not levers.
 | V51 | Reels that end on a question to the viewer do better | positive | `run V51 end_question --split binary` |
 | V52 | Reels that end on a moral, lesson or blessing do worse than those ending on a twist or open loop | negative | `run V52 end_moral --split binary` |
 | V53 | Reels that end by asking for comments ("comment Jai Shri Ram", "type yes") do no better (matches F8, F18) | null | `run V53 end_comment --split binary` |
+| V54 | More spoken words in the first 5 s (a dense, fast start) do better | positive | `run V54 words_first5 --continuous --where has_speech=1` |
+| V55 | The first sentence being short (ends within 2.5 s) does better than a long opening sentence | positive | `run V55 first_sent_short --split binary` |
 
 ## Craft (blind judge tournaments in the hook lab)
 Each is tested by rendering matched variants that differ only in the named factor and ranking them blind (3 judges).

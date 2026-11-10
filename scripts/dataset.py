@@ -64,6 +64,13 @@ def main():
             r.update({"ff_luma": round(float(g.mean()), 4), "ff_sat": round(float(hsv[..., 1].mean()), 4), "ff_contrast": round(float(g.std()), 4),
                       "ff_detail": round(float(np.abs(np.diff(top, axis=1)).mean() + np.abs(np.diff(top, axis=0)).mean()), 4)})
         except Exception: pass
+        try:
+            ws = [w for sg in t.get("segments", []) for w in sg.get("words", [])]
+            if ws:
+                r["words_first5"] = sum(1 for w in ws if w.get("s", 99) < 5.0)
+                ends = [w["e"] for w in ws if str(w.get("w", "")).strip()[-1:] in ".?!।"]
+                r["first_sent_short"] = int(bool(ends) and ends[0] <= ws[0]["s"] + 2.5)
+        except Exception: pass
         segs = t.get("segments", []); first = " ".join(s["text"] for s in segs if s["start"] < 3.5); lo = [x[1] for x in m.get("loudness_lufs", []) if x[1] > -60]
         r.update({"analysed": 1, "cuts_per_10s": m.get("cuts_per_10s"), "first_cut_s": m.get("first_cut_s") or "", "view_changes_per_10s": m.get("view_changes_per_10s"),
                   "motion_mean": m.get("motion_mean"), "motion_first3s": m.get("motion_first3s"), "still_frac": round(m.get("still_seconds", 0) / max(m["duration"], 1), 3),
