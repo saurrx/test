@@ -1,0 +1,29 @@
+{
+ "clips": [
+  "renders/best/reel5_never_1080.mp4",
+  "renders/best/reel3_jal_1080.mp4",
+  "renders/best/reel1_bell_1080.mp4",
+  "data/ref/aarti_ref.mp4"
+ ],
+ "whole": true,
+ "key": {
+  "j1": {
+   "A": "data/ref/aarti_ref.mp4",
+   "B": "renders/best/reel1_bell_1080.mp4",
+   "C": "renders/best/reel5_never_1080.mp4",
+   "D": "renders/best/reel3_jal_1080.mp4"
+  },
+  "j2": {
+   "A": "renders/best/reel1_bell_1080.mp4",
+   "B": "renders/best/reel5_never_1080.mp4",
+   "C": "renders/best/reel3_jal_1080.mp4",
+   "D": "data/ref/aarti_ref.mp4"
+  },
+  "j3": {
+   "A": "renders/best/reel3_jal_1080.mp4",
+   "B": "renders/best/reel1_bell_1080.mp4",
+   "C": "data/ref/aarti_ref.mp4",
+   "D": "renders/best/reel5_never_1080.mp4"
+  }
+ }
+}

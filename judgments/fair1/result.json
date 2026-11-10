@@ -1,0 +1,42 @@
+{
+ "name": "fair1",
+ "judges": 3,
+ "order": [
+  "renders/best/reel5_never_1080.mp4",
+  "data/ref/aarti_ref.mp4",
+  "renders/best/reel3_jal_1080.mp4",
+  "renders/best/reel1_bell_1080.mp4"
+ ],
+ "borda": {
+  "renders/best/reel5_never_1080.mp4": 7,
+  "renders/best/reel3_jal_1080.mp4": 4,
+  "renders/best/reel1_bell_1080.mp4": 1,
+  "data/ref/aarti_ref.mp4": 6
+ },
+ "first_place_votes": {
+  "renders/best/reel5_never_1080.mp4": 1,
+  "renders/best/reel3_jal_1080.mp4": 0,
+  "renders/best/reel1_bell_1080.mp4": 0,
+  "data/ref/aarti_ref.mp4": 2
+ },
+ "per_judge": [
+  [
+   "renders/best/reel5_never_1080.mp4",
+   "renders/best/reel3_jal_1080.mp4",
+   "renders/best/reel1_bell_1080.mp4",
+   "data/ref/aarti_ref.mp4"
+  ],
+  [
+   "data/ref/aarti_ref.mp4",
+   "renders/best/reel5_never_1080.mp4",
+   "renders/best/reel3_jal_1080.mp4",
+   "renders/best/reel1_bell_1080.mp4"
+  ],
+  [
+   "data/ref/aarti_ref.mp4",
+   "renders/best/reel5_never_1080.mp4",
+   "renders/best/reel3_jal_1080.mp4",
+   "renders/best/reel1_bell_1080.mp4"
+  ]
+ ]
+}
