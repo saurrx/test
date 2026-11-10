@@ -1,13 +1,14 @@
 # Tasks
 
 ## Now
-Loop RUNNING (started 2026-11-09T19:59Z, ends 2026-11-10T04:59Z). Iteration 8 as of 00:05Z.
-- In progress: reel 5 v3 draft (PC job `r5v3`) -> QC, `scripts/playbook_check.py`, 2 blind judges vs `renders/reel3_v2.mp4` + `data/ref/aarti_ref.mp4`; if it does not beat reel 3, one more version, then final (`render_bg.sh ... final`, `finish.sh ... reel5_never_1080`).
-- In progress: PC job `v4` (`reel1c_final`, `reel3c_final`): judge against current finals before replacing them.
-- Next: checkpoint 3 (`bench/cp3/*.json` ready; render 3 drafts, judge vs cp1, 3 judges), hook lab 3, reel 6 if time.
-- Virality: F20 done this iteration. Next ideas: refit `scripts/model.py` with first-frame features; rerun the report near the end.
+Loop RUNNING (started 2026-11-09T19:59Z, ends 2026-11-10T04:59Z). Iteration 9 as of 00:42Z.
+- In progress: PC job `r5g` = reel 5 final with screen-fixed headlines -> `scripts/finish.sh reel5g_final reel5_never_1080`, QC `--final`, check the first second (headline must not collide with the header).
+- In progress: PC job `r6v1` = reel 6 draft ("Om Namah Shivaya: five syllables, five elements", `makes/reel6_mantra`) -> sheet review, QC, playbook check, 2 blind judges vs `renders/reel5_v3.mp4` + `data/ref/aarti_ref.mp4`, at most 3 versions, then final as `reel6_mantra_1080`.
+- Done this session: reel 4 corrected final; reels 1 and 3 upgraded finals; checkpoint 3 (5/9, not improved) -> headline clipping fixed (`fixedText: true` in props, use it in every new reel) -> checkpoint 3b **8/9 vs cp1, QC 3/3**; F20 (first frame, suggestive), F21 (endings, underpowered).
+- Next: hook lab 3 with `fixedText`; checkpoint 4 near the end (vs cp3b); re-render reels 2 and 4 with `fixedText` only if a headline is visibly clipped.
+- Virality next: rerun `scripts/pc_sync.sh pull && python3 -I scripts/dataset.py && python3 -I scripts/vtest.py report && python3 -I scripts/model.py` near 04:00Z with whatever the PC worker has analysed by then (241 so far).
 - From 04:25Z: `research/FINAL_REPORT.md`, push, disable the two watchdog scheduled tasks.
-- No Treg calls. Render at most 2 jobs at once on the PC (3 at once took over 15 minutes each).
+- No Treg calls. At most 2 render jobs at once on the PC.
 
 ## How to work (for a restart)
 - Render: `scripts/render.sh <props.json> <name> [draft|final]` (PC). QC: `python3 -I scripts/qc.py renders/<name>.mp4 <props.json>`.
