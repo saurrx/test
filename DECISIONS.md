@@ -77,3 +77,8 @@
 - Result: darker and more saturated first frames do better (both survive correction and the trend-removed outcome). I had predicted "brighter wins".
 - Action: playbook P19 added; craft belief C1 retired; no change needed to our reels (already dark and saturated).
 - Also: `scripts/playbook_check.py` added so every reel is checked against the mechanical playbook rules before judging.
+
+## 2026-11-10 00:12Z: replaced reel 3's final despite a 0/2 judge result
+- What: kept the new reel 3 final (shaded, lit) although both blind judgments picked the previous one by the key.
+- Why: the judges' written reasons describe the new version's features, the old file fails the darkness QC check, and judge calibration is near chance. QC is the firmer signal here.
+- Skipped: a third judgment (usage is better spent on checkpoint 3). The old final is recoverable from git.
